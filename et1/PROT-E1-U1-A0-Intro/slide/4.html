@@ -1,0 +1,96 @@
+<div class="row">
+
+    <div class="col-sm-7 textoJustificado">
+        <div class="navbar-dark identificadorAulas">
+
+            <div class=dados>
+                Unidade 1 - Introdução ao Curso
+
+            </div>
+        </div>
+        <br>
+        <br>
+    </div>
+</div>
+<div class="row justify-content-md-center" id="slide2">
+
+    <div class="col-sm-5 textoJustificado">
+        <h5 class="corDestaque2 maiusculo font-weight-bold">2. BOAS-VINDAS!
+        </h5>
+        <p>
+            <br>
+            <span class="paragrafo">
+                Com o vídeo ao lado, o gestor da Política Nacional de Práticas Integrativas e Complementares no SUS
+                (PNPIC), do Departamento de Gestão do Cuidado Integral (DGCI), da Secretaria de Atenção Primária à Saúde
+                (SAPS), do Ministério da Saúde (MS), lhe dará as boas-vindas apresentando o curso. Tudo isso para que
+                você tenha a melhor experiência de aprendizagem, em uma sequência cuidadosamente planejada para
+                facilitar a sua assimilação dos conteúdos.
+
+
+            </span>
+            <br>
+        </p>
+
+        <div id="botao"
+            style="position: absolute;right: 0px;background-color: #8aad45;width: 130px;height: 70px;display: flex;align-items: center;justify-content: space-around;border-radius: 20px 0px;">
+            <div
+                style="display: flex;background-color: white;border-radius: 50%;width: 40px;height: 40px;align-items: center;justify-content: center;">
+                <div
+                    style="border-top: 12px solid transparent;border-bottom: 12px solid transparent;border-left: 20px solid #8aad45;margin-left: 6px;">
+                </div>
+            </div>
+            <p style="color: white;margin: 0px;">VÍDEO</p>
+        </div>
+
+    </div>
+
+    <div class="col-sm-5 text-center">
+        <br>
+        <br>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/DTyFp6X3ABA"
+            title="Fitoferidas - Boas-Vindas ao Fitoferidas" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+
+    </div>
+
+    <div id="janela"
+        style="height: 100%;width: 100%;position: absolute;top: 0px;left: 0px;background-color: rgba(0, 0, 0, 0.8);display: flex;align-items: center;justify-content: center;">
+        <iframe width="953" height="580" src="https://www.youtube.com/embed/DTyFp6X3ABA"
+            title="Fitoferidas - Boas-Vindas ao Fitoferidas" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        <span style="cursor: pointer; position: absolute; top: 10px; right: 10px; color: white; padding: 40px;"
+            id="close">X</span>
+    </div>
+</div>
+<script src="https://www.youtube.com/iframe_api"></script>
+<script>
+    var player;
+
+    // Função chamada pela API do YouTube quando a API está pronta
+    function onYouTubeIframeAPIReady() {
+        player = new YT.Player('youtube-video', {
+            events: {
+                'onReady': onPlayerReady
+            }
+        });
+    }
+
+
+    $('.zoomify').zoomify(); $('.img-fluid').zoomify();
+    $('#janela').hide();
+    $('#close').click(() => {
+        $('#janela').hide();
+        player.pauseVideo();
+    })
+
+    $('#botao').css('cursor', 'pointer').click(() => {
+        $('#janela').show();
+    })
+
+</script>

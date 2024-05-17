@@ -1,0 +1,191 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 05/08/2020, 09:55:28
+    Author     : Vanderson
+/*
+CorDestaque1= #866607
+CorSecundaria = #CA9A1C;
+CorTerciaria = #CA9A1C;
+
+*/
+#menuAulas{
+    background-color: #CA9A1C !important;
+}
+
+.divImgPrincipalCapa {
+    overflow: hidden;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #CA9A1C !important;
+    border-color: #CA9A1C !important;
+}
+.btn-primary:hover {
+    color: #fff;
+    background-color: #CA9A1C !important;
+    border-color: #CA9A1C !important;
+}
+.c100 > span {
+    color: #866607 !important;
+}
+.corSecundaria,.corDestaque2{
+    color:#CA9A1C !important;
+
+}
+.textoJustificado{
+    text-align: justify;
+}
+.paragrafo{
+
+    /*text-indent: 1.5em;*/
+    margin-top: 0;
+    display: block;
+    text-align: justify;
+}
+.corPrimaria,.corDestaque1{
+    color:#866607 !important;
+}
+
+
+.identificadorAulas {
+    position: relative;
+    top: 0;
+    display: block;
+    text-align: left;
+    border-radius: 0 0 110px 0px;
+    padding: 7px;
+    padding-right: 85px !important;
+    color: #FFFFFF !important;
+    background-color: #CA9A1C !important;
+    font-weight: bold !important;
+    overflow: hidden;
+}
+.identificadorAulas .dados{
+    float:left;
+    margin-left: 10px;
+    font-size: 13px !important;
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto');
+body{
+    background-image: url('../img/fundoGeral.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-size: 16pt !important;
+    font-family: 'Roboto', sans-serif;
+}
+.fonte{
+    font-size:12pt !important;
+}
+.imgPrincipalCapa{
+    border-right: 10px solid #CA9A1C;
+    border-radius: 0px 150px 0 0;
+    width: 100%;
+
+}
+.capaDireita{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.imgPrincipalCapaDireita {
+    border-left: 10px solid #CA9A1C;
+    border-radius: 0px 0px 0px 180px;
+    width: 90%;
+}
+.logoPrincipal{
+    width: 280px;
+    margin: auto;
+    display: block;
+}
+.borda-direita{
+    border-radius: 0 35px;
+}
+.borda-esquerda {
+    border-radius: 35px 0;
+}
+.caixas {
+    background-color: #BC8200;
+    color: white;
+    font-weight: bold;
+    padding: 15px;
+    position: relative;
+    max-width: 90%;
+    margin: auto;
+}
+.saibamais::before{
+    content: "";
+    background-image: url(../img/adicao.png);
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: -45px;
+    background-size: cover;
+    right: -31px;
+
+}
+.alerta::before{
+    content: "";
+    background-image: url(../img/alerta.png);
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: -45px;
+    background-size: cover;
+    right: -31px;
+
+}
+.adicao::before{
+    content: "";
+    background-image: url(../img/adicao.png);
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: -45px;
+    background-size: cover;
+    right: -31px;
+
+}
+.imagem {
+    position: relative;
+}
+.imagem .controles {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.imagem .controles img {
+    width: 90px;
+}
+.img-thumbnail1{
+
+    padding: .25rem;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: .25rem;
+    max-width: 90%;
+    height: auto;
+}
+
+.imagem-redonda-borda {
+    border-radius: 50%;
+    overflow: hidden;
+    max-width: 73%;
+    margin: auto;
+    border: 7px solid #CA9A1C;
+}
+
+.imagem-esquerda {
+    float: left;
+    width: 133px;
+}
+
+.paragrafo-imagem-esquerda {
+    padding-left: 110px;
+}
