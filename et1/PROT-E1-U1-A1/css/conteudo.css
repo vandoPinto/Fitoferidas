@@ -12,40 +12,53 @@ CorSecundaria = #0F6D39;
 CorTerciaria = #83AD3F;
 
 */
-#menuAulas{
-    background-color: #83AD3F !important;
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto');
+
+#menuAulas {
+    background-color: rgb(225 225 225) !important;
+    /* background-color: #83AD3F !important; */
 }
 
 .divImgPrincipalCapa {
     overflow: hidden;
 }
+
 .btn-primary {
     color: #fff;
     background-color: #0F6D39 !important;
     border-color: #0F6D39 !important;
 }
+
 .btn-primary:hover {
     color: #fff;
     background-color: #83AD3F !important;
     border-color: #83AD3F !important;
 }
-.c100 > span {
+
+.c100>span {
     color: #866607 !important;
 }
-.corSecundaria,.corDestaque2{
-    color:#0F6D39 !important;
+
+.corSecundaria,
+.corDestaque2 {
+    color: #0F6D39 !important;
 
 }
-.textoJustificado{
+
+.textoJustificado {
     text-align: justify;
 }
-.paragrafo{
+
+.paragrafo {
 
     margin-top: 0;
     display: block;
 }
-.corPrimaria,.corDestaque1{
-    color:#866607 !important;
+
+.corPrimaria,
+.corDestaque1 {
+    color: #866607 !important;
 }
 
 
@@ -62,29 +75,92 @@ CorTerciaria = #83AD3F;
     font-weight: bold !important;
     overflow: hidden;
 }
-.identificadorAulas .dados{
-    float:left;
+
+.identificadorAulas .dados {
+    float: left;
     margin-left: 10px;
     font-size: 13px !important;
 
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto');
-body{
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto'); */
+@font-face {
+    font-family: 'Helvetica Neue1';
+    src: url('../fonts/helveticaneue.woff2') format('woff2'),
+        url('../fonts/helveticaneue.woff') format('woff');
+}
+
+div#conteudo {
+    overflow-x: hidden !important;
+    min-height: 100vh !important;
+}
+
+
+div#capa {
+    min-height: 100vh !important;
+}
+
+.imgPrincipalCapa {
+    height: 100% !important;
+}
+
+.imgPrincipalCapaDireita {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.divImgPrincipalCapa {
+    overflow: hidden;
+    height: 100%;
+}
+
+.capaDireita {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+
+}
+
+body {
     background-image: url('../img/fundoGeral.png');
     background-size: cover;
     background-repeat: no-repeat;
-    font-family: 'Roboto', sans-serif;
-    font-size: 15pt !important;
+    font-family: 'Helvetica Neue', 'Roboto', Arial, sans-serif !important;
+    font-size: 16pt !important;
 }
 
-.imgPrincipalCapa{
+span.fonte {
+    font-size: 11pt !important;
+}
+
+.h5,
+h5 {
+    font-size: 18pt !important;
+    font-weight: bold !important;
+}
+
+div#conteudo {
+    /* overflow: auto; */
+    padding-inline: 0;
+    overflow-x: hidden !important;
+}
+
+.identificadorAulas .dados {
+    float: left;
+    margin-left: 10px;
+    font-size: 12pt !important;
+}
+
+
+.imgPrincipalCapa {
     border-right: 10px solid #83AD3F;
     border-radius: 0px 150px 0 0;
     width: 100%;
 
 }
-.capaDireita{
+
+.capaDireita {
     position: absolute;
     right: 0;
     top: 0;
@@ -95,17 +171,21 @@ body{
     border-radius: 0px 0px 0px 180px;
     width: 90%;
 }
-.logoPrincipal{
+
+.logoPrincipal {
     width: 280px;
     margin: auto;
     display: block;
 }
-.borda-direita{
+
+.borda-direita {
     border-radius: 0 35px;
 }
+
 .borda-esquerda {
     border-radius: 35px 0;
 }
+
 .caixas {
     background-color: #81ae2f;
     color: white;
@@ -115,7 +195,8 @@ body{
     max-width: 90%;
     margin: auto;
 }
-.saibamais::before{
+
+.saibamais::before {
     content: "";
     background-image: url(../img/saibamais.png);
     width: 70px;
@@ -123,10 +204,11 @@ body{
     position: absolute;
     top: -45px;
     background-size: cover;
-    right: -31px;
+    left: -31px;
 
 }
-.alerta::before{
+
+.alerta::before {
     content: "";
     background-image: url(../img/alerta.png);
     width: 70px;
@@ -134,10 +216,11 @@ body{
     position: absolute;
     top: -45px;
     background-size: cover;
-    right: -31px;
+    left: -31px;
 
 }
-.adicao::before{
+
+.adicao::before {
     content: "";
     background-image: url(../img/adicao.png);
     width: 70px;
@@ -145,21 +228,25 @@ body{
     position: absolute;
     top: -45px;
     background-size: cover;
-    right: -31px;
+    left: -31px;
 
 }
+
 .imagem {
     position: relative;
 }
+
 .imagem .controles {
-     position: absolute;
+    position: absolute;
     bottom: -27px;
     right: -5px;
 }
+
 .imagem .controles img {
     width: 80px;
 }
-.img-thumbnail1{
+
+.img-thumbnail1 {
 
     padding: .25rem;
     background-color: #fff;
@@ -184,4 +271,8 @@ body{
 
 .paragrafo-imagem-esquerda {
     padding-left: 110px;
+}
+
+.row {
+    align-items: center;
 }

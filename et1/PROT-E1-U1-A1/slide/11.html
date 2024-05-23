@@ -1,8 +1,20 @@
+<style>
+    .jan {
+        z-index: 30;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, .8);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+</style>
 <div class="row">
-
     <div class="col-sm-7 textoJustificado">
         <div class="navbar-dark identificadorAulas">
-
             <div class=dados>
                 Unidade 1 – Tratamento de Feridas no Sistema Único de Saúde - SUS
                 <br>
@@ -18,15 +30,9 @@
     <div class="col-sm-10">
         <h5 class="corDestaque2 maiusculo font-weight-bold">
             5. ASPECTOS EPIDEMIOLÓGICOS, DEMOGRÁFICOS E SOCIAIS RELACIONADOS ÀS FERIDAS NO SUS
-
-
-
         </h5>
     </div>
-
-
     <div class="col-sm-5 textoJustificado">
-
         <p>
             <br>
             <span class="paragrafo">
@@ -35,30 +41,25 @@
                 proporção de pessoas de 60 anos ou mais na população brasileira seria marcante nas próximas décadas.
                 Entre 1950 e 2000, a proporção de idosos na população brasileira, que esteve abaixo de 10%, foi
                 semelhante àquela encontrada nos países menos desenvolvidos.
-
             </span>
             <br>
-
         </p>
-
     </div>
     <div class="col-sm-5 text-center">
         <div>
-            <img class="lupa img-fluid animate__animated animate__backInRight" src="img/imgslide12.png" />
-            <div class="controles">
-                <a href="https://www.saude.gov.br/sistema-unico-de-saude" download="" target="_blank"><img
-                        class="img-fluid " src="img/saibamais.png"></a>
-
-            </div>
+            <img class="img-fluid animate__animated animate__backInRight" src="img/imgslide12.png" />
+            <img class="botao" src="img/lupa.png" class="lupa-img" style="max-width:40px">
         </div><br>
-
     </div>
-
-
-
+    <div class="jan">
+        <img src="img/imgslide12.png" style="height: 100%;" />
+    </div>
 </div>
 <script>
-
-    $('.img-fluid').zoomify();
-
+    $(() => {
+        $('.jan').hide().click(() => { $('.jan').fadeOut() });
+        $('.botao').css('cursor', 'pointer').click(() => {
+            $('.jan').css('cursor', 'pointer').fadeIn();
+        })
+    })
 </script>

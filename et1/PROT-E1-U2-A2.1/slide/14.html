@@ -19,7 +19,8 @@
 
     <div class="col-sm-5 text-center">
         <div>
-            <img class="lupa img-fluid animate__animated animate__backInLeft" src="img/imgslide14.png" />
+            <img class=" img-fluid animate__animated animate__backInLeft" src="img/imgslide14.png" />
+            <img class="botao" src="img/lupa.png" class="lupa-img" style="max-width:40px">
 
         </div><br>
 
@@ -52,8 +53,15 @@
 
 
 </div>
+<div class="jan">
+    <img src="img/imgslide14.png" style="height: 100%; background-color: white; padding: 20px;" />
+</div>
+
 <script>
-
-    $('.img-fluid').zoomify();
-
+    $(() => {
+        $('.jan').hide().click(() => { $('.jan').fadeOut() });
+        $('.botao').css('cursor', 'pointer').click(() => {
+            $('.jan').css('cursor', 'pointer').fadeIn();
+        })
+    })
 </script>

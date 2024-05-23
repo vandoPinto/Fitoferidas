@@ -22,9 +22,10 @@
     <div class="col-sm-4 text-center imagem">
         <div>
             <img class="img-fluid animate__animated animate__backInLeft" src="img/imgslide4.png" />
+            <img class="botao" src="img/lupa.png" class="lupa-img" style="max-width:40px">
             <div class="controles">
                 <a href="img/imgslide4.png" download target=_blank>
-                    <img src="img/down-arq.png" />
+                    <img src="img/down-arq.png" style="width: 150px;" />
                 </a>
             </div>
         </div>
@@ -42,17 +43,18 @@
                 ilustrado no esquema ao lado.
             </span>
             <br>
-
         </p>
-
     </div>
-
-
-
-
 </div>
+<div class="jan">
+    <img src="img/imgslide4.png" style="height: 100%; background-color: white; padding: 20px;" />
+</div>
+
 <script>
-
-    $('.img-fluid').zoomify();
-
+    $(() => {
+        $('.jan').hide().click(() => { $('.jan').fadeOut() });
+        $('.botao').css('cursor', 'pointer').click(() => {
+            $('.jan').css('cursor', 'pointer').fadeIn();
+        })
+    })
 </script>

@@ -1,3 +1,17 @@
+<style>
+    .jan {
+        z-index: 30;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, .8);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+</style>
 <div class="row">
 
     <div class="col-sm-7 textoJustificado">
@@ -45,21 +59,20 @@
     </div>
     <div class="col-sm-5 text-center">
         <div>
-            <img class="lupa img-fluid  animate__animated animate__backInRight" src="img/imgslide13.png" />
-            <div class="controles">
-                <a href="https://www.saude.gov.br/sistema-unico-de-saude" download="" target="_blank"><img
-                        src="img/saibamais.png" class="img-fluid"></a>
-
-            </div>
+            <img class="img-fluid animate__animated animate__backInRight" src="img/imgslide13.png" />
+            <img class="botao" src="img/lupa.png" class="lupa-img" style="max-width:40px">
         </div><br>
-
     </div>
-
-
-
+    <div class="jan">
+        <img src="img/imgslide13.png" style="height: 100%;" />
+    </div>
 </div>
+
 <script>
-
-    $('.img-fluid').zoomify();
-
+    $(() => {
+        $('.jan').hide().click(() => { $('.jan').fadeOut() });
+        $('.botao').css('cursor', 'pointer').click(() => {
+            $('.jan').css('cursor', 'pointer').fadeIn();
+        })
+    })
 </script>
