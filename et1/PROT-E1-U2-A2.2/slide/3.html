@@ -1,10 +1,10 @@
-<div class="row" >
+<div class="row">
 
     <div class="col-sm-7 textoJustificado">
         <div class="navbar-dark identificadorAulas">
 
-            <div class=dados >
-                Unidade 2 –  Princípios de Anatomia e Fisiologia da Pele e Classificação das Feridas
+            <div class=dados>
+                Unidade 2 – Princípios de Anatomia e Fisiologia da Pele e Classificação das Feridas
                 <br>
                 Aula 2 - Lesões Elementares da Pele
 
@@ -22,15 +22,19 @@
 
 
 
-        </h5> 
+        </h5>
     </div>
 
     <div class="col-sm-3 textoJustificado">
 
         <p>
             <br>
+            <br>
+            <br>
             <span class="paragrafo">
-                No diagrama ao lado, observe que as lesões elementares ou fundamentais são classificadas em primárias e secundárias. Podem ser únicas ou múltiplas, estando localizadas em determinadas regiões (focais), ou mesmo disseminadas por toda a superfície da pele. 
+                No diagrama ao lado, observe que as lesões elementares ou fundamentais são classificadas em primárias e
+                secundárias. Podem ser únicas ou múltiplas, estando localizadas em determinadas regiões (focais), ou
+                mesmo disseminadas por toda a superfície da pele.
 
             </span>
             <br>
@@ -38,22 +42,27 @@
         </p>
 
     </div>
-    <div class="col-sm-6 text-center imagem">
-        <div >
-            <img class="lupa img-fluid" src="img/imgslide4.png"  />
+    <div class="col-sm-6 text-center imagem animate__animated animate__backInRight">
+        <div>
+            <img class=" img-fluid" src="img/imgslide4.png" />
             <div class="controles">
-                <a href="img/imgslide4.png" download target=_blank ><img src="img/down-arq.png" />  </a>
+                <a href="img/imgslide4.png" download target=_blank><img src="img/down-arq.png" /> </a>
+                <img class="botao" src="img/lupa.png" class="lupa-img" style="max-width:40px">
             </div>
         </div><br>
 
     </div>
-
-
-
-
 </div>
+
+<div class="jan">
+    <img src="img/imgslide4.png" style="height: 100%; background-color: white; padding: 20px;" />
+</div>
+
 <script>
-
-    $('.img-fluid ').zoomify();
-
+    $(() => {
+        $('.jan').hide().click(() => { $('.jan').fadeOut() });
+        $('.botao').css('cursor', 'pointer').click(() => {
+            $('.jan').css('cursor', 'pointer').fadeIn();
+        })
+    })
 </script>
