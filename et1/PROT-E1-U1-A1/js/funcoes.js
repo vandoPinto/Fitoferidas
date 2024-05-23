@@ -61,7 +61,7 @@ function montaMenu() {
     items.forEach(function (item, indice, array) {
         if (item.titulo)
             retornoMenu += '<a href=# class="alteraAula" ident=' + indice + ' >' + item.titulo + '</a>';
-        retornoNav += '<i id="aA' + indice + '" class="alteraAula timeline--inner-pin  is-normal" ident=' + indice + ' data-title="' + item.nome + '   " data-toggle="tooltip" data-placement="top" title="' + item.nome + '"></i>';
+        retornoNav += '<i id="aA' + indice + '" class="alteraAula timeline--inner-pin  is-normal" ident=' + indice + ' data-title="' + item.nome + '   " data-toggle="tooltip" data-placement="top" title="Tela ' + (indice + 1) + '"></i>';
     });
 
     $('#menuAulas').append(retornoMenu);
