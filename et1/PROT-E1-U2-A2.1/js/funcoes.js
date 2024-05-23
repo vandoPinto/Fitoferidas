@@ -134,6 +134,7 @@ function Navega(opcao) {
 /* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
 function openNav() {
     document.getElementById("menuAulas").style.width = "250px";
+    $('#menuAulas').css('background-color', 'rgb(225, 225, 225)')
 
 }
 

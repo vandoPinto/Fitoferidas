@@ -12,12 +12,8 @@ CorSecundaria = #0F6D39;
 CorTerciaria = #83AD3F;
 
 */
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto');
-
 #menuAulas {
-    background-color: rgb(225 225 225) !important;
-    /* background-color: #83AD3F !important; */
+    background-color: #83AD3F !important;
 }
 
 .divImgPrincipalCapa {
@@ -83,75 +79,15 @@ CorTerciaria = #83AD3F;
 
 }
 
-/* @import url('https://fonts.googleapis.com/css2?family=Roboto'); */
-@font-face {
-    font-family: 'Helvetica Neue1';
-    src: url('../fonts/helveticaneue.woff2') format('woff2'),
-        url('../fonts/helveticaneue.woff') format('woff');
-}
-
-div#conteudo {
-    overflow-x: hidden !important;
-    min-height: 100vh !important;
-}
-
-
-div#capa {
-    min-height: 100vh !important;
-}
-
-.imgPrincipalCapa {
-    height: 100% !important;
-}
-
-.imgPrincipalCapaDireita {
-    width: 100% !important;
-    height: 100% !important;
-}
-
-.divImgPrincipalCapa {
-    overflow: hidden;
-    height: 100%;
-}
-
-.capaDireita {
-    position: absolute;
-    right: 0;
-    top: 0;
-    bottom: 0;
-
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto');
 
 body {
     background-image: url('../img/fundoGeral.png');
     background-size: cover;
     background-repeat: no-repeat;
-    font-family: 'Helvetica Neue', 'Roboto', Arial, sans-serif !important;
-    font-size: 16pt !important;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15pt !important;
 }
-
-span.fonte {
-    font-size: 11pt !important;
-}
-
-.h5,
-h5 {
-    font-size: 18pt !important;
-    font-weight: bold !important;
-}
-
-div#conteudo {
-    /* overflow: auto; */
-    padding-inline: 0;
-    overflow-x: hidden !important;
-}
-
-.identificadorAulas .dados {
-    float: left;
-    margin-left: 10px;
-    font-size: 12pt !important;
-}
-
 
 .imgPrincipalCapa {
     border-right: 10px solid #83AD3F;
@@ -204,7 +140,7 @@ div#conteudo {
     position: absolute;
     top: -45px;
     background-size: cover;
-    left: -31px;
+    right: -31px;
 
 }
 
@@ -216,7 +152,7 @@ div#conteudo {
     position: absolute;
     top: -45px;
     background-size: cover;
-    left: -31px;
+    right: -31px;
 
 }
 
@@ -228,7 +164,7 @@ div#conteudo {
     position: absolute;
     top: -45px;
     background-size: cover;
-    left: -31px;
+    right: -31px;
 
 }
 
@@ -288,4 +224,24 @@ div#conteudo {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.timeline--inner-pin {
+    background-color: transparent;
+}
+
+.current {
+    background-color: orange;
+}
+
+#menuAulas {
+    background-color: rgb(225, 225, 225) !important;
+}
+
+.sidebar a {
+    color: black;
+}
+
+.sidebar a:hover {
+    color: #0F6D39;
 }
