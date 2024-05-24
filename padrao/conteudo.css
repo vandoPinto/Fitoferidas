@@ -38,7 +38,7 @@
 
 /* 
 em geral mudar de
-#menuAulas .alteraAula.concluido::after {
+#menuAulas .alteraAula.concluido::before {
 #menuAulas .alteraAula::after {
 
     para
