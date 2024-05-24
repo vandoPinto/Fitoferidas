@@ -25,7 +25,7 @@
         </h5>
     </div>
 
-
+    <div class="botao" style="width: 156px;height: 70px; position: absolute;top: 224px;left: 164px;z-index: 1;"></div>
 
 
     <div class="col-sm-9 text-center">
@@ -38,8 +38,26 @@
 
 
 </div>
+
+<div class="janela"
+    style="position: absolute;top: 310px;left: 110px;background-color: #CA9A1C;padding: 20px;width: 750px;color: white;">
+    <p>SAIBA MAIS<br>
+        Do sistema tegumentar também fazem parte os pelos, as unhas e as glândulas sebáceas e glândulas sudoríparas.
+        O folículo piloso ou unidade folicular é uma estrutura complexa presente na pele e é composta por fio de
+        pelo ou cabelo, com seu respectivo bulbo, glândula sebácea e sudorípara, músculo piro-eretor e outros
+        órgãos. Os pelos desenvolvem-se nos folículos pilosos presentes na epiderme. Essas estruturas são sujeitas a
+        inflamação e infecção.
+        Denomina-se pele glabra, aquela que não possui pelos, como a pele das mãos e da planta dos pés.</p>
+</div>
 <script>
-
-    // $('.zoomify').zoomify(); $('.img-fluid').zoomify();
-
+    $(() => {
+        $('.janela').hide().click(() => { $('.janela').fadeOut(); });
+        $('.botao').css('cursor', 'pointer')
+            .mouseenter(() => {
+                $('.janela').css('cursor', 'pointer').fadeIn();
+            })
+            .mouseleave(() => {
+                $('.janela').fadeOut();
+            });
+    });
 </script>
