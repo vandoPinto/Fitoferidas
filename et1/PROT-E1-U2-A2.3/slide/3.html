@@ -1,9 +1,9 @@
-<div class="row" >
+<div class="row">
 
     <div class="col-sm-7 textoJustificado">
         <div class="navbar-dark identificadorAulas">
 
-            <div id="dadosAula" class=dados >
+            <div id="dadosAula" class=dados>
 
             </div>
         </div>
@@ -17,7 +17,7 @@
 
 
 
-        </h5> 
+        </h5>
     </div>
 
     <div class="col-sm-10 text-center">
@@ -25,20 +25,31 @@
 
 
         <span class="paragrafo">
-        Quanto ao agente causador, as feridas podem ser classificadas como cirúrgicas ou traumáticas e não cirúrgicas, como pode ser verificado na Figura 2. 
+            Quanto ao agente causador, as feridas podem ser classificadas como cirúrgicas ou traumáticas e não
+            cirúrgicas, como pode ser verificado na Figura 2.
 
 
         </span>
+        <br>
     </div>
 
-    <div class="col-sm-6 textoJustificado">
+    <div class="col-sm-6 textoJustificado animate__animated animate__backInUp" style="display: flex;">
 
-       
-            <br>
-            <img class="lupa img-fluid"  src="img/imgslide4.png" />
-        <div class="controles">
-            <a href="img/imgslide4.png" download target=_blank ><img  src="img/down-arq.png" />  </a>
+
+
+        <img class="lupa img-fluid" src="img/imgslide4.png" />
+
+        <div class="controles"
+            style="display: flex;flex-direction: column;align-items: center;justify-content: center;gap: 20px;">
+            <img class="botao" src="img/lupa.png" style="max-width: 40px; cursor: pointer;">
+            <a href="img/imgslide4.png" download="" target="_blank"><img src="img/down-arq.png" style="width: 100%;">
+            </a>
         </div>
+
+
+        <!-- <div class="controles">
+            <a href="img/imgslide4.png" download target=_blank ><img  src="img/down-arq.png" />  </a>
+        </div> -->
         <br>
 
         </p>
@@ -48,8 +59,15 @@
 
 
 </div>
+<div class="jan">
+    <img src="img/imgslide4.png" style="width: 100%; background-color: white; padding: 20px;" />
+</div>
+
 <script>
-
-    $('.img-fluid ').zoomify();
-
+    $(() => {
+        $('.jan').hide().click(() => { $('.jan').fadeOut() });
+        $('.botao').css('cursor', 'pointer').click(() => {
+            $('.jan').css('cursor', 'pointer').fadeIn();
+        })
+    })
 </script>

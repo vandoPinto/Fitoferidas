@@ -38,6 +38,7 @@
 
 /* 
 em geral mudar de
+#menuAulas .alteraAula.concluido::after {
 #menuAulas .alteraAula::after {
 
     para

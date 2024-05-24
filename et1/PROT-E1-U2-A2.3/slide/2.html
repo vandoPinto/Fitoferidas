@@ -1,10 +1,7 @@
-<div class="row" >
-
+<div class="row">
     <div class="col-sm-7 textoJustificado">
         <div class="navbar-dark identificadorAulas">
-
-            <div id="dadosAula" class=dados >
-
+            <div id="dadosAula" class=dados>
             </div>
         </div>
         <br>
@@ -13,45 +10,44 @@
 </div>
 <div class="row justify-content-md-center" id="slide2">
     <div class="col-sm-10">
-        <h5 class="corDestaque2 maiusculo font-weight-bold">2. CLASSIFICAÇÃO DAS FERIDAS
-
-
-
-        </h5> 
+        <h5 class="corDestaque2 maiusculo font-weight-bold">2. CLASSIFICAÇÃO DAS FERIDAS</h5>
     </div>
-
     <div class="col-sm-10 text-center">
         <br>
-
-
         <span class="paragrafo">
-            As feridas podem ser causadas por fatores intrínsecos ou extrínsecos; e os sistemas de classificação variam de acordo com o nível de comprometimento tecidual, a etiologia e o grau de contaminação. As diferentes classificações nos norteiam para predição de risco, condutas terapêuticas e documentação. 
+            As feridas podem ser causadas por fatores intrínsecos ou extrínsecos; e os sistemas de classificação variam
+            de acordo com o nível de comprometimento tecidual, a etiologia e o grau de contaminação. As diferentes
+            classificações nos norteiam para predição de risco, condutas terapêuticas e documentação.
             <br>
-            Quanto ao <b>comprometimento tecidual</b>, as feridas podem ser superficiais (perda da epiderme), com perda parcial de tecido (epiderme e derme), ou perda total dos tecidos (envolvendo tecidos subcutâneos), como pode ser observado na Figura 1. 
-
-
+            Quanto ao <b>comprometimento tecidual</b>, as feridas podem ser superficiais (perda da epiderme), com perda
+            parcial de tecido (epiderme e derme), ou perda total dos tecidos (envolvendo tecidos subcutâneos), como pode
+            ser observado na Figura 1.
         </span>
     </div>
-
-    <div class="col-sm-10 textoJustificado">
-
+    <div class="col-sm-10 textoJustificado animate__animated animate__backInUp" style="display: flex;">
         <p>
             <br>
-            <img class="lupa img-fluid" src="img/imgslide3.png" /><br>
- <div class="controles">
-                <a href="img/imgslide3.png" download target=_blank ><img src="img/down-arq.png"  />  </a>
-            </div>
-        <br>
-
+            <img class=" img-fluid" src="img/imgslide3.png"><br>
         </p>
-
+        <div class="controles"
+            style="display: flex;flex-direction: column;align-items: center;justify-content: center;gap: 20px;">
+            <img class="botao" src="img/lupa.png" style="max-width: 40px; cursor: pointer;">
+            <a href="img/imgslide3.png" download="" target="_blank"><img src="img/down-arq.png" style="width: 100%;">
+            </a>
+        </div>
+        <br>
+        <p></p>
     </div>
-
-
-
 </div>
+<div class="jan">
+    <img src="img/imgslide3.png" style="width: 100%; background-color: white; padding: 20px;" />
+</div>
+
 <script>
-
-    $('.img-fluid').zoomify();
-
+    $(() => {
+        $('.jan').hide().click(() => { $('.jan').fadeOut() });
+        $('.botao').css('cursor', 'pointer').click(() => {
+            $('.jan').css('cursor', 'pointer').fadeIn();
+        })
+    })
 </script>
