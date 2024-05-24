@@ -1,9 +1,9 @@
-<div class="row" >
+<div class="row">
 
     <div class="col-sm-7 textoJustificado">
         <div class="navbar-dark identificadorAulas">
 
-            <div id="dadosAula" class=dados >
+            <div id="dadosAula" class=dados>
 
             </div>
         </div>
@@ -22,29 +22,40 @@
 
     <div class="col-sm-5 center">
         <span class="paragrafo">
-            As úlceras arteriais ou isquêmicas ocorrem em decorrência da insuficiência da irrigação sanguínea arterial, surgindo em consequência do estreitamento progressivo do vaso sanguíneo causado pela aterosclerose, o que pode levar à isquemia. 
+            As úlceras arteriais ou isquêmicas ocorrem em decorrência da insuficiência da irrigação sanguínea arterial,
+            surgindo em consequência do estreitamento progressivo do vaso sanguíneo causado pela aterosclerose, o que
+            pode levar à isquemia.
             <br>
-            Clinicamente se caracterizam por: extremidade fria e cianótica; demora no retorno da cor após a elevação do membro; pele atrófica; perda de pelo; diminuição ou ausência das pulsações das artérias do pé; claudicação intermitente; e dor aumentada com a elevação das pernas.
+            Clinicamente se caracterizam por: extremidade fria e cianótica; demora no retorno da cor após a elevação do
+            membro; pele atrófica; perda de pelo; diminuição ou ausência das pulsações das artérias do pé; claudicação
+            intermitente; e dor aumentada com a elevação das pernas.
 
         </span>
     </div>
-    <div class="col-sm-4 center">
 
-     
-            <img class="lupa img-fluid" src="img/imgslide16.png" />
-        <div class="controles">
-            <a href="img/imgslide16.png" download target=_blank ><img src="img/down-arq.png" />  </a>
+
+    <div class="col-sm-4 center animate__animated animate__backInRight" style="display: flex;align-items: center;">
+        <img class="lupa img-fluid" src="img/imgslide16.png" style="width: 80%;"><br>
+        <div class="controles"
+            style="display: flex;flex-direction: column;align-items: center;justify-content: space-around;gap: 20px;">
+            <img class="botao" src="img/lupa.png" style="max-width: 40px; cursor: pointer;">
+            <a href="img/imgslide16.png" download="" target="_blank"><img src="img/down-arq.png" style="width: 50px;">
+            </a>
         </div>
-      
-
-
     </div>
 
 
 
 </div>
+<div class="jan">
+    <img src="img/imgslide16.png" style="height: 100%; background-color: white; padding: 20px;" />
+</div>
+
 <script>
-
-    $('.zoomify').zoomify();$('.img-fluid').zoomify();
-
+    $(() => {
+        $('.jan').hide().click(() => { $('.jan').fadeOut() });
+        $('.botao').css('cursor', 'pointer').click(() => {
+            $('.jan').css('cursor', 'pointer').fadeIn();
+        })
+    })
 </script>

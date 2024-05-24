@@ -1,9 +1,9 @@
-<div class="row" >
+<div class="row">
 
     <div class="col-sm-7 textoJustificado">
         <div class="navbar-dark identificadorAulas">
 
-            <div id="dadosAula" class=dados >
+            <div id="dadosAula" class=dados>
 
             </div>
         </div>
@@ -15,7 +15,7 @@
     <div class="col-sm-10">
         <h5 class="corDestaque2 maiusculo font-weight-bold">
             3. AVALIAÇÃO DAS PESSOAS COM RISCO DE ÚLCERAS CRÔNICAS
-        </h5> 
+        </h5>
     </div>
 
     <div class="col-sm-5 text-center">
@@ -23,33 +23,37 @@
 
 
         <span class="paragrafo">
-            A implementação de um plano de cuidados individualizado e centrado no usuário para prevenção de feridas configura um processo de integração entre os profissionais de saúde, de acordo com os níveis de competência de cada categoria profissional, envolvendo o usuário e a sua família ou cuidador(es).  
+            A implementação de um plano de cuidados individualizado e centrado no usuário para prevenção de feridas
+            configura um processo de integração entre os profissionais de saúde, de acordo com os níveis de competência
+            de cada categoria profissional, envolvendo o usuário e a sua família ou cuidador(es).
             <br>
-            As boas práticas de prevenção de lesões e ulcerações compreendem a identificação de risco e um plano estruturado de cuidados, como apresentado ao lado. 
+            <br>
+            As boas práticas de prevenção de lesões e ulcerações compreendem a identificação de risco e um plano
+            estruturado de cuidados, como apresentado ao lado.
 
         </span>
         <br>
 
 
     </div>
-    <div class="col-sm-5 center">
-
-        <p>
-            <br>
-            <img class="lupa img-fluid" src="img/imgslide5.png" /><br>
-
-            <br>
-
-        </p>
-
+    <div class="col-sm-5 center animate__animated animate__backInRight" style="display: flex;    align-items: center;">
+        <img class=" img-fluid" src="img/imgslide5.png" />
+        <img class="botao" src="img/lupa.png" class="lupa-img" style="max-width:40px; height: 40px;">
     </div>
 
 
 
 
 </div>
+<div class="jan">
+    <img src="img/imgslide5.png" style="width: 100%; background-color: white; padding: 20px;" />
+</div>
+
 <script>
-
-    $('.img-fluid').zoomify();
-
+    $(() => {
+        $('.jan').hide().click(() => { $('.jan').fadeOut() });
+        $('.botao').css('cursor', 'pointer').click(() => {
+            $('.jan').css('cursor', 'pointer').fadeIn();
+        })
+    })
 </script>
