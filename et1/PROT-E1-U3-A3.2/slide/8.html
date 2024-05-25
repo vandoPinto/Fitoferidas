@@ -1,10 +1,7 @@
-<div class="row" >
-
+<div class="row">
     <div class="col-sm-7 textoJustificado">
         <div class="navbar-dark identificadorAulas">
-
-            <div id="dadosAula" class=dados >
-
+            <div id="dadosAula" class=dados>
             </div>
         </div>
         <br>
@@ -15,48 +12,56 @@
     <div class="col-sm-10">
         <h5 class="corDestaque2 maiusculo font-weight-bold">
             4. MODELO DE INSTRUMENTO PARA AVALIAÇÃO DE FERIDAS
-        </h5> 
+        </h5>
         <br>
         <span class="paragrafo">
-
-            Impresso utilizado no Hospital de Clínicas/UNICAMP - Universidade Estadual de Campinas. Campinas - São Paulo.
+            Impresso utilizado no Hospital de Clínicas/UNICAMP - Universidade Estadual de Campinas. Campinas - São
+            Paulo.
             <br>
         </span>
-  <br>
-
+        <br>
     </div>
-
-
-    <div class="col-sm-5 text-center">
-
-       
-            <img class="lupa img-fluid" src="img/imgslide9a.png" /><br>
-        <div class="controles">
-            Frente<br>
-            <a href="img/imgslide9a.png" download target=_blank ><img src="img/down-arq.png" />  </a>
+    <div style="display: flex;justify-content: space-between;align-items: center;">
+        <div class="col-sm-5 center animate__animated animate__backInRight" style="display: flex;align-items: center;">
+            <img class="lupa img-fluid" src="img/imgslide9b.png" style="width: 80%;"><br>
+            <div class="controles"
+                style="display: flex;flex-direction: column;align-items: center;justify-content: space-around;gap: 20px;">
+                Frente
+                <img class="botao1" src="img/lupa.png" style="max-width: 40px; cursor: pointer;">
+                <a href="img/imgslide9b.png" download="" target="_blank"><img src="img/down-arq.png"
+                        style="width: 50px;">
+                </a>
+            </div>
         </div>
-      
-
-    </div>
-
-    <div class="col-sm-5 text-center">
-
-       
-            <img class="lupa img-fluid" src="img/imgslide9b.png" /><br>
-        <div class="controles">
-            Verso<br>
-            <a href="img/imgslide9b.png" download target=_blank ><img src="img/down-arq.png" />  </a>
+        <div class="col-sm-5 center animate__animated animate__backInRight" style="display: flex;align-items: center;">
+            <img class="lupa img-fluid" src="img/imgslide9a.png" style="width: 73%;"><br>
+            <div class="controles"
+                style="display: flex;flex-direction: column;align-items: center;justify-content: space-around;gap: 20px;">
+                Verso
+                <img class="botao2" src="img/lupa.png" style="max-width: 40px; cursor: pointer;">
+                <a href="img/imgslide9a.png" download="" target="_blank"><img src="img/down-arq.png"
+                        style="width: 50px;">
+                </a>
+            </div>
         </div>
-      
-
     </div>
-
-
-
-
+</div>
+<div class="jan1 jan">
+    <img src="img/imgslide9b.png" style="height: 100%; background-color: white; padding: 20px;" />
+</div>
+<div class="jan2 jan">
+    <img src="img/imgslide9a.png" style="height: 100%; background-color: white; padding: 20px;" />
 </div>
 <script>
+    $(() => {
+        $('.jan1').hide().click(() => { $('.jan1').fadeOut() });
+        $('.botao1').css('cursor', 'pointer').click(() => {
+            $('.jan1').css('cursor', 'pointer').fadeIn();
+        })
 
-    $('.img-fluid').zoomify();
-
+        $('.jan2').hide().click(() => { $('.jan2').fadeOut() });
+        $('.botao2').css('cursor', 'pointer').click(() => {
+            $('.jan2').css('cursor', 'pointer').fadeIn();
+        })
+    })
 </script>

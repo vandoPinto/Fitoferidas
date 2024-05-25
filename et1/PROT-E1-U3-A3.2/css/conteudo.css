@@ -12,42 +12,51 @@ CorSecundaria = #CA9A1C;
 CorTerciaria = #CA9A1C;
 
 */
-#menuAulas{
+#menuAulas {
     background-color: #CA9A1C !important;
 }
 
 .divImgPrincipalCapa {
     overflow: hidden;
 }
+
 .btn-primary {
     color: #fff;
     background-color: #CA9A1C !important;
     border-color: #CA9A1C !important;
 }
+
 .btn-primary:hover {
     color: #fff;
     background-color: #CA9A1C !important;
     border-color: #CA9A1C !important;
 }
-.c100 > span {
+
+.c100>span {
     color: #866607 !important;
 }
-.corSecundaria,.corDestaque2{
-    color:#CA9A1C !important;
+
+.corSecundaria,
+.corDestaque2 {
+    color: #CA9A1C !important;
 
 }
-.textoJustificado{
+
+.textoJustificado {
     text-align: justify;
 }
-.paragrafo{
+
+.paragrafo {
 
     /*text-indent: 1.5em;*/
     margin-top: 0;
     display: block;
     text-align: justify;
 }
-.corPrimaria,.corDestaque1{
-    color:#866607 !important;
+
+.corPrimaria,
+.corDestaque1 {
+    color: #866607 !important;
 }
 
 
@@ -64,31 +73,36 @@ CorTerciaria = #CA9A1C;
     font-weight: bold !important;
     overflow: hidden;
 }
-.identificadorAulas .dados{
-    float:left;
+
+.identificadorAulas .dados {
+    float: left;
     margin-left: 10px;
     font-size: 13px !important;
 
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto');
-body{
+
+body {
     background-image: url('../img/fundoGeral.png');
     background-size: cover;
     background-repeat: no-repeat;
     font-size: 16pt !important;
     font-family: 'Roboto', sans-serif;
 }
-.fonte{
-    font-size:12pt !important;
+
+.fonte {
+    font-size: 12pt !important;
 }
-.imgPrincipalCapa{
+
+.imgPrincipalCapa {
     border-right: 10px solid #CA9A1C;
     border-radius: 0px 150px 0 0;
     width: 100%;
 
 }
-.capaDireita{
+
+.capaDireita {
     position: absolute;
     right: 0;
     top: 0;
@@ -99,17 +113,21 @@ body{
     border-radius: 0px 0px 0px 180px;
     width: 90%;
 }
-.logoPrincipal{
+
+.logoPrincipal {
     width: 280px;
     margin: auto;
     display: block;
 }
-.borda-direita{
+
+.borda-direita {
     border-radius: 0 35px;
 }
+
 .borda-esquerda {
     border-radius: 35px 0;
 }
+
 .caixas {
     background-color: #BC8200;
     color: white;
@@ -119,7 +137,8 @@ body{
     max-width: 90%;
     margin: auto;
 }
-.saibamais::before{
+
+.saibamais::before {
     content: "";
     background-image: url(../img/adicao.png);
     width: 70px;
@@ -130,7 +149,8 @@ body{
     right: -31px;
 
 }
-.complementar::before{
+
+.complementar::before {
     content: "";
     background-image: url(../img/complementar.png);
     width: 70px;
@@ -141,7 +161,8 @@ body{
     right: -31px;
 
 }
-.clique::before{
+
+.clique::before {
     content: "";
     background-image: url(../img/clique.png);
     width: 70px;
@@ -152,11 +173,15 @@ body{
     right: -31px;
 
 }
-.complementar a,.clique a,.alerta a{
-    color:white;  
-    
+
+.complementar a,
+.clique a,
+.alerta a {
+    color: white;
+
 }
-.alerta::before{
+
+.alerta::before {
     content: "";
     background-image: url(../img/alerta.png);
     width: 70px;
@@ -167,7 +192,8 @@ body{
     right: -31px;
 
 }
-.adicao::before{
+
+.adicao::before {
     content: "";
     background-image: url(../img/adicao.png);
     width: 70px;
@@ -178,18 +204,22 @@ body{
     right: -31px;
 
 }
+
 .imagem {
     position: relative;
 }
+
 .imagem .controles {
     position: absolute;
     bottom: 0;
     right: 0;
 }
+
 .imagem .controles img {
     width: 90px;
 }
-.img-thumbnail1{
+
+.img-thumbnail1 {
 
     padding: .25rem;
     background-color: #fff;
@@ -214,4 +244,41 @@ body{
 
 .paragrafo-imagem-esquerda {
     padding-left: 110px;
+}
+
+.row {
+    align-items: center;
+}
+
+.jan {
+    z-index: 30;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.timeline--inner-pin {
+    background-color: transparent;
+}
+
+.current {
+    background-color: orange;
+}
+
+#menuAulas {
+    background-color: rgb(225, 225, 225) !important;
+}
+
+.sidebar a {
+    color: black;
+}
+
+.sidebar a:hover {
+    color: #0F6D39;
 }

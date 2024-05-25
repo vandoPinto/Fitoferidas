@@ -1,9 +1,9 @@
-<div class="row" >
+<div class="row">
 
     <div class="col-sm-7 textoJustificado">
         <div class="navbar-dark identificadorAulas">
 
-            <div id="dadosAula" class=dados >
+            <div id="dadosAula" class=dados>
 
             </div>
         </div>
@@ -14,11 +14,11 @@
 <div class="row justify-content-md-center" id="slide2">
     <div class="col-sm-10">
         <h5 class="corDestaque2 maiusculo font-weight-bold">
-            3.1. PARTE 
+            3.1. PARTE
             <br>
             1. IDENTIFICAÇÃO DO USUÁRIO
 
-        </h5> 
+        </h5>
     </div>
 
     <div class="col-sm-5 text-center">
@@ -32,8 +32,9 @@
         </span>
         <br>
         <br>
-        <div class="col-sm-11 caixas alerta   borda-direita text-center">
-            "O exame físico deve ser realizado no sentido céfalo-caudal com foco nas alterações utilizando técnicas de inspeção, palpação, percussão e ausculta.
+        <div class="col-sm-11 caixas alerta   borda-direita text-center animate__animated animate__backInLeft">
+            "O exame físico deve ser realizado no sentido céfalo-caudal com foco nas alterações utilizando técnicas de
+            inspeção, palpação, percussão e ausculta.
 
 
 
@@ -42,27 +43,30 @@
         </div>
     </div>
 
-    <div class="col-sm-4 center">
 
-        <p>
-            <br>
-            <img class="lupa img-fluid" src="img/imgslide4.png" /><br>
-        <div class="controles">
-            <a href="img/imgslide4.png" download target=_blank ><img src="img/down-arq.png" />  </a>
+    <div class="col-sm-4 center animate__animated animate__backInRight" style="display: flex;align-items: center;">
+        <img class="lupa img-fluid" src="img/imgslide4.png" style="width: 70%;"><br>
+        <div class="controles"
+            style="display: flex;flex-direction: column;align-items: center;justify-content: space-around;gap: 20px;">
+            <img class="botao" src="img/lupa.png" style="max-width: 40px; cursor: pointer;">
+            <a href="img/imgslide4.png" download="" target="_blank"><img src="img/down-arq.png" style="width: 50px;">
+            </a>
         </div>
-        <br>
-
-        </p>
-
-
     </div>
 
 
 
 
 </div>
+<div class="jan">
+    <img src="img/imgslide4.png" style="height: 100%; background-color: white; padding: 20px;" />
+</div>
+
 <script>
-
-    $('.img-fluid').zoomify();
-
+    $(() => {
+        $('.jan').hide().click(() => { $('.jan').fadeOut() });
+        $('.botao').css('cursor', 'pointer').click(() => {
+            $('.jan').css('cursor', 'pointer').fadeIn();
+        })
+    })
 </script>
