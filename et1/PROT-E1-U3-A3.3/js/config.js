@@ -17,61 +17,87 @@ var nomeAula = "Aula 3.3 - Avaliação de Feridas: exsudato, bordas e perilesion
 
 
 items.push({
+    'titulo': 'OBJETIVOS DE APRENDIZAGEM',
     'nome': 'Aula 1',
     'arquivo': '1.html',
     'identificador': '0'
 });
 
 items.push({
+    'titulo': 'BOAS-VINDAS!',
     'nome': 'Aula 2',
     'arquivo': '2.html',
     'identificador': '1'
 });
 items.push({
+    'titulo': 'AVALIAÇÃO DE FERIDAS: LEITO, EXSUDATO, BORDAS E PELE PERILESIONAL',
     'nome': 'Aula 3',
     'arquivo': '3.html',
     'identificador': '2'
 });
 items.push({
+    'titulo': '',
     'nome': 'Aula 4',
     'arquivo': '4.html',
     'identificador': '3'
 });
 items.push({
+    'titulo': '',
     'nome': 'Aula 5',
     'arquivo': '5.html',
     'identificador': '4'
 });
 items.push({
+    'titulo': '',
     'nome': 'Aula 6',
     'arquivo': '6.html',
     'identificador': '5'
 });
 items.push({
+    'titulo': 'PRINCIPAIS TECIDOS ENCONTRADOS NAS FERIDAS',
     'nome': 'Aula 7',
     'arquivo': '7.html',
     'identificador': '6'
 });
 items.push({
+    'titulo': 'EXSUDATO',
     'nome': 'Aula 8',
     'arquivo': '8.html',
     'identificador': '7'
 });
 
 
-items.push({'nome': 'Aula 9', 'arquivo': '9.html', 'identificador': '8'});
-items.push({'nome': 'Aula 10', 'arquivo': '10.html', 'identificador': '9'});
-items.push({'nome': 'Aula 11', 'arquivo': '11.html', 'identificador': '10'});
+items.push({
+    'titulo': '', 'nome': 'Aula 9', 'arquivo': '9.html', 'identificador': '8'
+});
+items.push({
+    'titulo': '', 'nome': 'Aula 10', 'arquivo': '10.html', 'identificador': '9'
+});
+items.push({
+    'titulo': 'BORDA DA FERIDA', 'nome': 'Aula 11', 'arquivo': '11.html', 'identificador': '10'
+});
 
 
-items.push({'nome': 'Aula 12', 'arquivo': '12.html', 'identificador': '11'});
-items.push({'nome': 'Aula 13', 'arquivo': '13.html', 'identificador': '12'});
-items.push({'nome': 'Aula 14', 'arquivo': '14.html', 'identificador': '13'});
-items.push({'nome': 'Aula 15', 'arquivo': '15.html', 'identificador': '14'});
+items.push({
+    'titulo': 'PELE PERILESIONAL', 'nome': 'Aula 12', 'arquivo': '12.html', 'identificador': '11'
+});
+items.push({
+    'titulo': '', 'nome': 'Aula 13', 'arquivo': '13.html', 'identificador': '12'
+});
+items.push({
+    'titulo': 'AVALIAÇÃO', 'nome': 'Aula 14', 'arquivo': '14.html', 'identificador': '13'
+});
+items.push({
+    'titulo': 'REFERÊNCIAS', 'nome': 'Aula 15', 'arquivo': '15.html', 'identificador': '14'
+});
 
 
-items.push({ 'nome': 'Credito', 'arquivo': 'credito1.html', 'identificador': 'c1'});
-items.push({ 'nome': 'Credito', 'arquivo': 'credito2.html', 'identificador': 'c2'});
+items.push({
+    'titulo': 'FICHA TÉCNICA', 'nome': 'Credito', 'arquivo': 'credito1.html', 'identificador': 'c1'
+});
+items.push({
+    'titulo': '', 'nome': 'Credito', 'arquivo': 'credito2.html', 'identificador': 'c2'
+});
 
 
 
