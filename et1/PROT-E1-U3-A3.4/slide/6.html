@@ -1,9 +1,9 @@
-<div class="row" >
+<div class="row">
 
     <div class="col-sm-7 textoJustificado">
         <div class="navbar-dark identificadorAulas">
 
-            <div id="dadosAula" class=dados >
+            <div id="dadosAula" class=dados>
 
             </div>
         </div>
@@ -14,17 +14,22 @@
 <div class="row justify-content-md-center" id="slide2">
     <div class="col-sm-10">
         <h5 class="corDestaque2 maiusculo font-weight-bold">
-            3.2. MENSURAÇÃO DE FERIDAS 
+            3.2. MENSURAÇÃO DE FERIDAS
 
-        </h5> 
+        </h5>
     </div>
 
     <div class="col-sm-5 text-center">
 
         <span class="paragrafo">
-            <b>Planimetria</b>: A maneira mais simples e precisa de medir a área da lesão (tecido necrótico ou de granulação) utilizando um curativo transparente ou acetato quadriculado, que deve ser colocado sobre a lesão e com uma caneta porosa contornar toda a área da ferida, após contar os quadrados que caem dentro das bordas da ferida para determinar a área em centímetros quadrados. (GOLDMAN RJ, SALCIDO R, 2002) 
+            <b>Planimetria</b>: A maneira mais simples e precisa de medir a área da lesão (tecido necrótico ou de
+            granulação) utilizando um curativo transparente ou acetato quadriculado, que deve ser colocado sobre a lesão
+            e com uma caneta porosa contornar toda a área da ferida, após contar os quadrados que caem dentro das bordas
+            da ferida para determinar a área em centímetros quadrados. (GOLDMAN RJ, SALCIDO R, 2002)
             <br><br>
-            Quando utilizar esse método para medir tecido necrótico ou de granulação, é necessário documentar a quantidade como um percentual da área da superfície da ferida (por exemplo, 25% da superfície da ferida é de cor amarela).
+            Quando utilizar esse método para medir tecido necrótico ou de granulação, é necessário documentar a
+            quantidade como um percentual da área da superfície da ferida (por exemplo, 25% da superfície da ferida é de
+            cor amarela).
 
         </span>
         <br>
@@ -32,16 +37,30 @@
 
     </div>
 
-    <div class="col-sm-5 text-center">
+    <!-- <div class="col-sm-5 text-center">
         <img class="lupa img-fluid" src="img/imgslide7.png" /><br>
+    </div> -->
+
+    <div class="col-sm-5 center animate__animated animate__backInRight" style="display: flex;align-items: center;">
+        <img class="lupa img-fluid" src="img/imgslide7.png" style="width: 100%;"><br>
+        <div class="controles"
+            style="display: flex;flex-direction: column;align-items: center;justify-content: space-around;gap: 20px;">
+            <img class="botao" src="img/lupa.png" style="max-width: 40px; cursor: pointer;">
+        </div>
     </div>
 
 
 
-
 </div>
+<div class="jan">
+    <img src="img/imgslide7.png" style="height: 100%; background-color: white; padding: 20px;" />
+</div>
+
 <script>
-
-    $('.img-fluid').zoomify();
-
+    $(() => {
+        $('.jan').hide().click(() => { $('.jan').fadeOut() });
+        $('.botao').css('cursor', 'pointer').click(() => {
+            $('.jan').css('cursor', 'pointer').fadeIn();
+        })
+    })
 </script>

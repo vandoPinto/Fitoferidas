@@ -1,9 +1,9 @@
-<div class="row" >
+<div class="row">
 
     <div class="col-sm-7 textoJustificado">
         <div class="navbar-dark identificadorAulas">
 
-            <div id="dadosAula" class=dados >
+            <div id="dadosAula" class=dados>
 
             </div>
         </div>
@@ -14,17 +14,21 @@
 <div class="row justify-content-md-center" id="slide2">
     <div class="col-sm-10">
         <h5 class="corDestaque2 maiusculo font-weight-bold">
-            3.2. MENSURAÇÃO DE FERIDAS 
+            3.2. MENSURAÇÃO DE FERIDAS
 
-        </h5> 
+        </h5>
     </div>
 
     <div class="col-sm-5 text-center">
 
         <span class="paragrafo">
-            <b>Medida Linear</b>: As medidas lineares medem o tamanho ou a extensão das feridas (comprimento e largura), fornecendo a tendência do processo de cicatrização. 
+            <b>Medida Linear</b>: As medidas lineares medem o tamanho ou a extensão das feridas (comprimento e largura),
+            fornecendo a tendência do processo de cicatrização.
             <br><br>
-            Deve-se mensurar a ferida, por meio de traços lineares, em relação a maior extensão da lesão, no eixo céfalo-podálico (vertical) e látero-lateral (horizontal), considerando um ângulo de 90° entre eles. Utilizar uma régua graduada em centímetros para executar a medição.  Para calcular a área estimada em cm², multiplica-se  o  comprimento  pela largura.
+            Deve-se mensurar a ferida, por meio de traços lineares, em relação a maior extensão da lesão, no eixo
+            céfalo-podálico (vertical) e látero-lateral (horizontal), considerando um ângulo de 90° entre eles. Utilizar
+            uma régua graduada em centímetros para executar a medição. Para calcular a área estimada em cm²,
+            multiplica-se o comprimento pela largura.
 
         </span>
         <br>
@@ -32,16 +36,30 @@
 
     </div>
 
-    <div class="col-sm-5 text-center">
-        <img class="lupa img-fluid" src="img/imgslide6.png" /><br>
+    <!-- <div class="col-sm-5 text-center">
+        <img class=" img-fluid" src="img/imgslide6.png" /><br>
+    </div> -->
+
+
+    <div class="col-sm-5 center animate__animated animate__backInRight" style="display: flex;align-items: center;">
+        <img class="lupa img-fluid" src="img/imgslide6.png" style="width: 100%;"><br>
+        <div class="controles"
+            style="display: flex;flex-direction: column;align-items: center;justify-content: space-around;gap: 20px;">
+            <img class="botao" src="img/lupa.png" style="max-width: 40px; cursor: pointer;">
+        </div>
     </div>
 
-
-
-
 </div>
+
+<div class="jan">
+    <img src="img/imgslide6.png" style="height: 100%; background-color: white; padding: 20px;" />
+</div>
+
 <script>
-
-    $('.img-fluid').zoomify();
-
+    $(() => {
+        $('.jan').hide().click(() => { $('.jan').fadeOut() });
+        $('.botao').css('cursor', 'pointer').click(() => {
+            $('.jan').css('cursor', 'pointer').fadeIn();
+        })
+    })
 </script>

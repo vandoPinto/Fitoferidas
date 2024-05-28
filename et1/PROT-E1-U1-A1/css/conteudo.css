@@ -12,6 +12,9 @@ CorSecundaria = #0F6D39;
 CorTerciaria = #83AD3F;
 
 */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto');
+
 #menuAulas {
     background-color: #83AD3F !important;
 }
@@ -79,7 +82,6 @@ CorTerciaria = #83AD3F;
 
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto');
 
 body {
     background-image: url('../img/fundoGeral.png');
