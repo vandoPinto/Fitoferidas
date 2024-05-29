@@ -1,9 +1,9 @@
-<div class="row" >
+<div class="row">
 
     <div class="col-sm-7 textoJustificado">
         <div class="navbar-dark identificadorAulas">
 
-            <div id="dadosAula" class=dados >
+            <div id="dadosAula" class=dados>
 
             </div>
         </div>
@@ -18,36 +18,53 @@
 
 
 
-        </h5> 
+        </h5>
         <br>
     </div>
 
     <div class="col-sm-5">
         <span class="paragrafo">
-            Quando os microrganismos conseguem superar os mecanismos de defesa do hospedeiro, seja por sua quantidade, virulência ou pela imunocompetência do indivíduo, verifica-se uma infecção localizada da ferida.
+            Quando os microrganismos conseguem superar os mecanismos de defesa do hospedeiro, seja por sua quantidade,
+            virulência ou pela imunocompetência do indivíduo, verifica-se uma infecção localizada da ferida.
             <br><br>
-            As manifestações clínicas locais de infecção das feridas agudas diferem das feridas crônicas, assim como as condutas para tratamento. Por essa razão, discutiremos a seguir essas peculiaridades.
+            As manifestações clínicas locais de infecção das feridas agudas diferem das feridas crônicas, assim como as
+            condutas para tratamento. Por essa razão, discutiremos a seguir essas peculiaridades.
 
         </span>
     </div>
 
-
+    <!-- 
     <div class="col-sm-5">
 
         <img class='img-fluid' src='img/imgslide10.png' />
 
         <br>
 
+    </div> -->
+
+
+
+    <div class="col-sm-5 center animate__animated animate__backInRight"
+        style="display: flex;align-items: center;justify-content: center;">
+        <img class=" img-fluid" src="img/imgslide10.png" style="width: 100%;"><br>
+        <div class="controles"
+            style="display: flex;flex-direction: column;align-items: center;justify-content: space-around;gap: 20px;">
+            <img class="botao" src="img/lupa.png" style="max-width: 40px; cursor: pointer;">
+            <!-- <a href="img/imgslide4.png" download><img src="img/down-arq.png" /></a> -->
+        </div>
     </div>
-
-
-
-
-
-
 </div>
+
+
+<div class="jan">
+    <img src="img/imgslide10.png" style="height: 100%; background-color: white; padding: 20px;" />
+</div>
+
 <script>
-
-    $('.img-fluid').zoomify();
-
+    $(() => {
+        $('.jan').hide().click(() => { $('.jan').fadeOut() });
+        $('.botao').css('cursor', 'pointer').click(() => {
+            $('.jan').css('cursor', 'pointer').fadeIn();
+        })
+    })
 </script>

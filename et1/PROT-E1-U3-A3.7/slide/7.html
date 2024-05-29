@@ -1,9 +1,9 @@
-<div class="row" >
+<div class="row">
 
     <div class="col-sm-7 textoJustificado">
         <div class="navbar-dark identificadorAulas">
 
-            <div id="dadosAula" class=dados >
+            <div id="dadosAula" class=dados>
 
             </div>
         </div>
@@ -14,37 +14,55 @@
 <div class="row justify-content-md-center" id="slide2">
     <div class="col-sm-10">
         <h5 class="corDestaque2 maiusculo font-weight-bold">
-         4. INFECÇÃO EM FERIDAS AGUDAS E CRÔNICAS
+            4. INFECÇÃO EM FERIDAS AGUDAS E CRÔNICAS
 
 
-        </h5> 
+        </h5>
         <br>
     </div>
 
     <div class="col-sm-4">
         <span class="paragrafo">
-    Em uma ferida crônica, por ser uma lesão aberta, a contaminação ocorre tanto pelos microrganismos da flora endógena (da própria pessoa) quanto a exógena (do meio ambiente) e os riscos associados ao tipo e à quantidade de contaminantes são estabelecidos pela localização anatômica da lesão e pelo meio ambiente no qual o indivíduo está sendo assistido (domicílio, unidade básica de saúde, ambulatório ou hospital). 
+            Em uma ferida crônica, por ser uma lesão aberta, a contaminação ocorre tanto pelos microrganismos da flora
+            endógena (da própria pessoa) quanto a exógena (do meio ambiente) e os riscos associados ao tipo e à
+            quantidade de contaminantes são estabelecidos pela localização anatômica da lesão e pelo meio ambiente no
+            qual o indivíduo está sendo assistido (domicílio, unidade básica de saúde, ambulatório ou hospital).
 
         </span>
     </div>
 
 
-    <div class="col-sm-6">
+    <!-- <div class="col-sm-6">
 
         <img class='img-fluid' src='img/imgslide8.png' />
      
         <br>
 
+    </div> -->
+
+
+
+    <div class="col-sm-6 center animate__animated animate__backInRight"
+        style="display: flex;align-items: center;justify-content: center;">
+        <img class=" img-fluid" src="img/imgslide8.png" style="width: 90%;"><br>
+        <div class="controles"
+            style="display: flex;flex-direction: column;align-items: center;justify-content: space-around;gap: 20px;">
+            <img class="botao" src="img/lupa.png" style="max-width: 40px; cursor: pointer;">
+            <!-- <a href="img/imgslide4.png" download><img src="img/down-arq.png" /></a> -->
+        </div>
     </div>
-
-
-
-
-
-
 </div>
+
+
+<div class="jan">
+    <img src="img/imgslide8.png" style="height: 100%; background-color: white; padding: 20px;" />
+</div>
+
 <script>
-
-    $('.img-fluid').zoomify();
-
+    $(() => {
+        $('.jan').hide().click(() => { $('.jan').fadeOut() });
+        $('.botao').css('cursor', 'pointer').click(() => {
+            $('.jan').css('cursor', 'pointer').fadeIn();
+        })
+    })
 </script>

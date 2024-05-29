@@ -1,9 +1,9 @@
-<div class="row" >
+<div class="row">
 
     <div class="col-sm-7 textoJustificado">
         <div class="navbar-dark identificadorAulas">
 
-            <div id="dadosAula" class=dados >
+            <div id="dadosAula" class=dados>
 
             </div>
         </div>
@@ -14,34 +14,42 @@
 <div class="row justify-content-md-center" id="slide2">
     <div class="col-sm-10">
         <h5 class="corDestaque2 maiusculo font-weight-bold">
-            5. PRINCIPAIS COBERTURAS PARA O TRATAMENTO DE FERIDAS 
+            5. PRINCIPAIS COBERTURAS PARA O TRATAMENTO DE FERIDAS
 
 
-        </h5> 
+        </h5>
         <br>
     </div>
     <div class="col-sm-5">
         <span class="paragrafo">
-            A partir da década de 60, quando Winter descobriu que a epitelização é duas vezes mais rápida em um ambiente úmido e que o crescimento celular precisa de umidade, muitos curativos foram desenvolvidos para melhorar o ambiente para o fechamento das feridas. Entre estes curativos, podemos citar:
+            A partir da década de 60, quando Winter descobriu que a epitelização é duas vezes mais rápida em um ambiente
+            úmido e que o crescimento celular precisa de umidade, muitos curativos foram desenvolvidos para melhorar o
+            ambiente para o fechamento das feridas. Entre estes curativos, podemos citar:
 
         </span>
 
     </div>
 
-    <div class="col-sm-5">
-        <div class='arquivoImagem'>
-            <img class="lupa img-fluid" src="img/imgslide8.png" />
-            <div class="controles">
-                <a href="img/imgslide8.png" download ><img src="img/down-arq.png" /></a>
-            </div>
+
+    <div class="col-sm-5 center animate__animated animate__backInRight" style="display: flex;align-items: center;">
+        <img class=" img-fluid" src="img/imgslide8.png" style="width: 100%;"><br>
+        <div class="controles"
+            style="display: flex;flex-direction: column;align-items: center;justify-content: space-around;gap: 20px;">
+            <img class="botao" src="img/lupa.png" style="max-width: 40px; cursor: pointer;">
+            <a href="img/imgslide8.png" download=""><img src="img/down-arq.png" style="width: 90%;"></a>
         </div>
-
     </div>
-
-
 </div>
+
+<div class="jan">
+    <img src="img/imgslide8.png" style="height: 100%; background-color: white; padding: 20px;" />
+</div>
+
 <script>
-
-    $('.img-fluid').zoomify();
-
+    $(() => {
+        $('.jan').hide().click(() => { $('.jan').fadeOut() });
+        $('.botao').css('cursor', 'pointer').click(() => {
+            $('.jan').css('cursor', 'pointer').fadeIn();
+        })
+    })
 </script>

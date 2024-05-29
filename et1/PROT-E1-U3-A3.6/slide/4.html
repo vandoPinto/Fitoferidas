@@ -1,9 +1,9 @@
-<div class="row" >
+<div class="row">
 
     <div class="col-sm-7 textoJustificado">
         <div class="navbar-dark identificadorAulas">
 
-            <div id="dadosAula" class=dados >
+            <div id="dadosAula" class=dados>
 
             </div>
         </div>
@@ -17,34 +17,50 @@
             4. INTRODUÇÃO
 
 
-        </h5> 
+        </h5>
         <br>
     </div>
 
     <div class="col-sm-5">
         <span class="paragrafo">
-            A ferida complexa pode ser definida como de difícil resolução e associada a uma ou mais das seguintes situações: perda cutânea extensa, infecções agressivas, inviabilidade dos tecidos comprometidos (por presença de isquemia ou necrose) e associação com doenças sistêmicas que prejudicam os processos normais de cicatrização.
+            A ferida complexa pode ser definida como de difícil resolução e associada a uma ou mais das seguintes
+            situações: perda cutânea extensa, infecções agressivas, inviabilidade dos tecidos comprometidos (por
+            presença de isquemia ou necrose) e associação com doenças sistêmicas que prejudicam os processos normais de
+            cicatrização.
             <br><br>
-            Com o aumento da expectativa de vida da população, há a incidência crescente das doenças que acompanham o envelhecimento, como cardiopatias, neoplasias, diabetes, hipertensão arterial, entre outras. 
+            Com o aumento da expectativa de vida da população, há a incidência crescente das doenças que acompanham o
+            envelhecimento, como cardiopatias, neoplasias, diabetes, hipertensão arterial, entre outras.
         </span>
     </div>
 
 
-    <div class="col-sm-5">
+    <!-- <div class="col-sm-5">
 
         <img class='img-fluid' src='img/imgslide5.png' />
         <br>
 
+    </div> -->
+
+
+
+    <div class="col-sm-5 center animate__animated animate__backInRight"
+        style="display: flex;align-items: center;justify-content: center;gap: 10px;">
+        <img class=" img-fluid" src="img/imgslide5.png" style="width: 85%;"><br>
+        <div class="controles" style="display: flex;align-items: center;justify-content: space-around;gap: 20px;">
+            <img class="botao" src="img/lupa.png" style="max-width: 40px; cursor: pointer;">
+            <!-- <a href="img/imgslide5.png" download=""><img src="img/down-arq.png" style="width: 60%;"></a> -->
+        </div>
     </div>
-
-
-
-
-
-
+</div>
+</div>
+<div class="jan">
+    <img src="img/imgslide5.png" style="width: 100%; background-color: white; padding: 20px;" />
 </div>
 <script>
-
-    $('.img-fluid').zoomify();
-
+    $(() => {
+        $('.jan').hide().click(() => { $('.jan').fadeOut() });
+        $('.botao').css('cursor', 'pointer').click(() => {
+            $('.jan').css('cursor', 'pointer').fadeIn();
+        })
+    })
 </script>

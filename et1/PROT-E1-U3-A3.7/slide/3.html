@@ -1,14 +1,12 @@
-<div class="row" >
+<div class="row">
 
     <div class="col-sm-7 textoJustificado">
         <div class="navbar-dark identificadorAulas">
 
-            <div id="dadosAula" class=dados >
+            <div id="dadosAula" class=dados>
 
             </div>
         </div>
-        <br>
-        <br>
     </div>
 </div>
 <div class="row justify-content-md-center" id="slide2">
@@ -17,35 +15,53 @@
             4. INFECÇÃO EM FERIDAS AGUDAS E CRÔNICAS
 
 
-        </h5> 
-        <br>
+        </h5>
     </div>
 
     <div class="col-sm-5">
         <span class="paragrafo">
-            A infecção em feridas é um evento adverso multifatorial relacionado ao(s) agente(s) etiológico(s) – tipo de microrganismo, virulência e quantidade – e à resistência do hospedeiro, ou seja, condições clínicas, comorbidades como o diabetes, por exemplo, e outros fatores interferentes nas respostas imunológicas inespecíficas. 
+            A infecção em feridas é um evento adverso multifatorial relacionado ao(s) agente(s) etiológico(s) – tipo de
+            microrganismo, virulência e quantidade – e à resistência do hospedeiro, ou seja, condições clínicas,
+            comorbidades como o diabetes, por exemplo, e outros fatores interferentes nas respostas imunológicas
+            inespecíficas.
             <br><br>
-            Esse evento adverso pode ocorrer em uma cascata de fenômenos que se iniciam com a contaminação da ferida, que, se não prontamente observado e tratado, pode ser sucedido do agravamento das condições locais da ferida e repercussões sistêmicas. 
+            Esse evento adverso pode ocorrer em uma cascata de fenômenos que se iniciam com a contaminação da ferida,
+            que, se não prontamente observado e tratado, pode ser sucedido do agravamento das condições locais da ferida
+            e repercussões sistêmicas.
 
         </span>
     </div>
 
 
-    <div class="col-sm-5">
+    <!-- <div class="col-sm-5">
 
         <img class='img-fluid' src='img/imgslide4.png' />
         <br>
 
+    </div> -->
+
+
+    <div class="col-sm-5 center animate__animated animate__backInRight"
+        style="display: flex;align-items: center;justify-content: center;">
+        <img class=" img-fluid" src="img/imgslide4.png" style="width: 50%;"><br>
+        <div class="controles"
+            style="display: flex;flex-direction: column;align-items: center;justify-content: space-around;gap: 20px;">
+            <img class="botao" src="img/lupa.png" style="max-width: 40px; cursor: pointer;">
+            <!-- <a href="img/imgslide4.png" download><img src="img/down-arq.png" /></a> -->
+        </div>
     </div>
-
-
-
-
-
-
 </div>
+
+
+<div class="jan">
+    <img src="img/imgslide4.png" style="height: 100%; background-color: white; padding: 20px;" />
+</div>
+
 <script>
-
-    $('.img-fluid').zoomify();
-
+    $(() => {
+        $('.jan').hide().click(() => { $('.jan').fadeOut() });
+        $('.botao').css('cursor', 'pointer').click(() => {
+            $('.jan').css('cursor', 'pointer').fadeIn();
+        })
+    })
 </script>

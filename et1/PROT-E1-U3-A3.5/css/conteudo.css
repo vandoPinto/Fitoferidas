@@ -270,6 +270,6 @@ body {
     color: #0F6D39;
 }
 
-div#conteudo {
-    height: 100%;
+.imgPrincipalCapa {
+    width: auto !important;
 }

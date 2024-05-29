@@ -1,9 +1,9 @@
-<div class="row" >
+<div class="row">
 
     <div class="col-sm-7 textoJustificado">
         <div class="navbar-dark identificadorAulas">
 
-            <div id="dadosAula" class=dados >
+            <div id="dadosAula" class=dados>
 
             </div>
         </div>
@@ -18,39 +18,59 @@
 
 
 
-        </h5> 
+        </h5>
         <br>
     </div>
 
     <div class="col-sm-5">
         <span class="paragrafo">
-            A colonização, como o evento sequencial à contaminação, tem a sua ocorrência relacionada à existência de condições para manutenção dos contaminantes no local da lesão. Uma ferida colonizada tem microrganismos que se proliferam sem indução de qualquer resposta imunológica.
+            A colonização, como o evento sequencial à contaminação, tem a sua ocorrência relacionada à existência de
+            condições para manutenção dos contaminantes no local da lesão. Uma ferida colonizada tem microrganismos que
+            se proliferam sem indução de qualquer resposta imunológica.
             <br><br>
-            Tanto a contaminação quanto a colonização são condições preveníveis e passíveis de intervenções de vigilância e controle para minimizar o risco de infecção. 
+            Tanto a contaminação quanto a colonização são condições preveníveis e passíveis de intervenções de
+            vigilância e controle para minimizar o risco de infecção.
             <br><br>
-            Na Imagem vemos uma úlcera venosa com sinais de infecção localizada (exsudato em grande quantidade, odor fétido e dor). Leito da lesão com tecido de granulação friável.
+            Na Imagem vemos uma úlcera venosa com sinais de infecção localizada (exsudato em grande quantidade, odor
+            fétido e dor). Leito da lesão com tecido de granulação friável.
 
 
         </span>
     </div>
 
 
-    <div class="col-sm-5">
+    <!-- <div class="col-sm-5">
 
         <img class='lupa img-fluid' src='img/imgslide9.png' />
 
         <br>
 
+    </div> -->
+
+
+
+
+    <div class="col-sm-5 center animate__animated animate__backInRight"
+        style="display: flex;align-items: center;justify-content: center;">
+        <img class=" img-fluid" src="img/imgslide9.png" style="width: 80%;"><br>
+        <div class="controles"
+            style="display: flex;flex-direction: column;align-items: center;justify-content: space-around;gap: 20px;">
+            <img class="botao" src="img/lupa.png" style="max-width: 40px; cursor: pointer;">
+            <!-- <a href="img/imgslide4.png" download><img src="img/down-arq.png" /></a> -->
+        </div>
     </div>
-
-
-
-
-
-
 </div>
+
+
+<div class="jan">
+    <img src="img/imgslide9.png" style="height: 100%; background-color: white; padding: 20px;" />
+</div>
+
 <script>
-
-    $('.img-fluid').zoomify();
-
+    $(() => {
+        $('.jan').hide().click(() => { $('.jan').fadeOut() });
+        $('.botao').css('cursor', 'pointer').click(() => {
+            $('.jan').css('cursor', 'pointer').fadeIn();
+        })
+    })
 </script>
