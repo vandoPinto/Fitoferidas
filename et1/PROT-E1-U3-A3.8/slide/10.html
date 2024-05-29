@@ -1,9 +1,9 @@
-<div class="row" >
+<div class="row">
 
     <div class="col-sm-7 textoJustificado">
         <div class="navbar-dark identificadorAulas">
 
-            <div id="dadosAula" class=dados >
+            <div id="dadosAula" class=dados>
 
             </div>
         </div>
@@ -16,25 +16,40 @@
         <h5 class="corDestaque2 maiusculo font-weight-bold">
             4. COMO OS BIOFILMES SE FORMAM E ONDE SÃO ENCONTRADOS?
 
-        </h5> 
+        </h5>
         <br>
     </div>
-    <div class="col-sm-3">
+    <!-- <div class="col-sm-3">
         <img class='img-fluid' src='img/imgslide11.png' />
 
+    </div> -->
+
+    <div class="col-sm-4 center animate__animated animate__backInLeft"
+        style="display: flex;align-items: center;margin-right: 40px;">
+        <div class="controles"
+            style="display: flex;flex-direction: column;align-items: center;justify-content: space-around;gap: 20px;">
+            <img class="botao" src="img/lupa.png" class="lupa-img" style="max-width:40px">
+            <!-- <a href="img/imgslide4.png" download><img src="img/down-arq.png" /></a> -->
+        </div>
+        <img class=" img-fluid" src="img/imgslide11.png" style="width: 100%;"><br>
     </div>
-    <div class="col-sm-7">
+
+
+    <div class="col-sm-6">
         <span class="paragrafo">
-            Alguns microrganismos, pelas suas características fenotípicas e genotípicas, estão mais frequentemente associados à produção de biofilmes. São eles: Candida albicans, Staphylococcus coagulase negativa, Enterococcus spp, Klebsiela pneumoniae, Pseudomonas aeruginosa, Staphylococccus aureus.
+            Alguns microrganismos, pelas suas características fenotípicas e genotípicas, estão mais frequentemente
+            associados à produção de biofilmes. São eles: Candida albicans, Staphylococcus coagulase negativa,
+            Enterococcus spp, Klebsiela pneumoniae, Pseudomonas aeruginosa, Staphylococccus aureus.
 
         </span>
         <br>
         <br>
-        <div class="caixas alerta borda-direta">
-            Na Etapa 2 -  indicaremos plantas medicinais
-            que apresentam ação antimicrobiana para alguns dos microrganismos citados acima, associados à produção de biofilmes. 
+        <div class="caixas alerta borda-direta animate__animated animate__backInRight">
+            Na Etapa 2 - indicaremos plantas medicinais
+            que apresentam ação antimicrobiana para alguns dos microrganismos citados acima, associados à produção de
+            biofilmes.
 
-        </div>  
+        </div>
     </div>
 
 
@@ -44,8 +59,17 @@
 
 
 </div>
+
+
+<div class="jan">
+    <img src="img/imgslide11.png" style="height: 100%; background-color: white; padding: 20px;" />
+</div>
+
 <script>
-
-    $('.img-fluid').zoomify();
-
+    $(() => {
+        $('.jan').hide().click(() => { $('.jan').fadeOut() });
+        $('.botao').css('cursor', 'pointer').click(() => {
+            $('.jan').css('cursor', 'pointer').fadeIn();
+        })
+    })
 </script>

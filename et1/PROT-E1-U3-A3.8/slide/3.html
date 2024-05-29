@@ -1,9 +1,9 @@
-<div class="row" >
+<div class="row">
 
     <div class="col-sm-7 textoJustificado">
         <div class="navbar-dark identificadorAulas">
 
-            <div id="dadosAula" class=dados >
+            <div id="dadosAula" class=dados>
 
             </div>
         </div>
@@ -17,7 +17,7 @@
             3. O CONCEITO DE BIOFILME
 
 
-        </h5> 
+        </h5>
         <br>
     </div>
 
@@ -25,28 +25,45 @@
         <span class="paragrafo">
             <b>O que é biofilme?</b>
             <br>
-            Biofilmes são comunidades de células aderidas a uma superfície e entre si, embebidas por uma matriz de substâncias extracelulares poliméricas, que são produzidas pelos próprios microrganismos, com a finalidade de aumentar a sua chance de sobrevivência.
+            Biofilmes são comunidades de células aderidas a uma superfície e entre si, embebidas por uma matriz de
+            substâncias extracelulares poliméricas, que são produzidas pelos próprios microrganismos, com a finalidade
+            de aumentar a sua chance de sobrevivência.
 
 
         </span>
     </div>
 
 
-    <div class="col-sm-5">
+    <!-- <div class="col-sm-5">
 
         <img class='lupa img-fluid' src='img/imgslide4.png' />
         <br>
 
+    </div> -->
+
+
+
+
+    <div class="col-sm-5 center animate__animated animate__backInRight" style="display: flex;align-items: center;">
+        <img class=" img-fluid" src="img/imgslide4.png" style="width: 100%;"><br>
+        <div class="controles"
+            style="display: flex;flex-direction: column;align-items: center;justify-content: space-around;gap: 20px;">
+            <img class="botao" src="img/lupa.png" class="lupa-img" style="max-width:40px">
+            <!-- <a href="img/imgslide4.png" download><img src="img/down-arq.png" /></a> -->
+        </div>
     </div>
-
-
-
-
-
-
 </div>
+
+
+<div class="jan">
+    <img src="img/imgslide4.png" style="height: 100%; background-color: white; padding: 20px;" />
+</div>
+
 <script>
-
-    $('.img-fluid').zoomify();
-
+    $(() => {
+        $('.jan').hide().click(() => { $('.jan').fadeOut() });
+        $('.botao').css('cursor', 'pointer').click(() => {
+            $('.jan').css('cursor', 'pointer').fadeIn();
+        })
+    })
 </script>

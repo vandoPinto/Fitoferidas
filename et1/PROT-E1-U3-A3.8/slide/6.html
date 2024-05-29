@@ -1,9 +1,9 @@
-<div class="row" >
+<div class="row">
 
     <div class="col-sm-7 textoJustificado">
         <div class="navbar-dark identificadorAulas">
 
-            <div id="dadosAula" class=dados >
+            <div id="dadosAula" class=dados>
 
             </div>
         </div>
@@ -16,36 +16,58 @@
         <h5 class="corDestaque2 maiusculo font-weight-bold">
             4. COMO OS BIOFILMES SE FORMAM E ONDE SÃO ENCONTRADOS?
 
-        </h5> 
+        </h5>
         <br>
     </div>
 
     <div class="col-sm-6">
         <span class="paragrafo">
-            Os biofilmes se organizam em meio a muitas vantagens biológicas para os microrganismos. A primeira delas é o fato de que a matriz de polissacarídeo age como uma barreira de filtragem, protegendo as células microbianas, dificultando a penetração de agentes antimicrobianos em geral, quer sejam antibióticos ou bactericidas.
+            Os biofilmes se organizam em meio a muitas vantagens biológicas para os microrganismos. A primeira delas é o
+            fato de que a matriz de polissacarídeo age como uma barreira de filtragem, protegendo as células
+            microbianas, dificultando a penetração de agentes antimicrobianos em geral, quer sejam antibióticos ou
+            bactericidas.
             <br><br>
-            Diversos fatores contribuem para a velocidade da formação de biofilmes: número e tipo de células presentes no líquido ao qual a superfície está exposta, a taxa de fluxo desse líquido através da superfície e as propriedades físico-químicas da superfície como a composição nutricional e a temperatura do ambiente. 	
+            Diversos fatores contribuem para a velocidade da formação de biofilmes: número e tipo de células presentes
+            no líquido ao qual a superfície está exposta, a taxa de fluxo desse líquido através da superfície e as
+            propriedades físico-químicas da superfície como a composição nutricional e a temperatura do ambiente.
 
         </span>
     </div>
 
 
-    <div class="col-sm-4">
+    <!-- <div class="col-sm-4">
 
         <img class='img-fluid' src='img/imgslide7.png' />
 
         <br>
 
+    </div> -->
+
+
+
+
+
+
+    <div class="col-sm-4 center animate__animated animate__backInRight" style="display: flex;align-items: center;">
+        <img class=" img-fluid" src="img/imgslide7.png" style="width: 100%;"><br>
+        <div class="controles"
+            style="display: flex;flex-direction: column;align-items: center;justify-content: space-around;gap: 20px;">
+            <img class="botao" src="img/lupa.png" class="lupa-img" style="max-width:40px">
+            <!-- <a href="img/imgslide4.png" download><img src="img/down-arq.png" /></a> -->
+        </div>
     </div>
-
-
-
-
-
-
 </div>
+
+
+<div class="jan">
+    <img src="img/imgslide7.png" style="height: 100%; background-color: white; padding: 20px;" />
+</div>
+
 <script>
-
-    $('.img-fluid').zoomify();
-
+    $(() => {
+        $('.jan').hide().click(() => { $('.jan').fadeOut() });
+        $('.botao').css('cursor', 'pointer').click(() => {
+            $('.jan').css('cursor', 'pointer').fadeIn();
+        })
+    })
 </script>
