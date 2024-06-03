@@ -1,9 +1,9 @@
-<div class="row" >
+<div class="row">
 
     <div class="col-sm-7 textoJustificado">
         <div class="navbar-dark identificadorAulas">
 
-            <div id="dadosAula" class=dados >
+            <div id="dadosAula" class=dados>
 
             </div>
         </div>
@@ -14,42 +14,61 @@
 <div class="row justify-content-md-center" id="slide2">
     <div class="col-sm-10">
         <h5 class="corDestaque2 maiusculo font-weight-bold">
-            4. ASPECTOS DA DOR NO TRATAMENTO DE FERIDAS: 
+            4. ASPECTOS DA DOR NO TRATAMENTO DE FERIDAS:
             CONCEITO E RECURSOS TERAPÊUTICOS
 
-        </h5> 
+        </h5>
         <br>
     </div>
 
     <div class="col-sm-6">
         <span class="paragrafo">
-            As práticas integrativas e complementares, como Musicoterapia, Cromoterapia, Toque Terapêutico, Aromaterapia, Visualização Criativa, Reiki e Exercícios Respiratórios, costumam ser utilizadas como recursos para a melhora das condições de dor em usuários com feridas crônicas.
+            As práticas integrativas e complementares, como Musicoterapia, Cromoterapia, Toque Terapêutico,
+            Aromaterapia, Visualização Criativa, Reiki e Exercícios Respiratórios, costumam ser utilizadas como recursos
+            para a melhora das condições de dor em usuários com feridas crônicas.
 
         </span>
         <br><br>
-        <div class="caixas complementar borda-direita">
-            Leia também: “Atenção Integral nos cuidados das feridas crônicas”. J.Javier Soldevilla Agreda, Joan Enrique Torra i Bou (coord.). Trad. Ângela Lima. Petrópolis, RJ: EPUB, 2012.  Capítulo 11: Terapias Alternativas e Feridas Crônicas.
+        <div class="caixas complementar borda-direita  animate__animated animate__backInLeft">
+            Leia também: “Atenção Integral nos cuidados das feridas crônicas”. J.Javier Soldevilla Agreda, Joan Enrique
+            Torra i Bou (coord.). Trad. Ângela Lima. Petrópolis, RJ: EPUB, 2012. Capítulo 11: Terapias Alternativas e
+            Feridas Crônicas.
 
         </div>
     </div>
 
 
-    <div class="col-sm-4">
+    <!-- <div class="col-sm-4">
 
         <img class='img-fluid' src='img/imgslide10.png' />
 
         <br>
 
-    </div>
+    </div> -->
 
+    <div class="col-sm-4 center animate__animated animate__backInRight"
+        style="display: flex;align-items: center;flex-direction: column;">
+        <img class=" img-fluid" src="img/imgslide10.png" style="width: 100%;"><br>
+        <div class="controles" style="display: flex;align-items: center;justify-content: space-around;gap: 20px;">
+            <img class="botao" src="img/lupa.png" style="max-width: 40px; cursor: pointer;">
+            <!-- <a href="img/imgslide9.png" download=""><img src="img/down-arq.png" style="width: 60%;"></a> -->
+        </div>
+    </div>
 
 
 
 
 
 </div>
+<div class="jan">
+    <img src="img/imgslide10.png" style="height: 100%; background-color: white; padding: 20px;" />
+</div>
+
 <script>
-
-    $('.img-fluid').zoomify();
-
+    $(() => {
+        $('.jan').hide().click(() => { $('.jan').fadeOut() });
+        $('.botao').css('cursor', 'pointer').click(() => {
+            $('.jan').css('cursor', 'pointer').fadeIn();
+        })
+    })
 </script>

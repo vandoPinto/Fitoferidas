@@ -1,9 +1,9 @@
-<div class="row" >
+<div class="row">
 
     <div class="col-sm-7 textoJustificado">
         <div class="navbar-dark identificadorAulas">
 
-            <div id="dadosAula" class=dados >
+            <div id="dadosAula" class=dados>
 
             </div>
         </div>
@@ -14,11 +14,11 @@
 <div class="row justify-content-md-center" id="slide2">
     <div class="col-sm-10">
         <h5 class="corDestaque2 maiusculo font-weight-bold">
-         6.4.  PLANTAS MEDICINAIS QUE ESTIMULAM AS ENZIMAS ANTIOXIDANTES:
+            6.4. PLANTAS MEDICINAIS QUE ESTIMULAM AS ENZIMAS ANTIOXIDANTES:
 
 
 
-        </h5> 
+        </h5>
         <br>
 
 
@@ -26,11 +26,14 @@
 
     <div class="col-sm-5">
         <span class="paragrafo">
-            <b>Camellia sinensis Kuntze</b>, o chá verde, tem como partes utilizadas as folhas. A sua capacidade antioxidante é por ativação da glutationa peroxidase, da SOD, e da catalase. Pode ser usada na alimentação na forma de infusão, uma colher de sobremesa das folhas secas para 250ml de água, deixar abafado por 3 minutos e coar.
+            <b>Camellia sinensis Kuntze</b>, o chá verde, tem como partes utilizadas as folhas. A sua capacidade
+            antioxidante é por ativação da glutationa peroxidase, da SOD, e da catalase. Pode ser usada na alimentação
+            na forma de infusão, uma colher de sobremesa das folhas secas para 250ml de água, deixar abafado por 3
+            minutos e coar.
 
         </span>
         <br /><br />
-       
+
 
 
     </div>
@@ -39,18 +42,29 @@
 
 
 
-    <div class="col-sm-5">
+    <!-- <div class="col-sm-5">
         <img class="img-fluid" src="img/imgslide20.png" />
+    </div> -->
 
 
-
+    <div class="col-sm-5 center animate__animated animate__backInRight" style="display: flex;align-items: center;">
+        <img class=" img-fluid" src="img/imgslide20.png" style="width: 100%;"><br>
+        <div class="controles"
+            style="display: flex;flex-direction: column;align-items: center;justify-content: space-around;gap: 20px;">
+            <img class="botao" src="img/lupa.png" class="lupa-img" style="max-width:40px">
+        </div>
     </div>
-
-
 
 </div>
+<div class="jan">
+    <img src="img/imgslide20.png" style="height: 100%; background-color: white; padding: 20px;" />
+</div>
+
 <script>
-
-    $('.img-fluid').zoomify();
-
+    $(() => {
+        $('.jan').hide().click(() => { $('.jan').fadeOut() });
+        $('.botao').css('cursor', 'pointer').click(() => {
+            $('.jan').css('cursor', 'pointer').fadeIn();
+        })
+    })
 </script>

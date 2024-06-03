@@ -1,9 +1,9 @@
-<div class="row" >
+<div class="row">
 
     <div class="col-sm-7 textoJustificado">
         <div class="navbar-dark identificadorAulas">
 
-            <div id="dadosAula" class=dados >
+            <div id="dadosAula" class=dados>
 
             </div>
         </div>
@@ -16,7 +16,7 @@
         <h5 class="corDestaque2 maiusculo font-weight-bold">
             5. APORTE DE PROTEÍNA
 
-        </h5> 
+        </h5>
         <br>
 
 
@@ -24,26 +24,44 @@
 
     <div class="col-sm-5">
         <span class="paragrafo">
-            A estrutura corporal dos seres humanos e dos animais é constituída por proteína. As proteínas são formadas por aminoácidos, e a síntese de proteínas exige a presença de todos os aminoácidos necessários durante o processo. Os alimentos ricos em proteínas são obtidos principalmente da carne ou de produtos de animais, como ovos e leite. As proteínas dietéticas deverão corresponder a 10%-15% das calorias totais.  Também se encontram presentes em fontes de origem vegetal, como as leguminosas ervilhas, lentilhas e grão-de-bico e os feijões. 
+            A estrutura corporal dos seres humanos e dos animais é constituída por proteína. As proteínas são formadas
+            por aminoácidos, e a síntese de proteínas exige a presença de todos os aminoácidos necessários durante o
+            processo. Os alimentos ricos em proteínas são obtidos principalmente da carne ou de produtos de animais,
+            como ovos e leite. As proteínas dietéticas deverão corresponder a 10%-15% das calorias totais. Também se
+            encontram presentes em fontes de origem vegetal, como as leguminosas ervilhas, lentilhas e grão-de-bico e os
+            feijões.
 
         </span>
     </div>
 
 
-    <div class="col-sm-5">
+    <!-- <div class="col-sm-5">
         <img class="img-fluid" src="img/imgslide8.png" />
 
 
+    </div> -->
+
+    <div class="col-sm-5 center animate__animated animate__backInRight" style="display: flex;align-items: center;">
+        <img class=" img-fluid" src="img/imgslide8.png" style="width: 100%;"><br>
+        <div class="controles"
+            style="display: flex;flex-direction: column;align-items: center;justify-content: space-around;gap: 20px;">
+            <img class="botao" src="img/lupa.png" class="lupa-img" style="max-width:40px">
+        </div>
     </div>
 
 
 
 
-
-
 </div>
+<div class="jan">
+    <img src="img/imgslide8.png" style="height: 100%; background-color: white; padding: 20px;" />
+</div>
+
 <script>
-
-    $('.img-fluid').zoomify();
-
+    $(() => {
+        $('.jan').hide().click(() => { $('.jan').fadeOut() });
+        $('.botao').css('cursor', 'pointer').click(() => {
+            $('.jan').css('cursor', 'pointer').fadeIn();
+        })
+    })
 </script>

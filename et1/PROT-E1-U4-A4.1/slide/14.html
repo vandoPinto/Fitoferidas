@@ -1,9 +1,9 @@
-<div class="row" >
+<div class="row">
 
     <div class="col-sm-7 textoJustificado">
         <div class="navbar-dark identificadorAulas">
 
-            <div id="dadosAula" class=dados >
+            <div id="dadosAula" class=dados>
 
             </div>
         </div>
@@ -14,9 +14,9 @@
 <div class="row justify-content-md-center" id="slide2">
     <div class="col-sm-10">
         <h5 class="corDestaque2 maiusculo font-weight-bold">
-            6.1.  VITAMINA C (ÁCIDO ASCÓRBICO)
+            6.1. VITAMINA C (ÁCIDO ASCÓRBICO)
 
-        </h5> 
+        </h5>
         <br>
 
 
@@ -25,21 +25,30 @@
 
 
 
-    <div class="col-sm-5">
+    <!-- <div class="col-sm-5">
         <img class="img-fluid" src="img/imgslide15.png" />
+    </div> -->
 
-
-
+    <div class="col-sm-5 center animate__animated animate__backInLeft"
+        style="display: flex;align-items: center;flex-direction: column;">
+        <img class=" img-fluid" src="img/imgslide15.png" style="width: 100%;"><br>
+        <div class="controles"
+            style="display: flex;flex-direction: column;align-items: center;justify-content: space-around;gap: 20px;">
+            <img class="botao" src="img/lupa.png" class="lupa-img" style="max-width:40px">
+        </div>
     </div>
+
 
     <div class="col-sm-5">
         <span class="paragrafo">
-            As principais fontes de vitamina C são: pimenta, tomate, brócolis, morango, kiwi e frutas cítricas  como laranja, tangerina, acerola e cheiro-verde. 
+            As principais fontes de vitamina C são: pimenta, tomate, brócolis, morango, kiwi e frutas cítricas como
+            laranja, tangerina, acerola e cheiro-verde.
 
         </span>
         <br /><br />
-        <div class="caixas complementar borda-direita">
-            Leia também: BIANCHI, M.L.P.; ANTUNES, L.M.G. Free radicals and the main dietary antioxidants. Rev. Nutr., Campinas, 12 (2): 123-130, 1999.
+        <div class="caixas complementar borda-direita animate__animated animate__backInRight">
+            Leia também: BIANCHI, M.L.P.; ANTUNES, L.M.G. Free radicals and the main dietary antioxidants. Rev. Nutr.,
+            Campinas, 12 (2): 123-130, 1999.
 
         </div>
     </div>
@@ -48,8 +57,15 @@
 
 
 </div>
+<div class="jan">
+    <img src="img/imgslide15.png" style="height: 100%; background-color: white; padding: 20px;" />
+</div>
+
 <script>
-
-    $('.img-fluid').zoomify();
-
+    $(() => {
+        $('.jan').hide().click(() => { $('.jan').fadeOut() });
+        $('.botao').css('cursor', 'pointer').click(() => {
+            $('.jan').css('cursor', 'pointer').fadeIn();
+        })
+    })
 </script>

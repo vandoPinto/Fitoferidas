@@ -1,9 +1,9 @@
-<div class="row" >
+<div class="row">
 
     <div class="col-sm-7 textoJustificado">
         <div class="navbar-dark identificadorAulas">
 
-            <div id="dadosAula" class=dados >
+            <div id="dadosAula" class=dados>
 
             </div>
         </div>
@@ -17,7 +17,7 @@
             IMPORTANTE!
 
 
-        </h5> 
+        </h5>
         <br>
 
 
@@ -30,7 +30,9 @@
         <span class="paragrafo">
             <img src="img/alerta.png" width="60" />
             <br>
-            As plantas medicinais nesta etapa serão utilizadas in natura, frescas ou secas, podendo compor a alimentação na forma de temperos, ou ainda como chás medicinais, decocção, infusão ou maceração em água. Essas formas de preparação da planta medicinal possuem eficácias semelhantes.
+            As plantas medicinais nesta etapa serão utilizadas in natura, frescas ou secas, podendo compor a alimentação
+            na forma de temperos, ou ainda como chás medicinais, decocção, infusão ou maceração em água. Essas formas de
+            preparação da planta medicinal possuem eficácias semelhantes.
 
         </span>
         <br /><br />
@@ -39,23 +41,31 @@
 
     </div>
 
-    <div class="col-sm-5">
+    <!-- <div class="col-sm-5">
         <img class="img-fluid" src="img/imgslide24.png" />
+    </div> -->
 
 
 
+
+    <div class="col-sm-5 center animate__animated animate__backInRight" style="display: flex;align-items: center;">
+        <img class=" img-fluid" src="img/imgslide24.png" style="width: 100%;"><br>
+        <div class="controles"
+            style="display: flex;flex-direction: column;align-items: center;justify-content: space-around;gap: 20px;">
+            <img class="botao" src="img/lupa.png" class="lupa-img" style="max-width:40px">
+        </div>
     </div>
 
-
-
-
-
-
-
-
 </div>
+<div class="jan">
+    <img src="img/imgslide24.png" style="height: 100%; background-color: white; padding: 20px;" />
+</div>
+
 <script>
-
-    $('.img-fluid').zoomify();
-
+    $(() => {
+        $('.jan').hide().click(() => { $('.jan').fadeOut() });
+        $('.botao').css('cursor', 'pointer').click(() => {
+            $('.jan').css('cursor', 'pointer').fadeIn();
+        })
+    })
 </script>

@@ -1,9 +1,9 @@
-<div class="row" >
+<div class="row">
 
     <div class="col-sm-7 textoJustificado">
         <div class="navbar-dark identificadorAulas">
 
-            <div id="dadosAula" class=dados >
+            <div id="dadosAula" class=dados>
 
             </div>
         </div>
@@ -18,32 +18,63 @@
 
 
 
-        </h5> 
-    
+        </h5>
+
         <br>
     </div>
-    <div class="col-sm-3 text-center">
+
+    <div class="col-sm-3 text-center animate__animated animate__backInRight botao_1">
         <img class='img-fluid' src='img/imgslide11a.png' style="    max-height: 400px;" /><br>
     </div>
-    <div class="col-sm-3 text-center">
-        <img class='img-fluid' src='img/imgslide11b.png' style="    max-height: 400px;"/>
-    </div>    
-    <div class="col-sm-3 text-center">
-        <img class='img-fluid' src='img/imgslide11c.png'style="    max-height: 400px;" />
-    </div>   
-    <div class="col-sm-3 text-center">
-        <img class='img-fluid' src='img/imgslide11d.png'style="    max-height: 400px;" />
-
+    <div class="col-sm-3 text-center animate__animated animate__backInRight botao_2">
+        <img class='img-fluid' src='img/imgslide11b.png' style="    max-height: 400px;" />
+    </div>
+    <div class="col-sm-3 text-center animate__animated animate__backInRight botao_3">
+        <img class='img-fluid' src='img/imgslide11c.png' style="    max-height: 400px;" />
+    </div>
+    <div class="col-sm-3 text-center animate__animated animate__backInRight botao_4">
+        <img class='img-fluid' src='img/imgslide11d.png' style="    max-height: 400px;" />
     </div>
 
-
-
-
-
-
 </div>
+
+<div class="jan_1 jan">
+    <img src="img/imgslide11a.png" style="height: 100%; background-color: white; padding: 20px;" />
+</div>
+
+
+<div class="jan_2 jan">
+    <img src="img/imgslide11b.png" style="height: 100%; background-color: white; padding: 20px;" />
+</div>
+
+
+<div class="jan_3 jan">
+    <img src="img/imgslide11c.png" style="height: 100%; background-color: white; padding: 20px;" />
+</div>
+<div class="jan_4 jan">
+    <img src="img/imgslide11d.png" style="height: 100%; background-color: white; padding: 20px;" />
+</div>
+
+
 <script>
+    $(() => {
+        $('.jan_1').hide().click(() => { $('.jan_1').fadeOut() });
+        $('.jan_2').hide().click(() => { $('.jan_2').fadeOut() });
+        $('.jan_3').hide().click(() => { $('.jan_3').fadeOut() });
+        $('.jan_4').hide().click(() => { $('.jan_4').fadeOut() });
 
-    $('.img-fluid').zoomify();
 
+        $('.botao_1').css('cursor', 'pointer').click(() => {
+            $('.jan_1').css('cursor', 'pointer').fadeIn();
+        })
+        $('.botao_2').css('cursor', 'pointer').click(() => {
+            $('.jan_2').css('cursor', 'pointer').fadeIn();
+        })
+        $('.botao_3').css('cursor', 'pointer').click(() => {
+            $('.jan_3').css('cursor', 'pointer').fadeIn();
+        })
+        $('.botao_4').css('cursor', 'pointer').click(() => {
+            $('.jan_4').css('cursor', 'pointer').fadeIn();
+        })
+    })
 </script>

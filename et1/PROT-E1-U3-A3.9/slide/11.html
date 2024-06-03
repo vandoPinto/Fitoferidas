@@ -1,9 +1,9 @@
-<div class="row" >
+<div class="row">
 
     <div class="col-sm-7 textoJustificado">
         <div class="navbar-dark identificadorAulas">
 
-            <div id="dadosAula" class=dados >
+            <div id="dadosAula" class=dados>
 
             </div>
         </div>
@@ -17,17 +17,29 @@
             5. MENSURAÇÃO DA DOR EM PESSOAS COM FERIDAS
 
 
-        </h5> 
+        </h5>
         <br>
         <br>
         <span class="paragrafo">
-            Para a mensuração da dor em pessoas com feridas, o método mais fácil é utilizar a escala de dor visual e analógica, ou a escala de dor visual numérica, voltada a crianças e adultos, conforme indicam os desenhos a seguir. Tais escalas têm as carinhas dos pacientes e são autoexplicativas.
+            Para a mensuração da dor em pessoas com feridas, o método mais fácil é utilizar a escala de dor visual e
+            analógica, ou a escala de dor visual numérica, voltada a crianças e adultos, conforme indicam os desenhos a
+            seguir. Tais escalas têm as carinhas dos pacientes e são autoexplicativas.
             <br><br>
             Para adultos apenas as faces; e para as crianças, as faces com e sem dor:
 
         </span>
         <br>
-        <img class="img-fluid" src="img/imgslide12.png" />
+        <!-- <img class="img-fluid" src="img/imgslide12.png" /> -->
+
+
+
+        <img class=" img-fluid animate__animated animate__backInLeft" src="img/imgslide12.png" style="width: 100%;"><br>
+        <div class="controles" style="display: flex;align-items: center;justify-content: space-around;gap: 20px;">
+            <img class="botao" src="img/lupa.png" style="max-width: 40px; cursor: pointer;">
+            <!-- <a href="img/imgslide9.png" download=""><img src="img/down-arq.png" style="width: 60%;"></a> -->
+        </div>
+
+
     </div>
 
 
@@ -36,8 +48,15 @@
 
 
 </div>
+<div class="jan">
+    <img src="img/imgslide12.png" style="width: 100%; background-color: white; padding: 20px;" />
+</div>
+
 <script>
-
-    $('.img-fluid').zoomify();
-
+    $(() => {
+        $('.jan').hide().click(() => { $('.jan').fadeOut() });
+        $('.botao').css('cursor', 'pointer').click(() => {
+            $('.jan').css('cursor', 'pointer').fadeIn();
+        })
+    })
 </script>
