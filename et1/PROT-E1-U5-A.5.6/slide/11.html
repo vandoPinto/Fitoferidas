@@ -1,55 +1,91 @@
-<div class="row" >
+<div class="row">
 
     <div class="col-sm-7 textoJustificado">
         <div class="navbar-dark identificadorAulas">
 
-            <div id="dadosAula" class=dados >
+            <div id="dadosAula" class=dados>
 
             </div>
         </div>
         <br>
-        <br>
+        <!-- <br> -->
     </div>
 </div>
 <div class="row justify-content-md-center" id="slide2">
-    <div class="col-sm-12">
-        <h5 class="corDestaque2 maiusculo font-weight-bold">
-6. CLASSIFICAÇÃO DAS MASD E PRINCIPAIS CAUSAS
-
-
-
-        </h5> 
-        <br> 
-		    </div>
-			
-			
-        <div class="col-sm-2">
-       <img class="lupa img-fluid" src="img/imgslide12a.png" />
-
-</div>
-
-
-        <div class="col-sm-2">
-       <img class="lupa img-fluid" src="img/imgslide12b.png" />
-
-</div>
-
-        <div class="col-sm-2">
-       <img class="lupa img-fluid" src="img/imgslide12c.png" />
-
-</div>
-
-        <div class="col-sm-2">
-       <img class="lupa img-fluid" src="img/imgslide12d.png" />
-
-</div>
+    <div class="col-sm-11">
+        <h5 class="corDestaque2 maiusculo font-weight-bold">6. CLASSIFICAÇÃO DAS MASD E PRINCIPAIS CAUSAS</h5>
+        <!-- <br> -->
     </div>
 
 
+    <!-- <div class="col-sm-2">
+        <img class="lupa img-fluid" src="img/imgslide12a.png" />
+    </div> -->
+    <div class="col-sm-3 animate__animated animate__backInLeft"
+        style="display: flex;align-items: center;flex-direction: column;">
+        <img class=" img-fluid" src="img/imgslide12a.png"><br>
+        <img class="botao_1" src="img/lupa.png" style="max-width: 40px; cursor: pointer;">
+    </div>
 
+
+    <!-- <div class="col-sm-2">
+        <img class="lupa img-fluid" src="img/imgslide12b.png" />
+    </div> -->
+    <div class="col-sm-3 animate__animated animate__backInLeft"
+        style="display: flex;align-items: center;flex-direction: column;">
+        <img class=" img-fluid" src="img/imgslide12b.png"><br>
+        <img class="botao_2" src="img/lupa.png" style="max-width: 40px; cursor: pointer;">
+    </div>
+
+    <!-- <div class="col-sm-2">
+        <img class="lupa img-fluid" src="img/imgslide12c.png" />
+    </div> -->
+    <div class="col-sm-3 animate__animated animate__backInLeft"
+        style="display: flex;align-items: center;flex-direction: column;">
+        <img class=" img-fluid" src="img/imgslide12c.png"><br>
+        <img class="botao_3" src="img/lupa.png" style="max-width: 40px; cursor: pointer;">
+    </div>
+
+    <!-- <div class="col-sm-2">
+        <img class="lupa img-fluid" src="img/imgslide12d.png" />
+    </div> -->
+    <div class="col-sm-3 animate__animated animate__backInLeft"
+        style="display: flex;align-items: center;flex-direction: column;">
+        <img class=" img-fluid" src="img/imgslide12d.png"><br>
+        <img class="botao_4" src="img/lupa.png" style="max-width: 40px; cursor: pointer;">
+    </div>
+</div>
+
+
+<div class="jan_1 jan">
+    <img src="img/imgslide12a.png" style="height: 100%; background-color: white; padding: 20px;" />
+</div>
+<div class="jan_2 jan">
+    <img src="img/imgslide12b.png" style="height: 100%; background-color: white; padding: 20px;" />
+</div>
+<div class="jan_3 jan">
+    <img src="img/imgslide12c.png" style="height: 100%; background-color: white; padding: 20px;" />
+</div>
+<div class="jan_4 jan">
+    <img src="img/imgslide12d.png" style="height: 100%; background-color: white; padding: 20px;" />
 </div>
 <script>
-
-    $('.img-fluid').zoomify();
-
+    $(() => {
+        $('.jan_1').hide().click(() => { $('.jan_1').fadeOut() });
+        $('.botao_1').css('cursor', 'pointer').click(() => {
+            $('.jan_1').css('cursor', 'pointer').fadeIn();
+        })
+        $('.jan_2').hide().click(() => { $('.jan_2').fadeOut() });
+        $('.botao_2').css('cursor', 'pointer').click(() => {
+            $('.jan_2').css('cursor', 'pointer').fadeIn();
+        })
+        $('.jan_3').hide().click(() => { $('.jan_3').fadeOut() });
+        $('.botao_3').css('cursor', 'pointer').click(() => {
+            $('.jan_3').css('cursor', 'pointer').fadeIn();
+        })
+        $('.jan_4').hide().click(() => { $('.jan_4').fadeOut() });
+        $('.botao_4').css('cursor', 'pointer').click(() => {
+            $('.jan_4').css('cursor', 'pointer').fadeIn();
+        })
+    })
 </script>
