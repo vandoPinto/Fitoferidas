@@ -1,53 +1,67 @@
-<div class="row" >
+<div class="row">
 
     <div class="col-sm-7 textoJustificado">
         <div class="navbar-dark identificadorAulas">
 
-            <div id="dadosAula" class=dados >
+            <div id="dadosAula" class=dados>
 
             </div>
         </div>
         <br>
-        <br>
+        <!-- <br> -->
     </div>
 </div>
 <div class="row justify-content-md-center" id="slide2">
     <div class="col-sm-10">
         <h5 class="corDestaque2 maiusculo font-weight-bold">
-12.LESÃO POR PRESSÃO NÃO CLASSIFICÁVEL
+            12. LESÃO POR PRESSÃO NÃO CLASSIFICÁVEL
 
-        </h5> 
-        <br>
-		<span class="paragrafo">
-A extensão da lesão não pode ser estabelecida porque está recoberta por tecidos desvitalizados (esfacelos e/ou escara) que dificultam a classificação. Essa lesão tem perda da pele na sua espessura total e após o desbridamento ficará aparente uma LP em estágio 3 ou 4.
+        </h5>
+        <!-- <br> -->
+        <span class="paragrafo">
+            A extensão da lesão não pode ser estabelecida porque está recoberta por tecidos desvitalizados (esfacelos
+            e/ou escara) que dificultam a classificação. Essa lesão tem perda da pele na sua espessura total e após o
+            desbridamento ficará aparente uma LP em estágio 3 ou 4.
 
-</span>
-		
-   <br>
-</div>
-<div class="col-sm-5">
+        </span>
+
+        <!-- <br> -->
+    </div>
+    <!-- <div class="col-sm-5">
         <img class='lupa img-fluid' src='img/imgslide19a.png' />
-
         <br>
-
     </div>
-
-<div class="col-sm-5">
+    <div class="col-sm-5">
         <img class='lupa img-fluid' src='img/imgslide19b.png' />
-
         <br>
+    </div> -->
 
+    <div class="col-sm-5 center animate__animated animate__backInLeft"
+        style="display: flex;align-items: center;flex-direction: column;">
+        <img class=" img-fluid" src="img/imgslide19a.png" style="width: 100%;">
+        <img class="botao_1" src="img/lupa.png" style="max-width: 40px;">
     </div>
-
-
-
-
-
-
-
+    <div class="col-sm-5 center animate__animated animate__backInRight"
+        style="display: flex;align-items: center;flex-direction: column;">
+        <img class=" img-fluid" src="img/imgslide19b.png" style="width: 80%;">
+        <img class="botao_2" src="img/lupa.png" style="max-width: 40px;">
+    </div>
+</div>
+<div class="jan_1 jan">
+    <img src="img/imgslide19a.png" style="height: 100%; background-color: white; padding: 20px;" />
+</div>
+<div class="jan_2 jan">
+    <img src="img/imgslide19b.png" style="height: 100%; background-color: white; padding: 20px;" />
 </div>
 <script>
-
-    $('.img-fluid').zoomify();
-
+    $(() => {
+        $('.jan_1').hide().click(() => { $('.jan_1').fadeOut() });
+        $('.botao_1').css('cursor', 'pointer').click(() => {
+            $('.jan_1').css('cursor', 'pointer').fadeIn();
+        })
+        $('.jan_2').hide().click(() => { $('.jan_2').fadeOut() });
+        $('.botao_2').css('cursor', 'pointer').click(() => {
+            $('.jan_2').css('cursor', 'pointer').fadeIn();
+        })
+    })
 </script>

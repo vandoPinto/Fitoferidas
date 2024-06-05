@@ -1,9 +1,9 @@
-<div class="row" >
+<div class="row">
 
     <div class="col-sm-7 textoJustificado">
         <div class="navbar-dark identificadorAulas">
 
-            <div id="dadosAula" class=dados >
+            <div id="dadosAula" class=dados>
 
             </div>
         </div>
@@ -14,34 +14,42 @@
 <div class="row justify-content-md-center" id="slide2">
     <div class="col-sm-5">
         <h5 class="corDestaque2 maiusculo font-weight-bold">
- 4.LESÃO POR PRESSÃO - LP
+            4. LESÃO POR PRESSÃO - LP
 
 
 
-        </h5> 
-        <br> 
+        </h5>
+        <br>
         <span class="paragrafo">
-      Descrita como uma injúria do tecido epitelial, podendo acometer os tecidos profundos subjacentes, a Lesão por Pressão ocorre devido à pressão intensa ou prolongada sobre regiões de proeminências ósseas ou locais de pressão de dispositivos médicos. 
-	
+            Descrita como uma injúria do tecido epitelial, podendo acometer os tecidos profundos subjacentes, a Lesão
+            por Pressão ocorre devido à pressão intensa ou prolongada sobre regiões de proeminências ósseas ou locais de
+            pressão de dispositivos médicos.
 
-  </span>
-        
+
+        </span>
+
 
 
     </div>
 
 
-    <div class="col-sm-5">
-       <img class="img-fluid" src="img/imgslide4.png" />
+    <!-- <div class="col-sm-5">
+        <img class="img-fluid" src="img/imgslide4.png" />
+    </div> -->
 
-
+    <div class="col-sm-5 center animate__animated animate__backInRight" style="display: flex;align-items: center;">
+        <img class=" img-fluid" src="img/imgslide4.png" style="width: 90%;"><br>
+        <img class="botao" src="img/lupa.png" class="lupa-img" style="max-width:40px">
     </div>
-
-
-
+</div>
+<div class="jan">
+    <img src="img/imgslide4.png" style="height: 100%; background-color: white; padding: 20px;" />
 </div>
 <script>
-
-    $('.img-fluid').zoomify();
-
+    $(() => {
+        $('.jan').hide().click(() => { $('.jan').fadeOut() });
+        $('.botao').css('cursor', 'pointer').click(() => {
+            $('.jan').css('cursor', 'pointer').fadeIn();
+        })
+    })
 </script>
