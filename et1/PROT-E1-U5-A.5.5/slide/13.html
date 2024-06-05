@@ -1,48 +1,60 @@
-<div class="row" >
+<div class="row">
 
-    <div class="col-sm-7 textoJustificado">
-        <div class="navbar-dark identificadorAulas">
+	<div class="col-sm-7 textoJustificado">
+		<div class="navbar-dark identificadorAulas">
 
-            <div id="dadosAula" class=dados >
+			<div id="dadosAula" class=dados>
 
-            </div>
-        </div>
-        <br>
-        <br>
-    </div>
+			</div>
+		</div>
+		<br>
+		<!-- <br> -->
+	</div>
 </div>
 <div class="row justify-content-md-center" id="slide2">
-    <div class="col-sm-5">
-	<br>
-	<img src="img/saibamaisslide.png" >
-	<br><br><br>
-	<b class="corDestaque2">
-	b. Escolha da cobertura ou fitas adesivas
+	<div class="col-sm-5">
+		<br>
+		<img src="img/saibamaisslide.png">
+		<br>
+		<!-- <br><br> -->
+		<b class="corDestaque2">
+			b. Escolha da cobertura ou fitas adesivas
 
-	</b>
-	<br>
-	<span class="paragrafo">
-	A cobertura ou fita devem cumprir suas finalidades sem riscos de eventos adversos relacionados com o produto ou cliente (exemplo: não fixação e perda de dispositivos, soltura e risco de contaminação, retenção de umidade e risco de maceração, alta adesividade e risco de lesão à pele, entre outros).
+		</b>
+		<br>
+		<span class="paragrafo">
+			A cobertura ou fita devem cumprir suas finalidades sem riscos de eventos adversos relacionados com o produto
+			ou cliente (exemplo: não fixação e perda de dispositivos, soltura e risco de contaminação, retenção de
+			umidade e risco de maceração, alta adesividade e risco de lesão à pele, entre outros).
 
-	</span>
-       
-    </div>
-      <div class="col-sm-5">
-	<br>
-	<img class="img-fluid" src="img/imgslide14.png" >
-	<br><br><br>
-	<div class="caixas alerta borda-direita">
-	A escolha de uma cobertura ou 
-fita adesiva deve considerar essencialmente as finalidades de uso, as necessidades do cliente e os riscos associados ao produto.
+		</span>
 
 	</div>
-       
-    </div>
+	<div class="col-sm-5">
+		<!-- <br> -->
+		<!-- <img class="img-fluid" src="img/imgslide14.png" > -->
 
-
+		<div class="animate__animated animate__backInRight" style="display: flex;align-items: center;">
+			<img class=" img-fluid" src="img/imgslide14.png" style="width: 90%;"><br>
+			<img class="botao" src="img/lupa.png" class="lupa-img" style="max-width:40px">
+		</div>
+		<br>
+		<!-- <br><br> -->
+		<div class="caixas alerta borda-direita animate__animated animate__backInUp">
+			A escolha de uma cobertura ou
+			fita adesiva deve considerar essencialmente as finalidades de uso, as necessidades do cliente e os riscos
+			associados ao produto.
+		</div>
+	</div>
+</div>
+<div class="jan">
+	<img src="img/imgslide14.png" style="height: 100%; background-color: white; padding: 20px;" />
 </div>
 <script>
-
-    $('.img-fluid').zoomify();
-
+	$(() => {
+		$('.jan').hide().click(() => { $('.jan').fadeOut() });
+		$('.botao').css('cursor', 'pointer').click(() => {
+			$('.jan').css('cursor', 'pointer').fadeIn();
+		})
+	})
 </script>

@@ -1,9 +1,9 @@
-<div class="row" >
+<div class="row">
 
     <div class="col-sm-7 textoJustificado">
         <div class="navbar-dark identificadorAulas">
 
-            <div id="dadosAula" class=dados >
+            <div id="dadosAula" class=dados>
 
             </div>
         </div>
@@ -14,37 +14,47 @@
 <div class="row justify-content-md-center" id="slide2">
     <div class="col-sm-5">
         <h5 class="corDestaque2 maiusculo font-weight-bold">
-4. MARSI – LESÕES RELACIONADAS A ADESIVOS MÉDICOS
+            4. MARSI – LESÕES RELACIONADAS A ADESIVOS MÉDICOS
 
 
 
 
-        </h5> 
-        <br> 
+        </h5>
+        <br>
         <span class="paragrafo">
- As MARSI são lesões de pele relacionadas a adesivos médicos, com manifestações clínicas como eritema, erosão, vesícula, bolha ou rompimento da epiderme, após 30 minutos ou mais da remoção do adesivo. 
-<br /><br />
-Adesivos médicos são produtos utilizados para fixação externa de dispositivos ou aproximar bordas de feridas.
-	
+            As MARSI são lesões de pele relacionadas a adesivos médicos, com manifestações clínicas como eritema,
+            erosão, vesícula, bolha ou rompimento da epiderme, após 30 minutos ou mais da remoção do adesivo.
+            <br /><br />
+            Adesivos médicos são produtos utilizados para fixação externa de dispositivos ou aproximar bordas de
+            feridas.
 
-  </span>
-        
+
+        </span>
+
 
 
     </div>
 
 
-    <div class="col-sm-5">
+    <!-- <div class="col-sm-5">
        <img class="lupa img-fluid" src="img/imgslide4.png" />
 
 
+    </div> -->
+
+    <div class="col-sm-5 center animate__animated animate__backInRight" style="display: flex;align-items: center;">
+        <img class=" img-fluid" src="img/imgslide4.png" style="width: 100%;"><br>
+        <img class="botao" src="img/lupa.png" class="lupa-img" style="max-width:40px">
     </div>
-
-
-
+</div>
+<div class="jan">
+    <img src="img/imgslide4.png" style="height: 100%; background-color: white; padding: 20px;" />
 </div>
 <script>
-
-    $('.img-fluid').zoomify();
-
+    $(() => {
+        $('.jan').hide().click(() => { $('.jan').fadeOut() });
+        $('.botao').css('cursor', 'pointer').click(() => {
+            $('.jan').css('cursor', 'pointer').fadeIn();
+        })
+    })
 </script>

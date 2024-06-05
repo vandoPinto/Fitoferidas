@@ -1,48 +1,56 @@
-<div class="row" >
+<div class="row">
 
     <div class="col-sm-7 textoJustificado">
         <div class="navbar-dark identificadorAulas">
 
-            <div id="dadosAula" class=dados >
+            <div id="dadosAula" class=dados>
 
             </div>
         </div>
         <br>
-        <br>
+        <!-- <br> -->
     </div>
 </div>
 <div class="row justify-content-md-center" id="slide2">
     <div class="col-sm-5">
-	<br>
-	<img src="img/saibamaisslide.png" >
-	<br>
-	<b class="corDestaque2">
-e.  Não observação sistematizada das condições da cobertura
+        <br>
+        <img src="img/saibamaisslide.png">
+        <br>
+        <b class="corDestaque2">
+            e. Não observação sistematizada das condições da cobertura
 
 
-	</b>
-	<br>
-	<span class="paragrafo">
-Coberturas sujas, soltas, mal fixadas ou saturadas podem representar riscos de contaminação, seja em uma ferida ou no local de fixação de um disposto.
+        </b>
+        <br>
+        <span class="paragrafo">
+            Coberturas sujas, soltas, mal fixadas ou saturadas podem representar riscos de contaminação, seja em uma
+            ferida ou no local de fixação de um disposto.
 
-	</span>
-       <br /><br /><br />
-	   <div class="caixas alerta borda-direita">
-A escolha da cobertura ou fita adesiva deve ser custo-efetiva e garantir a segurança do paciente.
+        </span>
+        <br />
+        <!-- <br /><br /> -->
+        <div class="caixas alerta borda-direita animate__animated animate__backInLeft">
+            A escolha da cobertura ou fita adesiva deve ser custo-efetiva e garantir a segurança do paciente.
 
-	</div>
+        </div>
     </div>
-      <div class="col-sm-5">
-	<br>
-	<img class="img-fluid" src="img/imgslide17.png" >
-	
-       
+    <div class="col-sm-5">
+        <br>
+        <!-- <img class="img-fluid" src="img/imgslide17.png" > -->
+        <div class=" animate__animated animate__backInRight" style="display: flex;align-items: center;">
+            <img class=" img-fluid" src="img/imgslide17.png" style="width: 100%;"><br>
+            <img class="botao" src="img/lupa.png" class="lupa-img" style="max-width:40px">
+        </div>
     </div>
-
-
+</div>
+<div class="jan">
+    <img src="img/imgslide17.png" style="height: 100%; background-color: white; padding: 20px;" />
 </div>
 <script>
-
-    $('.img-fluid').zoomify();
-
+    $(() => {
+        $('.jan').hide().click(() => { $('.jan').fadeOut() });
+        $('.botao').css('cursor', 'pointer').click(() => {
+            $('.jan').css('cursor', 'pointer').fadeIn();
+        })
+    })
 </script>
