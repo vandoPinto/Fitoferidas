@@ -1,46 +1,54 @@
-<div class="row" >
+<div class="row">
 
     <div class="col-sm-7 textoJustificado">
         <div class="navbar-dark identificadorAulas">
 
-            <div id="dadosAula" class=dados >
+            <div id="dadosAula" class=dados>
 
             </div>
         </div>
         <br>
-        <br>
+        <!-- <br> -->
     </div>
 </div>
 <div class="row justify-content-md-center" id="slide2">
     <div class="col-sm-10">
         <h5 class="corDestaque2 maiusculo font-weight-bold">
-7. ALGORITMO DE TRATAMENTO DA ÚLCERA VENOSA
+            7. ALGORITMO DE TRATAMENTO DA ÚLCERA VENOSA
 
 
 
-        </h5> 
+        </h5>
         <br>
-   <br>
+        <!-- <br> -->
 
-        <img class='lupa img-fluid' src='img/imgslide20.png' />
-		<div class="controles">
-		<a href='img/imgslide20.png' download ><img src="img/down-arq.png" /></a>
-</div>
-        <br>
+        <!-- <img class='lupa img-fluid' src='img/imgslide20.png' />
+        <div class="controles">
+            <a href='img/imgslide20.png' download><img src="img/down-arq.png" /></a>
+        </div>
+        <br> -->
+
+        <div class=" animate__animated animate__backInRight"
+            style="display: flex;align-items: center;flex-direction: row;justify-content: space-around;">
+            <img src="img/imgslide20.png" style="width: 100%;">
+            <div style="display: flex;gap: 20px;flex-direction: column;justify-content: center;">
+                <img class="botao" src="img/lupa.png" style="max-width: 40px;">
+                <a href="img/imgslide20.png" download="">
+                    <img src="img/down-arq.png" style="width: 100%;">
+                </a>
+            </div>
+        </div>
 
     </div>
-
-
-
-
-
-
-
-
-
+</div>
+<div class="jan">
+    <img src="img/imgslide20.png" style="height: 100%; background-color: white; padding: 20px;" />
 </div>
 <script>
-
-    $('.img-fluid').zoomify();
-
+    $(() => {
+        $('.jan').hide().click(() => { $('.jan').fadeOut() });
+        $('.botao').css('cursor', 'pointer').click(() => {
+            $('.jan').css('cursor', 'pointer').fadeIn();
+        })
+    })
 </script>

@@ -1,60 +1,75 @@
-<div class="row" >
+<div class="row">
 
     <div class="col-sm-7 textoJustificado">
         <div class="navbar-dark identificadorAulas">
 
-            <div id="dadosAula" class=dados >
+            <div id="dadosAula" class=dados>
 
             </div>
         </div>
         <br>
-        <br>
+        <!-- <br> -->
     </div>
 </div>
 <div class="row justify-content-md-center" id="slide2">
     <div class="col-sm-10">
         <h5 class="corDestaque2 maiusculo font-weight-bold">
-    4. ÚLCERAS VENOSAS 
+            4. ÚLCERAS VENOSAS
 
 
 
-        </h5> 
+        </h5>
         <br>
     </div>
-    
+
 
     <div class="col-sm-5">
-       <span class=paragrafo >
-  O ajuste do nível de compressão deve ser estabelecido de acordo com necessidade e tolerância do usuário.  A terapia compressiva pode ser realizada com bandagens elásticas, inelásticas ou meias de acordo com avaliação clínica e as orientações de uso estabelecidas pelo fabricante. Cabe salientarmos que as meias compressivas devem ser individualizadas e necessitam de medidas das circunferências de tornozelo, panturrilha e altura até 2 cm abaixo do joelho. Para meia-calça há necessidade da circunferência da coxa e altura da perna.  
+        <span class=paragrafo>
+            O ajuste do nível de compressão deve ser estabelecido de acordo com necessidade e tolerância do usuário. A
+            terapia compressiva pode ser realizada com bandagens elásticas, inelásticas ou meias de acordo com avaliação
+            clínica e as orientações de uso estabelecidas pelo fabricante. Cabe salientarmos que as meias compressivas
+            devem ser individualizadas e necessitam de medidas das circunferências de tornozelo, panturrilha e altura
+            até 2 cm abaixo do joelho. Para meia-calça há necessidade da circunferência da coxa e altura da perna.
 
         </span>
-<br><br><br>
-<div class="caixas alerta borda-direita">
-Saiba Mais: <br>
-<a href="https://www.ufrgs.br/telessauders/perguntas/insuficiencia-venosa/" target="_blank">medição para aquisição de meia compressiva</a>
+        <br>
+        <!-- <br><br> -->
+        <div class="caixas alerta borda-direita animate__animated animate__backInLeft">
+            Saiba Mais: <br>
+            <a href="https://www.ufrgs.br/telessauders/perguntas/insuficiencia-venosa/" target="_blank"
+                style="color: blue !important;">medição para
+                aquisição de meia compressiva</a>
 
-</div>
+        </div>
     </div>
-	
-	<div class="col-sm-5">
+
+    <!-- <div class="col-sm-5">
 
         <img class='lupa img-fluid' src='img/imgslide10.png' />
 
         <br>
 
+    </div> -->
+
+
+
+    <div class="col-sm-5 center animate__animated animate__backInRight"
+        style="display: flex;align-items: center;justify-content: space-evenly;">
+        <img class=" img-fluid" src="img/imgslide10.png" style="width: 60%;">
+        <img class="botao" src="img/lupa.png" style="max-width: 40px;">
     </div>
 
 
-
-
-
-
-
-
-
 </div>
+<div class="jan">
+    <img src="img/imgslide10.png" style="height: 100%; background-color: white; padding: 20px;" />
+</div>
+
 <script>
-
-    $('.img-fluid').zoomify();
-
+    $(() => {
+        $('.jan').hide().click(() => { $('.jan').fadeOut() });
+        $('.botao').css('cursor', 'pointer').click(() => {
+            $('.jan').css('cursor', 'pointer').fadeIn();
+        })
+    })
 </script>

@@ -1,9 +1,9 @@
-<div class="row" >
+<div class="row">
 
     <div class="col-sm-7 textoJustificado">
         <div class="navbar-dark identificadorAulas">
 
-            <div id="dadosAula" class=dados >
+            <div id="dadosAula" class=dados>
 
             </div>
         </div>
@@ -14,37 +14,51 @@
 <div class="row justify-content-md-center" id="slide2">
     <div class="col-sm-5">
         <h5 class="corDestaque2 maiusculo font-weight-bold">
-        4. ÚLCERAS VENOSAS 
+            4. ÚLCERAS VENOSAS
 
 
 
-        </h5> 
+        </h5>
         <br> <br> <br>
-		<div class="caixas alerta borda-direita">
-     Saiba Mais sobre ITB - Índice Tornozelo Braquial no final da aula.
+        <div class="caixas alerta borda-direita animate__animated animate__backInLeft">
+            Saiba Mais sobre ITB - Índice Tornozelo Braquial no final da aula.
 
         </div> <br>
         <span class="paragrafo">
-        A úlcera venosa é definida como uma lesão aberta entre o joelho e a articulação do tornozelo que ocorre na presença de doença venosa (Quadro 2).  O tempo de cicatrização maior do que duas semanas sugere cronicidade da úlcera. 
+            A úlcera venosa é definida como uma lesão aberta entre o joelho e a articulação do tornozelo que ocorre na
+            presença de doença venosa (Quadro 2). O tempo de cicatrização maior do que duas semanas sugere cronicidade
+            da úlcera.
 
-  </span>
-        
+        </span>
+
 
 
     </div>
 
 
-    <div class="col-sm-5">
+    <!-- <div class="col-sm-5">
        <img class="img-fluid" src="img/imgslide4.png" />
 
 
+    </div> -->
+
+    <div class="col-sm-5 center animate__animated animate__backInRight"
+        style="display: flex;align-items: center;justify-content: space-evenly;">
+        <img class=" img-fluid" src="img/imgslide4.png" style="width: 60%;">
+        <img class="botao" src="img/lupa.png" style="max-width: 40px;">
     </div>
 
 
-
 </div>
+<div class="jan">
+    <img src="img/imgslide8.png" style="height: 100%; background-color: white; padding: 20px;" />
+</div>
+
 <script>
-
-    $('.img-fluid').zoomify();
-
+    $(() => {
+        $('.jan').hide().click(() => { $('.jan').fadeOut() });
+        $('.botao').css('cursor', 'pointer').click(() => {
+            $('.jan').css('cursor', 'pointer').fadeIn();
+        })
+    })
 </script>

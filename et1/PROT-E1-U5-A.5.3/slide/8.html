@@ -1,9 +1,9 @@
-<div class="row" >
+<div class="row">
 
     <div class="col-sm-7 textoJustificado">
         <div class="navbar-dark identificadorAulas">
 
-            <div id="dadosAula" class=dados >
+            <div id="dadosAula" class=dados>
 
             </div>
         </div>
@@ -14,26 +14,30 @@
 <div class="row justify-content-md-center" id="slide2">
     <div class="col-sm-10">
         <h5 class="corDestaque2 maiusculo font-weight-bold">
-       4. ÚLCERAS VENOSAS 
+            4. ÚLCERAS VENOSAS
 
-        </h5> 
+        </h5>
         <br>
     </div>
-    
+
 
     <div class="col-sm-5">
-       <span class=paragrafo >
-      A escolha e a adequação do sistema de compressão são essenciais para o tratamento da úlcera venosa e adesão do usuário à proposta terapêutica.  A escolha do produto deve considerar: o nível de exsudato da ferida; a frequência prevista de troca do curativo; a destreza e a habilidade do profissional, usuário ou cuidador para realizar a troca das bandagens de compressão e as experiências anteriores do usuário com terapias compressivas e sua concordância com a proposta terapêutica. 
+        <span class=paragrafo>
+            A escolha e a adequação do sistema de compressão são essenciais para o tratamento da úlcera venosa e adesão
+            do usuário à proposta terapêutica. A escolha do produto deve considerar: o nível de exsudato da ferida; a
+            frequência prevista de troca do curativo; a destreza e a habilidade do profissional, usuário ou cuidador
+            para realizar a troca das bandagens de compressão e as experiências anteriores do usuário com terapias
+            compressivas e sua concordância com a proposta terapêutica.
 
         </span>
-<br><br><br>
-<div class="caixas alerta borda-direita">
-"Os exercícios e caminhadas devem ser encorajados mesmo quando em uso da terapia compressiva."
-</div>
+        <br>
+        <div class="caixas alerta borda-direita animate__animated animate__backInLeft">
+            "Os exercícios e caminhadas devem ser encorajados mesmo quando em uso da terapia compressiva."
+        </div>
 
     </div>
-	
-	<div class="col-sm-3">
+
+    <!-- <div class="col-sm-3">
 
         <img class='lupa img-fluid' src='img/imgslide9.png' />
 		<div class=controles>
@@ -42,19 +46,27 @@
 
         <br>
 
+    </div> -->
+
+
+
+    <div class="col-sm-3 animate__animated animate__backInRight"
+        style="display: flex;align-items: center;flex-direction: row;justify-content: space-around;">
+        <img src="img/imgslide9.png" style="width: 100%;"><br>
+        <div style="display: flex;gap: 20px;flex-direction: column;justify-content: center;">
+            <img class="botao" src="img/lupa.png" style="max-width: 40px; cursor: pointer;">
+            <a href="img/imgslide9.png" download=""><img src="img/down-arq.png" style="width: 130%;"></a>
+        </div>
     </div>
-
-
-
-
-
-
-
-
-
+</div>
+<div class="jan">
+    <img src="img/imgslide9.png" style="height: 100%; background-color: white; padding: 20px;" />
 </div>
 <script>
-
-    $('.img-fluid').zoomify();
-
+    $(() => {
+        $('.jan').hide().click(() => { $('.jan').fadeOut() });
+        $('.botao').css('cursor', 'pointer').click(() => {
+            $('.jan').css('cursor', 'pointer').fadeIn();
+        })
+    })
 </script>
