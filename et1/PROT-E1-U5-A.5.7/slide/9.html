@@ -1,9 +1,9 @@
-<div class="row" >
+<div class="row">
 
     <div class="col-sm-7 textoJustificado">
         <div class="navbar-dark identificadorAulas">
 
-            <div id="dadosAula" class=dados >
+            <div id="dadosAula" class=dados>
 
             </div>
         </div>
@@ -13,22 +13,24 @@
 </div>
 <div class="row justify-content-md-center" id="slide2">
     <div class="col-sm-10">
-        <h5 class="corDestaque2 maiusculo font-weight-bold">
-            6. INTERVENÇÕES PARA A PREVENÇÃO DAS ÚLCERAS NEUROPÁTICAS
-
-
-
-        </h5> 
-
-
+        <h5 class="corDestaque2 maiusculo font-weight-bold">6. INTERVENÇÕES PARA A PREVENÇÃO DAS ÚLCERAS NEUROPÁTICAS
+        </h5>
         <br>
-        <img class="img-fluid" src="img/imgslide10.png" />
+        <!-- <img class="img-fluid" src="img/imgslide10.png" /> -->
+        <div class="col-sm-12 center animate__animated animate__backInRight" style="display: flex;align-items: center;">
+            <img class=" img-fluid" src="img/imgslide10.png" style="width: 90%;"><br>
+            <img class="botao" src="img/lupa.png" style="max-width: 40px; cursor: pointer;">
+        </div>
     </div>
-
-
+</div>
+<div class="jan">
+    <img src="img/imgslide10.png" style="width: 100%; background-color: white; padding: 20px;" />
 </div>
 <script>
-
-    $('.img-fluid').zoomify();
-
+    $(() => {
+        $('.jan').hide().click(() => { $('.jan').fadeOut() });
+        $('.botao').css('cursor', 'pointer').click(() => {
+            $('.jan').css('cursor', 'pointer').fadeIn();
+        })
+    })
 </script>
