@@ -1,55 +1,64 @@
-<div class="row" >
+<div class="row">
 
     <div class="col-sm-7 textoJustificado">
         <div class="navbar-dark identificadorAulas">
 
-            <div id="dadosAula" class=dados >
+            <div id="dadosAula" class=dados>
 
             </div>
         </div>
-        <br>
         <br>
     </div>
 </div>
 <div class="row justify-content-md-center" id="slide2">
     <div class="col-sm-5">
         <h5 class="corDestaque2 maiusculo font-weight-bold">
-12. PLANTAS MEDICINAIS - QUEIMADURAS
+            12. PLANTAS MEDICINAIS - QUEIMADURAS
 
 
 
 
-        </h5> 
+        </h5>
+
+
+        <span class=paragrafo>
+            Apresentamos duas plantas medicinais que possuem propriedades para hidratar e recompor a derme e a epiderme,
+            podendo ser utilizadas em queimaduras de primeiro e segundo grau. A Aloe vera L. e Symphytum officinale L.
+            dispõem de propriedades comprovadas pela pesquisa clínica para o tratamento de queimaduras. Veja como
+            acessar essas informações na Etapa 2.
+
+
+        </span>
         <br>
- 
-       <span class=paragrafo >
-Apresentamos duas plantas medicinais que possuem propriedades para hidratar e recompor a derme e a epiderme, podendo ser utilizadas em queimaduras de primeiro e segundo grau. A  Aloe vera L. e Symphytum officinale L. dispõem de propriedades comprovadas pela pesquisa clínica para o tratamento de queimaduras. Veja como acessar essas informações na Etapa 2. 
+        <div class="caixas saibamais borda-direita animate__animated animate__backInLeft">
+            Você encontrará as orientações e indicações
+            sobre o uso de plantas medicinais e fitoterápicos para o tratamento de feridas ambas na Etapa 2:
+            monografias Plantas Medicinais com Potencialidades para o Tratamento de Feridas.
 
-
-	 </span>
-<br>
-
-<br>
-<br>
-<div class="caixas saibamais borda-direita">
-Você encontrará as orientações e indicações 
-sobre o uso de plantas medicinais e fitoterápicos para o tratamento de feridas ambas na Etapa 2: monografias Plantas Medicinais com Potencialidades para o Tratamento de Feridas.
-
+        </div>
     </div>
-</div>
-<div class=col-sm-5>
+    <!-- <div class=col-sm-5>
     <img class='img-fluid' src='img/imgslide22.png' />
 	</div>
-	
+	 -->
 
 
 
-
-
-
+    <div class="col-sm-5 center animate__animated animate__backInRight"
+        style="display: flex;justify-content: space-around;align-items: center;">
+        <img class=" img-fluid" src="img/imgslide22.png" style="width: 100%;">
+        <img class="botao" src="img/lupa.png" style="max-width: 40px; cursor: pointer;">
+    </div>
 </div>
+<div class="jan">
+    <img src="img/imgslide22.png" style="height: 100%; background-color: white; padding: 20px;" />
+</div>
+
 <script>
-
-    $('.img-fluid').zoomify();
-
+    $(() => {
+        $('.jan').hide().click(() => { $('.jan').fadeOut() });
+        $('.botao').css('cursor', 'pointer').click(() => {
+            $('.jan').css('cursor', 'pointer').fadeIn();
+        })
+    })
 </script>

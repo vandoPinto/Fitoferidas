@@ -1,9 +1,9 @@
-<div class="row" >
+<div class="row">
 
     <div class="col-sm-7 textoJustificado">
         <div class="navbar-dark identificadorAulas">
 
-            <div id="dadosAula" class=dados >
+            <div id="dadosAula" class=dados>
 
             </div>
         </div>
@@ -14,38 +14,45 @@
 <div class="row justify-content-md-center" id="slide2">
     <div class="col-sm-5">
         <h5 class="corDestaque2 maiusculo font-weight-bold">
-        5. DEFINIÇÃO DE QUEIMADURAS
+            5. DEFINIÇÃO DE QUEIMADURAS
 
 
-        </h5> 
+        </h5>
         <br>
- 
-       <span class=paragrafo >
-     São denominadas como queimaduras as lesões no tecido do revestimento do corpo. Hoje são chamadas de trauma, que, de acordo com o agente, classificam-se como: trauma térmico, químico, elétrico, radioativos ou congeladora. Podem destruir total ou parcialmente a pele e seus anexos e até atingir camadas mais profundas, como músculos, tendões e ossos.
 
-	 </span>
+        <span class=paragrafo>
+            São denominadas como queimaduras as lesões no tecido do revestimento do corpo. Hoje são chamadas de trauma,
+            que, de acordo com o agente, classificam-se como: trauma térmico, químico, elétrico, radioativos ou
+            congeladora. Podem destruir total ou parcialmente a pele e seus anexos e até atingir camadas mais profundas,
+            como músculos, tendões e ossos.
+
+        </span>
 
     </div>
-	
-	<div class="col-sm-5">
+
+    <!-- <div class="col-sm-5">
 
         <img class='img-fluid' src='img/imgslide5.png' />
 
         <br>
 
+    </div> -->
+
+    <div class="col-sm-5 center animate__animated animate__backInRight"
+        style="display: flex;justify-content: space-around;align-items: center;">
+        <img class=" img-fluid" src="img/imgslide5.png" style="width: 80%;">
+        <img class="botao" src="img/lupa.png" style="max-width: 40px; cursor: pointer;">
     </div>
-
-
-
-
-
-
-
-
-
 </div>
+<div class="jan">
+    <img src="img/imgslide5.png" style="height: 100%; background-color: white; padding: 20px;" />
+</div>
+
 <script>
-
-    $('.img-fluid').zoomify();
-
+    $(() => {
+        $('.jan').hide().click(() => { $('.jan').fadeOut() });
+        $('.botao').css('cursor', 'pointer').click(() => {
+            $('.jan').css('cursor', 'pointer').fadeIn();
+        })
+    })
 </script>

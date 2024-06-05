@@ -1,9 +1,9 @@
-<div class="row" >
+<div class="row">
 
     <div class="col-sm-7 textoJustificado">
         <div class="navbar-dark identificadorAulas">
 
-            <div id="dadosAula" class=dados >
+            <div id="dadosAula" class=dados>
 
             </div>
         </div>
@@ -14,40 +14,49 @@
 <div class="row justify-content-md-center" id="slide2">
     <div class="col-sm-5">
         <h5 class="corDestaque2 maiusculo font-weight-bold">
-8.3. QUEIMADURA DE TERCEIRO GRAU 
+            8.3. QUEIMADURA DE TERCEIRO GRAU
 
 
 
 
-        </h5> 
+        </h5>
         <br>
- 
-       <span class=paragrafo >
- Envolve epiderme, derme e tecido celular subcutâneo, podendo inclusive ser chamada de queimadura de quarto grau, acometendo também ossos, nervos, tendões, vasos, ou seja, estruturas mais nobres. Nesse caso, o mecanismo de cura é a cicatrização, o que, de modo algum, é de interesse do cirurgião plástico, já que pode fatalmente levar a sequelas não só estéticas, como funcionais ou até mesmo ao óbito.
 
-	 </span>
+        <span class=paragrafo>
+            Envolve epiderme, derme e tecido celular subcutâneo, podendo inclusive ser chamada de queimadura de quarto
+            grau, acometendo também ossos, nervos, tendões, vasos, ou seja, estruturas mais nobres. Nesse caso, o
+            mecanismo de cura é a cicatrização, o que, de modo algum, é de interesse do cirurgião plástico, já que pode
+            fatalmente levar a sequelas não só estéticas, como funcionais ou até mesmo ao óbito.
+
+        </span>
 
     </div>
-	
-	<div class="col-sm-5">
+
+    <!-- <div class="col-sm-5">
 
         <img class='img-fluid' src='img/imgslide13.png' />
 
         <br>
 
+    </div> -->
+
+
+
+    <div class="col-sm-5 center animate__animated animate__backInRight"
+        style="display: flex;justify-content: space-around;align-items: center;">
+        <img class=" img-fluid" src="img/imgslide13.png" style="width: 100%;">
+        <img class="botao" src="img/lupa.png" style="max-width: 40px; cursor: pointer;">
     </div>
-
-
-
-
-
-
-
-
-
 </div>
+<div class="jan">
+    <img src="img/imgslide13.png" style="height: 100%; background-color: white; padding: 20px;" />
+</div>
+
 <script>
-
-    $('.img-fluid').zoomify();
-
+    $(() => {
+        $('.jan').hide().click(() => { $('.jan').fadeOut() });
+        $('.botao').css('cursor', 'pointer').click(() => {
+            $('.jan').css('cursor', 'pointer').fadeIn();
+        })
+    })
 </script>

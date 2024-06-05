@@ -1,9 +1,9 @@
-<div class="row" >
+<div class="row">
 
     <div class="col-sm-7 textoJustificado">
         <div class="navbar-dark identificadorAulas">
 
-            <div id="dadosAula" class=dados >
+            <div id="dadosAula" class=dados>
 
             </div>
         </div>
@@ -14,38 +14,47 @@
 <div class="row justify-content-md-center" id="slide2">
     <div class="col-sm-5">
         <h5 class="corDestaque2 maiusculo font-weight-bold">
-8.1. QUEIMADURA  DE PRIMEIRO GRAU 
+            8.1. QUEIMADURA DE PRIMEIRO GRAU
 
 
-        </h5> 
+        </h5>
         <br>
- 
-       <span class=paragrafo >
- Acomete apenas a epiderme e seu mecanismo de cura é a regeneração (<i>ad integro</i>). É bastante dolorosa, sendo conhecida também como radiodermite actímica. A mais comum de todas é a queimadura solar. Com o tempo médio de cura em torno de sete dias, em geral, ocorre ainda, lentamente, uma descamação grande da pele, mas, nesses casos, praticamente de uma só vez. 
 
-	 </span>
+        <span class=paragrafo>
+            Acomete apenas a epiderme e seu mecanismo de cura é a regeneração (<i>ad integro</i>). É bastante dolorosa,
+            sendo conhecida também como radiodermite actímica. A mais comum de todas é a queimadura solar. Com o tempo
+            médio de cura em torno de sete dias, em geral, ocorre ainda, lentamente, uma descamação grande da pele, mas,
+            nesses casos, praticamente de uma só vez.
+
+        </span>
 
     </div>
-	
-	<div class="col-sm-5">
+
+    <!-- <div class="col-sm-5">
 
         <img class='img-fluid' src='img/imgslide11.png' />
 
         <br>
 
+    </div> -->
+
+
+
+    <div class="col-sm-5 center animate__animated animate__backInRight"
+        style="display: flex;justify-content: space-around;align-items: center;">
+        <img class=" img-fluid" src="img/imgslide11.png" style="width: 100%;">
+        <img class="botao" src="img/lupa.png" style="max-width: 40px; cursor: pointer;">
     </div>
-
-
-
-
-
-
-
-
-
 </div>
+<div class="jan">
+    <img src="img/imgslide11.png" style="height: 100%; background-color: white; padding: 20px;" />
+</div>
+
 <script>
-
-    $('.img-fluid').zoomify();
-
+    $(() => {
+        $('.jan').hide().click(() => { $('.jan').fadeOut() });
+        $('.botao').css('cursor', 'pointer').click(() => {
+            $('.jan').css('cursor', 'pointer').fadeIn();
+        })
+    })
 </script>
