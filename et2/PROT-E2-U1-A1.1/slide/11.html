@@ -1,9 +1,9 @@
-<div class="row" >
+<div class="row">
 
     <div class="col-sm-7 textoJustificado">
         <div class="navbar-dark identificadorAulas">
 
-            <div id="dadosAula" class=dados >
+            <div id="dadosAula" class=dados>
 
             </div>
         </div>
@@ -14,40 +14,53 @@
 <div class="row justify-content-md-center" id="slide2">
     <div class="col-sm-10">
         <h5 class="corDestaque2 maiusculo font-weight-bold">
-5. REGULAMENTAÇÕES TÉCNICAS E MARCOS LEGAIS 
+            5. REGULAMENTAÇÕES TÉCNICAS E MARCOS LEGAIS
 
 
-        </h5> 
-        <br> 
-		    </div>
-			
-			
-        <div class="col-sm-5">
-     
-	 <span class="paragrafo">
-	 O Ministério da Saúde instituiu políticas públicas  que apoiam a utilização das plantas medicinais e fitoterápicos como método terapêutico, auxiliando os profissionais de saúde e gestores do Sistema Único de Saúde na implantação de programas de assistência nesta área. Descreveremos, a seguir, a Política Nacional de Práticas Integrativas e Complementares no SUS - PNPIC e a Política e o  Programa de Plantas Medicinais e Fitoterápicos -  PNPMF.
+        </h5>
+        <br>
+    </div>
 
-	 </span>
 
-</div>
+    <div class="col-sm-5">
 
-  <div class="col-sm-4">
+        <span class="paragrafo">
+            O Ministério da Saúde instituiu políticas públicas que apoiam a utilização das plantas medicinais e
+            fitoterápicos como método terapêutico, auxiliando os profissionais de saúde e gestores do Sistema Único de
+            Saúde na implantação de programas de assistência nesta área. Descreveremos, a seguir, a Política Nacional de
+            Práticas Integrativas e Complementares no SUS - PNPIC e a Política e o Programa de Plantas Medicinais e
+            Fitoterápicos - PNPMF.
+
+        </span>
+
+    </div>
+
+    <!-- <div class="col-sm-4">
     <img class="img-fluid" src="img/imgslide12.png" />
 	<div class="controles">
 	<a href="img/imgslide12.png" download><img src="img/down-arq.png" /></a>
 	</div>
-</div>
+</div> -->
 
 
-
-
+    <div class="col-sm-4 center animate__animated animate__backInRight" style="display: flex;align-items: center;">
+        <img class=" img-fluid" src="img/imgslide12.png" style="width: 100%;"><br>
+        <div class="controles"
+            style="display: flex;flex-direction: column;align-items: center;justify-content: space-around;gap: 20px;">
+            <img class="botao" src="img/lupa.png" class="lupa-img" style="max-width:40px">
+            <a href="img/imgslide12.png" download><img src="img/down-arq.png" /></a>
+        </div>
     </div>
-
-
-
 </div>
+<div class="jan">
+    <img src="img/imgslide12.png" style="height: 100%; background-color: white; padding: 20px;" />
+</div>
+
 <script>
-
-    $('.img-fluid').zoomify();
-
+    $(() => {
+        $('.jan').hide().click(() => { $('.jan').fadeOut() });
+        $('.botao').css('cursor', 'pointer').click(() => {
+            $('.jan').css('cursor', 'pointer').fadeIn();
+        })
+    })
 </script>

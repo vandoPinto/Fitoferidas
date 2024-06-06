@@ -1,9 +1,9 @@
-<div class="row" >
+<div class="row">
 
     <div class="col-sm-7 textoJustificado">
         <div class="navbar-dark identificadorAulas">
 
-            <div id="dadosAula" class=dados >
+            <div id="dadosAula" class=dados>
 
             </div>
         </div>
@@ -14,41 +14,48 @@
 <div class="row justify-content-md-center" id="slide2">
     <div class="col-sm-10">
         <h5 class="corDestaque2 maiusculo font-weight-bold">
-5. REGULAMENTAÇÕES TÉCNICAS E MARCOS LEGAIS 
+            5. REGULAMENTAÇÕES TÉCNICAS E MARCOS LEGAIS
 
 
 
 
-        </h5> 
+        </h5>
         <br>
-		</div>
-		 <div class="col-sm-5">
-		 <br>
-		 <img src="img/imgslide19a.png" />
-			<div class="caixas2  borda-direita">
-Enfatizamos a abordagem deste programa 
-na Aula 2.1  - O Programa Farmácias Vivas - Unidade 2 desta Etapa 2  do curso por servir de modelo para grande parte das ações
-e programas de plantas medicinais e fitoterápicos dos municípios brasileiros. 
+    </div>
+    <div class="col-sm-5">
+        <br>
+        <img src="img/imgslide19a.png" />
+        <div class="caixas2  borda-direita animate__animated animate__backInLeft">
+            Enfatizamos a abordagem deste programa
+            na Aula 2.1 - O Programa Farmácias Vivas - Unidade 2 desta Etapa 2 do curso por servir de modelo para grande
+            parte das ações
+            e programas de plantas medicinais e fitoterápicos dos municípios brasileiros.
 
-</div>
+        </div>
     </div>
 
- <div class="col-sm-5">
+    <!-- <div class="col-sm-5">
  <br>
 		 <img class="img-fluid" src="img/imgslide19b.png" />
 
+    </div> -->
+
+
+
+    <div class="col-sm-5 center animate__animated animate__backInRight" style="display: flex;align-items: center;">
+        <img class=" img-fluid" src="img/imgslide19b.png" style="width: 100%;">
+        <img class="botao" src="img/lupa.png" class="lupa-img" style="max-width:40px">
     </div>
-
-
-
-
-
-
-
-
 </div>
+<div class="jan">
+    <img src="img/imgslide19b.png" style="height: 100%; background-color: white; padding: 20px;" />
+</div>
+
 <script>
-
-    $('.img-fluid').zoomify();
-
+    $(() => {
+        $('.jan').hide().click(() => { $('.jan').fadeOut() });
+        $('.botao').css('cursor', 'pointer').click(() => {
+            $('.jan').css('cursor', 'pointer').fadeIn();
+        })
+    })
 </script>

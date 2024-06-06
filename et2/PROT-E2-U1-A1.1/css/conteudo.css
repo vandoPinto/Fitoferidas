@@ -12,55 +12,71 @@ CorSecundaria = #367E58;
 CorTerciaria = #367E58;
 
 */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto');
+
 h5.corDestaque2.maiusculo.font-weight-bold {
     font-size: 20pt;
 }
- .carousel-item.active{
+
+.carousel-item.active {
     display: flex !important;
     justify-content: center;
 }
-.caixas a{
-    color:white !important;
+
+.caixas a {
+    color: white !important;
 }
-#menuAulas{
+
+#menuAulas {
     background-color: #367E58 !important;
 }
 
 .divImgPrincipalCapa {
     overflow: hidden;
 }
+
 .btn-primary {
     color: #fff;
     background-color: #29622E !important;
     border-color: #367E58 !important;
 }
+
 .btn-primary:hover {
     color: #fff;
     background-color: #367E58 !important;
     border-color: #367E58 !important;
 }
-.c100 > span {
+
+.c100>span {
     color: #866607 !important;
 }
-.dadosAula{
-    color:#29622E;
+
+.dadosAula {
+    color: #29622E;
 }
-.corSecundaria,.corDestaque2{
-    color:#29622E !important;
+
+.corSecundaria,
+.corDestaque2 {
+    color: #29622E !important;
 
 }
-.textoJustificado{
+
+.textoJustificado {
     text-align: justify;
 }
-.paragrafo{
+
+.paragrafo {
 
     /*text-indent: 1.5em;*/
     margin-top: 0;
     display: block;
     text-align: justify;
 }
-.corPrimaria,.corDestaque1{
-    color:#866607 !important;
+
+.corPrimaria,
+.corDestaque1 {
+    color: #866607 !important;
 }
 
 
@@ -77,32 +93,36 @@ h5.corDestaque2.maiusculo.font-weight-bold {
     font-weight: bold !important;
     overflow: hidden;
 }
-.identificadorAulas .dados{
-    float:left;
+
+.identificadorAulas .dados {
+    float: left;
     margin-left: 10px;
     font-size: 13px !important;
-    color:white;
+    color: white;
 
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto');
-body{
+
+body {
     background-image: url('../img/fundoGeral.png');
     background-size: cover;
     background-repeat: no-repeat;
     font-size: 14pt !important;
     font-family: 'Roboto', sans-serif;
 }
-.fonte{
-    font-size:12pt !important;
+
+.fonte {
+    font-size: 12pt !important;
 }
-.imgPrincipalCapa{
+
+.imgPrincipalCapa {
     border-right: 10px solid #367E58;
     border-radius: 0px 150px 0 0;
     width: 100%;
 
 }
-.capaDireita{
+
+.capaDireita {
     position: absolute;
     right: 0;
     top: 0;
@@ -113,40 +133,46 @@ body{
     border-radius: 0px 0px 0px 180px;
     width: 90%;
 }
-.logoPrincipal{
+
+.logoPrincipal {
     width: 280px;
     margin: auto;
     display: block;
 }
-.borda-direita{
+
+.borda-direita {
     border-radius: 0 35px;
 }
+
 .borda-esquerda {
     border-radius: 35px 0;
 }
+
 .caixas {
     color: #347E58;
-    background-color:#B2F7CE;
+    background-color: #B2F7CE;
     font-weight: bold;
     padding: 15px;
     position: relative;
     max-width: 90%;
     margin: auto;
-}
-.caixas2 {
-    color: #B2F7CE;
-    background-color:#347E58;
-    font-weight: bold;
-    padding: 15px;
-    position: relative;
-    max-width: 90%;
-    margin: auto;
-}
-.caixas2 a{
-    color:white;
 }
 
-.sus::before{
+.caixas2 {
+    color: #B2F7CE;
+    background-color: #347E58;
+    font-weight: bold;
+    padding: 15px;
+    position: relative;
+    max-width: 90%;
+    margin: auto;
+}
+
+.caixas2 a {
+    color: white;
+}
+
+.sus::before {
     content: "";
     background-image: url(../img/sus.png);
     width: 70px;
@@ -159,7 +185,7 @@ body{
 }
 
 
-.oms::before{
+.oms::before {
     content: "";
     background-image: url(../img/oms.png);
     width: 70px;
@@ -170,7 +196,8 @@ body{
     right: -31px;
 
 }
-.alerta::before{
+
+.alerta::before {
     content: "";
     background-image: url(../img/alerta.png);
     width: 70px;
@@ -181,7 +208,8 @@ body{
     right: -31px;
 
 }
-.adicao::before{
+
+.adicao::before {
     content: "";
     background-image: url(../img/adicao.png);
     width: 70px;
@@ -192,7 +220,8 @@ body{
     right: -31px;
 
 }
-.saibamais::before{
+
+.saibamais::before {
     content: "";
     background-image: url(../img/adicao.png);
     width: 70px;
@@ -203,7 +232,8 @@ body{
     right: -31px;
 
 }
-.complementar::before{
+
+.complementar::before {
     content: "";
     background-image: url(../img/complementar.png);
     width: 70px;
@@ -214,26 +244,32 @@ body{
     right: -31px;
 
 }
+
 .imagem {
     position: relative;
 }
+
 .imagem .controles {
     position: absolute;
     bottom: 0;
     right: 0;
 }
+
 .controles {
     position: absolute;
     bottom: 0;
     right: 0;
 }
+
 .imagem .controles img {
-    width: 70px;
+    width: 50px;
 }
+
 .controles img {
-    width: 70px;
+    width: 50px;
 }
-.img-thumbnail1{
+
+.img-thumbnail1 {
 
     padding: .25rem;
     background-color: #fff;
@@ -258,4 +294,45 @@ body{
 
 .paragrafo-imagem-esquerda {
     padding-left: 110px;
+}
+
+.row {
+    align-items: center;
+}
+
+.jan {
+    z-index: 30;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.timeline--inner-pin {
+    background-color: transparent;
+}
+
+.current {
+    background-color: orange;
+}
+
+#menuAulas {
+    background-color: rgb(225, 225, 225) !important;
+}
+
+.sidebar a {
+    color: black;
+}
+
+.sidebar a:hover {
+    color: #0F6D39;
+}
+
+.imgPrincipalCapa {
+    width: auto !important;
 }
