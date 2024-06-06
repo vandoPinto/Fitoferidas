@@ -1,10 +1,7 @@
-<div class="row" >
-
+<div class="row">
     <div class="col-sm-7 textoJustificado">
         <div class="navbar-dark identificadorAulas">
-
-            <div id="dadosAula" class=dados >
-
+            <div id="dadosAula" class=dados>
             </div>
         </div>
         <br>
@@ -12,44 +9,42 @@
     </div>
 </div>
 <div class="row justify-content-md-center" id="slide2">
-    <div class="col-sm-10">
-        <h5 class="corDestaque2 maiusculo font-weight-bold">
-15. FARMACOECONOMIA 
-
-        </h5> 
-    
-<br>
-</div>
-
-<div class="col-sm-7">
-
-<span class="paragrafo">
-Em um trabalho realizado com as Agentes Comunitárias de Saúde no município de Limoeiro do Norte, Ceará, constatou-se que, quanto aos remédios caseiros com plantas medicinais, 90% delas acreditam que o baixo custo não interfere na eficácia desses remédios (MENDES, 2019). 
-<br><br>
-Importante ressaltar que é de responsabilidade da administração pública do município no qual a Farmácia Viva esteja sediada, prever e prover os recursos humanos, infraestrutura física, equipamentos e procedimentos operacionais necessários à operacionalização das suas atividades de preparação de plantas medicinais e fitoterápicos a serem dispensados no âmbito do SUS, não sendo permitida sua comercialização.  (BRASIL, 2013c)
-
-
-</span>
-</div>
-<div class="col-sm-3">
-
-<div class="imagem" >
+    <!-- <div class="col-sm-10">
+        <h5 class="corDestaque2 maiusculo font-weight-bold"></h5>
+        <br>
+    </div> -->
+    <div class="col-sm-7">
+        <span class="paragrafo">
+            Em um trabalho realizado com as Agentes Comunitárias de Saúde no município de Limoeiro do Norte, Ceará,
+            constatou-se que, quanto aos remédios caseiros com plantas medicinais, 90% delas acreditam que o baixo custo
+            não interfere na eficácia desses remédios (MENDES, 2019).
+            <br><br>
+            Importante ressaltar que é de responsabilidade da administração pública do município no qual a Farmácia Viva
+            esteja sediada, prever e prover os recursos humanos, infraestrutura física, equipamentos e procedimentos
+            operacionais necessários à operacionalização das suas atividades de preparação de plantas medicinais e
+            fitoterápicos a serem dispensados no âmbito do SUS, não sendo permitida sua comercialização. (BRASIL, 2013c)
+        </span>
+    </div>
+    <!-- <div class="col-sm-3">
+        <div class="imagem" >
 		<img class="img-fluid" src="img/imgslide39.png" />
 		</div>
 		    </div>
-			
-			
-        
-
- 
-
-
-
-
-
+</div> 
+  </div>-->
+    <div class="col-sm-3 center animate__animated animate__backInRight" style="display: flex;align-items: center;">
+        <img class=" img-fluid" src="img/imgslide39.png" style="width: 100%;">
+        <img class="botao" src="img/lupa.png" class="lupa-img" style="max-width:40px">
+    </div>
+</div>
+<div class="jan">
+    <img src="img/imgslide39.png" style="height: 100%; background-color: white; padding: 20px;" />
 </div>
 <script>
-
-    $('.img-fluid').zoomify();
-
+    $(() => {
+        $('.jan').hide().click(() => { $('.jan').fadeOut() });
+        $('.botao').css('cursor', 'pointer').click(() => {
+            $('.jan').css('cursor', 'pointer').fadeIn();
+        })
+    })
 </script>

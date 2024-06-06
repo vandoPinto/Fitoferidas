@@ -1,9 +1,9 @@
-<div class="row" >
+<div class="row">
 
     <div class="col-sm-7 textoJustificado">
         <div class="navbar-dark identificadorAulas">
 
-            <div id="dadosAula" class=dados >
+            <div id="dadosAula" class=dados>
 
             </div>
         </div>
@@ -14,42 +14,52 @@
 <div class="row justify-content-md-center" id="slide2">
     <div class="col-sm-10">
         <h5 class="corDestaque2 maiusculo font-weight-bold">
-13.2. A FARMÁCIA VIVA III - PRODUTORA E DISPENSADORA 
+            13.2. A FARMÁCIA VIVA III - PRODUTORA E DISPENSADORA
 
-        </h5> 
-		</div>
-		 <div class="col-sm-5">
-        <br> 
-		<span class=paragrafo >
-<ul>
-<li>Exige-se menor esforço da Farmácia Viva (municipal) em monitorar o correto armazenamento e os estoques, pois os mesmos encontram-se na própria unidade, o que facilita a gestão e programação;
-</li><li>A proximidade do horto medicinal amplia a didática a ser utilizada para a educação popular (interativa e lúdica) pela possibilidade do contato direto com as plantas medicinais em seus canteiros, favorecendo principalmente a educação agronômica;
-</li><li>Pode ter como limitação a distância do usuário do serviço à unidade de Farmácia Viva.
-</li>
-</ul>
+        </h5>
+    </div>
+    <div class="col-sm-5">
+        <br>
+        <span class=paragrafo>
+            <ul>
+                <li>Exige-se menor esforço da Farmácia Viva (municipal) em monitorar o correto armazenamento e os
+                    estoques, pois os mesmos encontram-se na própria unidade, o que facilita a gestão e programação;
+                </li>
+                <li>A proximidade do horto medicinal amplia a didática a ser utilizada para a educação popular
+                    (interativa e lúdica) pela possibilidade do contato direto com as plantas medicinais em seus
+                    canteiros, favorecendo principalmente a educação agronômica;
+                </li>
+                <li>Pode ter como limitação a distância do usuário do serviço à unidade de Farmácia Viva.
+                </li>
+            </ul>
 
-</span>
+        </span>
 
-		    </div>
-		 <div class="col-sm-5">
+    </div>
+    <!-- <div class="col-sm-5">
         <br> 
 		<div class="imagem">
 		<img src="img/imgslide27.png" />
 		</div>
 
-		    </div>
-			
-        
-
- 
+		    </div> -->
 
 
 
 
-
+    <div class="col-sm-5 center animate__animated animate__backInRight" style="display: flex;align-items: center;">
+        <img class=" img-fluid" src="img/imgslide27.png" style="width: 100%;">
+        <img class="botao" src="img/lupa.png" class="lupa-img" style="max-width:40px">
+    </div>
+</div>
+<div class="jan">
+    <img src="img/imgslide27.png" style="height: 100%; background-color: white; padding: 20px;" />
 </div>
 <script>
-
-    $('.img-fluid').zoomify();
-
+    $(() => {
+        $('.jan').hide().click(() => { $('.jan').fadeOut() });
+        $('.botao').css('cursor', 'pointer').click(() => {
+            $('.jan').css('cursor', 'pointer').fadeIn();
+        })
+    })
 </script>

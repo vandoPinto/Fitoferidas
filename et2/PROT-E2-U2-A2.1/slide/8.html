@@ -25,14 +25,27 @@
         <br />
         <br />
     </div>
-    <div class="col-sm-5">
+    <!-- <div class="col-sm-5">
         <div class="imagem">
             <img class=img-fluid src="img/imgslide9.png" />
         </div>
         <br />
         <br />
+    </div> -->
+
+    <div class="col-sm-5 center animate__animated animate__backInRight" style="display: flex;align-items: center;">
+        <img class=" img-fluid" src="img/imgslide9.png" style="width: 100%;">
+        <img class="botao" src="img/lupa.png" class="lupa-img" style="max-width:40px">
     </div>
 </div>
+<div class="jan">
+    <img src="img/imgslide9.png" style="height: 100%; background-color: white; padding: 20px;" />
+</div>
 <script>
-    $('.img-fluid').zoomify();
+    $(() => {
+        $('.jan').hide().click(() => { $('.jan').fadeOut() });
+        $('.botao').css('cursor', 'pointer').click(() => {
+            $('.jan').css('cursor', 'pointer').fadeIn();
+        })
+    })
 </script>
