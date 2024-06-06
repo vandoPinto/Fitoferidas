@@ -1,9 +1,9 @@
-<div class="row" >
+<div class="row">
 
     <div class="col-sm-7 textoJustificado">
         <div class="navbar-dark identificadorAulas">
 
-            <div id="dadosAula" class=dados >
+            <div id="dadosAula" class=dados>
 
             </div>
         </div>
@@ -14,38 +14,51 @@
 <div class="row justify-content-md-center" id="slide2">
     <div class="col-sm-10">
         <h5 class="corDestaque2 maiusculo font-weight-bold">
-5. METABÓLITOS SECUNDÁRIOS COM POTENCIAL 
-USO NO TRATAMENTO DE  FERIDAS
+            5. METABÓLITOS SECUNDÁRIOS COM POTENCIAL
+            USO NO TRATAMENTO DE FERIDAS
 
-        </h5> 
-        <br> 
-		    </div>
-			
-			
-       
-       <div class="col-sm-5">
-     
-	 <span class="paragrafo">
-Metabólitos secundários nas plantas podem ser divididos em três grupos distintos quimicamente: terpenos, compostos fenólicos e componentes contendo nitrogênio. Como a fitoquímica constitui um elemento fundamental na validação científica de plantas medicinais e fitoterápicos, é imprescindível que profissionais das áreas da saúde compreendam a relação das estruturas químicas com atividades farmacológicas, bem como as propriedades gerais, como solubilidade e sua influência na escolha da forma farmacêutica, a exemplo de pomadas, cápsulas, tinturas, entre outros. 
+        </h5>
+        <br>
+    </div>
 
-	 </span>
 
-</div>
 
- <div class="col-sm-5">
+    <div class="col-sm-5">
+
+        <span class="paragrafo">
+            Metabólitos secundários nas plantas podem ser divididos em três grupos distintos quimicamente: terpenos,
+            compostos fenólicos e componentes contendo nitrogênio. Como a fitoquímica constitui um elemento fundamental
+            na validação científica de plantas medicinais e fitoterápicos, é imprescindível que profissionais das áreas
+            da saúde compreendam a relação das estruturas químicas com atividades farmacológicas, bem como as
+            propriedades gerais, como solubilidade e sua influência na escolha da forma farmacêutica, a exemplo de
+            pomadas, cápsulas, tinturas, entre outros.
+
+        </span>
+
+    </div>
+
+    <!-- <div class="col-sm-5">
      <img  class="img-fluid" src="img/imgslide12.png" /><br>
 
 
+</div> -->
+
+
+    <div class="col-sm-5 center animate__animated animate__backInRight"
+        style="display: flex;justify-content: center;align-items: center;">
+        <img class=" img-fluid" src="img/imgslide12.png" style="width: 100%;">
+        <img class="botao" src="img/lupa.png" style="max-width: 40px; cursor: pointer;">
+    </div>
+</div>
+<div class="jan">
+    <img src="img/imgslide12.png" style="height: 100%; background-color: white; padding: 20px;" />
 </div>
 
-
-    
-
-
-
-</div>
 <script>
-
-    $('.img-fluid').zoomify();
-
+    $(() => {
+        $('.jan').hide().click(() => { $('.jan').fadeOut() });
+        $('.botao').css('cursor', 'pointer').click(() => {
+            $('.jan').css('cursor', 'pointer').fadeIn();
+        })
+    })
 </script>

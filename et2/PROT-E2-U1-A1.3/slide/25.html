@@ -1,9 +1,9 @@
-<div class="row" >
+<div class="row">
 
     <div class="col-sm-7 textoJustificado">
         <div class="navbar-dark identificadorAulas">
 
-            <div id="dadosAula" class=dados >
+            <div id="dadosAula" class=dados>
 
             </div>
         </div>
@@ -14,42 +14,56 @@
 <div class="row justify-content-md-center" id="slide2">
     <div class="col-sm-10">
         <h5 class="corDestaque2 maiusculo font-weight-bold">
-7.2. COMPOSTOS FENÓLICOS - TANINOS
+            7.2. COMPOSTOS FENÓLICOS - TANINOS
 
-        </h5> 
-        <br> 
-		    </div>
-			
-			
-        
-
- 
-
-<div class="col-sm-5">
-     
-	 <span class="paragrafo">
-Taninos são substâncias complexas, polifenóis de origem vegetal, com pesos moleculares geralmente entre 500 e 3000, os quais possuem a propriedade de se combinarem e precipitarem proteínas de pele de animal, evitando sua putrefação e, consequentemente, transformando-as em couro. 
-<br><br>
-Dessa forma, a palavra tanino é largamente usada, particularmente em literatura botânica, originalmente derivada do termo “tanante”, o que acaba por provocar o material vegetal a produzir couro a partir de peles.
+        </h5>
+        <br>
+    </div>
 
 
-	 </span>
 
-</div>
 
- <div class="col-sm-5">
+
+
+    <div class="col-sm-5">
+
+        <span class="paragrafo">
+            Taninos são substâncias complexas, polifenóis de origem vegetal, com pesos moleculares geralmente entre 500
+            e 3000, os quais possuem a propriedade de se combinarem e precipitarem proteínas de pele de animal, evitando
+            sua putrefação e, consequentemente, transformando-as em couro.
+            <br><br>
+            Dessa forma, a palavra tanino é largamente usada, particularmente em literatura botânica, originalmente
+            derivada do termo “tanante”, o que acaba por provocar o material vegetal a produzir couro a partir de peles.
+
+
+        </span>
+
+    </div>
+
+    <!-- <div class="col-sm-5">
    <div class="imagem">
 	<img class="img-fluid" src="img/imgslide26.png" />
 	
 	</div>
+</div> -->
+
+
+
+    <div class="col-sm-5 center animate__animated animate__backInRight"
+        style="display: flex;justify-content: center;align-items: center;">
+        <img class=" img-fluid" src="img/imgslide26.png" style="width: 100%;">
+        <img class="botao" src="img/lupa.png" style="max-width: 40px; cursor: pointer;">
+    </div>
+</div>
+<div class="jan">
+    <img src="img/imgslide26.png" style="height: 100%; background-color: white; padding: 20px;" />
 </div>
 
-
-
-
-</div>
 <script>
-
-    $('.img-fluid').zoomify();
-
+    $(() => {
+        $('.jan').hide().click(() => { $('.jan').fadeOut() });
+        $('.botao').css('cursor', 'pointer').click(() => {
+            $('.jan').css('cursor', 'pointer').fadeIn();
+        })
+    })
 </script>

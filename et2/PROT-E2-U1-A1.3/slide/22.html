@@ -1,9 +1,9 @@
-<div class="row" >
+<div class="row">
 
     <div class="col-sm-7 textoJustificado">
         <div class="navbar-dark identificadorAulas">
 
-            <div id="dadosAula" class=dados >
+            <div id="dadosAula" class=dados>
 
             </div>
         </div>
@@ -14,41 +14,53 @@
 <div class="row justify-content-md-center" id="slide2">
     <div class="col-sm-10">
         <h5 class="corDestaque2 maiusculo font-weight-bold">
-6. METABÓLITOS SECUNDÁRIOS - TERPENOS
+            6. METABÓLITOS SECUNDÁRIOS - TERPENOS
 
-        </h5> 
-        <br> 
-		
-		    </div>
-			
-			
-      
-
-  <div class="col-sm-5">
-  <span class="paragrafo">
-  Recentes pesquisas têm sido dedicadas aos triterpenos e, para uma maior compreensão, citamos o exemplo da planta Centella asiatica L., mencionada em nosso curso como coadjuvante no tratamento de feridas. 	
-<br><br>
-Os ácidos madasiático (VII) e asiático (VIII) são componentes de extratos triterpênicos padronizados de Centella asiatica L. (sinonímia Hydrocotyle asiatica L.). Atuam como reguladores do tecido conjuntivo e ativantes dos fibroblastos, equilibrando, assim, quando alterada, a produção das fibras colágenas, sobretudo no nível da derme e das paredes venosas. Possuem também efeito antibacteriano, anti-inflamatório e cicatrizante. 
-</span>
-  
-
-</div>
-
-<div class="col-sm-5">
-  <div class="imagem">
-    <img class="img-fluid" src="img/imgslide23.png" />
-
-	</div>
-</div>
-
+        </h5>
+        <br>
 
     </div>
 
 
 
+
+    <div class="col-sm-5">
+        <span class="paragrafo">
+            Recentes pesquisas têm sido dedicadas aos triterpenos e, para uma maior compreensão, citamos o exemplo da
+            planta Centella asiatica L., mencionada em nosso curso como coadjuvante no tratamento de feridas.
+            <br><br>
+            Os ácidos madasiático (VII) e asiático (VIII) são componentes de extratos triterpênicos padronizados de
+            Centella asiatica L. (sinonímia Hydrocotyle asiatica L.). Atuam como reguladores do tecido conjuntivo e
+            ativantes dos fibroblastos, equilibrando, assim, quando alterada, a produção das fibras colágenas, sobretudo
+            no nível da derme e das paredes venosas. Possuem também efeito antibacteriano, anti-inflamatório e
+            cicatrizante.
+        </span>
+
+
+    </div>
+
+    <!-- <div class="col-sm-5">
+  <div class="imagem">
+    <img class="img-fluid" src="img/imgslide23.png" />
+
+	</div>
+</div> -->
+
+    <div class="col-sm-5 center animate__animated animate__backInRight"
+        style="display: flex;justify-content: center;align-items: center;">
+        <img class=" img-fluid" src="img/imgslide23.png" style="width: 100%;">
+        <img class="botao" src="img/lupa.png" style="max-width: 40px; cursor: pointer;">
+    </div>
 </div>
+<div class="jan">
+    <img src="img/imgslide23.png" style="height: 100%; background-color: white; padding: 20px;" />
+</div>
+
 <script>
-
-    $('.img-fluid').zoomify();
-
+    $(() => {
+        $('.jan').hide().click(() => { $('.jan').fadeOut() });
+        $('.botao').css('cursor', 'pointer').click(() => {
+            $('.jan').css('cursor', 'pointer').fadeIn();
+        })
+    })
 </script>

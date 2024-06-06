@@ -1,9 +1,9 @@
-<div class="row" >
+<div class="row">
 
     <div class="col-sm-7 textoJustificado">
         <div class="navbar-dark identificadorAulas">
 
-            <div id="dadosAula" class=dados >
+            <div id="dadosAula" class=dados>
 
             </div>
         </div>
@@ -12,36 +12,52 @@
     </div>
 </div>
 <div class="row justify-content-md-center" id="slide2">
-    <div class="col-sm-8">
+    <div class="col-sm-10">
         <h5 class="corDestaque2 maiusculo font-weight-bold">
-4.1 E-BOOK SOBRE METABÓLITOS SECUNDÁRIOS
+            4.1 E-BOOK SOBRE METABÓLITOS SECUNDÁRIOS
 
 
 
-        </h5> 
+        </h5>
         <br>
-		</div>
-		<div class="col-sm-5" >
-		<span class=paragrafo >
-		Ao lado você encontrará material de estudo fundamental para nosso percurso nesta aula e para a melhor compreensão das aulas seguintes e nesta Etapa, como um todo.
-<br><br>
-Aproveite!
-	</span>
-	</div>
-	
-	<div class="col-sm-3" >
-		<div class=imagem >
-<img class="img-fluid" src="img/imgslide5.png" />
-<div class="controles">
-<a href="img/imgslide5.png" download ><img src="img/down-arq.png" /></a>
+    </div>
+    <div class="col-sm-5">
+        <span class=paragrafo>
+            Ao lado você encontrará material de estudo fundamental para nosso percurso nesta aula e para a melhor
+            compreensão das aulas seguintes e nesta Etapa, como um todo.
+            <br><br>
+            Aproveite!
+        </span>
+    </div>
+
+    <!-- <div class="col-sm-3">
+        <div class=imagem>
+            <img class="img-fluid" src="img/imgslide5.png" />
+            <div class="controles">
+                <a href="img/imgslide5.png" download><img src="img/down-arq.png" /></a>
+            </div>
+
+        </div>
+    </div> -->
+    <div class="col-sm-5 center animate__animated animate__backInRight"
+        style="display: flex;justify-content: center;align-items: center;">
+        <img class=" img-fluid" src="img/imgslide5.png" style="width: 60%;"><br>
+        <div class="controles"
+            style="display: flex;flex-direction: column;align-items: center;justify-content: space-around;gap: 20px;">
+            <img class="botao" src="img/lupa.png" style="max-width: 40px; cursor: pointer;">
+            <a href="img/imgslide5.png" download=""><img src="img/down-arq.png"></a>
+        </div>
+    </div>
+</div>
+<div class="jan">
+    <img src="img/imgslide5.png" style="height: 100%; background-color: white; padding: 20px;" />
 </div>
 
-</div>
-	</div>
-
-       </div>
 <script>
-
-    $('.img-fluid').zoomify();
-
+    $(() => {
+        $('.jan').hide().click(() => { $('.jan').fadeOut() });
+        $('.botao').css('cursor', 'pointer').click(() => {
+            $('.jan').css('cursor', 'pointer').fadeIn();
+        })
+    })
 </script>

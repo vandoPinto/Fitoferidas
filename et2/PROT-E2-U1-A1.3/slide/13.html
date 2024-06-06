@@ -1,9 +1,9 @@
-<div class="row" >
+<div class="row">
 
     <div class="col-sm-7 textoJustificado">
         <div class="navbar-dark identificadorAulas">
 
-            <div id="dadosAula" class=dados >
+            <div id="dadosAula" class=dados>
 
             </div>
         </div>
@@ -14,41 +14,51 @@
 <div class="row justify-content-md-center" id="slide2">
     <div class="col-sm-10">
         <h5 class="corDestaque2 maiusculo font-weight-bold">
-6. METABÓLITOS SECUNDÁRIOS - TERPENOS
+            6. METABÓLITOS SECUNDÁRIOS - TERPENOS
 
 
-        </h5> 
-        <br> 
-		    </div>
-			
-			
-       
-       <div class="col-sm-7">
-     
-	 <span class="paragrafo">
-Os terpenos (terpenóides) formam a classe estruturalmente mais variada de produtos vegetais naturais, constituindo-se na maior classe de metabólitos secundários, com mais de 22 mil compostos identificados. 
-<br><br>
-Pensava-se, antigamente que o precursor dos terpenos era o isopreno (I), mas pesquisas sobre a rota biossintética desses compostos demonstraram que são formados a partir da justaposição sucessiva de pirofosfato de isopentenila (IPP-C5), (II), sendo que este último dá origem a todos os terpenos: monoterpenos (C10), sesquiterpenos (C15), diterpenos (C20), triterpenos (C30) e os tetraterpenos (C40). Dessa forma, os terpenos podem ser compreendidos como um grupo de moléculas cuja estrutura está baseada em um número definido de unidades isoprênicas (metil-buta-1,3-dieno, com 5 átomos de carbono), C5H8.
+        </h5>
+        <br>
+    </div>
 
-	 </span>
 
-</div>
 
- <div class="col-sm-3">
+    <div class="col-sm-7">
+
+        <span class="paragrafo">
+            Os terpenos (terpenóides) formam a classe estruturalmente mais variada de produtos vegetais naturais,
+            constituindo-se na maior classe de metabólitos secundários, com mais de 22 mil compostos identificados.
+            <br><br>
+            Pensava-se, antigamente que o precursor dos terpenos era o isopreno (I), mas pesquisas sobre a rota
+            biossintética desses compostos demonstraram que são formados a partir da justaposição sucessiva de
+            pirofosfato de isopentenila (IPP-C5), (II), sendo que este último dá origem a todos os terpenos:
+            monoterpenos (C10), sesquiterpenos (C15), diterpenos (C20), triterpenos (C30) e os tetraterpenos (C40).
+            Dessa forma, os terpenos podem ser compreendidos como um grupo de moléculas cuja estrutura está baseada em
+            um número definido de unidades isoprênicas (metil-buta-1,3-dieno, com 5 átomos de carbono), C5H8.
+
+        </span>
+
+    </div>
+
+    <!-- <div class="col-sm-3">
      <img  class="img-fluid" src="img/imgslide14.png" /><br>
-	
+</div> -->
 
-
+    <div class="col-sm-3 center animate__animated animate__backInRight"
+        style="display: flex;justify-content: center;align-items: center;">
+        <img class=" img-fluid" src="img/imgslide14.png" style="width: 100%;">
+        <img class="botao" src="img/lupa.png" style="max-width: 40px; cursor: pointer;">
+    </div>
+</div>
+<div class="jan">
+    <img src="img/imgslide14.png" style="height: 100%; background-color: white; padding: 20px;" />
 </div>
 
-
-    
-
-
-
-</div>
 <script>
-
-    $('.img-fluid').zoomify();
-
+    $(() => {
+        $('.jan').hide().click(() => { $('.jan').fadeOut() });
+        $('.botao').css('cursor', 'pointer').click(() => {
+            $('.jan').css('cursor', 'pointer').fadeIn();
+        })
+    })
 </script>

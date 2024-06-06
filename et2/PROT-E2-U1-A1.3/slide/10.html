@@ -1,9 +1,9 @@
-<div class="row" >
+<div class="row">
 
     <div class="col-sm-7 textoJustificado">
         <div class="navbar-dark identificadorAulas">
 
-            <div id="dadosAula" class=dados >
+            <div id="dadosAula" class=dados>
 
             </div>
         </div>
@@ -14,28 +14,42 @@
 <div class="row justify-content-md-center" id="slide2">
     <div class="col-sm-10">
         <h5 class="corDestaque2 maiusculo font-weight-bold">
-4. METABÓLITOS SECUNDÁRIOS
+            4. METABÓLITOS SECUNDÁRIOS
 
 
-        </h5> 
-        <br> 
-       </div>
-<div class="col-sm-5">
-<span class="paragrafo">
-Logo, para o desenvolvimento de um produto fitoterápico, são necessários estudos prévios relativos a aspectos botânicos, agronômicos, químicos, farmacológicos, toxicológicos e de desenvolvimento de metodologias analíticas e tecnológicas. Consequentemente, estudos fitoquímicos, especialmente aqueles envolvendo atividade biológica, são de expressiva importância no processo de desenvolvimento de um produto fitoterápico.
-	
+        </h5>
+        <br>
+    </div>
+    <div class="col-sm-5">
+        <span class="paragrafo">
+            Logo, para o desenvolvimento de um produto fitoterápico, são necessários estudos prévios relativos a
+            aspectos botânicos, agronômicos, químicos, farmacológicos, toxicológicos e de desenvolvimento de
+            metodologias analíticas e tecnológicas. Consequentemente, estudos fitoquímicos, especialmente aqueles
+            envolvendo atividade biológica, são de expressiva importância no processo de desenvolvimento de um produto
+            fitoterápico.
 
-</span>
+
+        </span>
+    </div>
+    <!-- <div class="col-sm-5">
+        <img class="img-fluid" src="img/imgslide10.png" />
+    </div> -->
+
+    <div class="col-sm-5 center animate__animated animate__backInRight"
+        style="display: flex;justify-content: center;align-items: center;">
+        <img class=" img-fluid" src="img/imgslide10.png" style="width: 100%;">
+        <img class="botao" src="img/lupa.png" style="max-width: 40px; cursor: pointer;">
+    </div>
 </div>
-<div class="col-sm-5">
-<img  class="img-fluid"  src="img/imgslide10.png" />
+<div class="jan">
+    <img src="img/imgslide10.png" style="height: 100%; background-color: white; padding: 20px;" />
 </div>
 
-
-
-</div>
 <script>
-
-    $('.img-fluid').zoomify();
-
+    $(() => {
+        $('.jan').hide().click(() => { $('.jan').fadeOut() });
+        $('.botao').css('cursor', 'pointer').click(() => {
+            $('.jan').css('cursor', 'pointer').fadeIn();
+        })
+    })
 </script>
