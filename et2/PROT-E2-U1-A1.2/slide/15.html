@@ -1,9 +1,9 @@
-<div class="row" >
+<div class="row">
 
     <div class="col-sm-7 textoJustificado">
         <div class="navbar-dark identificadorAulas">
 
-            <div id="dadosAula" class=dados >
+            <div id="dadosAula" class=dados>
 
             </div>
         </div>
@@ -14,38 +14,36 @@
 <div class="row justify-content-md-center" id="slide2">
     <div class="col-sm-10">
         <h5 class="corDestaque2 maiusculo font-weight-bold">
-7. IDENTIFICAÇÃO BOTÂNICA DAS PLANTAS MEDICINAIS 
+            7. IDENTIFICAÇÃO BOTÂNICA DAS PLANTAS MEDICINAIS
 
 
-        </h5> 
-        <br> 
-		    </div>
-			
-			
-        
-
-  <div class="col-sm-6">
-    <img class="img-fluid" src="img/imgslide21.png" />
-	
-</div>
-
-<div class="col-sm-4">
-     
-	 <span class="paragrafo">
-O Brasil possui a maior flora do mundo, concentrada principalmente nos biomas Amazônico e na Mata Atlântica, onde existem cerca de 120 mil espécies de plantas superiores. Até meados do século XIX muitas plantas medicinais foram essenciais ao arsenal farmacêutico brasileiro (CARVALHO, 2004). 
-
-	 </span>
-
-</div>
-
-
+        </h5>
+        <br>
     </div>
-
-
-
+    <!-- <div class="col-sm-6">
+        <img class="img-fluid" src="img/imgslide21.png" />
+    </div> -->
+    <div class="col-sm-6 center animate__animated animate__backInLeft"
+        style="display: flex;align-items: center; flex-direction: column;">
+        <img class=" img-fluid" src="img/imgslide21.png" style="width: 100%;">
+        <img class="botao" src="img/lupa.png" class="lupa-img" style="max-width:40px">
+    </div>
+    <div class="col-sm-4">
+        <span class="paragrafo">
+            O Brasil possui a maior flora do mundo, concentrada principalmente nos biomas Amazônico e na Mata Atlântica,
+            onde existem cerca de 120 mil espécies de plantas superiores. Até meados do século XIX muitas plantas
+            medicinais foram essenciais ao arsenal farmacêutico brasileiro (CARVALHO, 2004).
+        </span>
+    </div>
+</div>
+<div class="jan">
+    <img src="img/imgslide21.png" style="height: 100%; background-color: white; padding: 20px;" />
 </div>
 <script>
-
-    $('.img-fluid').zoomify();
-
+    $(() => {
+        $('.jan').hide().click(() => { $('.jan').fadeOut() });
+        $('.botao').css('cursor', 'pointer').click(() => {
+            $('.jan').css('cursor', 'pointer').fadeIn();
+        })
+    })
 </script>

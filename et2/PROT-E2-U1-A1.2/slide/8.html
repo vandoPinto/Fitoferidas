@@ -1,9 +1,9 @@
-<div class="row" >
+<div class="row">
 
     <div class="col-sm-7 textoJustificado">
         <div class="navbar-dark identificadorAulas">
 
-            <div id="dadosAula" class=dados >
+            <div id="dadosAula" class=dados>
 
             </div>
         </div>
@@ -14,34 +14,53 @@
 <div class="row justify-content-md-center" id="slide2">
     <div class="col-sm-10">
         <h5 class="corDestaque2 maiusculo font-weight-bold">
-5. CONCEITOS BÁSICOS DE PLANTAS MEDICINAIS E FITOTERÁPICOS
+            5. CONCEITOS BÁSICOS DE PLANTAS MEDICINAIS E FITOTERÁPICOS
 
 
-        </h5> 
+        </h5>
         <br>
-       </div>
-	       <div class="col-sm-7">
-<span class="paragrafo">
-Os conceitos dos termos técnicos abordados a seguir são referências da   Agência Nacional de Vigilância Sanitária - Anvisa, através da Resolução por Decreto Colegiado, RDC nº 26/2014, que incluiu junto às legislações tais conceitos de modo a esclarecer a terminologia utilizada na área. Essa Resolução ampliou, portanto, o elenco das drogas vegetais na Farmacopeia Brasileira, em sua 5ª edição  Nacional, elaborando o Formulário Nacional da Farmacopeia Brasileira e o Memento Fitoterápicos Nacional, importantes documentos de legislação na área da fitoterapia.
+    </div>
+    <div class="col-sm-7">
+        <span class="paragrafo">
+            Os conceitos dos termos técnicos abordados a seguir são referências da Agência Nacional de Vigilância
+            Sanitária - Anvisa, através da Resolução por Decreto Colegiado, RDC nº 26/2014, que incluiu junto às
+            legislações tais conceitos de modo a esclarecer a terminologia utilizada na área. Essa Resolução ampliou,
+            portanto, o elenco das drogas vegetais na Farmacopeia Brasileira, em sua 5ª edição Nacional, elaborando o
+            Formulário Nacional da Farmacopeia Brasileira e o Memento Fitoterápicos Nacional, importantes documentos de
+            legislação na área da fitoterapia.
 
-</span>
+        </span>
     </div>
 
-<div class="col-sm-3">
-<div class=imagem >
-<img class="img-fluid"  src="img/imgslide9.png" />
-<div class="controles">
-<a href="https://www.gov.br/anvisa/pt-br/assuntos/farmacopeia/farmacopeia-brasileira" download target="_blank"><img src="img/down-arq.png" /></a>
+    <!-- <div class="col-sm-3">
+        <div class=imagem>
+            <img class="img-fluid" src="img/imgslide9.png" />
+            <div class="controles">
+                <a href="https://www.gov.br/anvisa/pt-br/assuntos/farmacopeia/farmacopeia-brasileira" download
+                    target="_blank"><img src="img/down-arq.png" /></a>
+            </div>
+
+        </div>
+    </div> -->
+
+    <div class="col-sm-3 center animate__animated animate__backInRight" style="display: flex;align-items: center;">
+        <img class=" img-fluid" src="img/imgslide9.png" style="width: 100%;"><br>
+        <div class="controles"
+            style="display: flex;flex-direction: column;align-items: center;justify-content: space-around;gap: 20px;">
+            <img class="botao" src="img/lupa.png" class="lupa-img" style="max-width:40px">
+            <a href="https://www.gov.br/anvisa/pt-br/assuntos/farmacopeia/farmacopeia-brasileira" download
+                target="_blank"><img src="img/down-arq.png" /></a>
+        </div>
+    </div>
 </div>
-
-</div>
-</div>
-
-
-
+<div class="jan">
+    <img src="img/imgslide9.png" style="height: 100%; background-color: white; padding: 20px;" />
 </div>
 <script>
-
-    $('.img-fluid').zoomify();
-
+    $(() => {
+        $('.jan').hide().click(() => { $('.jan').fadeOut() });
+        $('.botao').css('cursor', 'pointer').click(() => {
+            $('.jan').css('cursor', 'pointer').fadeIn();
+        })
+    })
 </script>

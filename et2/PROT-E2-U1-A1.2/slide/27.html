@@ -1,9 +1,9 @@
-<div class="row" >
+<div class="row">
 
     <div class="col-sm-7 textoJustificado">
         <div class="navbar-dark identificadorAulas">
 
-            <div id="dadosAula" class=dados >
+            <div id="dadosAula" class=dados>
 
             </div>
         </div>
@@ -14,30 +14,33 @@
 <div class="row justify-content-md-center" id="slide2">
     <div class="col-sm-10">
         <h5 class="corDestaque2 maiusculo font-weight-bold">
-9. SISTEMA DE CLASSIFICAÇÃO CIENTÍFICA DAS PLANTAS MEDICINAIS
+            9. SISTEMA DE CLASSIFICAÇÃO CIENTÍFICA DAS PLANTAS MEDICINAIS
 
 
-        </h5> 
-        <br> 
-		    </div>
-			
-			
-        
+        </h5>
+        <br>
+    </div>
 
- 
 
-<div class="col-sm-7">
-     
-	 <span class="paragrafo">
-A classificação científica de uma planta e o seu depósito de amostras em um herbário são etapas fundamentais para a confiabilidade dos estudos, bem como para a certeza de que não se está usando a planta errada.   
-<br><br>
-Há procedimentos simples e básicos para identificar uma planta e torná-la testemunha da flora local. Alguns desses procedimentos, habitualmente seguidos pelos botânicos, devem ser observados, como coleta de amostras da planta, herborização, identificação da espécie e confecção de exsicatas com o material botânico, ou seja:
 
-	 </span>
 
-</div>
 
- <div class="col-sm-3">
+
+    <div class="col-sm-7">
+
+        <span class="paragrafo">
+            A classificação científica de uma planta e o seu depósito de amostras em um herbário são etapas fundamentais
+            para a confiabilidade dos estudos, bem como para a certeza de que não se está usando a planta errada.
+            <br><br>
+            Há procedimentos simples e básicos para identificar uma planta e torná-la testemunha da flora local. Alguns
+            desses procedimentos, habitualmente seguidos pelos botânicos, devem ser observados, como coleta de amostras
+            da planta, herborização, identificação da espécie e confecção de exsicatas com o material botânico, ou seja:
+
+        </span>
+
+    </div>
+
+    <!-- <div class="col-sm-3">
    <div class="imagem">
 	<img class="img-fluid" src="img/imgslide33.png" />
 	<div class="controles">
@@ -46,14 +49,24 @@ Há procedimentos simples e básicos para identificar uma planta e torná-la tes
 	</a>
 	</div>
 	</div>
-</div>
+</div> -->
+    <div class="col-sm-3 center animate__animated animate__backInRight" style="display: flex;align-items: center;">
+        <img class=" img-fluid" src="img/imgslide33.png" style="width: 90%;"><br>
+        <div class="controles"
+            style="display: flex;flex-direction: column;align-items: center;justify-content: space-around;gap: 20px;">
+            <img class="botao" src="img/lupa.png" class="lupa-img" style="max-width:40px">
+            <a href="img/imgslide33.png" download><img src="img/down-arq.png" /></a>
+        </div>
     </div>
-
-
-
+</div>
+<div class="jan">
+    <img src="img/imgslide33.png" style="height: 100%; background-color: white; padding: 20px;" />
 </div>
 <script>
-
-    $('.img-fluid').zoomify();
-
+    $(() => {
+        $('.jan').hide().click(() => { $('.jan').fadeOut() });
+        $('.botao').css('cursor', 'pointer').click(() => {
+            $('.jan').css('cursor', 'pointer').fadeIn();
+        })
+    })
 </script>
