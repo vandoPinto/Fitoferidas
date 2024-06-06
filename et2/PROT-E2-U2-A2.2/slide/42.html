@@ -1,9 +1,9 @@
-<div class="row" >
+<div class="row">
 
     <div class="col-sm-7 textoJustificado">
         <div class="navbar-dark identificadorAulas">
 
-            <div id="dadosAula" class=dados >
+            <div id="dadosAula" class=dados>
 
             </div>
         </div>
@@ -14,45 +14,60 @@
 <div class="row justify-content-md-center" id="slide2">
     <div class="col-sm-10">
         <h5 class="corDestaque2 maiusculo font-weight-bold">
-10. CONSIDERAÇÕES FINAIS
+            10. CONSIDERAÇÕES FINAIS
 
-        </h5> 
-        <br> 
-		
-		    </div>
-			
-			
-      
+        </h5>
+        <br>
 
-  <div class="col-sm-5">
-  <span class="paragrafo">
-No presente módulo, buscamos o entendimento de várias formas e formulações farmacêuticas para uso tópico em feridas. As indicações e as referências foram retiradas do Formulário Fitoterápico da Farmacopeia Brasileira.
-<br><br>
-Convém esclarecer que, neste módulo, não foi nosso objetivo repassar as operações farmacêuticas. Para aprofundar mais o tema, contudo, recomendamos os links abaixo para leituras complementares. 
+    </div>
 
- 
- </span>
-  
 
-</div>
 
-<div class="col-sm-5">
+
+    <div class="col-sm-5">
+        <span class="paragrafo">
+            No presente módulo, buscamos o entendimento de várias formas e formulações farmacêuticas para uso tópico em
+            feridas. As indicações e as referências foram retiradas do Formulário Fitoterápico da Farmacopeia
+            Brasileira.
+            <br><br>
+            Convém esclarecer que, neste módulo, não foi nosso objetivo repassar as operações farmacêuticas. Para
+            aprofundar mais o tema, contudo, recomendamos os links abaixo para leituras complementares.
+
+
+        </span>
+
+
+    </div>
+
+    <!-- <div class="col-sm-5">
   <div class="imagem">
     <img class="img-fluid" src="img/imgslide43.png" />
 <div class="controles">
 	<a href="https://www.gov.br/anvisa/pt-br/assuntos/farmacopeia/formulario-fitoterapico/arquivos/2021-fffb2-final-c-capa2.pdf" download target="_blank" ><img src="img/down-arq.png" /></a>
 	</div>
 	</div>
-</div>
+</div> -->
 
 
+    <div class="col-sm-5 animate__animated animate__backInRight" style="display: flex;align-items: center;">
+        <img class=" img-fluid" src="img/imgslide43.png" style="width: 87%;"><br>
+        <div class="controles"
+            style="display: flex;flex-direction: column;align-items: center;justify-content: space-around;gap: 20px;">
+            <img class="botao" src="img/lupa.png" class="lupa-img" style="max-width:40px">
+            <a href="https://www.gov.br/anvisa/pt-br/assuntos/farmacopeia/formulario-fitoterapico/arquivos/2021-fffb2-final-c-capa2.pdf"
+                download target="_blank"><img src="img/down-arq.png" /></a>
+        </div>
     </div>
-
-
-
+</div>
+</div>
+<div class="jan">
+    <img src="img/imgslide43.png" style="height: 100%; background-color: white; padding: 20px;" />
 </div>
 <script>
-
-    $('.img-fluid').zoomify();
-
+    $(() => {
+        $('.jan').hide().click(() => { $('.jan').fadeOut() });
+        $('.botao').css('cursor', 'pointer').click(() => {
+            $('.jan').css('cursor', 'pointer').fadeIn();
+        })
+    })
 </script>

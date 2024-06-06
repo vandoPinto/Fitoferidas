@@ -1,9 +1,9 @@
-<div class="row" >
+<div class="row">
 
     <div class="col-sm-7 textoJustificado">
         <div class="navbar-dark identificadorAulas">
 
-            <div id="dadosAula" class=dados >
+            <div id="dadosAula" class=dados>
 
             </div>
         </div>
@@ -14,44 +14,58 @@
 <div class="row justify-content-md-center" id="slide2">
     <div class="col-sm-10">
         <h5 class="corDestaque2 maiusculo font-weight-bold">
-9. FORMAS FARMACÊUTICAS 
-SEMI-SÓLIDAS DE FITOTERÁPICOS
+            9. FORMAS FARMACÊUTICAS
+            SEMI-SÓLIDAS DE FITOTERÁPICOS
 
-        </h5> 
-        <br> 
-		
-		    </div>
-			
-			
-      
+        </h5>
+        <br>
 
-  <div class="col-sm-4">
-  <span class="paragrafo">
+    </div>
 
-Lanette N é uma base auto-emulsionável que promove emoliência e suavidade à pele, sendo muito usada na fabricação de cremes. Possui glicerina de ação hidratante e umectante em sua composição. Nesta fórmula de creme base, depois de pronta, podem ser adicionados os extratos vegetais ativos conforme a fórmula do Creme de Calêndula, demonstrada a seguir (BRASIL, 2012).
 
- </span>
-  
 
-</div>
 
-<div class="col-sm-6">
+    <div class="col-sm-4">
+        <span class="paragrafo">
+
+            Lanette N é uma base auto-emulsionável que promove emoliência e suavidade à pele, sendo muito usada na
+            fabricação de cremes. Possui glicerina de ação hidratante e umectante em sua composição. Nesta fórmula de
+            creme base, depois de pronta, podem ser adicionados os extratos vegetais ativos conforme a fórmula do Creme
+            de Calêndula, demonstrada a seguir (BRASIL, 2012).
+
+        </span>
+
+
+    </div>
+
+    <!-- <div class="col-sm-6">
   <div class="imagem">
     <img class="img-fluid" src="img/imgslide36.png" />
 <div class="controles">
 	<a href="img/imgslide36.png" download ><img src="img/down-arq.png" /></a>
 	</div>
 	</div>
-</div>
+</div> -->
 
 
+    <div class="col-sm-6 animate__animated animate__backInRight" style="display: flex;align-items: center;">
+        <img class=" img-fluid" src="img/imgslide36.png" style="width: 87%;"><br>
+        <div class="controles"
+            style="display: flex;flex-direction: column;align-items: center;justify-content: space-around;gap: 20px;">
+            <img class="botao" src="img/lupa.png" class="lupa-img" style="max-width:40px">
+            <a href="img/imgslide36.png" download><img src="img/down-arq.png" /></a>
+        </div>
     </div>
-
-
-
+</div>
+</div>
+<div class="jan">
+    <img src="img/imgslide36.png" style="height: 100%; background-color: white; padding: 20px;" />
 </div>
 <script>
-
-    $('.img-fluid').zoomify();
-
+    $(() => {
+        $('.jan').hide().click(() => { $('.jan').fadeOut() });
+        $('.botao').css('cursor', 'pointer').click(() => {
+            $('.jan').css('cursor', 'pointer').fadeIn();
+        })
+    })
 </script>

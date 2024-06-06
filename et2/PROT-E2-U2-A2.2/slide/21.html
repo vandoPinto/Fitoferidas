@@ -1,9 +1,9 @@
-<div class="row" >
+<div class="row">
 
     <div class="col-sm-7 textoJustificado">
         <div class="navbar-dark identificadorAulas">
 
-            <div id="dadosAula" class=dados >
+            <div id="dadosAula" class=dados>
 
             </div>
         </div>
@@ -14,47 +14,70 @@
 <div class="row justify-content-md-center" id="slide2">
     <div class="col-sm-10">
         <h5 class="corDestaque2 maiusculo font-weight-bold">
-8. DERIVADOS VEGETAIS
+            8. DERIVADOS VEGETAIS
 
-        </h5> 
-        <br> 
-		
-		    </div>
-			
-			
-      
+        </h5>
+        <br>
 
-<div class="col-sm-5">
-  <div class="imagem">
-    <img class="img-fluid" src="img/imgslide22a.png" />
+    </div>
 
-	</div>
-	<br>
-	<span class="paragrafo">
-	Extrato de Confrei a 50% - para preparar 100 mL de extrato foram utilizadas 50 g de folhas de Confrei dessecadas e trituradas (droga vegetal);
-</span>
+
+
+
+    <div class="col-sm-5">
+        <!-- <div class="imagem">
+            <img class="img-fluid" src="img/imgslide22a.png" />
+        </div> -->
+        <div class="animate__animated animate__backInRight"
+            style="display: flex;align-items: center;justify-content: center;flex-direction: row-reverse;">
+            <img class=" img-fluid" src="img/imgslide22a.png" style="width: 90%;">
+            <img class="botao_1" src="img/lupa.png" class="lupa-img" style="max-width:40px">
+        </div>
+        <br>
+        <!-- <span class="paragrafo">
+            Extrato de Confrei a 50% - para preparar 100 mL de extrato foram utilizadas 50 g de folhas de Confrei
+            dessecadas e trituradas (droga vegetal);
+        </span> -->
+    </div>
+
+
+
+    <div class="col-sm-5">
+        <!-- <div class="imagem">
+            <img class="img-fluid" src="img/imgslide22b.png" />
+        </div> -->
+        <div class="animate__animated animate__backInRight" style="display: flex;align-items: center;">
+            <img class=" img-fluid" src="img/imgslide22b.png" style="width: 90%;">
+            <img class="botao_2" src="img/lupa.png" class="lupa-img" style="max-width:40px">
+        </div>
+
+        <br>
+        <!-- <span class="paragrafo">
+            Extrato de Pau D’Arco a 20% - para preparar 100 mL de extrato foram utilizadas 20 g do cerne de Pau
+            D’Arco dessecado e triturado (droga vegetal).
+        </span> -->
+    </div>
+
+
+
+</div>
 </div>
 
-
-
-<div class="col-sm-5">
-  <div class="imagem">
-    <img class="img-fluid" src="img/imgslide22b.png" />
-
-	</div>
-	<br>
-	<span class="paragrafo">
-	Extrato de Pau D’Arco a 20% - para preparar 100 mL de extrato foram utilizadas 20 g do cerne de Pau D’Arco dessecado e triturado (droga vegetal).
-	
-
-</span>
+<div class="jan_1 jan">
+    <img src="img/imgslide22a.png" style="height: 100%; background-color: white; padding: 20px;" />
 </div>
-
-
-
+<div class="jan_2 jan">
+    <img src="img/imgslide22b.png" style="height: 100%; background-color: white; padding: 20px;" />
 </div>
 <script>
-
-    $('.img-fluid').zoomify();
-
+    $(() => {
+        $('.jan_1').hide().click(() => { $('.jan_1').fadeOut() });
+        $('.botao_1').css('cursor', 'pointer').click(() => {
+            $('.jan_1').css('cursor', 'pointer').fadeIn();
+        })
+        $('.jan_2').hide().click(() => { $('.jan_2').fadeOut() });
+        $('.botao_2').css('cursor', 'pointer').click(() => {
+            $('.jan_2').css('cursor', 'pointer').fadeIn();
+        })
+    })
 </script>

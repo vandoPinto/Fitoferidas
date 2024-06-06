@@ -1,9 +1,9 @@
-<div class="row" >
+<div class="row">
 
     <div class="col-sm-7 textoJustificado">
         <div class="navbar-dark identificadorAulas">
 
-            <div id="dadosAula" class=dados >
+            <div id="dadosAula" class=dados>
 
             </div>
         </div>
@@ -14,44 +14,56 @@
 <div class="row justify-content-md-center" id="slide2">
     <div class="col-sm-10">
         <h5 class="corDestaque2 maiusculo font-weight-bold">
-9. FORMAS FARMACÊUTICAS SEMI-SÓLIDAS DE FITOTERÁPICOS
+            9. FORMAS FARMACÊUTICAS SEMI-SÓLIDAS DE FITOTERÁPICOS
 
-        </h5> 
-        <br> 
-		
-		    </div>
-			
-			
-      
-
-  <div class="col-sm-6">
-  <span class="paragrafo">
-<b class="corDestaque2">
-Géis
-</b>
-<br><br>
-Esses géis são constituídos por um veículo, agentes emulsivos e gelificantes e promotores de penetração. Relativamente ao veículo, este possui uma fase aquosa, que pode ser constituída por água ou álcoois e por uma fase oleosa, formada por óleos minerais ou parafina. Devem ter a capacidade de depositar eficientemente o fármaco sobre a pele e permitir, assim, uma distribuição uniforme, libertá-lo facilmente de modo a chegar ao local pretendido e manter um nível terapêutico no tecido alvo por um período de tempo suficiente para proporcionar um efeito farmacológico (LOURENÇO, 2013). 
-
- </span>
-  
-
-</div>
-
-<div class="col-sm-4">
-  <div class="imagem">
-    <img class="img-fluid" src="img/imgslide39.png" />
-
-	</div>
-</div>
-
+        </h5>
+        <br>
 
     </div>
 
 
 
+
+    <div class="col-sm-6">
+        <span class="paragrafo">
+            <b class="corDestaque2">
+                Géis
+            </b>
+            <br><br>
+            Esses géis são constituídos por um veículo, agentes emulsivos e gelificantes e promotores de penetração.
+            Relativamente ao veículo, este possui uma fase aquosa, que pode ser constituída por água ou álcoois e por
+            uma fase oleosa, formada por óleos minerais ou parafina. Devem ter a capacidade de depositar eficientemente
+            o fármaco sobre a pele e permitir, assim, uma distribuição uniforme, libertá-lo facilmente de modo a chegar
+            ao local pretendido e manter um nível terapêutico no tecido alvo por um período de tempo suficiente para
+            proporcionar um efeito farmacológico (LOURENÇO, 2013).
+
+        </span>
+
+
+    </div>
+
+    <!-- <div class="col-sm-4">
+  <div class="imagem">
+    <img class="img-fluid" src="img/imgslide39.png" />
+
+	</div>
+</div> -->
+
+
+
+    <div class="col-sm-4 center animate__animated animate__backInRight" style="display: flex;align-items: center;">
+        <img class=" img-fluid" src="img/imgslide39.png" style="width: 90%;">
+        <img class="botao" src="img/lupa.png" class="lupa-img" style="max-width:40px">
+    </div>
+</div>
+<div class="jan">
+    <img src="img/imgslide39.png" style="height: 100%; background-color: white; padding: 20px;" />
 </div>
 <script>
-
-    $('.img-fluid').zoomify();
-
+    $(() => {
+        $('.jan').hide().click(() => { $('.jan').fadeOut() });
+        $('.botao').css('cursor', 'pointer').click(() => {
+            $('.jan').css('cursor', 'pointer').fadeIn();
+        })
+    })
 </script>

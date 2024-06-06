@@ -1,9 +1,9 @@
-<div class="row" >
+<div class="row">
 
     <div class="col-sm-7 textoJustificado">
         <div class="navbar-dark identificadorAulas">
 
-            <div id="dadosAula" class=dados >
+            <div id="dadosAula" class=dados>
 
             </div>
         </div>
@@ -14,33 +14,46 @@
 <div class="row justify-content-md-center" id="slide2">
     <div class="col-sm-10">
         <h5 class="corDestaque2 maiusculo font-weight-bold">
-4. FORMAS FARMACÊUTICAS 
+            4. FORMAS FARMACÊUTICAS
 
-        </h5> 
+        </h5>
 
-	
+
     </div>
-      <div class="col-sm-5">
-          <br><br><br>
-	<div class="caixas alerta borda-direita">
-	Forma farmacêutica é a forma física de 
-apresentação do fitoterápico, ou seja, é a forma final em que se apresenta o fitoterápico ao usuário, depois de uma série de operações farmacêuticas realizadas com os extratos e os excipientes adequados, com o objetivo de atingir o sucesso terapêutico. A fórmula, ou a formulação, é o conjunto dos componentes que constituem a forma farmacêutica (LOURENÇO, 3013). 
+    <div class="col-sm-5">
+        <br><br><br>
+        <div class="caixas alerta borda-direita animate__animated animate__backInLeft">
+            Forma farmacêutica é a forma física de
+            apresentação do fitoterápico, ou seja, é a forma final em que se apresenta o fitoterápico ao usuário, depois
+            de uma série de operações farmacêuticas realizadas com os extratos e os excipientes adequados, com o
+            objetivo de atingir o sucesso terapêutico. A fórmula, ou a formulação, é o conjunto dos componentes que
+            constituem a forma farmacêutica (LOURENÇO, 3013).
 
-	</div>
-	</div>
-	
-	<div class="col-sm-5" >
+        </div>
+    </div>
+
+    <!-- <div class="col-sm-5" >
 		<div class=imagem >
 <img class="img-fluid" src="img/imgslide7.png" />
 
 
 
 </div>
-	</div>
+	</div> -->
 
-       </div>
+    <div class="col-sm-5 center animate__animated animate__backInRight" style="display: flex;align-items: center;">
+        <img class=" img-fluid" src="img/imgslide7.png" style="width: 100%;">
+        <img class="botao" src="img/lupa.png" class="lupa-img" style="max-width:40px">
+    </div>
+</div>
+<div class="jan">
+    <img src="img/imgslide7.png" style="height: 100%; background-color: white; padding: 20px;" />
+</div>
 <script>
-
-    $('.img-fluid').zoomify();
-
+    $(() => {
+        $('.jan').hide().click(() => { $('.jan').fadeOut() });
+        $('.botao').css('cursor', 'pointer').click(() => {
+            $('.jan').css('cursor', 'pointer').fadeIn();
+        })
+    })
 </script>

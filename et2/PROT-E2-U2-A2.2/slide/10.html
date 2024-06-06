@@ -1,9 +1,9 @@
-<div class="row" >
+<div class="row">
 
     <div class="col-sm-7 textoJustificado">
         <div class="navbar-dark identificadorAulas">
 
-            <div id="dadosAula" class=dados >
+            <div id="dadosAula" class=dados>
 
             </div>
         </div>
@@ -14,35 +14,49 @@
 <div class="row justify-content-md-center" id="slide2">
     <div class="col-sm-10">
         <h5 class="corDestaque2 maiusculo font-weight-bold">
-6. MATÉRIAS-PRIMAS VEGETAIS 
+            6. MATÉRIAS-PRIMAS VEGETAIS
 
-        </h5> 
+        </h5>
         <br>
-		</div>
-		<div class="col-sm-5" >
-		<span class=paragrafo >
-Compreendem a plantas medicinais (frescas), as drogas vegetais ou os derivados vegetais (BRASIL, 2021).
-<br><br>
-<b>Planta medicinal</b>  – É a espécie vegetal, cultivada ou não, utilizada com propósitos terapêuticos (BRASIL, 2021).
-<br><br>
-A planta medicinal fresca, segundo Matos (2007), assim que coletada, é o momento em que a espécie expressa a maior qualidade dos seus fitoquímicos, a qual pode ser utilizada na forma de remédio caseiro, conforme o objetivo da Farmácia Viva Modelo I. 
+    </div>
+    <div class="col-sm-5">
+        <span class=paragrafo>
+            Compreendem a plantas medicinais (frescas), as drogas vegetais ou os derivados vegetais (BRASIL, 2021).
+            <br><br>
+            <b>Planta medicinal</b> – É a espécie vegetal, cultivada ou não, utilizada com propósitos terapêuticos
+            (BRASIL, 2021).
+            <br><br>
+            A planta medicinal fresca, segundo Matos (2007), assim que coletada, é o momento em que a espécie expressa a
+            maior qualidade dos seus fitoquímicos, a qual pode ser utilizada na forma de remédio caseiro, conforme o
+            objetivo da Farmácia Viva Modelo I.
 
-	</span>
-	
-	</div>
-	
-	<div class="col-sm-5" >
+        </span>
+
+    </div>
+
+    <!-- <div class="col-sm-5" >
 		<div class=imagem >
 <img class="img-fluid" src="img/imgslide11.png" />
 
 
 
 </div>
-	</div>
+	</div> -->
 
-       </div>
+    <div class="col-sm-5 center animate__animated animate__backInRight"
+        style="display: flex;align-items: center;justify-content: center;">
+        <img class=" img-fluid" src="img/imgslide11.png" style="width: 80%;">
+        <img class="botao" src="img/lupa.png" style="max-width: 40px; cursor: pointer;">
+    </div>
+</div>
+<div class="jan">
+    <img src="img/imgslide11.png" style="height: 100%; background-color: white; padding: 20px;" />
+</div>
 <script>
-
-    $('.img-fluid').zoomify();
-
+    $(() => {
+        $('.jan').hide().click(() => { $('.jan').fadeOut() });
+        $('.botao').css('cursor', 'pointer').click(() => {
+            $('.jan').css('cursor', 'pointer').fadeIn();
+        })
+    })
 </script>

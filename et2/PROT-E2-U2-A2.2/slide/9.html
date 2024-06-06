@@ -1,9 +1,9 @@
-<div class="row" >
+<div class="row">
 
     <div class="col-sm-7 textoJustificado">
         <div class="navbar-dark identificadorAulas">
 
-            <div id="dadosAula" class=dados >
+            <div id="dadosAula" class=dados>
 
             </div>
         </div>
@@ -14,22 +14,25 @@
 <div class="row justify-content-md-center" id="slide2">
     <div class="col-sm-10">
         <h5 class="corDestaque2 maiusculo font-weight-bold">
-5. COMPOSIÇÃO DOS FITOTERÁPICOS DE USO TÓPICO
+            5. COMPOSIÇÃO DOS FITOTERÁPICOS DE USO TÓPICO
 
-        </h5> 
+        </h5>
         <br>
-		</div>
-		<div class="col-sm-5" >
-		<span class=paragrafo >
-O fitoterápico é um produto obtido de planta medicinal, droga vegetal  ou de seus derivados, com finalidade profilática, curativa ou paliativa. 
-<br><br>
-Para melhor organização e compreensão da composição dos fitoterápicos de uso tópico elaborou-se o Esquema 1, a seguir, com dois grupos que os estruturam: matéria-prima, incluindo derivados vegetais e formas semi-sólidas.
+    </div>
+    <div class="col-sm-5">
+        <span class=paragrafo>
+            O fitoterápico é um produto obtido de planta medicinal, droga vegetal ou de seus derivados, com finalidade
+            profilática, curativa ou paliativa.
+            <br><br>
+            Para melhor organização e compreensão da composição dos fitoterápicos de uso tópico elaborou-se o Esquema 1,
+            a seguir, com dois grupos que os estruturam: matéria-prima, incluindo derivados vegetais e formas
+            semi-sólidas.
 
-	</span>
-	
-	</div>
-	
-	<div class="col-sm-5" >
+        </span>
+
+    </div>
+
+    <!-- <div class="col-sm-5" >
 		<div class=imagem >
 <img class="img-fluid" src="img/imgslide10.png" />
 <div class="controles">
@@ -38,11 +41,25 @@ Para melhor organização e compreensão da composição dos fitoterápicos de u
 
 
 </div>
-	</div>
+	</div> -->
 
-       </div>
+    <div class="col-sm-5 center animate__animated animate__backInRight" style="display: flex;align-items: center;">
+        <img class=" img-fluid" src="img/imgslide10.png" style="width: 80%;"><br>
+        <div class="controles"
+            style="display: flex;flex-direction: column;align-items: center;justify-content: space-around;gap: 20px;">
+            <img class="botao" src="img/lupa.png" class="lupa-img" style="max-width:40px">
+            <a href="img/imgslide10.png" download target="_blank"><img src="img/down-arq.png" /></a>
+        </div>
+    </div>
+</div>
+<div class="jan">
+    <img src="img/imgslide10.png" style="height: 100%; background-color: white; padding: 20px;" />
+</div>
 <script>
-
-    $('.img-fluid').zoomify();
-
+    $(() => {
+        $('.jan').hide().click(() => { $('.jan').fadeOut() });
+        $('.botao').css('cursor', 'pointer').click(() => {
+            $('.jan').css('cursor', 'pointer').fadeIn();
+        })
+    })
 </script>
