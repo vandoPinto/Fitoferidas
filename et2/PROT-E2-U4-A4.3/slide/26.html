@@ -1,9 +1,9 @@
-<div class="row" >
+<div class="row">
 
     <div class="col-sm-7 textoJustificado">
         <div class="navbar-dark identificadorAulas">
 
-            <div id="dadosAula" class=dados >
+            <div id="dadosAula" class=dados>
 
             </div>
         </div>
@@ -14,38 +14,50 @@
 <div class="row justify-content-md-center" id="slide2">
     <div class="col-sm-10">
         <h5 class="corDestaque2 maiusculo font-weight-bold">
-10. RECURSOS TERAPÊUTICOS LOCAIS UTILIZADOS PELA ANTROPOSOFIA, DE ACORDO COM AS FASES DO TRATAMENTO
+            10. RECURSOS TERAPÊUTICOS LOCAIS UTILIZADOS PELA ANTROPOSOFIA, DE ACORDO COM AS FASES DO TRATAMENTO
 
 
-        </h5> 
+        </h5>
         <br>
-		</div>
-		<div class="col-sm-7" >
-		<span class=paragrafo >
-- Pomada de Calendula officinalis L.
-<br>Indicação de uso: aplicar sobre as feridas nas fases de granulação.
-<br>- Compressas de Repolho
-<br>Indicação de uso: aplicar “retalhos” de folhas de repolho sobre as feridas nas fases exudativas e necrotizantes. Trocar 2 a 3 vezes ao dia.
-<br>Fonte: Medicina Interna – Malthias Girke, indicada nas Referências Bibliográficas.
-<br>- Mel
-<br>Indicação de uso: aplicar pequena quantidade sobre as feridas em qualquer das fases. O paciente pode queixar dor.
-<br>Fonte: Medicina Interna – Malthias Girke, indicada nas Referências Bibliográficas.
+    </div>
+    <div class="col-sm-7">
+        <span class=paragrafo>
+            - Pomada de Calendula officinalis L.
+            <br>Indicação de uso: aplicar sobre as feridas nas fases de granulação.
+            <br>- Compressas de Repolho
+            <br>Indicação de uso: aplicar “retalhos” de folhas de repolho sobre as feridas nas fases exudativas e
+            necrotizantes. Trocar 2 a 3 vezes ao dia.
+            <br>Fonte: Medicina Interna – Malthias Girke, indicada nas Referências Bibliográficas.
+            <br>- Mel
+            <br>Indicação de uso: aplicar pequena quantidade sobre as feridas em qualquer das fases. O paciente pode
+            queixar dor.
+            <br>Fonte: Medicina Interna – Malthias Girke, indicada nas Referências Bibliográficas.
 
-	</span>
-	
-	</div>
-	
-	<div class="col-sm-3" >
+        </span>
+
+    </div>
+
+    <!-- <div class="col-sm-3" >
 		<div class=imagem >
 <img class="img-fluid" src="img/imgslide27.png" />
 
 
 </div>
-	</div>
+	</div> -->
 
-       </div>
+    <div class="col-sm-3 center animate__animated animate__backInRight" style="display: flex;align-items: center;">
+        <img class=" img-fluid" src="img/imgslide27.png" style="width: 100%;">
+        <img class="botao" src="img/lupa.png" class="lupa-img" style="max-width:40px">
+    </div>
+</div>
+<div class="jan">
+    <img src="img/imgslide27.png" style="height: 100%; background-color: white; padding: 20px;" />
+</div>
 <script>
-
-    $('.img-fluid').zoomify();
-
+    $(() => {
+        $('.jan').hide().click(() => { $('.jan').fadeOut() });
+        $('.botao').css('cursor', 'pointer').click(() => {
+            $('.jan').css('cursor', 'pointer').fadeIn();
+        })
+    })
 </script>
