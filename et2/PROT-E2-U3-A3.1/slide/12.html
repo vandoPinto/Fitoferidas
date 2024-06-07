@@ -1,9 +1,9 @@
-<div class="row" >
+<div class="row">
 
     <div class="col-sm-7 textoJustificado">
         <div class="navbar-dark identificadorAulas">
 
-            <div id="dadosAula" class=dados >
+            <div id="dadosAula" class=dados>
 
             </div>
         </div>
@@ -14,41 +14,55 @@
 <div class="row justify-content-md-center" id="slide2">
     <div class="col-sm-10">
         <h5 class="corDestaque2 maiusculo font-weight-bold">
-6. APLICAÇÃO DE PLANTAS MEDICINAIS E FITOTERÁPICOS 
+            6. APLICAÇÃO DE PLANTAS MEDICINAIS E FITOTERÁPICOS
 
 
-        </h5> 
+        </h5>
         <br>
-		</div>
-		
-	
+    </div>
 
 
-	
-	<div class="col-sm-7" >
-		<span class=paragrafo >
-A definição de um fitoterápico para o tratamento de feridas se dá após a avaliação da lesão e do usuário em sua integralidade, conforme descrito na Aula 3.3. sobre Avaliação de Feridas- Exsudato, Bordas e Perilesional – Unidade 3 Etapa 1.
-<br><br>
-A escolha do fitoterápico deve estar de acordo com as suas atividades farmacológicas seguindo as suas indicações terapêuticas e as contraindicações, para aplicação tópica.
-<br><br>
-O fitoterápico a ser utilizado na aplicação tópica em lesões/feridas são aqueles com apresentação farmacêutica semi-sólida em forma de pomada, creme ou gel, conforme descrição ao lado:
 
-	</span>
-	
-	</div>
-	
-		<div class="col-sm-3" >
+
+
+    <div class="col-sm-7">
+        <span class=paragrafo>
+            A definição de um fitoterápico para o tratamento de feridas se dá após a avaliação da lesão e do usuário em
+            sua integralidade, conforme descrito na Aula 3.3. sobre Avaliação de Feridas- Exsudato, Bordas e
+            Perilesional – Unidade 3 Etapa 1.
+            <br><br>
+            A escolha do fitoterápico deve estar de acordo com as suas atividades farmacológicas seguindo as suas
+            indicações terapêuticas e as contraindicações, para aplicação tópica.
+            <br><br>
+            O fitoterápico a ser utilizado na aplicação tópica em lesões/feridas são aqueles com apresentação
+            farmacêutica semi-sólida em forma de pomada, creme ou gel, conforme descrição ao lado:
+
+        </span>
+
+    </div>
+
+    <!-- <div class="col-sm-3" >
 		<div class=imagem >
 <img class="img-fluid" src="img/imgslide13.png" />
 
 
 
 </div>
-	</div>
-	
-       </div>
+	</div> -->
+
+    <div class="col-sm-3 center animate__animated animate__backInRight" style="display: flex;align-items: center;">
+        <img class=" img-fluid" src="img/imgslide13.png" style="width: 100%;">
+        <img class="botao" src="img/lupa.png" class="lupa-img" style="max-width:40px">
+    </div>
+</div>
+<div class="jan">
+    <img src="img/imgslide13.png" style="height: 100%; background-color: white; padding: 20px;" />
+</div>
 <script>
-
-    $('.img-fluid').zoomify();
-
+    $(() => {
+        $('.jan').hide().click(() => { $('.jan').fadeOut() });
+        $('.botao').css('cursor', 'pointer').click(() => {
+            $('.jan').css('cursor', 'pointer').fadeIn();
+        })
+    })
 </script>

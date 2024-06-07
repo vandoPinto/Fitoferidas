@@ -1,9 +1,9 @@
-<div class="row" >
+<div class="row">
 
     <div class="col-sm-7 textoJustificado">
         <div class="navbar-dark identificadorAulas">
 
-            <div id="dadosAula" class=dados >
+            <div id="dadosAula" class=dados>
 
             </div>
         </div>
@@ -14,32 +14,45 @@
 <div class="row justify-content-md-center" id="slide2">
     <div class="col-sm-10">
         <h5 class="corDestaque2 maiusculo font-weight-bold">
-4. INTRODUÇÃO
+            4. INTRODUÇÃO
 
 
-        </h5> 
+        </h5>
         <br>
-		</div>
-		<div class="col-sm-3" >
-		<span class=paragrafo >
-A cicatrização de feridas é um processo multifásico, envolvendo as etapas de hemostasia, inflamação, proliferação e remodelação dos tecidos lesados. O processo de cicatrização de feridas pode ser ainda prejudicado por fatores como má-circulação no leito da ferida e infecção microbiana, má nutrição, temas esses apresentados em profundidade na Etapa 1 deste curso.
+    </div>
+    <div class="col-sm-3">
+        <span class=paragrafo>
+            A cicatrização de feridas é um processo multifásico, envolvendo as etapas de hemostasia, inflamação,
+            proliferação e remodelação dos tecidos lesados. O processo de cicatrização de feridas pode ser ainda
+            prejudicado por fatores como má-circulação no leito da ferida e infecção microbiana, má nutrição, temas
+            esses apresentados em profundidade na Etapa 1 deste curso.
 
-	</span>
-	
-	</div>
-	
-	<div class="col-sm-7" >
+        </span>
+
+    </div>
+
+    <!-- <div class="col-sm-7" >
 		<div class=imagem >
 <img class="img-fluid" src="img/imgslide4.png" />
 
 
 
 </div>
-	</div>
+	</div> -->
 
-       </div>
+    <div class="col-sm-7 center animate__animated animate__backInRight" style="display: flex;align-items: center;">
+        <img class=" img-fluid" src="img/imgslide4.png" style="width: 100%;">
+        <img class="botao" src="img/lupa.png" class="lupa-img" style="max-width:40px">
+    </div>
+</div>
+<div class="jan">
+    <img src="img/imgslide4.png" style="height: 100%; background-color: white; padding: 20px;" />
+</div>
 <script>
-
-    $('.img-fluid').zoomify();
-
+    $(() => {
+        $('.jan').hide().click(() => { $('.jan').fadeOut() });
+        $('.botao').css('cursor', 'pointer').click(() => {
+            $('.jan').css('cursor', 'pointer').fadeIn();
+        })
+    })
 </script>
