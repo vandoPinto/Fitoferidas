@@ -1,9 +1,9 @@
-<div class="row" >
+<div class="row">
 
     <div class="col-sm-7 textoJustificado">
         <div class="navbar-dark identificadorAulas">
 
-            <div id="dadosAula" class=dados >
+            <div id="dadosAula" class=dados>
 
             </div>
         </div>
@@ -14,24 +14,30 @@
 <div class="row justify-content-md-center" id="slide2">
     <div class="col-sm-10">
         <h5 class="corDestaque2 maiusculo font-weight-bold">
-4. INTRODUÇÃO
+            4. INTRODUÇÃO
 
 
 
-        </h5> 
+        </h5>
         <br>
-		</div>
-		<div class="col-sm-7" >
-<span class=paragrafo >
-A gestão e a regulação da dispensação de plantas medicinais e fitoterápicos adquiridos na sua forma industrializada pelo Sistema Único de Saúde ou manipulados pelas Farmácias Vivas são coordenadas por áreas responsáveis pela Assistência Farmacêutica - ANVISA - em conformidade com as diretrizes das Políticas Nacionais de Plantas Medicinais e Fitoterápicos (PNPMF) e das Práticas Integrativas e Complementares no SUS (PNPIC). 
-<br><br>
-Ressaltamos que na Relação Nacional de Medicamentos Essenciais ao SUS, que compreende a seleção e a padronização de medicamentos indicados para o atendimento de doenças e agravos no âmbito do SUS, foram incluídos 12 medicamentos fitoterápicos.
+    </div>
+    <div class="col-sm-7">
+        <span class=paragrafo>
+            A gestão e a regulação da dispensação de plantas medicinais e fitoterápicos adquiridos na sua forma
+            industrializada pelo Sistema Único de Saúde ou manipulados pelas Farmácias Vivas são coordenadas por áreas
+            responsáveis pela Assistência Farmacêutica - ANVISA - em conformidade com as diretrizes das Políticas
+            Nacionais de Plantas Medicinais e Fitoterápicos (PNPMF) e das Práticas Integrativas e Complementares no SUS
+            (PNPIC).
+            <br><br>
+            Ressaltamos que na Relação Nacional de Medicamentos Essenciais ao SUS, que compreende a seleção e a
+            padronização de medicamentos indicados para o atendimento de doenças e agravos no âmbito do SUS, foram
+            incluídos 12 medicamentos fitoterápicos.
 
-</span>
-	
-	</div>
-	
-	<div class="col-sm-3" >
+        </span>
+
+    </div>
+
+    <!-- <div class="col-sm-3" >
 <div class="imagem">
 <img class="img-fluid" src="img/imgslide5.png" />
 <div class=controles >
@@ -40,10 +46,25 @@ Ressaltamos que na Relação Nacional de Medicamentos Essenciais ao SUS, que com
 
 </div>
 	</div>
+    </div> -->
+    <div class="col-sm-3 center animate__animated animate__backInRight"
+        style="display: flex;align-items: center;justify-content: center;">
+        <img class=" img-fluid" src="img/imgslide5.png" style="width: 80%;"><br>
+        <div class="controles"
+            style="display: flex;flex-direction: column;align-items: center;justify-content: space-around;gap: 20px;">
+            <img class="botao" src="img/lupa.png" style="max-width: 40px; cursor: pointer;">
+            <a href="img/imgslide5.png" download=""><img src="img/down-arq.png"></a>
+        </div>
     </div>
-       </div>
+</div>
+<div class="jan">
+    <img src="img/imgslide5.png" style="height: 100%; background-color: white; padding: 20px;" />
+</div>
 <script>
-
-    $('.img-fluid').zoomify();
-
+    $(() => {
+        $('.jan').hide().click(() => { $('.jan').fadeOut() });
+        $('.botao').css('cursor', 'pointer').click(() => {
+            $('.jan').css('cursor', 'pointer').fadeIn();
+        })
+    })
 </script>

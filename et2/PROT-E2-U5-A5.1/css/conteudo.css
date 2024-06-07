@@ -12,55 +12,71 @@ CorSecundaria = #8AB661;
 CorTerciaria = #8AB661;
 
 */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto');
+
 h5.corDestaque2.maiusculo.font-weight-bold {
     font-size: 20pt;
 }
- .carousel-item.active{
+
+.carousel-item.active {
     display: flex !important;
     justify-content: center;
 }
-.caixas a{
-    color:white !important;
+
+.caixas a {
+    color: white !important;
 }
-#menuAulas{
+
+#menuAulas {
     background-color: #8AB661 !important;
 }
 
 .divImgPrincipalCapa {
     overflow: hidden;
 }
+
 .btn-primary {
     color: #fff;
     background-color: #8AB661 !important;
     border-color: #8AB661 !important;
 }
+
 .btn-primary:hover {
     color: #fff;
     background-color: #8AB661 !important;
     border-color: #8AB661 !important;
 }
-.c100 > span {
+
+.c100>span {
     color: #866607 !important;
 }
-.dadosAula{
-    color:#8AB661;
+
+.dadosAula {
+    color: #8AB661;
 }
-.corSecundaria,.corDestaque2{
-    color:#8AB661 !important;
+
+.corSecundaria,
+.corDestaque2 {
+    color: #8AB661 !important;
 
 }
-.textoJustificado{
+
+.textoJustificado {
     text-align: justify;
 }
-.paragrafo{
+
+.paragrafo {
 
     /*text-indent: 1.5em;*/
     margin-top: 0;
     display: block;
     text-align: justify;
 }
-.corPrimaria,.corDestaque1{
-    color:#866607 !important;
+
+.corPrimaria,
+.corDestaque1 {
+    color: #866607 !important;
 }
 
 
@@ -77,32 +93,36 @@ h5.corDestaque2.maiusculo.font-weight-bold {
     font-weight: bold !important;
     overflow: hidden;
 }
-.identificadorAulas .dados{
-    color:white;
-    float:left;
+
+.identificadorAulas .dados {
+    color: white;
+    float: left;
     margin-left: 10px;
     font-size: 13px !important;
 
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto');
-body{
+
+body {
     background-image: url('../img/fundoGeral.png');
     background-size: cover;
     background-repeat: no-repeat;
     font-size: 14pt !important;
     font-family: 'Roboto', sans-serif;
 }
-.fonte{
-    font-size:12pt !important;
+
+.fonte {
+    font-size: 12pt !important;
 }
-.imgPrincipalCapa{
+
+.imgPrincipalCapa {
     border-right: 10px solid #8AB661;
     border-radius: 0px 150px 0 0;
     width: 100%;
 
 }
-.capaDireita{
+
+.capaDireita {
     position: absolute;
     right: 0;
     top: 0;
@@ -113,17 +133,21 @@ body{
     border-radius: 0px 0px 0px 180px;
     width: 90%;
 }
-.logoPrincipal{
+
+.logoPrincipal {
     width: 280px;
     margin: auto;
     display: block;
 }
-.borda-direita{
+
+.borda-direita {
     border-radius: 0 35px;
 }
+
 .borda-esquerda {
     border-radius: 35px 0;
 }
+
 .caixas {
     color: white;
     background-color: #8AB661;
@@ -134,7 +158,7 @@ body{
     margin: auto;
 }
 
-.alerta::before{
+.alerta::before {
     content: "";
     background-image: url(../img/alerta.png);
     width: 70px;
@@ -145,7 +169,8 @@ body{
     right: -31px;
 
 }
-.adicao::before{
+
+.adicao::before {
     content: "";
     background-image: url(../img/adicao.png);
     width: 70px;
@@ -156,7 +181,8 @@ body{
     right: -31px;
 
 }
-.saibamais::before{
+
+.saibamais::before {
     content: "";
     background-image: url(../img/adicao.png);
     width: 70px;
@@ -167,7 +193,8 @@ body{
     right: -31px;
 
 }
-.complementar::before{
+
+.complementar::before {
     content: "";
     background-image: url(../img/complementar.png);
     width: 70px;
@@ -178,26 +205,32 @@ body{
     right: -31px;
 
 }
+
 .imagem {
     position: relative;
 }
+
 .imagem .controles {
     position: absolute;
     bottom: 0;
     right: 0;
 }
+
 .controles {
     position: absolute;
     bottom: 0;
     right: 0;
 }
+
 .imagem .controles img {
-    width: 70px;
+    width: 50px;
 }
+
 .controles img {
-    width: 70px;
+    width: 50px;
 }
-.img-thumbnail1{
+
+.img-thumbnail1 {
 
     padding: .25rem;
     background-color: #fff;
@@ -222,4 +255,45 @@ body{
 
 .paragrafo-imagem-esquerda {
     padding-left: 110px;
+}
+
+.row {
+    align-items: center;
+}
+
+.jan {
+    z-index: 30;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.timeline--inner-pin {
+    background-color: transparent;
+}
+
+.current {
+    background-color: orange;
+}
+
+#menuAulas {
+    background-color: rgb(225, 225, 225) !important;
+}
+
+.sidebar a {
+    color: black;
+}
+
+.sidebar a:hover {
+    color: #0F6D39;
+}
+
+.imgPrincipalCapa {
+    width: auto !important;
 }

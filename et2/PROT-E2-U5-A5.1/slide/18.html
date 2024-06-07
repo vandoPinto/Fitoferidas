@@ -1,9 +1,9 @@
-<div class="row" >
+<div class="row">
 
     <div class="col-sm-7 textoJustificado">
         <div class="navbar-dark identificadorAulas">
 
-            <div id="dadosAula" class=dados >
+            <div id="dadosAula" class=dados>
 
             </div>
         </div>
@@ -14,31 +14,44 @@
 <div class="row justify-content-md-center" id="slide2">
     <div class="col-sm-10">
         <h5 class="corDestaque2 maiusculo font-weight-bold">
-10. CONSIDERAÇÕES FINAIS
+            10. CONSIDERAÇÕES FINAIS
 
-        </h5> 
+        </h5>
         <br>
-		</div>
-		<div class="col-sm-6" >
-		<br><br><br>
-<div class="caixas alerta borda-direita">
-“[...] para seu emprego em programas 
-públicos de fitoterapia, o que inclui sua incorporação nas práticas da Saúde da Família, as plantas medicinais e fitoterápicos devem ser “validados”, 
-e os procedimentos de preparação e administração também padronizados e cientificamente reconhecidos.” (MATOS; LORENZI, 2008, p. 16). 
+    </div>
+    <div class="col-sm-6">
+        <br><br><br>
+        <div class="caixas alerta borda-direita animate__animated animate__backInLeft">
+            “[...] para seu emprego em programas
+            públicos de fitoterapia, o que inclui sua incorporação nas práticas da Saúde da Família, as plantas
+            medicinais e fitoterápicos devem ser “validados”,
+            e os procedimentos de preparação e administração também padronizados e cientificamente reconhecidos.”
+            (MATOS; LORENZI, 2008, p. 16).
 
-</div>
-	
-	</div>
-	
-	<div class="col-sm-4" >
+        </div>
+
+    </div>
+
+    <!-- <div class="col-sm-4" >
 <div class="imagem">
 <img class="img-fluid" src="img/imgslide19.png" />
 
 	</div>
+    </div> -->
+
+    <div class="col-sm-4 center animate__animated animate__backInRight" style="display: flex;align-items: center;">
+        <img class=" img-fluid" src="img/imgslide19.png" style="width: 70%;">
+        <img class="botao" src="img/lupa.png" class="lupa-img" style="max-width:40px">
     </div>
-       </div>
+</div>
+<div class="jan">
+    <img src="img/imgslide19.png" style="height: 100%; background-color: white; padding: 20px;" />
+</div>
 <script>
-
-    $('.img-fluid').zoomify();
-
+    $(() => {
+        $('.jan').hide().click(() => { $('.jan').fadeOut() });
+        $('.botao').css('cursor', 'pointer').click(() => {
+            $('.jan').css('cursor', 'pointer').fadeIn();
+        })
+    })
 </script>

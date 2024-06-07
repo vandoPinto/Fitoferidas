@@ -1,9 +1,9 @@
-<div class="row" >
+<div class="row">
 
     <div class="col-sm-7 textoJustificado">
         <div class="navbar-dark identificadorAulas">
 
-            <div id="dadosAula" class=dados >
+            <div id="dadosAula" class=dados>
 
             </div>
         </div>
@@ -14,30 +14,43 @@
 <div class="row justify-content-md-center" id="slide2">
     <div class="col-sm-10">
         <h5 class="corDestaque2 maiusculo font-weight-bold">
-10. CONSIDERAÇÕES FINAIS
+            10. CONSIDERAÇÕES FINAIS
 
-        </h5> 
+        </h5>
         <br>
-		</div>
-		<div class="col-sm-6" >
-		<br><br><br>
-<div class="caixas alerta borda-direita">
-“[...] Ou seja, a fitoterapia que está no 
-Sistema Único de Saúde  hoje, enquanto método terapêutico, inserido nas práticas profissionais é aquela a que chamamos anteriormente de fitoterapia científica ocidental, o que não quer dizer que possa ser impermeável aos desejos, crenças, tradições e conhecimentos populares com os quais ela vai se defrontar e dialogar.”
+    </div>
+    <div class="col-sm-6">
+        <br><br><br>
+        <div class="caixas alerta borda-direita animate__animated animate__backInLeft">
+            “[...] Ou seja, a fitoterapia que está no
+            Sistema Único de Saúde hoje, enquanto método terapêutico, inserido nas práticas profissionais é aquela a que
+            chamamos anteriormente de fitoterapia científica ocidental, o que não quer dizer que possa ser impermeável
+            aos desejos, crenças, tradições e conhecimentos populares com os quais ela vai se defrontar e dialogar.”
 
-</div>
-	
-	</div>
-	
-	<div class="col-sm-4" >
+        </div>
+
+    </div>
+
+    <!-- <div class="col-sm-4" >
 <div class="imagem">
 <img class="img-fluid" src="img/imgslide21.png" />
 
 	</div>
+    </div> -->
+
+    <div class="col-sm-4 center animate__animated animate__backInRight" style="display: flex;align-items: center;">
+        <img class=" img-fluid" src="img/imgslide21.png" style="width: 100%;">
+        <img class="botao" src="img/lupa.png" class="lupa-img" style="max-width:40px">
     </div>
-       </div>
+</div>
+<div class="jan">
+    <img src="img/imgslide21.png" style="height: 100%; background-color: white; padding: 20px;" />
+</div>
 <script>
-
-    $('.img-fluid').zoomify();
-
+    $(() => {
+        $('.jan').hide().click(() => { $('.jan').fadeOut() });
+        $('.botao').css('cursor', 'pointer').click(() => {
+            $('.jan').css('cursor', 'pointer').fadeIn();
+        })
+    })
 </script>

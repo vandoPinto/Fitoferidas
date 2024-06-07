@@ -1,9 +1,9 @@
-<div class="row" >
+<div class="row">
 
     <div class="col-sm-7 textoJustificado">
         <div class="navbar-dark identificadorAulas">
 
-            <div id="dadosAula" class=dados >
+            <div id="dadosAula" class=dados>
 
             </div>
         </div>
@@ -14,22 +14,27 @@
 <div class="row justify-content-md-center" id="slide2">
     <div class="col-sm-10">
         <h5 class="corDestaque2 maiusculo font-weight-bold">
-9. A FARMACOPÉIA BRASILEIRA
+            9. A FARMACOPÉIA BRASILEIRA
 
-        </h5> 
+        </h5>
         <br>
-		</div>
-		<div class="col-sm-7" >
-<span class=paragrafo >
-O Formulário de Fitoterápicos é um dos compêndios da Farmacopeia Brasileira e  contém informações sobre a forma correta de preparo de formulações oficinais e estáveis, de uso consagrado e/ou tradicional e as indicações e restrições de uso de cada espécie de planta medicinal. 
-<br><br>
-As formulações apresentadas dizem respeito às  espécies vegetais e às formas farmacêuticas comuns nos serviços de fitoterapia e  constantes da relação de espécies vegetais de interesse do SUS (RENISUS), podendo ser manipuladas de modo a estabelecer um estoque mínimo em farmácias de manipulação e farmácias vivas, segundo a legislação. 
+    </div>
+    <div class="col-sm-7">
+        <span class=paragrafo>
+            O Formulário de Fitoterápicos é um dos compêndios da Farmacopeia Brasileira e contém informações sobre a
+            forma correta de preparo de formulações oficinais e estáveis, de uso consagrado e/ou tradicional e as
+            indicações e restrições de uso de cada espécie de planta medicinal.
+            <br><br>
+            As formulações apresentadas dizem respeito às espécies vegetais e às formas farmacêuticas comuns nos
+            serviços de fitoterapia e constantes da relação de espécies vegetais de interesse do SUS (RENISUS), podendo
+            ser manipuladas de modo a estabelecer um estoque mínimo em farmácias de manipulação e farmácias vivas,
+            segundo a legislação.
 
-</span>
-	
-	</div>
-	
-	<div class="col-sm-3" >
+        </span>
+
+    </div>
+
+    <!-- <div class="col-sm-3" >
 <div class="imagem">
 <img class="img-fluid" src="img/imgslide13.png" />
 <div class=controles >
@@ -38,10 +43,25 @@ As formulações apresentadas dizem respeito às  espécies vegetais e às forma
 
 </div>
 	</div>
+    </div> -->
+    <div class="col-sm-3 center animate__animated animate__backInRight"
+        style="display: flex;align-items: center;justify-content: center;">
+        <img class=" img-fluid" src="img/imgslide13.png" style="width: 80%;"><br>
+        <div class="controles"
+            style="display: flex;flex-direction: column;align-items: center;justify-content: space-around;gap: 20px;">
+            <img class="botao" src="img/lupa.png" style="max-width: 40px; cursor: pointer;">
+            <a href="img/imgslide13.png" download=""><img src="img/down-arq.png"></a>
+        </div>
     </div>
-       </div>
+</div>
+<div class="jan">
+    <img src="img/imgslide13.png" style="height: 100%; background-color: white; padding: 20px;" />
+</div>
 <script>
-
-    $('.img-fluid').zoomify();
-
+    $(() => {
+        $('.jan').hide().click(() => { $('.jan').fadeOut() });
+        $('.botao').css('cursor', 'pointer').click(() => {
+            $('.jan').css('cursor', 'pointer').fadeIn();
+        })
+    })
 </script>

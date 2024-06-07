@@ -1,9 +1,9 @@
-<div class="row" >
+<div class="row">
 
     <div class="col-sm-7 textoJustificado">
         <div class="navbar-dark identificadorAulas">
 
-            <div id="dadosAula" class=dados >
+            <div id="dadosAula" class=dados>
 
             </div>
         </div>
@@ -14,23 +14,28 @@
 <div class="row justify-content-md-center" id="slide2">
     <div class="col-sm-10">
         <h5 class="corDestaque2 maiusculo font-weight-bold">
-8. A INSERÇÃO DA FITOTERAPIA NOS MUNICÍPIOS
+            8. A INSERÇÃO DA FITOTERAPIA NOS MUNICÍPIOS
 
-        </h5> 
+        </h5>
         <br>
-		</div>
-		<div class="col-sm-7" >
-<span class=paragrafo >
-A publicação de  “Cadernos de Atenção Básica – Práticas Integrativas e Complementares – Plantas Medicinais e Fitoterapia na Atenção Básica” n. 31, realizada pelo Ministério da Saúde em 2012,  contribui para a orientação de  gestores na implantação de programas e projetos em fitoterapia na Atenção Básica - hoje denominada pelo Ministério da Saúde de Atenção Primária.
-<br><br>
-Esses projetos e programas devem contar com a elaboração de Mementos, Formulários Terapêuticos, Monografias e Protocolos sobre espécies de plantas medicinais de forma a garantir a indicação segura e eficaz de fitoterápicos na atenção primária à  saúde, pelos profissionais de saúde.
+    </div>
+    <div class="col-sm-7">
+        <span class=paragrafo>
+            A publicação de “Cadernos de Atenção Básica – Práticas Integrativas e Complementares – Plantas Medicinais e
+            Fitoterapia na Atenção Básica” n. 31, realizada pelo Ministério da Saúde em 2012, contribui para a
+            orientação de gestores na implantação de programas e projetos em fitoterapia na Atenção Básica - hoje
+            denominada pelo Ministério da Saúde de Atenção Primária.
+            <br><br>
+            Esses projetos e programas devem contar com a elaboração de Mementos, Formulários Terapêuticos, Monografias
+            e Protocolos sobre espécies de plantas medicinais de forma a garantir a indicação segura e eficaz de
+            fitoterápicos na atenção primária à saúde, pelos profissionais de saúde.
 
 
-</span>
-	
-	</div>
-	
-	<div class="col-sm-3" >
+        </span>
+
+    </div>
+
+    <!-- <div class="col-sm-3" >
 <div class="imagem">
 <img class="img-fluid" src="img/imgslide11.png" />
 <div class=controles >
@@ -39,10 +44,25 @@ Esses projetos e programas devem contar com a elaboração de Mementos, Formulá
 
 </div>
 	</div>
+    </div> -->
+    <div class="col-sm-3 center animate__animated animate__backInRight"
+        style="display: flex;align-items: center;justify-content: center;">
+        <img class=" img-fluid" src="img/imgslide11.png" style="width: 100%;"><br>
+        <div class="controles"
+            style="display: flex;flex-direction: column;align-items: center;justify-content: space-around;gap: 20px;">
+            <img class="botao" src="img/lupa.png" style="max-width: 40px; cursor: pointer;">
+            <a href="img/imgslide11.png" download=""><img src="img/down-arq.png"></a>
+        </div>
     </div>
-       </div>
+</div>
+<div class="jan">
+    <img src="img/imgslide11.png" style="height: 100%; background-color: white; padding: 20px;" />
+</div>
 <script>
-
-    $('.img-fluid').zoomify();
-
+    $(() => {
+        $('.jan').hide().click(() => { $('.jan').fadeOut() });
+        $('.botao').css('cursor', 'pointer').click(() => {
+            $('.jan').css('cursor', 'pointer').fadeIn();
+        })
+    })
 </script>
