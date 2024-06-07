@@ -1,9 +1,9 @@
-<div class="row" >
+<div class="row">
 
     <div class="col-sm-7 textoJustificado">
         <div class="navbar-dark identificadorAulas">
 
-            <div id="dadosAula" class=dados >
+            <div id="dadosAula" class=dados>
 
             </div>
         </div>
@@ -14,32 +14,46 @@
 <div class="row justify-content-md-center" id="slide2">
     <div class="col-sm-10">
         <h5 class="corDestaque2 maiusculo font-weight-bold">
-6. PLANTAS MEDICINAIS E FITOTERÁPICOS E TERMALISMO
+            6. PLANTAS MEDICINAIS E FITOTERÁPICOS E TERMALISMO
 
 
-        </h5> 
+        </h5>
         <br>
-		</div>
-		<div class="col-sm-5" >
-		<span class=paragrafo >
-As plantas medicinais e os fitoterápicos já são utilizados nos tratamentos de feridas em nosso serviço associado ao tratamento com água termal, porém sem sistematização. Com a proposta de se ampliar o uso de fitoterápicos, foi solicitada ao Ambulatório de Feridas,  pela Secretaria de Saúde, a confecção de um protocolo para o uso de fitoterápicos no ambulatório de feridas. Esse protocolo está sendo elaborado e passará pelo Conselho Municipal de Saúde para a aquisição regular de fitoterápicos no município. 
+    </div>
+    <div class="col-sm-5">
+        <span class=paragrafo>
+            As plantas medicinais e os fitoterápicos já são utilizados nos tratamentos de feridas em nosso serviço
+            associado ao tratamento com água termal, porém sem sistematização. Com a proposta de se ampliar o uso de
+            fitoterápicos, foi solicitada ao Ambulatório de Feridas, pela Secretaria de Saúde, a confecção de um
+            protocolo para o uso de fitoterápicos no ambulatório de feridas. Esse protocolo está sendo elaborado e
+            passará pelo Conselho Municipal de Saúde para a aquisição regular de fitoterápicos no município.
 
-	</span>
-	
-	</div>
-	
-	<div class="col-sm-5" >
+        </span>
+
+    </div>
+
+    <!-- <div class="col-sm-5" >
 		<div class=imagem >
 <img class="img-fluid" src="img/imgslide25.png" />
 
 
 
 </div>
-	</div>
+	</div> -->
 
-       </div>
+    <div class="col-sm-5 center animate__animated animate__backInRight" style="display: flex;align-items: center;">
+        <img class=" img-fluid" src="img/imgslide25.png" style="width: 100%;">
+        <img class="botao" src="img/lupa.png" class="lupa-img" style="max-width:40px">
+    </div>
+</div>
+<div class="jan">
+    <img src="img/imgslide25.png" style="height: 100%; background-color: white; padding: 20px;" />
+</div>
 <script>
-
-    $('.img-fluid').zoomify();
-
+    $(() => {
+        $('.jan').hide().click(() => { $('.jan').fadeOut() });
+        $('.botao').css('cursor', 'pointer').click(() => {
+            $('.jan').css('cursor', 'pointer').fadeIn();
+        })
+    })
 </script>

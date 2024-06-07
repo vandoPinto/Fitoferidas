@@ -1,34 +1,37 @@
-<div class="row" >
+<div class="row">
 
     <div class="col-sm-7 textoJustificado">
         <div class="navbar-dark identificadorAulas">
 
-            <div id="dadosAula" class=dados >
+            <div id="dadosAula" class=dados>
 
             </div>
         </div>
         <br>
-        <br>
+        <!-- <br> -->
     </div>
 </div>
 <div class="row justify-content-md-center" id="slide2">
     <div class="col-sm-10">
         <h5 class="corDestaque2 maiusculo font-weight-bold">
-4. INTRODUÇÃO
+            4. INTRODUÇÃO
 
 
-        </h5> 
-        <br>
-		</div>
-		<div class="col-sm-5" >
-		<span class=paragrafo >
-A Política Nacional de Práticas Integrativas e Complementares do Sistema Único de Saúde inclui o Termalismo Social e a Crenoterapia como práticas integrativas e complementares em saúde (BRASIL, 2006). Esse movimento é crescente e bem aceito pela população, que já utiliza esses conhecimentos através do senso comum de sabedoria ancestral.
+        </h5>
+        <!-- <br> -->
+    </div>
+    <div class="col-sm-5">
+        <span class=paragrafo>
+            A Política Nacional de Práticas Integrativas e Complementares do Sistema Único de Saúde inclui o Termalismo
+            Social e a Crenoterapia como práticas integrativas e complementares em saúde (BRASIL, 2006). Esse movimento
+            é crescente e bem aceito pela população, que já utiliza esses conhecimentos através do senso comum de
+            sabedoria ancestral.
 
-	</span>
-	
-	</div>
-	
-	<div class="col-sm-5" >
+        </span>
+
+    </div>
+
+    <!-- <div class="col-sm-5" >
 		<div class=imagem >
 <img class="img-fluid" src="img/imgslide6.png" />
 <div class="controles">
@@ -40,11 +43,28 @@ A Política Nacional de Práticas Integrativas e Complementares do Sistema Únic
 
 
 </div>
-	</div>
+	</div> -->
 
-       </div>
+    <div class="col-sm-5 center animate__animated animate__backInRight"
+        style="display: flex;align-items: center; justify-content: center;">
+        <img class=" img-fluid" src="img/imgslide6.png" style="width: 60%;"><br>
+        <div class="controles"
+            style="display: flex;flex-direction: column;align-items: center;justify-content: space-around;gap: 20px;">
+            <img class="botao" src="img/lupa.png" class="lupa-img" style="max-width:40px">
+            <a href="https://bvsms.saude.gov.br/bvs/publicacoes/politica_nacional_praticas_integrativas_complementares_2ed.pdf"
+                target="_blank">
+                <img src="img/down-arq.png" />
+        </div>
+    </div>
+</div>
+<div class="jan">
+    <img src="img/imgslide6.png" style="height: 100%; background-color: white; padding: 20px;" />
+</div>
 <script>
-
-    $('.img-fluid').zoomify();
-
+    $(() => {
+        $('.jan').hide().click(() => { $('.jan').fadeOut() });
+        $('.botao').css('cursor', 'pointer').click(() => {
+            $('.jan').css('cursor', 'pointer').fadeIn();
+        })
+    })
 </script>

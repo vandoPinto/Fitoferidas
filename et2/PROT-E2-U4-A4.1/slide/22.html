@@ -1,9 +1,9 @@
-<div class="row" >
+<div class="row">
 
     <div class="col-sm-7 textoJustificado">
         <div class="navbar-dark identificadorAulas">
 
-            <div id="dadosAula" class=dados >
+            <div id="dadosAula" class=dados>
 
             </div>
         </div>
@@ -14,32 +14,46 @@
 <div class="row justify-content-md-center" id="slide2">
     <div class="col-sm-10">
         <h5 class="corDestaque2 maiusculo font-weight-bold">
-5. DESCRIÇÃO DOS SERVIÇOS
+            5. DESCRIÇÃO DOS SERVIÇOS
 
 
-        </h5> 
+        </h5>
         <br>
-		</div>
-		<div class="col-sm-5" >
-		<span class=paragrafo >
-Todos os usuários são incentivados ao autocuidado e aprendem a trocar o próprio curativo no domicílio, quando necessário. Quando isso não é possível, faz-se necessária a presença do cuidador familiar. As orientações são dadas pela equipe de enfermagem, que orienta lavar bem as feridas com água morna ou soro fisiológico a 0,9%, bem como finalizar com a água termal, levada do balneário, na forma de banho ou compressas com gazes por 20 minutos. É importante terminar aplicando a cobertura, conforme prescrição.
+    </div>
+    <div class="col-sm-5">
+        <span class=paragrafo>
+            Todos os usuários são incentivados ao autocuidado e aprendem a trocar o próprio curativo no domicílio,
+            quando necessário. Quando isso não é possível, faz-se necessária a presença do cuidador familiar. As
+            orientações são dadas pela equipe de enfermagem, que orienta lavar bem as feridas com água morna ou soro
+            fisiológico a 0,9%, bem como finalizar com a água termal, levada do balneário, na forma de banho ou
+            compressas com gazes por 20 minutos. É importante terminar aplicando a cobertura, conforme prescrição.
 
-	</span>
-	
-	</div>
-	
-	<div class="col-sm-5" >
+        </span>
+
+    </div>
+
+    <!-- <div class="col-sm-5" >
 		<div class=imagem >
 <img class="img-fluid" src="img/imgslide23.png" />
 
 
 
 </div>
-	</div>
+	</div> -->
 
-       </div>
+    <div class="col-sm-5 center animate__animated animate__backInRight" style="display: flex;align-items: center;">
+        <img class=" img-fluid" src="img/imgslide23.png" style="width: 100%;">
+        <img class="botao" src="img/lupa.png" class="lupa-img" style="max-width:40px">
+    </div>
+</div>
+<div class="jan">
+    <img src="img/imgslide23.png" style="height: 100%; background-color: white; padding: 20px;" />
+</div>
 <script>
-
-    $('.img-fluid').zoomify();
-
+    $(() => {
+        $('.jan').hide().click(() => { $('.jan').fadeOut() });
+        $('.botao').css('cursor', 'pointer').click(() => {
+            $('.jan').css('cursor', 'pointer').fadeIn();
+        })
+    })
 </script>
