@@ -1,9 +1,9 @@
-<div class="row" >
+<div class="row">
 
     <div class="col-sm-7 textoJustificado">
         <div class="navbar-dark identificadorAulas">
 
-            <div id="dadosAula" class=dados >
+            <div id="dadosAula" class=dados>
 
             </div>
         </div>
@@ -15,36 +15,49 @@
     <div class="col-sm-10">
         <h5 class="corDestaque2 maiusculo font-weight-bold">
 
-5.1. O HIDROLATO OU HIDROSOL 
+            5.1. O HIDROLATO OU HIDROSOL
 
-        </h5> 
+        </h5>
         <br>
-		</div>
-		<div class="col-sm-5" >
-		<span class=paragrafo >
-Quando uma planta aromática passa pelo método de extração – destilação à vapor – o método de obtenção de OE mais utilizado atualmente, temos como resultado final do processo o Hidrolato ou Hidrosol. 
-<br>
-O que são Hidrolatos?
+    </div>
+    <div class="col-sm-5">
+        <span class=paragrafo>
+            Quando uma planta aromática passa pelo método de extração – destilação à vapor – o método de obtenção de OE
+            mais utilizado atualmente, temos como resultado final do processo o Hidrolato ou Hidrosol.
+            <br>
+            O que são Hidrolatos?
 
-	</span>
-	<br><br><br>
-	<div class="caixas alerta borda-direita">
-	Os Hidrolatos são a água condensada co produzida durante a destilação a vapor ou hidrodestilação de material vegetal para fins terapêuticos. 
+        </span>
+        <br><br><br>
+        <div class="caixas alerta borda-direita animate__animated animate__backInLeft">
+            Os Hidrolatos são a água condensada co produzida durante a destilação a vapor ou hidrodestilação de material
+            vegetal para fins terapêuticos. 
 
-	</div>
-	</div>
-	
-	<div class="col-sm-5" >
+        </div>
+    </div>
+
+    <!-- <div class="col-sm-5" >
 		<div class=imagem >
 <img class="img-fluid" src="img/imgslide20.png" />
 
 
 </div>
-	</div>
+	</div> -->
 
-       </div>
+
+    <div class="col-sm-5 center animate__animated animate__backInRight" style="display: flex;align-items: center;">
+        <img class=" img-fluid" src="img/imgslide20.png" style="width: 90%;">
+        <img class="botao" src="img/lupa.png" class="lupa-img" style="max-width:40px">
+    </div>
+</div>
+<div class="jan">
+    <img src="img/imgslide20.png" style="height: 100%; background-color: white; padding: 20px;" />
+</div>
 <script>
-
-    $('.img-fluid').zoomify();
-
+    $(() => {
+        $('.jan').hide().click(() => { $('.jan').fadeOut() });
+        $('.botao').css('cursor', 'pointer').click(() => {
+            $('.jan').css('cursor', 'pointer').fadeIn();
+        })
+    })
 </script>

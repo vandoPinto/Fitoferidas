@@ -1,9 +1,9 @@
-<div class="row" >
+<div class="row">
 
     <div class="col-sm-7 textoJustificado">
         <div class="navbar-dark identificadorAulas">
 
-            <div id="dadosAula" class=dados >
+            <div id="dadosAula" class=dados>
 
             </div>
         </div>
@@ -14,31 +14,46 @@
 <div class="row justify-content-md-center" id="slide2">
     <div class="col-sm-10">
         <h5 class="corDestaque2 maiusculo font-weight-bold">
-5. ÓLEOS ESSENCIAIS 
+            5. ÓLEOS ESSENCIAIS
 
 
-        </h5> 
+        </h5>
         <br>
-		</div>
-		<div class="col-sm-5" >
-		<span class=paragrafo >
-A inalação dos aromas, seja de modo direto, ou espalhados no ambiente, chega ao sistema nervoso central pelas vias respiratórias e pelo bulbo olfatório (via trato olfatório), sendo conduzidas ao córtex e às regiões límbicas do cérebro. O sistema límbico facilita o armazenamento e a recuperação de memória.  Sua ação nos aspectos emocionais /psicológicos do indivíduo se dá pela ativação de transceptores neuroquímicos do cérebro, como a serotonina e as endorfinas.
+    </div>
+    <div class="col-sm-5">
+        <span class=paragrafo>
+            A inalação dos aromas, seja de modo direto, ou espalhados no ambiente, chega ao sistema nervoso central
+            pelas vias respiratórias e pelo bulbo olfatório (via trato olfatório), sendo conduzidas ao córtex e às
+            regiões límbicas do cérebro. O sistema límbico facilita o armazenamento e a recuperação de memória. Sua ação
+            nos aspectos emocionais /psicológicos do indivíduo se dá pela ativação de transceptores neuroquímicos do
+            cérebro, como a serotonina e as endorfinas.
 
-	</span>
-	
-	</div>
-	
-	<div class="col-sm-5" >
+        </span>
+
+    </div>
+
+    <!-- <div class="col-sm-5" >
 		<div class=imagem >
 <img class="img-fluid" src="img/imgslide14.png" />
 
 
 </div>
-	</div>
+	</div> -->
 
-       </div>
+
+    <div class="col-sm-5 center animate__animated animate__backInRight" style="display: flex;align-items: center;">
+        <img class=" img-fluid" src="img/imgslide14.png" style="width: 100%;">
+        <img class="botao" src="img/lupa.png" class="lupa-img" style="max-width:40px">
+    </div>
+</div>
+<div class="jan">
+    <img src="img/imgslide14.png" style="height: 100%; background-color: white; padding: 20px;" />
+</div>
 <script>
-
-    $('.img-fluid').zoomify();
-
+    $(() => {
+        $('.jan').hide().click(() => { $('.jan').fadeOut() });
+        $('.botao').css('cursor', 'pointer').click(() => {
+            $('.jan').css('cursor', 'pointer').fadeIn();
+        })
+    })
 </script>

@@ -1,9 +1,9 @@
-<div class="row" >
+<div class="row">
 
     <div class="col-sm-7 textoJustificado">
         <div class="navbar-dark identificadorAulas">
 
-            <div id="dadosAula" class=dados >
+            <div id="dadosAula" class=dados>
 
             </div>
         </div>
@@ -14,31 +14,45 @@
 <div class="row justify-content-md-center" id="slide2">
     <div class="col-sm-10">
         <h5 class="corDestaque2 maiusculo font-weight-bold">
-3. INTRODUÇÃO 
+            3. INTRODUÇÃO
 
 
-        </h5> 
+        </h5>
         <br>
-		</div>
-		<div class="col-sm-5" >
-		<span class=paragrafo >
-Com amplo espectro terapêutico, pode ser usada de forma individual e/ou coletiva, além de associada a outras práticas integrativas – medicina antroposófica/antroposofia aplicada à saúde, termalismo social/crenoterapia, plantas medicinais e fitoterapia, terapia de florais, entre outras –, sendo  considerada uma possibilidade de intervenção que potencializa os resultados do tratamento adotado. 
+    </div>
+    <div class="col-sm-5">
+        <span class=paragrafo>
+            Com amplo espectro terapêutico, pode ser usada de forma individual e/ou coletiva, além de associada a outras
+            práticas integrativas – medicina antroposófica/antroposofia aplicada à saúde, termalismo
+            social/crenoterapia, plantas medicinais e fitoterapia, terapia de florais, entre outras –, sendo considerada
+            uma possibilidade de intervenção que potencializa os resultados do tratamento adotado.
 
-	</span>
-	
-	</div>
-	
-	<div class="col-sm-5" >
+        </span>
+
+    </div>
+
+    <!-- <div class="col-sm-5" >
 		<div class=imagem >
 <img class="img-fluid" src="img/imgslide6.png" />
 
 
 </div>
-	</div>
+	</div> -->
 
-       </div>
+
+    <div class="col-sm-5 center animate__animated animate__backInRight" style="display: flex;align-items: center;">
+        <img class=" img-fluid" src="img/imgslide6.png" style="width: 100%;">
+        <img class="botao" src="img/lupa.png" class="lupa-img" style="max-width:40px">
+    </div>
+</div>
+<div class="jan">
+    <img src="img/imgslide6.png" style="height: 100%; background-color: white; padding: 20px;" />
+</div>
 <script>
-
-    $('.img-fluid').zoomify();
-
+    $(() => {
+        $('.jan').hide().click(() => { $('.jan').fadeOut() });
+        $('.botao').css('cursor', 'pointer').click(() => {
+            $('.jan').css('cursor', 'pointer').fadeIn();
+        })
+    })
 </script>
