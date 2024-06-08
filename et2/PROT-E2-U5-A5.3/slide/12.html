@@ -1,9 +1,9 @@
-<div class="row" >
+<div class="row">
 
     <div class="col-sm-7 textoJustificado">
         <div class="navbar-dark identificadorAulas">
 
-            <div id="dadosAula" class=dados >
+            <div id="dadosAula" class=dados>
 
             </div>
         </div>
@@ -12,45 +12,60 @@
     </div>
 </div>
 <div class="row justify-content-md-center" id="slide2">
-    <div class="col-sm-10">
+    <!-- <div class="col-sm-10">
         <h5 class="corDestaque2 maiusculo font-weight-bold">
 
-        </h5> 
+        </h5>
         <br>
-		</div>
-		<div class="col-sm-5" >
-<span class=paragrafo >
-<b>Profissional Nutricionista
+    </div> -->
+    <div class="col-sm-5">
+        <span class=paragrafo>
+            <b>Profissional Nutricionista
 
 
-</b>
-<br>
-Conselho Federal de Nutrição – CFN<br>
-Resolução nº 556/2015 “Altera as Resoluções Nº416, de 2008 e Nº525 de 20013 e acrescenta disposições à regulamentação da prática da Fitoterapia para o nutricionista como complemento da prescrição dietética.”
+            </b>
+            <!-- <br> -->
+            Conselho Federal de Nutrição – CFN<br>
+            Resolução nº 556/2015 “Altera as Resoluções Nº416, de 2008 e Nº525 de 20013 e acrescenta disposições à
+            regulamentação da prática da Fitoterapia para o nutricionista como complemento da prescrição dietética.”
 
-</span>
-	
-	</div>
-	
-	<div class="col-sm-5" >
+        </span>
+
+    </div>
+
+    <!-- <div class="col-sm-5" >
 <div class="imagem">
 <img class="img-fluid" src="img/imgslide13.png" />
 
 	</div>
+    </div> -->
+    <div class="col-sm-5 center animate__animated animate__backInRight" style="display: flex;align-items: center;">
+        <img class=" img-fluid" src="img/imgslide13.png" style="width: 70%;">
+        <img class="botao" src="img/lupa.png" class="lupa-img" style="max-width:40px">
     </div>
-	
-	<div class="col-sm-10" >
-<div class="caixas borda-direita" >
-Resolução CFN nº 556/2015<br>
-Art. 3º – I – a prescrição de plantas medicinais e chás medicinais são permitidos a todos os nutricionistas, ainda que sem título de especialista; II – a prescrição de medicamento fitoterápico, de produtos tradicionais fitoterápicos e de preparações magistrais de fitoterápicos [...], é permitida ao nutricionista desde que seja portador de título de especialista em fitoterapia.
+    <div class="col-sm-10">
+        <div class="caixas borda-direita animate__animated animate__backInUp">
+            Resolução CFN nº 556/2015<br>
+            Art. 3º – I – a prescrição de plantas medicinais e chás medicinais são permitidos a todos os nutricionistas,
+            ainda que sem título de especialista; II – a prescrição de medicamento fitoterápico, de produtos
+            tradicionais fitoterápicos e de preparações magistrais de fitoterápicos [...], é permitida ao nutricionista
+            desde que seja portador de título de especialista em fitoterapia.
+
+        </div>
+
+    </div>
+
+
 
 </div>
-	
-	</div>
-	
-       </div>
+<div class="jan">
+    <img src="img/imgslide13.png" style="height: 100%; background-color: white; padding: 20px;" />
+</div>
 <script>
-
-    $('.img-fluid').zoomify();
-
+    $(() => {
+        $('.jan').hide().click(() => { $('.jan').fadeOut() });
+        $('.botao').css('cursor', 'pointer').click(() => {
+            $('.jan').css('cursor', 'pointer').fadeIn();
+        })
+    })
 </script>

@@ -1,9 +1,9 @@
-<div class="row" >
+<div class="row">
 
     <div class="col-sm-7 textoJustificado">
         <div class="navbar-dark identificadorAulas">
 
-            <div id="dadosAula" class=dados >
+            <div id="dadosAula" class=dados>
 
             </div>
         </div>
@@ -14,24 +14,39 @@
 <div class="row justify-content-md-center" id="slide2">
     <div class="col-sm-10">
         <h5 class="corDestaque2 maiusculo font-weight-bold">
-4. CONSELHOS FEDERAIS DE CLASSE PROFISSIONAL
+            4. CONSELHOS FEDERAIS DE CLASSE PROFISSIONAL
 
 
-        </h5> 
+        </h5>
         <br>
-		
-<div class="imagem">
-<img class="img-fluid" src="img/imgslide8.png" />
-<div class=controles >
-<a href="img/imgslide8.png" download >
-<img src="img/down-arq.png" />
-</a>
 
-	</div>
+        <!-- <div class="imagem">
+            <img class="img-fluid" src="img/imgslide8.png" />
+            <div class=controles>
+                <a href="img/imgslide8.png" download>
+                    <img src="img/down-arq.png" />
+                </a>
+
+            </div>
+        </div> -->
+        <div class=" animate__animated animate__backInRight" style="display: flex;align-items: center;">
+            <img class=" img-fluid" src="img/imgslide8.png" style="width: 90%;"><br>
+            <div class="controles"
+                style="display: flex;flex-direction: column;align-items: center;justify-content: space-around;gap: 20px;">
+                <img class="botao" src="img/lupa.png" class="lupa-img" style="max-width:40px">
+                <a href="img/imgslide8.png" download><img src="img/down-arq.png" /></a>
+            </div>
+        </div>
     </div>
-       </div>
+</div>
+<div class="jan">
+    <img src="img/imgslide8.png" style="width: 100%; background-color: white; padding: 20px;" />
+</div>
 <script>
-
-    $('.img-fluid').zoomify();
-
+    $(() => {
+        $('.jan').hide().click(() => { $('.jan').fadeOut() });
+        $('.botao').css('cursor', 'pointer').click(() => {
+            $('.jan').css('cursor', 'pointer').fadeIn();
+        })
+    })
 </script>

@@ -1,55 +1,69 @@
-<div class="row" >
+<div class="row">
 
     <div class="col-sm-7 textoJustificado">
         <div class="navbar-dark identificadorAulas">
 
-            <div id="dadosAula" class=dados >
+            <div id="dadosAula" class=dados>
 
             </div>
         </div>
         <br>
-        <br>
+        <!-- <br> -->
     </div>
 </div>
 <div class="row justify-content-md-center" id="slide2">
-    <div class="col-sm-10">
+    <!-- <div class="col-sm-10">
         <h5 class="corDestaque2 maiusculo font-weight-bold">
 
-        </h5> 
+        </h5>
         <br>
-		</div>
-		<div class="col-sm-5" >
-<span class=paragrafo >
-<b>Profissional Enfermeiro</b>
-<br>
+    </div> -->
+    <div class="col-sm-5">
+        <span class=paragrafo>
+            <b>Profissional Enfermeiro</b>
+            <br>
 
-Conselho Federal de Enfermagem – Cofen
-Lei n° 7.498/86, de 25 de junho de 1986
-Art. 11. Inciso II – como integrante da equipe de saúde: c) prescrição de medicamentos estabelecidos em programas de saúde pública e em rotina aprovada pela instituição de saúde.
-Resolução Cofen - 577/2018
+            Conselho Federal de Enfermagem – Cofen
+            Lei n° 7.498/86, de 25 de junho de 1986
+            Art. 11. Inciso II – como integrante da equipe de saúde: c) prescrição de medicamentos estabelecidos em
+            programas de saúde pública e em rotina aprovada pela instituição de saúde.
+            Resolução Cofen - 577/2018
 
-</span>
-	
-	</div>
-	
-	<div class="col-sm-5" >
+        </span>
+
+    </div>
+
+    <!-- <div class="col-sm-5" >
 <div class="imagem">
 <img class="img-fluid" src="img/imgslide10.png" />
 
 	</div>
+    </div> -->
+    <div class="col-sm-5 center animate__animated animate__backInRight" style="display: flex;align-items: center;">
+        <img class=" img-fluid" src="img/imgslide10.png" style="width: 90%;">
+        <img class="botao" src="img/lupa.png" class="lupa-img" style="max-width:40px">
     </div>
-	
-	<div class="col-sm-10" >
-<div class="caixas borda-direita" >
-Art. 1º O Enfermeiro deverá, obrigatoriamente, promover o registro de seus  títulos de pós graduação lato sensu e stricto sensu, este último na modalidade profissionalizante, no Conselho Regional de Enfermagem de sua jurisdição. O COFEN contempla a Fitoterapia como especialidade de Enfermagem.
+
+    <div class="col-sm-10">
+        <div class="caixas borda-direita animate__animated animate__backInUp">
+            Art. 1º O Enfermeiro deverá, obrigatoriamente, promover o registro de seus títulos de pós graduação lato
+            sensu e stricto sensu, este último na modalidade profissionalizante, no Conselho Regional de Enfermagem de
+            sua jurisdição. O COFEN contempla a Fitoterapia como especialidade de Enfermagem.
+
+        </div>
+
+    </div>
+
 
 </div>
-	
-	</div>
-	
-       </div>
+<div class="jan">
+    <img src="img/imgslide10.png" style="height: 100%; background-color: white; padding: 20px;" />
+</div>
 <script>
-
-    $('.img-fluid').zoomify();
-
+    $(() => {
+        $('.jan').hide().click(() => { $('.jan').fadeOut() });
+        $('.botao').css('cursor', 'pointer').click(() => {
+            $('.jan').css('cursor', 'pointer').fadeIn();
+        })
+    })
 </script>

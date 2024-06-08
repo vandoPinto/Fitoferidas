@@ -61,7 +61,7 @@ function montaMenu() {
     items.forEach(function (item, indice, array) {
         if (item.titulo)
             retornoMenu += '<a href=# class="alteraAula" ident=' + indice + ' >' + item.titulo + '</a>';
-        retornoNav += '<i id="aA' + indice + '" class="alteraAula timeline--inner-pin  is-normal" ident=' + indice + ' data-title="' + item.nome + '   " data-toggle="tooltip" data-placement="top" title="Tela ' + (indice + 1) + '"></i>';
+        retornoNav += '<i id="aA' + indice + '" class="alteraAula timeline--inner-pin  is-normal" ident=' + indice + '   " data-toggle="tooltip" data-placement="top" title="Tela ' + (indice + 1) + '"></i>';
     });
 
     $('#menuAulas').append(retornoMenu);
@@ -88,7 +88,8 @@ function mudaAula(aula) {
     }
     aulaAtual = aula;
     atualizaProgresso();
-    $('#conteudo').load('slide/' + items[aula].arquivo + '?v3', function () { $('#dadosAula').html(nomeUnidade + "<br>" + nomeAula + "<b class='desenv'><br>Arq:" + items[aula].arquivo + "</b>"); });
+    $('#conteudo').load('slide/' + items[aula].arquivo + '?v3', function () { $('#dadosAula').html(nomeUnidade + "<br>" + nomeAula); });
+    // $('#conteudo').load('slide/' + items[aula].arquivo + '?v3', function () { $('#dadosAula').html(nomeUnidade + "<br>" + nomeAula + "<b class='desenv'><br>Arq:" + items[aula].arquivo + "</b>"); });
     //Exibe os navegadores
 
     if (aulaAtual == 0) {

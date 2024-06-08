@@ -1,9 +1,9 @@
-<div class="row" >
+<div class="row">
 
     <div class="col-sm-7 textoJustificado">
         <div class="navbar-dark identificadorAulas">
 
-            <div id="dadosAula" class=dados >
+            <div id="dadosAula" class=dados>
 
             </div>
         </div>
@@ -12,43 +12,59 @@
     </div>
 </div>
 <div class="row justify-content-md-center" id="slide2">
-    <div class="col-sm-10">
+    <!-- <div class="col-sm-10">
         <h5 class="corDestaque2 maiusculo font-weight-bold">
 
-        </h5> 
+        </h5>
         <br>
-		</div>
-		<div class="col-sm-5" >
-<span class=paragrafo >
-<b>Profissional Farmacêutico
-</b>
-<br>
-Conselho Federal de Farmácia - CFF
-Resolução nº 477 de 28 de maio de 2008 (BRASIL, 2013a) dispõe sobre as atribuições do farmacêutico no âmbito das plantas medicinais e fitoterápicos: “Responsável pelas atividades de preparação do fitoterápico, desde os preparados intermediários, produto final, controle em processo, controle de qualidade final, avaliação da prescrição e dispensação”.
+    </div> -->
+    <div class="col-sm-5">
+        <span class=paragrafo>
+            <b>Profissional Farmacêutico
+            </b>
+            <br>
+            Conselho Federal de Farmácia - CFF
+            Resolução nº 477 de 28 de maio de 2008 (BRASIL, 2013a) dispõe sobre as atribuições do farmacêutico no âmbito
+            das plantas medicinais e fitoterápicos: “Responsável pelas atividades de preparação do fitoterápico, desde
+            os preparados intermediários, produto final, controle em processo, controle de qualidade final, avaliação da
+            prescrição e dispensação”.
 
-</span>
-	
-	</div>
-	
-	<div class="col-sm-5" >
+        </span>
+
+    </div>
+
+    <!-- <div class="col-sm-5" >
 <div class="imagem">
 <img class="img-fluid" src="img/imgslide11.png" />
 
 	</div>
+    </div> -->
+    <div class="col-sm-5 center animate__animated animate__backInRight" style="display: flex;align-items: center;">
+        <img class=" img-fluid" src="img/imgslide11.png" style="width: 90%;">
+        <img class="botao" src="img/lupa.png" class="lupa-img" style="max-width:40px">
     </div>
-	
-	<div class="col-sm-10" >
-<div class="caixas borda-direita" >
-Resolução nº 586 de 29 de agosto de 2013 
-Art. 5º O farmacêutico poderá realizar a prescrição de medicamentos fitoterápicos e outros produtos com finalidade terapêutica.
+    <br>
+    <div class="col-sm-10">
+        <div class="caixas borda-direita animate__animated animate__backInUp">
+            Resolução nº 586 de 29 de agosto de 2013
+            Art. 5º O farmacêutico poderá realizar a prescrição de medicamentos fitoterápicos e outros produtos com
+            finalidade terapêutica.
+
+        </div>
+
+    </div>
+
+
 
 </div>
-	
-	</div>
-	
-       </div>
+<div class="jan">
+    <img src="img/imgslide11.png" style="height: 100%; background-color: white; padding: 20px;" />
+</div>
 <script>
-
-    $('.img-fluid').zoomify();
-
+    $(() => {
+        $('.jan').hide().click(() => { $('.jan').fadeOut() });
+        $('.botao').css('cursor', 'pointer').click(() => {
+            $('.jan').css('cursor', 'pointer').fadeIn();
+        })
+    })
 </script>
