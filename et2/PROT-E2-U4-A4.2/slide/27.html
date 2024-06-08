@@ -14,27 +14,44 @@
 <div class="row justify-content-md-center" id="slide2">
     <div class="col-sm-10">
         <h5 class="corDestaque2 maiusculo font-weight-bold">
-            8. EVIDÊNCIAS CIENTÍFICAS DA APLICAÇÃO DOS ÓLEOS ESSENCIAIS NA CICATRIZAÇÃO DE FERIDAS
-
+            7. APLICABILIDADE TERAPÊUTICA EM FERIDAS POR FÁBIÁN LÁSZLÓ
         </h5>
         <br>
+    </div>
+    <div class="col-sm-7">
+        <span class=paragrafo>
+            Neste vídeo o Aromatólogo Fábián László apresenta alguns óleos essenciais com potencial para o tratamento de
+            feridas, a partir de pesquisas científicas.
 
-        <br><br><br>
-        <div class="caixas saibamais borda-direita animate__animated animate__backInRight">
-            Selecionamos dois artigos científicos recentes sobre
-            a aplicação dos OE no tratamento de feridas. O primeiro se refere
-            à aplicabilidade da Lavandula angustifólia Mill. no tratamento de feridas.
-            O segundo sobre a aplicação de OE no tratamento de feridas - Revisão Integrativa Literatura.
-            Nas referências bibliográficas, você também encontrará citações de artigos.
-            A seguir um resumo desses dois artigos.
-
+        </span>
+        <div style="padding: 20px;">
+            <a href="https://youtu.be/u7dibiCAHBw" target="_blank"><img src="img/video.png" alt=""
+                    style="width: 20%;"></a>
         </div>
-
     </div>
 
+    <!-- <div class="col-sm-3" >
+		<div class=imagem >
+<img class="img-fluid" src="img/imgslide8.png" />
+
+
+</div>
+	</div> -->
+
+
+    <div class="col-sm-3 center animate__animated animate__backInRight" style="display: flex;align-items: center;">
+        <img class=" img-fluid" src="img/imgslide8.png" style="width: 100%;">
+        <img class="botao" src="img/lupa.png" class="lupa-img" style="max-width:40px">
+    </div>
+</div>
+<div class="jan">
+    <img src="img/imgslide8.png" style="height: 100%; background-color: white; padding: 20px;" />
 </div>
 <script>
-
-    // $('.img-fluid').zoomify();
-
+    $(() => {
+        $('.jan').hide().click(() => { $('.jan').fadeOut() });
+        $('.botao').css('cursor', 'pointer').click(() => {
+            $('.jan').css('cursor', 'pointer').fadeIn();
+        })
+    })
 </script>

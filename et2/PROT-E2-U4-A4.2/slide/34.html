@@ -14,43 +14,44 @@
 <div class="row justify-content-md-center" id="slide2">
     <div class="col-sm-10">
         <h5 class="corDestaque2 maiusculo font-weight-bold">
-            10. REFERÊNCIAS
+            9.1. ARTIGO REVISÃO INTEGRATIVA LITERATURA
 
         </h5>
         <br>
 
         <span class=paragrafo>
-            ANDREI, Patrícia. DEL COMUNE, Aparecida Peres. Aromaterapia e suas aplicações. CADERNOS • Centro
-            Universitário S. Camilo, São Paulo, v. 11, n. 4, p. 57-68, out. /dez. 2005. Disponível em: <a
-                href="http://www.saocamilo-sp.br/pdf/cadernos/36/07_aromaterapia.pdf"
-                target="_blank">http://www.saocamilo-sp.br/pdf/cadernos/36/07_aromaterapia.pdf</a> Acesso em: 04/05/2020
-            <br><br>ESTEVÃO, Lígia Reis Moura et al. Concentração de mastócitos e contração da ferida cutânea em ratos
-            tratados com óleo essencial de pimenta brasileira (Schinus terebinthifolius Raddi) Acta Cir. Bras. vol.30
-            no.4 São Paulo abr. 2015 PUB MED. Disponível em: <a
-                href="http://dx.doi.org/10.1590/S0102-865020150040000008"
-                target="_blank">http://dx.doi.org/10.1590/S0102-865020150040000008</a> Acesso em: 07/05/2020
-            <br><br>EDMONDSON, MARGARET 1, et al. Uncontrolled, open‐label, pilot study of tea tree (Melaleuca
-            alternifolia) oil solution in the decolonisation of methicillin‐resistant Staphylococcus aureus positive
-            wounds and its influence on wound healing. Int Wound J. Agosto de 2011 pub med Disponível em: <a
-                href="https://doi.org/10.1111/j.1742-481X.2011.00801.x"
-                target="_blank">https://doi.org/10.1111/j.1742-481X.2011.00801.x</a> Acesso em: 06/05/2020
-            <br><br>KOZICS, K.; et al. The Effect of Ten Essential Oils on Several Cutaneous Drug-Resistant
-            Microorganisms and Their Cyto/Genotoxic and Antioxidant Properties. 2019 Dec 13;24(24). pii: E4570
-            Disponível em: <a href="https://doi.org/10.3390/molecules24244570"
-                target="_blank">https://doi.org/10.3390/molecules24244570</a>
-            <br><br>NEGUT I et al. Treatment Strategies for Infected Wounds. Moléculas. 18 de setembro de 2018
-            Disponível em: <a href="https://doi.org/10.3390/molecules23092392"
-                target="_blank">https://doi.org/10.3390/molecules23092392</a> Acesso em: 08/05/2020
+            Os artigos pesquisados demonstraram uma taxa mais rápida de cicatrização de feridas, bem como o aumento
+            tanto da expressão de colágeno quanto da atividade de proteínas envolvidas no processo de remodelação de
+            tecidos em feridas tratadas com óleo essencial de Lavandula angustifolia Mill. O objetivo foi apresentar a
+            literatura científica sobre óleo essencial de lavanda terapêutica, para expandir o repertório atual de
+            opções econômicas de cicatrização de feridas disponíveis para médicos e pacientes.
 
         </span>
+        <br>
 
+        <!-- <div class=imagem >
+<img class="img" src="img/imgslide32.png" />
+
+
+</div> -->
+        <div class="animate__animated animate__backInRight"
+            style="display: flex;align-items: center;justify-content: center;">
+            <img class=" img-fluid" src="img/imgslide32.png" style="width: 50%;">
+            <img class="botao" src="img/lupa.png" style="max-width: 40px; cursor: pointer;">
+        </div>
     </div>
 
 
 
 </div>
+<div class="jan">
+    <img src="img/imgslide32.png" style="height: 100%; background-color: white; padding: 20px;" />
+</div>
 <script>
-
-    // $('.img-fluid').zoomify();
-
+    $(() => {
+        $('.jan').hide().click(() => { $('.jan').fadeOut() });
+        $('.botao').css('cursor', 'pointer').click(() => {
+            $('.jan').css('cursor', 'pointer').fadeIn();
+        })
+    })
 </script>

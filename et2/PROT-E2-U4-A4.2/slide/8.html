@@ -14,44 +14,42 @@
 <div class="row justify-content-md-center" id="slide2">
     <div class="col-sm-10">
         <h5 class="corDestaque2 maiusculo font-weight-bold">
-            4. BREVE HISTÓRICO
-
-
-        </h5>
+            4. BREVE HISTÓRICO POR FÁBIÁN LÁSZLÓ</h5>
         <br>
     </div>
-    <div class="col-sm-5">
+    <div class="col-sm-7">
         <span class=paragrafo>
-            A partir das publicações iniciais de René-Maurice Gattefossé, a aromaterapia ressurge na Europa por volta de
-            1964, com a publicação da obra Aromatherápie, de autoria do Dr. Jean Valnet, outro grande impulsionador da
-            aromaterapia mundial, a qual já se apresentou como bastante desenvolvida, principalmente na França e na
-            Inglaterra, onde é exercida por enfermeiros, fisioterapeutas, médicos, farmacêuticos, naturopatas,
-            aromaterapeutas e demais profissionais da Saúde.
-
+            Neste vídeo o Aromatólogo Fábián László traz um breve histórico da Aromaterapia no tratamento de feridas, a
+            partir das descobertas do químico francês René-Maurice Gattefossé.
         </span>
-
-    </div>
-
-    <div class="col-sm-5">
-        <span class=paragrafo>
-            No entanto, encontramos informações da utilização dos óleos essenciais há milhares de anos, ou seja, a
-            utilização das plantas medicinais e aromáticas está impressa em nossa ancestralidade, a exemplo de algumas
-            civilizações, como no Egito Antigo, na Grécia antiga, na Índia e na China.
-
-        </span>
-        <br><br><br>
-        <div class="caixas borda-direita animate__animated animate__backInRight">
-            Sugerimos que confira também
-            a Linha do Tempo da Aromaterapia
-            de forma dinâmica, logo a seguir!
-
+        <div style="padding: 20px;">
+            <a href="https://youtu.be/RToHMbsWla4" target="_blank"><img src="img/video.png" alt=""
+                    style="width: 20%;"></a>
         </div>
-
     </div>
+
+    <!-- <div class="col-sm-3" >
+		<div class=imagem >
+<img class="img-fluid" src="img/imgslide8.png" />
+
 
 </div>
+	</div> -->
+
+
+    <div class="col-sm-3 center animate__animated animate__backInRight" style="display: flex;align-items: center;">
+        <img class=" img-fluid" src="img/imgslide8.png" style="width: 100%;">
+        <img class="botao" src="img/lupa.png" class="lupa-img" style="max-width:40px">
+    </div>
+</div>
+<div class="jan">
+    <img src="img/imgslide8.png" style="height: 100%; background-color: white; padding: 20px;" />
+</div>
 <script>
-
-    // $('.img-fluid').zoomify();
-
+    $(() => {
+        $('.jan').hide().click(() => { $('.jan').fadeOut() });
+        $('.botao').css('cursor', 'pointer').click(() => {
+            $('.jan').css('cursor', 'pointer').fadeIn();
+        })
+    })
 </script>

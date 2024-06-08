@@ -19,29 +19,40 @@
 
         </h5>
         <br>
+    </div>
+    <div class="col-sm-5">
         <span class=paragrafo>
-            São prensados a frio e retirados de sementes, frutos, castanhas, nozes e grãos. Podem ser usados puros ou
-            como carreadores (condutores) dos óleos essenciais para o organismo, através da fricção na pele (massagem),
-            nos fios e couro cabeludo.
+            A gordura existente na pele tem completa afinidade com os ácidos graxos dos óleos vegetais e também dos
+            essenciais, por isso existe uma interação muito interessante e importante para o organismo, pois os óleos
+            vegetais atuam na composição dos tecidos e na membrana celular, metabolizando hormônios. Ao massagear a pele
+            com óleo vegetal, ele penetra nas camadas da derme, atingindo a corrente sanguínea e atuando nas células.
 
         </span>
-        <br><br><br>
-        <div class="caixas alerta borda-direita animate__animated animate__backInUp">
-            Os óleos sintéticos são imitações dos OEs naturais ou composições de fantasia e costumam
-            ser denominados de "essências". Para uso terapêutico, somente os óleos essenciais são reconhecidos pelas
-            farmacopeias. Na utilização dentro da aromaterapia, jamais devemos fazer uso
-            de óleos sintéticos no manejo de quaisquer condições de saúde, já que podem provocar alergias respiratórias,
-            alergias na pele e intoxicação, além de não possuírem propriedades terapêuticas.
-            Os óleos ou as essências sintéticas também não dispõem da frequência vibracional das plantas e,
-            por isso, não apresentam o efeito psicoterapêutico que os óleos essenciais 100% naturais possuem.
-
-        </div>
 
     </div>
 
+    <!-- <div class="col-sm-5" >
+		<div class=imagem >
+<img class="img-fluid" src="img/imgslide23.png" />
+
+
+</div>
+	</div> -->
+
+
+    <div class="col-sm-5 center animate__animated animate__backInRight" style="display: flex;align-items: center;">
+        <img class=" img-fluid" src="img/imgslide23.png" style="width: 100%;">
+        <img class="botao" src="img/lupa.png" class="lupa-img" style="max-width:40px">
+    </div>
+</div>
+<div class="jan">
+    <img src="img/imgslide23.png" style="height: 100%; background-color: white; padding: 20px;" />
 </div>
 <script>
-
-    // $('.img-fluid').zoomify();
-
+    $(() => {
+        $('.jan').hide().click(() => { $('.jan').fadeOut() });
+        $('.botao').css('cursor', 'pointer').click(() => {
+            $('.jan').css('cursor', 'pointer').fadeIn();
+        })
+    })
 </script>

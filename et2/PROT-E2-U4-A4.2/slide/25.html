@@ -16,30 +16,42 @@
         <h5 class="corDestaque2 maiusculo font-weight-bold">
             7. APLICAÇÃO DOS ÓLEOS ESSENCIAIS NO TRATAMENTO DE FERIDAS
 
-
         </h5>
         <br>
+    </div>
+    <div class="col-sm-5">
         <span class=paragrafo>
-            Óleos essenciais são muito concentrados em suas propriedades e, portanto, a utilização pura na pele pode
-            aumentar o risco de reações de irritação, sensibilidade, alergia ou dermatite. Para o uso tópico,
-            normalmente utilizamos como base para incorporar o óleo essencial o óleo vegetal, as bases de creme neutro
-            e/ou base gel neutro, segundo aspectos técnicos para obtenção da forma farmacêutica.
+            Embora o maior emprego dos óleos essenciais seja por meio da aplicação de aromas específicos, por inalação
+            pelas vias respiratórias, eles também apresentam importantíssimas propriedades farmacológicas que os
+            caracterizam como antibióticos, antisépticos, antivirais, antiinflamatorios, hidratantes e cicatrizantes,
+            podendo ser utilizados no tratamento de feridas.
 
         </span>
-        <br><br><br>
-        <div class="caixas alerta borda-direita animate__animated animate__backInUp">
-            Conservação: Os óleos essenciais são sensíveis à radiação UV, exigindo o armazenamento em vidros escuros, ao
-            abrigo da luz, em locais sem grandes variações de temperatura e fora do alcance de crianças e animais.
-            Diluição: a menos que haja orientação específica de um profissional devidamente capacitado para isso, os OEs
-            nunca devem ser utilizados puros, sem diluição e diretamente sobre a pele.
-
-        </div>
 
     </div>
 
+    <!-- <div class="col-sm-5" >
+		<div class=imagem >
+<img class="img-fluid" src="img/imgslide25.png" />
+
+
+</div>
+	</div> -->
+
+
+    <div class="col-sm-5 center animate__animated animate__backInRight" style="display: flex;align-items: center;">
+        <img class=" img-fluid" src="img/imgslide25.png" style="width: 100%;">
+        <img class="botao" src="img/lupa.png" class="lupa-img" style="max-width:40px">
+    </div>
+</div>
+<div class="jan">
+    <img src="img/imgslide25.png" style="height: 100%; background-color: white; padding: 20px;" />
 </div>
 <script>
-
-    // $('.img-fluid').zoomify();
-
+    $(() => {
+        $('.jan').hide().click(() => { $('.jan').fadeOut() });
+        $('.botao').css('cursor', 'pointer').click(() => {
+            $('.jan').css('cursor', 'pointer').fadeIn();
+        })
+    })
 </script>
