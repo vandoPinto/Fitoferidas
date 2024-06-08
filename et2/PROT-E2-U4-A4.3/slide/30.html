@@ -12,40 +12,54 @@
     </div>
 </div>
 <div class="row justify-content-md-center" id="slide2">
-    <div class="col-sm-10">
+    <div class="col-sm-11">
         <h5 class="corDestaque2 maiusculo font-weight-bold">
-            12. REFERÊNCIAS BIBLIOGRÁFICAS
+            12. CONSIDERAÇÕES FINAIS
 
         </h5>
         <br>
     </div>
-    <div class="col-sm-10">
+    <div class="col-sm-2">
         <span class=paragrafo>
-            BENEVIDES, I.. Medicina e terapias antroposóficas em 12 anos da Política Nacional de Práticas Integrativas e
-            Complementares: Conceitos, normativas e resultados. Arte Médica Ampliada, 2018, Vol 38 (1):30-4.
-            <br><br>BOTT V. Medicina Ampliada. Princípios da Antroposofia nos cuidados integrativos em saúde. São Paulo:
-            Editora AAER/Ad Verbum, 2018.
-            <br><br>GIRKE M. Medicina Interna. Fundamentos e conceitos terapêuticos da Medicina Antroposófica. São
-            Paulo: Editora João de Barro, 2014.
-            <br><br>GOEBEL W. E GLÖECKER M. Consultório Pediátrico: um conselheiro médico pedagógico. São Paulo: Editora
-            Antroposófica, 2016.
-            <br><br>KIENLE G.S., ALBONICO H.-U., BAARS E., HAMRE H.J., ZIMMERMANN P., KIENE H. Medicina antroposófica:
-            um sistema de medicina integrativa originado na Europa. Arte Médica Ampliada, 2018, Vol 38 (1):05-29.
-            <br><br>LUZ M.T., AFONSO V.W. (Org.) Medicina Antroposófica como Racionalidade Médica e prática integral de
-            cuidado à saúde. Juiz de Fora, Juiz de Fora: UFJF; 2014, 195 p.
-            <br><br>Vademecum de Aplicaciones externas en la Enfermería Antroposofica. Acesso libre: <a
-                href="http://www.pflege-vademecum.de/anwendungsformen.php"
-                target="_blank">http://www.pflege-vademecum.de/anwendungsformen.php</a>
+
+            <h5 class="corDestaque2 maiusculo font-weight-bold">
+                Quadro Sintético
+                de Plantas Medicinais
+            </h5>
 
         </span>
 
     </div>
 
+    <!-- <div class="col-sm-8" >
+<div class="imagem">
+<img class="img-fluid" src="img/imgslide29.png" />
+<div class=controles >
+<a href="img/imgslide29.png" download ><img src="img/down-arq.png" /></a>
 
 
 </div>
+	</div>
+    </div> -->
+
+    <div class="col-sm-8 center animate__animated animate__backInRight"
+        style="display: flex;align-items: center;justify-content: center;">
+        <img class=" img-fluid" src="img/imgslide29.png" style="width: 60%;"><br>
+        <div class="controles"
+            style="display: flex;flex-direction: column;align-items: center;justify-content: space-around;gap: 20px;">
+            <img class="botao" src="img/lupa.png" style="max-width: 40px; cursor: pointer;">
+            <a href="img/imgslide29.png" download=""><img src="img/down-arq.png"></a>
+        </div>
+    </div>
+</div>
+<div class="jan">
+    <img src="img/imgslide29.png" style="height: 100%; background-color: white; padding: 20px;" />
+</div>
 <script>
-
-    // $('.img-fluid').zoomify();
-
+    $(() => {
+        $('.jan').hide().click(() => { $('.jan').fadeOut() });
+        $('.botao').css('cursor', 'pointer').click(() => {
+            $('.jan').css('cursor', 'pointer').fadeIn();
+        })
+    })
 </script>

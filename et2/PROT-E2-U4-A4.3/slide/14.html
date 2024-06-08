@@ -14,41 +14,34 @@
 <div class="row justify-content-md-center" id="slide2">
     <div class="col-sm-10">
         <h5 class="corDestaque2 maiusculo font-weight-bold">
-            8. ABORDAGEM DAS FERIDAS
-            <br>
-            8.1. Compreensão funcional das feridas e dos processos de cicatrização
+            7. OS TRÊS SISTEMAS FUNCIONAIS (TRIMEMBRAÇÃO)
 
 
         </h5>
         <br>
-
-
-
     </div>
 
-    <div class="col-sm-5">
-        <span class=paragrafo>
-            De maneira geral, a cicatrização de feridas envolve um fino equilíbrio das quatro organizações constituintes
-            (sólida, líquida, gasosa e calórica) e das três dimensões funcionais: anabolismo (crescimento de tecidos) e
-            forças de catabolismo (forma, remodelamento), compensadas ritmicamente.
+    <!-- <div class="col-sm-10" >
+		<div class=imagem >
+<img class="img-fluid" src="img/imgslide14.png" />
 
-        </span>
-    </div>
-
-
-    <div class="col-sm-5">
-        <span class=paragrafo>
-            Os processos de crescimento e regeneração de tecidos estão intimamente vinculados à organização vital
-            (organismo líquido). Essa organização é responsável pela sensação de bem-estar, de boa disposição e saúde.
-            Ela é beneficiada por todos os aspectos relacionados à nutrição adequada, ritmo de sono e vigília, movimento
-            e repouso.
-
-        </span>
-    </div>
 
 </div>
+	</div> -->
+
+    <div class="col-sm-10 center animate__animated animate__backInRight" style="display: flex;align-items: center;">
+        <img class=" img-fluid" src="img/imgslide14.png" style="width: 100%;">
+        <img class="botao" src="img/lupa.png" class="lupa-img" style="max-width:40px">
+    </div>
+</div>
+<div class="jan">
+    <img src="img/imgslide14.png" style="height: 100%; background-color: white; padding: 20px;" />
+</div>
 <script>
-
-    // $('.img-fluid').zoomify();
-
+    $(() => {
+        $('.jan').hide().click(() => { $('.jan').fadeOut() });
+        $('.botao').css('cursor', 'pointer').click(() => {
+            $('.jan').css('cursor', 'pointer').fadeIn();
+        })
+    })
 </script>
