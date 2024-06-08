@@ -1,9 +1,9 @@
-<div class="row" >
+<div class="row">
 
     <div class="col-sm-7 textoJustificado">
         <div class="navbar-dark identificadorAulas">
 
-            <div id="dadosAula" class=dados >
+            <div id="dadosAula" class=dados>
 
             </div>
         </div>
@@ -14,28 +14,51 @@
 <div class="row justify-content-md-center" id="slide2">
     <div class="col-sm-10">
         <h5 class="corDestaque2 maiusculo font-weight-bold">
-8. A FARMÁCIA VIVA DA SECRETARIA DE ESTADO DE SAÚDE DO DF
+            8. A FARMÁCIA VIVA DA SECRETARIA DE ESTADO DE SAÚDE DO DF
 
-        </h5> 
+        </h5>
         <br>
-		</div>
-		<div class="col-sm-5" >
-<span class=paragrafo >
-O vídeo seguinte apresenta a Farmácia Viva da Secretaria de Estado de Saúde do Distrito Federal, que iniciou suas atividades em 2003, com o objetivo de integrar a fitoterapia como opção terapêutica na Atenção Primária à saúde do DF. Seu coordenador relata os programas e projetos que fazem uso de plantas medicinais e fitoterápicos, ressaltando àqueles utilizados no tratamento de feridas.
-
-</span>
-	
-	</div>
-	
-	<div class="col-sm-5" >
-<div class="imagem">
-<img class="img-fluid" src="img/imgslide12.png" />
-
-	</div>
     </div>
-       </div>
+    <div class="col-sm-7">
+        <span class=paragrafo>
+            Os vídeos seguintes apresentam a Farmácia Viva da Secretaria de Estado de Saúde do Distrito Federal, que
+            iniciou suas atividades em 2003, com o objetivo de integrar a fitoterapia como opção terapêutica na Atenção
+            Primária à saúde do DF. Seu coordenador relata os programas e projetos que fazem uso de plantas medicinais e
+            fitoterápicos, ressaltando aqueles utilizados no tratamento de feridas.
+
+
+        </span>
+        <div class=" animate__animated animate__backInLeft"
+            style="display: flex;margin: 40px auto;align-items: center;justify-content: center;">
+            <a href="https://youtu.be/jS2v0QhW8qc" target="_blank"><img src="img/video.png" alt=""
+                    style="width: 60%;"></a>
+            <a href="https://youtu.be/PkWgVmywGnw" target="_blank"><img src="img/video.png" alt=""
+                    style="width: 60%;"></a>
+            <a href="https://youtu.be/Bmjd7Y3MLDI" target="_blank"><img src="img/video.png" alt=""
+                    style="width: 60%;"></a>
+            <a href="https://youtu.be/K3lHpWsepCY" target="_blank"><img src="img/video.png" alt=""
+                    style="width: 60%;"></a>
+        </div>
+    </div>
+    <!-- <div class="col-sm-5">
+        <div class="imagem">
+            <img class="img-fluid" src="img/imgslide12.png" />
+
+        </div>
+    </div> -->
+    <div class="col-sm-3 center animate__animated animate__backInRight" style="display: flex;align-items: center;">
+        <img class=" img-fluid" src="img/imgslide12.png" style="width: 100%;">
+        <img class="botao" src="img/lupa.png" class="lupa-img" style="max-width:40px">
+    </div>
+</div>
+<div class="jan">
+    <img src="img/imgslide12.png" style="height: 100%; background-color: white; padding: 20px;" />
+</div>
 <script>
-
-    $('.img-fluid').zoomify();
-
+    $(() => {
+        $('.jan').hide().click(() => { $('.jan').fadeOut() });
+        $('.botao').css('cursor', 'pointer').click(() => {
+            $('.jan').css('cursor', 'pointer').fadeIn();
+        })
+    })
 </script>

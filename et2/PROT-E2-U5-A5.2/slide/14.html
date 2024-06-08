@@ -1,9 +1,9 @@
-<div class="row" >
+<div class="row">
 
     <div class="col-sm-7 textoJustificado">
         <div class="navbar-dark identificadorAulas">
 
-            <div id="dadosAula" class=dados >
+            <div id="dadosAula" class=dados>
 
             </div>
         </div>
@@ -14,30 +14,50 @@
 <div class="row justify-content-md-center" id="slide2">
     <div class="col-sm-10">
         <h5 class="corDestaque2 maiusculo font-weight-bold">
-10. FARMÁCIA DA NATUREZA – INTEGRAÇÃO SERVIÇO E ESCOLA
+            11. A EXPERIÊNCIA DE SÃO BENTO DO SUL – SC
 
-        </h5> 
+        </h5>
         <br>
-		</div>
-		<div class="col-sm-5" >
-<span class=paragrafo >
-Apresentaremos entrevistas realizadas com os coordenadores responsáveis pelo projeto de extensão da Faculdade de Medicina de Ribeirão Preto/USP, profissionais de saúde e técnicos responsáveis pela Farmácia da Natureza, enfatizando a aplicação de plantas medicinais e fitoterápicos no tratamento de feridas.
-
-
-
-</span>
-	
-	</div>
-	
-	<div class="col-sm-5" >
-<div class="imagem">
-<img class="img-fluid" src="img/imgslide15.png" />
-
-	</div>
     </div>
-       </div>
+    <div class="col-sm-7">
+        <span class=paragrafo>
+            Apresentamos a experiência do município de São Bento do Sul - SC com a aplicação de fitoterápicos no
+            tratamento de feridas. Ele começa com a entrevista da farmacêutica coordenadora de Farmácias Vivas e do
+            Centro Municipal de Práticas Integrativas - CEMPICS - do município. Em seguida você assistirá entrevistas
+            com a enfermeira responsável pelo tratamento de feridas com fitoterápicos na Unidade Básica de Saúde
+            Central, com a técnica de enfermagem e usuárias do serviço.
+
+        </span>
+        <div class=" animate__animated animate__backInLeft"
+            style="display: flex;margin: 40px auto;align-items: center;justify-content: center;">
+            <a href="https://youtu.be/w-1aOg_ktTQ" target="_blank"><img src="img/video.png" alt=""
+                    style="width: 60%;"></a>
+            <a href="https://youtu.be/83Qe06ElS3s" target="_blank"><img src="img/video.png" alt=""
+                    style="width: 60%;"></a>
+            <a href="https://youtu.be/-pvmGljF3gw" target="_blank"><img src="img/video.png" alt=""
+                    style="width: 60%;"></a>
+        </div>
+    </div>
+
+    <!-- <div class="col-sm-5">
+        <div class="imagem">
+            <img class="img-fluid" src="img/imgslide16.png" />
+
+        </div>
+    </div> -->
+    <div class="col-sm-3 center animate__animated animate__backInRight" style="display: flex;align-items: center;">
+        <img class=" img-fluid" src="img/vera.png" style="width: 100%;">
+        <img class="botao" src="img/lupa.png" class="lupa-img" style="max-width:40px">
+    </div>
+</div>
+<div class="jan">
+    <img src="img/vera.png" style="height: 100%; background-color: white; padding: 20px;" />
+</div>
 <script>
-
-    $('.img-fluid').zoomify();
-
+    $(() => {
+        $('.jan').hide().click(() => { $('.jan').fadeOut() });
+        $('.botao').css('cursor', 'pointer').click(() => {
+            $('.jan').css('cursor', 'pointer').fadeIn();
+        })
+    })
 </script>

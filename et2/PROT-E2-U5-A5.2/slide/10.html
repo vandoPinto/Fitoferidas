@@ -1,9 +1,9 @@
-<div class="row" >
+<div class="row">
 
     <div class="col-sm-7 textoJustificado">
         <div class="navbar-dark identificadorAulas">
 
-            <div id="dadosAula" class=dados >
+            <div id="dadosAula" class=dados>
 
             </div>
         </div>
@@ -14,30 +14,57 @@
 <div class="row justify-content-md-center" id="slide2">
     <div class="col-sm-10">
         <h5 class="corDestaque2 maiusculo font-weight-bold">
-7. A EXPERIÊNCIA EM  IGREJINHA - RS
+            7. A EXPERIÊNCIA EM IGREJINHA - RS
 
-        </h5> 
+        </h5>
         <br>
-		</div>
-		<div class="col-sm-5" >
-<span class=paragrafo >
-Neste vídeo as farmacêuticas responsáveis pela Farmácia Municipal de Igrejinha- RS, apresentarão a experiência obtida de mais de quinze anos atuando com processos de dispensação e manipulação de fitoterápicos e produtos naturais. 
-<br><br>
-Em seguida, você assistirá uma entrevista com  a enfermeira responsável  pelo tratamento de feridas com fitoterápicos na Unidade Básica de Saúde - Centro, do município. O vídeo se encerra com depoimentos de usuários em tratamento de  feridas com  fitoterápicos na Unidade Básica de Saúde.
+    </div>
+    <div class="col-sm-7">
+        <span class=paragrafo>
+            Você conhecerá as farmacêuticas responsáveis pela Farmácia Municipal de Igrejinha - RS, apresentando a
+            experiência obtida de mais de quinze anos atuando com processos de dispensação e manipulação de
+            fitoterápicos e produtos naturais.
+            <br>
+            Em seguida, você assistirá uma entrevista com a enfermeira responsável pelo tratamento de feridas com
+            fitoterápicos na Atenção Primária, uma usuária que segue em assistência domiciliar, dentre outros
+            profissionais envolvidos no município.
 
-</span>
-	
-	</div>
-	
-	<div class="col-sm-5" >
+
+        </span>
+        <div class=" animate__animated animate__backInLeft"
+            style="display: flex;margin: 40px auto;align-items: center;justify-content: center;">
+            <a href="https://youtu.be/iVxwuwbR3SA" target="_blank"><img src="img/video.png" alt=""
+                    style="width: 60%;"></a>
+            <a href="https://youtu.be/PsHjUcWLt4I" target="_blank"><img src="img/video.png" alt=""
+                    style="width: 60%;"></a>
+            <a href="https://youtu.be/uNU5Ve1vxhg" target="_blank"><img src="img/video.png" alt=""
+                    style="width: 60%;"></a>
+            <a href="https://youtu.be/lkeylWBBRa0" target="_blank"><img src="img/video.png" alt=""
+                    style="width: 60%;"></a>
+        </div>
+    </div>
+
+    <!-- <div class="col-sm-5" >
 <div class="imagem">
 <img class="img-fluid" src="img/imgslide11.png" />
 
 	</div>
+    </div> -->
+
+    <div class="col-sm-3 center animate__animated animate__backInRight" style="display: flex;align-items: center;">
+        <img class=" img-fluid" src="img/imgslide11.png" style="width: 100%;">
+        <img class="botao" src="img/lupa.png" class="lupa-img" style="max-width:40px">
     </div>
-       </div>
+</div>
+<div class="jan">
+    <img src="img/imgslide11.png" style="height: 100%; background-color: white; padding: 20px;" />
+</div>
 <script>
-
-    $('.img-fluid').zoomify();
-
+    $(() => {
+        $('.jan').hide().click(() => { $('.jan').fadeOut() });
+        $('.botao').css('cursor', 'pointer').click(() => {
+            $('.jan').css('cursor', 'pointer').fadeIn();
+        })
+    })
 </script>
+</div>

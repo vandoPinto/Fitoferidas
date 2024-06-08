@@ -1,9 +1,9 @@
-<div class="row" >
+<div class="row">
 
     <div class="col-sm-7 textoJustificado">
         <div class="navbar-dark identificadorAulas">
 
-            <div id="dadosAula" class=dados >
+            <div id="dadosAula" class=dados>
 
             </div>
         </div>
@@ -14,28 +14,48 @@
 <div class="row justify-content-md-center" id="slide2">
     <div class="col-sm-10">
         <h5 class="corDestaque2 maiusculo font-weight-bold">
-6. O PROGRAMA FARMÁCIAS VIVAS DE FORTALEZA - CE
-
-        </h5> 
+            6. O PROGRAMA FARMÁCIAS VIVAS DE FORTALEZA - CE</h5>
         <br>
-		</div>
-		<div class="col-sm-5" >
-<span class=paragrafo >
-Agora você verá o Programa Farmácias Vivas de Fortaleza, por meio de  entrevistas com a diretora do Horto de Plantas Medicinais Prof. José de Abreu Matos da Universidade do Ceará  e a coordenadora da Oficina Farmacêutica de Farmácias Vivas. Ainda, o vídeo traz a entrevista com o  responsável técnico da Assistência de Enfermagem no tratamento de feridas com fitoterápicos, no município de Fortaleza. Interessantíssimo!
-
-</span>
-	
-	</div>
-	
-	<div class="col-sm-5" >
-<div class="imagem">
-<img class="img-fluid" src="img/imgslide9.png" />
-
-	</div>
     </div>
-       </div>
+    <div class="col-sm-7">
+        <span class=paragrafo>
+            Agora você conhecerá o Programa Farmácias Vivas de Fortaleza, por meio de entrevistas com a diretora do
+            Horto de Plantas Medicinais Prof. José de Abreu Matos da Universidade do Ceará e a coordenadora da Oficina
+            Farmacêutica de Farmácias Vivas, engenheiro agrônomo responsável técnico pelo Horto Municipal de Plantas
+            Medicinais de Fortaleza. O vídeo traz também entrevista com a responsável técnico da Assistência de
+            Enfermagem no tratamento de feridas com fitoterápicos, no município de Fortaleza.
+
+        </span>
+        <div class=" animate__animated animate__backInLeft"
+            style="display: flex;margin: 40px auto;align-items: center;justify-content: center;">
+            <a href="https://youtu.be/AKQ9LD-T7ws" target="_blank"><img src="img/video.png" alt=""
+                    style="width: 60%;"></a>
+            <a href="https://youtu.be/Y-1Z3m3v_Y8" target="_blank"><img src="img/video.png" alt=""
+                    style="width: 60%;"></a>
+            <a href="https://youtu.be/-HQ3gI7Hpgo" target="_blank"><img src="img/video.png" alt=""
+                    style="width: 60%;"></a>
+        </div>
+    </div>
+
+    <!-- <div class="col-sm-5">
+        <div class="imagem">
+            <img class="img-fluid" src="img/imgslide9.png" />
+
+        </div>
+    </div> -->
+    <div class="col-sm-3 center animate__animated animate__backInRight" style="display: flex;align-items: center;">
+        <img class=" img-fluid" src="img/imgslide10.png" style="width: 100%;">
+        <img class="botao" src="img/lupa.png" class="lupa-img" style="max-width:40px">
+    </div>
+</div>
+<div class="jan">
+    <img src="img/imgslide10.png" style="height: 100%; background-color: white; padding: 20px;" />
+</div>
 <script>
-
-    $('.img-fluid').zoomify();
-
+    $(() => {
+        $('.jan').hide().click(() => { $('.jan').fadeOut() });
+        $('.botao').css('cursor', 'pointer').click(() => {
+            $('.jan').css('cursor', 'pointer').fadeIn();
+        })
+    })
 </script>

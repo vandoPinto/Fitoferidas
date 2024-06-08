@@ -1,9 +1,9 @@
-<div class="row" >
+<div class="row">
 
     <div class="col-sm-7 textoJustificado">
         <div class="navbar-dark identificadorAulas">
 
-            <div id="dadosAula" class=dados >
+            <div id="dadosAula" class=dados>
 
             </div>
         </div>
@@ -14,28 +14,53 @@
 <div class="row justify-content-md-center" id="slide2">
     <div class="col-sm-10">
         <h5 class="corDestaque2 maiusculo font-weight-bold">
-10. FARMÁCIA DA NATUREZA – INTEGRAÇÃO SERVIÇO E ESCOLA
+            10. FARMÁCIA DA NATUREZA – INTEGRAÇÃO SERVIÇO E ESCOLA
 
-        </h5> 
+        </h5>
         <br>
-		</div>
-		<div class="col-sm-5" >
-<span class=paragrafo >
-Neste próximo vídeo serão relatados os programas e projetos de extensão universitária da Faculdade de Medicina de Ribeirão Preto/USP e a Universidade de Ribeirão Preto – UNAERP - em parceria com a Prefeitura do Município de Jardinópolis – SP. Apresentaremos a Farmácia da Natureza que foi certificada em 2020 como Farmácia Viva Modelo 3 , que desde 2003 faz a dispensação de plantas medicinais e fitoterápicos ao SUS. 
+    </div>
+    <div class="col-sm-7">
+        <span class=paragrafo>
+            Nos próximos vídeos serão relatados os programas e projetos de extensão universitária da Faculdade de
+            Medicina de Ribeirão Preto/USP e a Universidade de Ribeirão Preto – UNAERP - em parceria com a Prefeitura do
+            Município de Jardinópolis – SP. Apresentaremos a Farmácia da Natureza que foi certificada em 2020 como
+            Farmácia Viva Modelo 3, que desde 2003 faz a dispensação de plantas medicinais e fitoterápicos no SUS.
+            Experiência inclusive premiada, aproveite!
 
-</span>
-	
-	</div>
-	
-	<div class="col-sm-5" >
+
+        </span>
+        <div class=" animate__animated animate__backInLeft"
+            style="display: flex;margin: 40px auto;align-items: center;justify-content: center;">
+            <a href="https://youtu.be/yecFPGHh-xo" target="_blank"><img src="img/video.png" alt=""
+                    style="width: 60%;"></a>
+            <a href="https://youtu.be/jGTTHFTt2bU" target="_blank"><img src="img/video.png" alt=""
+                    style="width: 60%;"></a>
+            <a href="https://youtu.be/FG9-WlaJjK8" target="_blank"><img src="img/video.png" alt=""
+                    style="width: 60%;"></a>
+            <a href="https://youtu.be/zcN1qgE82PE" target="_blank"><img src="img/video.png" alt=""
+                    style="width: 60%;"></a>
+        </div>
+    </div>
+
+    <!-- <div class="col-sm-5" >
 <div class="imagem">
 <img class="img-fluid" src="img/imgslide14.png" />
 
 	</div>
+    </div> -->
+    <div class="col-sm-3 center animate__animated animate__backInRight" style="display: flex;align-items: center;">
+        <img class=" img-fluid" src="img/imgslide14.png" style="width: 100%;">
+        <img class="botao" src="img/lupa.png" class="lupa-img" style="max-width:40px">
     </div>
-       </div>
+</div>
+<div class="jan">
+    <img src="img/imgslide14.png" style="height: 100%; background-color: white; padding: 20px;" />
+</div>
 <script>
-
-    $('.img-fluid').zoomify();
-
+    $(() => {
+        $('.jan').hide().click(() => { $('.jan').fadeOut() });
+        $('.botao').css('cursor', 'pointer').click(() => {
+            $('.jan').css('cursor', 'pointer').fadeIn();
+        })
+    })
 </script>

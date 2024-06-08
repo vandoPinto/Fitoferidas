@@ -1,9 +1,9 @@
-<div class="row" >
+<div class="row">
 
     <div class="col-sm-7 textoJustificado">
         <div class="navbar-dark identificadorAulas">
 
-            <div id="dadosAula" class=dados >
+            <div id="dadosAula" class=dados>
 
             </div>
         </div>
@@ -14,28 +14,51 @@
 <div class="row justify-content-md-center" id="slide2">
     <div class="col-sm-10">
         <h5 class="corDestaque2 maiusculo font-weight-bold">
-9. O CASO DA UNIFAP/MACAPÁ – AP
+            9. O CASO DA UNIFAP/MACAPÁ – AP
 
-        </h5> 
+        </h5>
         <br>
-		</div>
-		<div class="col-sm-5" >
-<span class=paragrafo >
-Este vídeo traz entrevistas com os enfermeiros responsáveis pelo projeto de extensão universitária da Universidade Federal do Amapá, denominado Time de Gestão em Feridas Complexas - TIGESFC. Este projeto, criado em 2019, tem entre seus  objetivos assistir usuários da Unidade Básica de Saúde da UNIFAP no tratamento de feridas complexas com plantas medicinais e fitoterápicos. Além disso, serão mostradas as dependências da Unidade Básica de Saúde e da universidade. Ele fecha com depoimentos de usuários que fazem parte do projeto.
-
-</span>
-	
-	</div>
-	
-	<div class="col-sm-5" >
-<div class="imagem">
-<img class="img-fluid" src="img/imgslide13.png" />
-
-	</div>
     </div>
-       </div>
+    <div class="col-sm-7">
+        <span class=paragrafo>
+            Agora você assistirá às entrevistas com os profissionais de enfermagem responsáveis pelo projeto de Extensão
+            Universitária da Universidade Federal do Amapá, denominado Time de Gestão em Feridas Complexas - TIGESFC.
+            Este projeto, criado em 2019, tem entre seus objetivos assistir usuários da Unidade Básica de Saúde da
+            UNIFAP no tratamento de feridas complexas com plantas medicinais e fitoterápicos. Além disso, serão
+            mostrados atendimentos de usuários na Unidade Básica de Saúde, e as dependências dos laboratórios da
+            universidade.
+
+
+        </span>
+        <div class=" animate__animated animate__backInLeft"
+            style="display: flex;margin: 40px auto;align-items: center;justify-content: center;">
+            <a href="https://youtu.be/lgjibeuJlUs" target="_blank"><img src="img/video.png" alt=""
+                    style="width: 60%;"></a>
+            <a href="https://youtu.be/tcZd2yxJddg" target="_blank"><img src="img/video.png" alt=""
+                    style="width: 60%;"></a>
+            <a href="https://youtu.be/3bRXmCVFO-U" target="_blank"><img src="img/video.png" alt=""
+                    style="width: 60%;"></a>
+        </div>
+    </div>
+    <!-- <div class="col-sm-5">
+        <div class="imagem">
+            <img class="img-fluid" src="img/imgslide13.png" />
+
+        </div>
+    </div> -->
+    <div class="col-sm-3 center animate__animated animate__backInRight" style="display: flex;align-items: center;">
+        <img class=" img-fluid" src="img/imgslide13.png" style="width: 100%;">
+        <img class="botao" src="img/lupa.png" class="lupa-img" style="max-width:40px">
+    </div>
+</div>
+<div class="jan">
+    <img src="img/imgslide13.png" style="height: 100%; background-color: white; padding: 20px;" />
+</div>
 <script>
-
-    $('.img-fluid').zoomify();
-
+    $(() => {
+        $('.jan').hide().click(() => { $('.jan').fadeOut() });
+        $('.botao').css('cursor', 'pointer').click(() => {
+            $('.jan').css('cursor', 'pointer').fadeIn();
+        })
+    })
 </script>

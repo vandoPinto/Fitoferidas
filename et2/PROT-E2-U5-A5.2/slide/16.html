@@ -1,9 +1,9 @@
-<div class="row" >
+<div class="row">
 
     <div class="col-sm-7 textoJustificado">
         <div class="navbar-dark identificadorAulas">
 
-            <div id="dadosAula" class=dados >
+            <div id="dadosAula" class=dados>
 
             </div>
         </div>
@@ -14,29 +14,52 @@
 <div class="row justify-content-md-center" id="slide2">
     <div class="col-sm-10">
         <h5 class="corDestaque2 maiusculo font-weight-bold">
-12. APLICAÇÃO DE FITOTERÁPICOS NO TRATAMENTO DE FERIDAS NO MUNICÍPIO DE BREJO DA MADRE DE DEUS - PE
+            13. A EXPERIÊNCIA DO MUNICÍPIO DE TOLEDO COM PLANTAS MEDICINAIS E FITOTERÁPICOS
 
-        </h5> 
+        </h5>
         <br>
-		</div>
-		<div class="col-sm-5" >
-<span class=paragrafo >
-Neste vídeo será apresentada a experiência de mais de 20 anos do Município Brejo da Madre de Deus, no estado de Pernambuco com a aplicação de fitoterápicos no tratamento de feridas. Serão entrevistados os profissionais responsáveis pela Farmácia Viva – Modelo 3  e os profissionais enfermeiros responsáveis pelo  tratamento de feridas com plantas medicinais e fitoterápicos nas Unidade Básicas de Saúde.
-
-
-</span>
-	
-	</div>
-	
-	<div class="col-sm-5" >
-<div class="imagem">
-<img class="img-fluid" src="img/imgslide17.png" />
-
-	</div>
     </div>
-       </div>
+    <div class="col-sm-7">
+        <span class=paragrafo>
+            Agora apresentaremos a experiência do município de Toledo – PR, com ênfase no tratamento de feridas com
+            plantas medicinais e fitoterápicos na Atenção Primária à Saúde no SUS do município. Você assistirá a
+            entrevista com a coordenadora do Programa Municipal de Plantas Medicinais e Fitoterápicos de Toledo –
+            PROFITO, e a farmacêutica responsável pela dispensação dos fitoterápicos na rede pública de saúde.
+            Apresentaremos também as experiências no tratamento de feridas com fitoterápicos através da entrevista com a
+            enfermeira responsável por este trabalho, além de entrevista com uma usuária do serviço.
+
+        </span>
+        <div class=" animate__animated animate__backInLeft"
+            style="display: flex;margin: 40px auto;align-items: center;justify-content: center;">
+            <a href="https://youtu.be/T8AmkPFWtkI" target="_blank"><img src="img/video.png" alt=""
+                    style="width: 60%;"></a>
+            <a href="https://youtu.be/mByeCdsvL2Y" target="_blank"><img src="img/video.png" alt=""
+                    style="width: 60%;"></a>
+            <a href="https://youtu.be/MyBmzV6d7FE" target="_blank"><img src="img/video.png" alt=""
+                    style="width: 60%;"></a>
+        </div>
+    </div>
+
+    <!-- <div class="col-sm-5">
+        <div class="imagem">
+            <img class="img-fluid" src="img/imgslide17.png" />
+
+        </div>
+    </div> -->
+
+    <div class="col-sm-3 center animate__animated animate__backInRight" style="display: flex;align-items: center;">
+        <img class=" img-fluid" src="img/imgslide18.png" style="width: 100%;">
+        <img class="botao" src="img/lupa.png" class="lupa-img" style="max-width:40px">
+    </div>
+</div>
+<div class="jan">
+    <img src="img/imgslide18.png" style="height: 100%; background-color: white; padding: 20px;" />
+</div>
 <script>
-
-    $('.img-fluid').zoomify();
-
+    $(() => {
+        $('.jan').hide().click(() => { $('.jan').fadeOut() });
+        $('.botao').css('cursor', 'pointer').click(() => {
+            $('.jan').css('cursor', 'pointer').fadeIn();
+        })
+    })
 </script>
