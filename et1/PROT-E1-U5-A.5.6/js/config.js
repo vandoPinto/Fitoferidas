@@ -29,6 +29,7 @@ items.push({ 'titulo': '', 'nome': 'Aula 10', 'arquivo': '10.html', 'identificad
 items.push({ 'titulo': 'CLASSIFICAÇÃO DAS MASD E PRINCIPAIS CAUSAS', 'nome': 'Aula 11', 'arquivo': '11.html', 'identificador': '10' });
 items.push({ 'titulo': 'CONSIDERAÇÕES FINAIS', 'nome': 'Aula 12', 'arquivo': '12.html', 'identificador': '11' });
 items.push({ 'titulo': 'AVALIAÇÃO', 'nome': 'Aula 13', 'arquivo': '13.html', 'identificador': '12' });
+items.push({ 'titulo': 'REFERÊNCIAS', 'nome': 'Aula 14', 'arquivo': '14.html', 'identificador': '13' });
 /*
 items.push({ 'titulo': '', 'nome': 'Aula 14', 'arquivo': '14.html', 'identificador': '13'});
 items.push({ 'titulo': '', 'nome': 'Aula 15', 'arquivo': '15.html', 'identificador': '14'});
