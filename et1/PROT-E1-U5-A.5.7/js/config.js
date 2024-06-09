@@ -28,10 +28,11 @@ items.push({ 'titulo': '', 'nome': 'Aula 9', 'arquivo': '9.html', 'identificador
 items.push({ 'titulo': '', 'nome': 'Aula 10', 'arquivo': '10.html', 'identificador': '9' });
 items.push({ 'titulo': 'IMPORTANTE! PREVENÇÃO!', 'nome': 'Aula 11', 'arquivo': '11.html', 'identificador': '10' });
 items.push({ 'titulo': 'PLANTAS MEDICINAIS E FITOTERÁPICOS', 'nome': 'Aula 12', 'arquivo': '12.html', 'identificador': '11' });
-items.push({ 'titulo': 'AVALIAÇÃO', 'nome': 'Aula 13', 'arquivo': '13.html', 'identificador': '12' });
+items.push({ 'titulo': 'CONSIDERAÇÕES FINAIS', 'nome': 'Aula 13', 'arquivo': '13.html', 'identificador': '12' });
+items.push({ 'titulo': 'AVALIAÇÃO', 'nome': 'Aula 14', 'arquivo': '14.html', 'identificador': '13' });
 
-items.push({ 'titulo': 'DIALOGUE COM A PRÁTICA', 'nome': 'Aula 14', 'arquivo': '14.html', 'identificador': '13' });
-items.push({ 'titulo': 'REFERÊNCIAS', 'nome': 'Aula 15', 'arquivo': '15.html', 'identificador': '14' });
+items.push({ 'titulo': 'DIALOGUE COM A PRÁTICA', 'nome': 'Aula 15', 'arquivo': '15.html', 'identificador': '14' });
+items.push({ 'titulo': 'REFERÊNCIAS', 'nome': 'Aula 16', 'arquivo': '16.html', 'identificador': '15' });
 /*
 items.push({ 'titulo': '', 'nome': 'Aula 16', 'arquivo': '16.html', 'identificador': '15'});
 items.push({ 'titulo': '', 'nome': 'Aula 17', 'arquivo': '17.html', 'identificador': '16'});
