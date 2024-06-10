@@ -18,39 +18,43 @@
 
         </h5>
         <br>
-        <span class=paragrafo>
-            Os diterpenos pertencem à classe dos terpenos constituídos por 20 átomos de carbono, correspondendo a quatro
-            unidades de isopreno - Tabela 1. Nesse grupo encontra-se uma série de metabólitos importantes
-            farmacologicamente, destacando-se o óleo-resina da Copaíba, planta já citada para o tratamento de feridas em
-            cujos constituintes diterpênicos é atribuída a maioria das propriedades terapêuticas, fato comprovado
-            cientificamente como atividade anti-inflamatória e cicatrizante, além da presença ainda de sesquiterpenos
-            que contribuem também com a atividade antisséptica do produto vegetal. As concentrações e a natureza dos
-            sesquiterpenos e diterpenos podem variar, mas essas duas classes de produtos naturais, e mais nenhuma outra,
-            devem estar sempre presentes nos óleos de copaíba (Veiga Jr. et al., 2005).
-
-        </span>
-        <br><br><br>
-        <div class="caixas saibamais borda-direita animate__animated animate__backInRight">
-            Veja mais sobre este tema nas seguintes aulas ambas na Etapa 2: Unidade 3 - Monografias de Plantas
-            Medicinais com Potencialidades para o Tratamento de Feridas Copaifera spp
-        </div>
-
-
-
     </div>
 
+    <div class="col-sm-5">
+        <span class="paragrafo">
+            O gingerol é dotado de propriedades antioxidantes e anti-inflamatórias que protegem o organismo de bactérias
+            e fungos. Frequentemente, é atribuída a ele a capacidade de melhorar a digestão, aliviar a dor nas
+            articulações, como antioxidante, tratar enxaquecas, além de prevenir náuseas e tonturas, entre muitas
+            outras.
 
+        </span>
 
+        <br>
+    </div>
 
-
-
+    <!-- <div class="col-sm-5">
+<div class="imagem">
+<img class="img-fluid" src="img/imgslide20.png" />
 </div>
 
+<br>
+    </div> -->
 
-
+    <div class="col-sm-5 center animate__animated animate__backInRight"
+        style="display: flex;justify-content: center;align-items: center;">
+        <img class=" img-fluid" src="img/imgslide20.png" style="width: 100%;">
+        <img class="botao" src="img/lupa.png" style="max-width: 40px; cursor: pointer;">
+    </div>
 </div>
+<div class="jan">
+    <img src="img/imgslide20.png" style="height: 100%; background-color: white; padding: 20px;" />
+</div>
+
 <script>
-
-    // $('.img-fluid').zoomify();
-
+    $(() => {
+        $('.jan').hide().click(() => { $('.jan').fadeOut() });
+        $('.botao').css('cursor', 'pointer').click(() => {
+            $('.jan').css('cursor', 'pointer').fadeIn();
+        })
+    })
 </script>

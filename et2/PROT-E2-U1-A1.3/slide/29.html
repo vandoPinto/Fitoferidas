@@ -16,36 +16,48 @@
         <h5 class="corDestaque2 maiusculo font-weight-bold">
             7.2. COMPOSTOS FENÓLICOS - TANINOS
 
+
         </h5>
         <br>
-        <span class=paragrafo>
-            A Farmacopeia Brasileira descreve que a quantidade mínima de taninos para utilização medicinal é de 8%
-            (BRASIL, 2014). Entretanto, esses níveis de taninos podem variar de acordo com a espécie, localização
-            geográfica e parte da planta empregada (LOPES et al., 2009).
+    </div>
+    <div class="col-sm-7">
+        <span class="paragrafo">
 
+            Importante ressaltar que os efeitos medicinais do barbatimão são atribuídos ao elevado teor de taninos em
+            sua composição química, podendo atingir níveis de 20% a 50%. Existem três propriedades químicas gerais dos
+            taninos, que são responsáveis pela maior parte das atividades farmacológicas: a formação de complexos com
+            íons metálicos; a atividade antioxidante e sequestradora de radicais livres; e a habilidade de formar
+            complexos com outras moléculas, como proteínas e polissacarídeos (BRASIL, 2014).
+            <br><br>
+            As propriedades farmacológicas de cicatrização de feridas foram demonstradas em diversos estudos clínicos e
+            não clínicos com Stryphnodendron adstringens (Mart.) Coville.
 
         </span>
-        <br><br><br>
-        <div class="caixas saibamais borda-direita animate__animated animate__backInRight">
-            Veja mais sobre este tema: Monografias de Plantas Medicinais com
-            Potencialidades para o Tratamento de Feridas – Etapa 2 – Unidade 3.
-            Hamamelis virginiana L. e Stryphnodendron adstringens (Mart.) Coville.
 
-        </div>
     </div>
+    <!-- <div class="col-sm-3"> 
+   <div class="imagem">
+	<img class="img-fluid" src="img/imgslide29.png" />
+	
+	</div>
+</div> -->
 
 
-
-
-
-
-
-
-
-
+    <div class="col-sm-3 center animate__animated animate__backInRight"
+        style="display: flex;justify-content: center;align-items: center;">
+        <img class=" img-fluid" src="img/imgslide29.png" style="width: 100%;">
+        <img class="botao" src="img/lupa.png" style="max-width: 40px; cursor: pointer;">
+    </div>
 </div>
+<div class="jan">
+    <img src="img/imgslide29.png" style="height: 100%; background-color: white; padding: 20px;" />
+</div>
+
 <script>
-
-    // $('.img-fluid').zoomify();
-
+    $(() => {
+        $('.jan').hide().click(() => { $('.jan').fadeOut() });
+        $('.botao').css('cursor', 'pointer').click(() => {
+            $('.jan').css('cursor', 'pointer').fadeIn();
+        })
+    })
 </script>

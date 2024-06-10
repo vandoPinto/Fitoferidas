@@ -16,31 +16,57 @@
         <h5 class="corDestaque2 maiusculo font-weight-bold">
             6. METABÓLITOS SECUNDÁRIOS - TERPENOS
 
+
         </h5>
         <br>
-
-
-        <span class="paragrafo">
-            Como exemplos de monoterpenos, citamos o timol, monoterpeno com anel aromático, presente em torno de 70% do
-            óleo essencial de Lippia origanoides Kunth.
-
-        </span>
-        <br><br><br>
-        <div class="caixas saibamais borda-direita  animate__animated animate__backInUp">
-            Veja mais sobre este tema, nesta Etapa 2: Monografias de Plantas Medicinais com Potencialidades para o
-            Tratamento de Feridas – Unidade 3 . Lippia origanoides Kunth. Aula 4.2. Aromaterapia. – Unidade 4
-
-        </div>
     </div>
 
 
+
+    <div class="col-sm-5">
+
+        <span class="paragrafo">
+            Esses produtos são misturas complexas de substâncias voláteis, lipofílicas, geralmente odoríferas, líquidas
+            e arrastadas pelo vapor d'água - daí a compreensão das técnicas utilizadas para extração, como a destilação
+            por arraste a vapor dágua, coobação (destilação repetida, a fim de se obter maior concentração dos
+            princípios ativos). Deve-se entender ainda o porquê de plantas ricas em óleos essenciais serem utilizadas em
+            inalação.
+
+        </span>
+
+    </div>
+
+    <!-- <div class="col-sm-5">
+ <div class="imagem">
+     <img  class="img-fluid" src="img/imgslide16.png" /><br>
+	<div class="controles">
+	<a href="img/imgslide16.png" download ><img src="img/down-arq.png" /></a>
+	</div>
 </div>
 
+</div> -->
 
 
+
+    <div class="col-sm-5 center animate__animated animate__backInRight"
+        style="display: flex;justify-content: center;align-items: center;">
+        <img class=" img-fluid" src="img/imgslide16.png" style="width: 90%;"><br>
+        <div class="controles"
+            style="display: flex;flex-direction: column;align-items: center;justify-content: space-around;gap: 20px;">
+            <img class="botao" src="img/lupa.png" style="max-width: 40px; cursor: pointer;">
+            <a href="img/imgslide16.png" download=""><img src="img/down-arq.png"></a>
+        </div>
+    </div>
+</div>
+<div class="jan">
+    <img src="img/imgslide16.png" style="height: 100%; background-color: white; padding: 20px;" />
+</div>
 
 <script>
-
-    // $('.img-fluid').zoomify();
-
+    $(() => {
+        $('.jan').hide().click(() => { $('.jan').fadeOut() });
+        $('.botao').css('cursor', 'pointer').click(() => {
+            $('.jan').css('cursor', 'pointer').fadeIn();
+        })
+    })
 </script>

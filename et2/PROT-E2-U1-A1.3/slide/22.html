@@ -21,46 +21,48 @@
 
     </div>
 
+    <!-- <div class="col-sm-5">
+        <div class="imagem">
+            <img class="img-fluid" src="img/imgslide22a.png" style="height:400px" />
 
-
+        </div>
+    </div>
 
     <div class="col-sm-5">
-        <span class="paragrafo">
-            Recentes pesquisas têm sido dedicadas aos triterpenos e, para uma maior compreensão, citamos o exemplo da
-            planta Centella asiatica L., mencionada em nosso curso como coadjuvante no tratamento de feridas.
-            <br><br>
-            Os ácidos madasiático (VII) e asiático (VIII) são componentes de extratos triterpênicos padronizados de
-            Centella asiatica L. (sinonímia Hydrocotyle asiatica L.). Atuam como reguladores do tecido conjuntivo e
-            ativantes dos fibroblastos, equilibrando, assim, quando alterada, a produção das fibras colágenas, sobretudo
-            no nível da derme e das paredes venosas. Possuem também efeito antibacteriano, anti-inflamatório e
-            cicatrizante.
-        </span>
+        <div class="imagem">
+            <img class="img-fluid" src="img/imgslide22b.png" style="height:400px" />
 
+        </div>
+    </div> -->
 
-    </div>
-
-    <!-- <div class="col-sm-5">
-  <div class="imagem">
-    <img class="img-fluid" src="img/imgslide23.png" />
-
-	</div>
-</div> -->
 
     <div class="col-sm-5 center animate__animated animate__backInRight"
-        style="display: flex;justify-content: center;align-items: center;">
-        <img class=" img-fluid" src="img/imgslide23.png" style="width: 100%;">
-        <img class="botao" src="img/lupa.png" style="max-width: 40px; cursor: pointer;">
+        style="display: flex;justify-content: center;align-items: center; flex-direction: column;">
+        <img class=" img-fluid" src="img/imgslide22a.png" style="width: 100%;">
+        <img class="botao_1" src="img/lupa.png" style="max-width: 40px;">
+    </div>
+    <div class="col-sm-5 center animate__animated animate__backInRight"
+        style="display: flex;justify-content: center;align-items: center; flex-direction: column;">
+        <img class=" img-fluid" src="img/imgslide22b.png" style="width: 100%;">
+        <img class="botao_2" src="img/lupa.png" style="max-width: 40px;">
     </div>
 </div>
-<div class="jan">
-    <img src="img/imgslide23.png" style="height: 100%; background-color: white; padding: 20px;" />
+<div class="jan_1 jan">
+    <img src="img/imgslide22a.png" style="height: 100%; background-color: white; padding: 20px;" />
+</div>
+<div class="jan_2 jan">
+    <img src="img/imgslide22b.png" style="height: 100%; background-color: white; padding: 20px;" />
 </div>
 
 <script>
     $(() => {
-        $('.jan').hide().click(() => { $('.jan').fadeOut() });
-        $('.botao').css('cursor', 'pointer').click(() => {
-            $('.jan').css('cursor', 'pointer').fadeIn();
+        $('.jan_1').hide().click(() => { $('.jan_1').fadeOut() });
+        $('.botao_1').css('cursor', 'pointer').click(() => {
+            $('.jan_1').css('cursor', 'pointer').fadeIn();
+        })
+        $('.jan_2').hide().click(() => { $('.jan_2').fadeOut() });
+        $('.botao_2').css('cursor', 'pointer').click(() => {
+            $('.jan_2').css('cursor', 'pointer').fadeIn();
         })
     })
 </script>
