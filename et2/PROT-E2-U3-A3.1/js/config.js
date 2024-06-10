@@ -36,6 +36,9 @@ items.push({ 'titulo': 'CONSIDERAÇÕES FINAIS', 'nome': 'Aula 15', 'arquivo': '
 items.push({ 'titulo': '', 'nome': 'Aula 16', 'arquivo': '16.html', 'identificador': '15' });
 
 items.push({ 'titulo': 'AVALIAÇÃO', 'nome': 'Aula 17', 'arquivo': '17.html', 'identificador': '16' });
+items.push({ 'titulo': 'REFERÊNCIAS', 'nome': 'Aula 18', 'arquivo': '18.html', 'identificador': '17' });
+items.push({ 'titulo': '', 'nome': 'Aula 19', 'arquivo': '19.html', 'identificador': '18' });
+items.push({ 'titulo': '', 'nome': 'Aula 20', 'arquivo': '20.html', 'identificador': '19' });
 
 /*
 items.push({ 'titulo': '', 'nome': 'Aula 18', 'arquivo': '18.html', 'identificador': '17'});
