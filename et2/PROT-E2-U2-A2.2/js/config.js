@@ -70,9 +70,9 @@ items.push({ 'titulo': '', 'nome': 'Aula 40', 'arquivo': '40.html', 'identificad
 items.push({ 'titulo': '', 'nome': 'Aula 41', 'arquivo': '41.html', 'identificador': '41' });
 items.push({ 'titulo': 'CONSIDERAÇÕES FINAIS', 'nome': 'Aula 42', 'arquivo': '42.html', 'identificador': '42' });
 items.push({ 'titulo': '', 'nome': 'Aula 43', 'arquivo': '43.html', 'identificador': '43' });
-items.push({ 'titulo': 'REFERÊNCIAS', 'nome': 'Aula 44', 'arquivo': '44.html', 'identificador': '44' });
-items.push({ 'titulo': 'DIALOGUE COM A PRÁTICA', 'nome': 'Aula 45', 'arquivo': '45.html', 'identificador': '45' });
-items.push({ 'titulo': 'REFERÊNCIAS', 'nome': 'Aula 46', 'arquivo': '46.html', 'identificador': '46' });
+items.push({ 'titulo': 'DIALOGUE COM A PRÁTICA', 'nome': 'Aula 44', 'arquivo': '44.html', 'identificador': '44' });
+items.push({ 'titulo': 'REFERÊNCIAS', 'nome': 'Aula 45', 'arquivo': '45.html', 'identificador': '45' });
+items.push({ 'titulo': '', 'nome': 'Aula 46', 'arquivo': '46.html', 'identificador': '46' });
 items.push({ 'titulo': '', 'nome': 'Aula 47', 'arquivo': '47.html', 'identificador': '47' });
 
 
