@@ -73,7 +73,7 @@ items.push({ 'titulo': 'REFERÊNCIAS', 'nome': 'Aula 43', 'arquivo': '43.html', 
 items.push({ 'titulo': '', 'nome': 'Aula 44', 'arquivo': '44.html', 'identificador': '44' });
 items.push({ 'titulo': '', 'nome': 'Aula 45', 'arquivo': '45.html', 'identificador': '45' });
 items.push({ 'titulo': '', 'nome': 'Aula 46', 'arquivo': '46.html', 'identificador': '46' });
-items.push({ 'titulo': '', 'nome': 'Aula 47', 'arquivo': '47.html', 'identificador': '47' });
+// items.push({ 'titulo': '', 'nome': 'Aula 47', 'arquivo': '47.html', 'identificador': '47' });
 
 
 items.push({ 'titulo': 'FICHA TÉCNICA', 'nome': 'Credito', 'arquivo': 'credito1.html', 'identificador': 'c1' });
