@@ -14,47 +14,44 @@
 <div class="row justify-content-md-center" id="slide2">
     <div class="col-sm-10">
         <h5 class="corDestaque2 maiusculo font-weight-bold">
+            9. SISTEMA DE CLASSIFICAÇÃO CIENTÍFICA
+            DAS PLANTAS MEDICINAIS
+
 
         </h5>
         <br>
-        <img src="img/imgslide39.png" />
-        <br>
-        <div class="caixas borda-direita  animate__animated animate__backInRight">
-
-            <br>Projeto Reflora: <a href="http://reflora.jbrj.gov.br/reflora/PrincipalUC/PrincipalUC.do"
-                target="_blank">http://reflora.jbrj.gov.br/reflora/PrincipalUC/PrincipalUC.do</a>
-            <br>INCT Herbário Virtual da Flora e dos Fungos: <a href="http://inct.florabrasil.net/"
-                target="_blank">http://inct.florabrasil.net/</a>
-            <br>Lista de espécies da Flora do Brasil: <a href="http://floradobrasil.jbrj.gov.br/"
-                target="_blank">http://floradobrasil.jbrj.gov.br/</a>
-            <br>Flora Brasiliensis: <a href="http://florabrasiliensis.cria.org.br/index"
-                target="_blank">http://florabrasiliensis.cria.org.br/index</a>
-            <br>MPNS - Medicinal PlantNames Services: <a href="http://mpns.kew.org/mpns-portal/"
-                target="_blank">http://mpns.kew.org/mpns-portal/</a>
-            <br>The Plant List: <a href="http://www.theplantlist.org/" target="_blank">http://www.theplantlist.org/</a>
-            <br>The New York Botanical Garden: <a href="http://www.nybg.org" target="_blank">www.nybg.org</a>
-            <br>Rede Brasileira de Herbários: <a href="http://www.botanica.org.br/rbh"
-                target="_blank">http://www.botanica.org.br/rbh</a>
-            <br>Jardins Botânicos reunidos no Museu Goeldi: <a
-                href="https://www.museu-goeldi.br/noticias/jardins-botanicos-reunidos-no-museu-goeldi"
-                target="_blank">https://www.museu-goeldi.br/noticias/jardins-botanicos-reunidos-no-museu-goeldi</a>
-
-
-
-
-
-        </div>
     </div>
 
 
+    <div class="col-sm-6">
 
+        <span class="paragrafo">
+            Sobre exsicatas e herbários, dados taxonômicos (classificação, nomes científicos e sinonímias), distribuição
+            geográfica das plantas e nomes populares, veja a seguir as indicações de projetos de herbários no Brasil e
+            pelo mundo afora.
+        </span>
+
+    </div>
+
+    <!-- <div class="col-sm-4">
+        <div class="imagem">
+            <img class="img-fluid" src="img/imgslide38.png" />
+        </div>
+    </div> -->
+
+    <div class="col-sm-4 center animate__animated animate__backInRight" style="display: flex;align-items: center;">
+        <img class=" img-fluid" src="img/imgslide38.png" style="width: 90%;"><br>
+        <img class="botao" src="img/lupa.png" class="lupa-img" style="max-width:40px">
+    </div>
 </div>
-
-
-
+<div class="jan">
+    <img src="img/imgslide38.png" style="height: 100%; background-color: white; padding: 20px;" />
 </div>
 <script>
-
-    // $('.img-fluid').zoomify();
-
+    $(() => {
+        $('.jan').hide().click(() => { $('.jan').fadeOut() });
+        $('.botao').css('cursor', 'pointer').click(() => {
+            $('.jan').css('cursor', 'pointer').fadeIn();
+        })
+    })
 </script>

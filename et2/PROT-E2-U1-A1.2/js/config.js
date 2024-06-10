@@ -48,18 +48,19 @@ items.push({ 'titulo': 'IMPORTANTE!', 'nome': 'Aula 23', 'arquivo': '23.html', '
 items.push({ 'titulo': 'O SISTEMA DE IDENTIFICAÇÃO TRADICIONAL DAS PLANTAS MEDICINAIS', 'nome': 'Aula 24', 'arquivo': '24.html', 'identificador': '23' });
 
 
-items.push({ 'titulo': 'O SISTEMA DE IDENTIFICAÇÃO TRADICIONAL E CIENTÍFICO DAS PLANTAS MEDICINAIS', 'nome': 'Aula 25', 'arquivo': '25.html', 'identificador': '24' });
-items.push({ 'titulo': 'SISTEMA DE CLASSIFICAÇÃO CIENTÍFICA DAS PLANTAS MEDICINAIS', 'nome': 'Aula 26', 'arquivo': '26.html', 'identificador': '25' });
-items.push({ 'titulo': '', 'nome': 'Aula 27', 'arquivo': '27.html', 'identificador': '26' });
+items.push({ 'titulo': '', 'nome': 'Aula 25', 'arquivo': '25.html', 'identificador': '24' });
+items.push({ 'titulo': 'O SISTEMA DE IDENTIFICAÇÃO TRADICIONAL E CIENTÍFICO DAS PLANTAS MEDICINAIS', 'nome': 'Aula 26', 'arquivo': '26.html', 'identificador': '25' });
+items.push({ 'titulo': 'SISTEMA DE CLASSIFICAÇÃO CIENTÍFICA DAS PLANTAS MEDICINAIS', 'nome': 'Aula 27', 'arquivo': '27.html', 'identificador': '26' });
 
 items.push({ 'titulo': '', 'nome': 'Aula 28', 'arquivo': '28.html', 'identificador': '27' });
 items.push({ 'titulo': '', 'nome': 'Aula 29', 'arquivo': '29.html', 'identificador': '28' });
 items.push({ 'titulo': '', 'nome': 'Aula 30', 'arquivo': '30.html', 'identificador': '29' });
 
 items.push({ 'titulo': '', 'nome': 'Aula 31', 'arquivo': '31.html', 'identificador': '30' });
-items.push({ 'titulo': 'AVALIAÇÃO', 'nome': 'Aula 32', 'arquivo': '32.html', 'identificador': '31' });
-items.push({ 'titulo': 'REFERÊNCIAS', 'nome': 'Aula 33', 'arquivo': '33.html', 'identificador': '32' });
-items.push({ 'titulo': '', 'nome': 'Aula 34', 'arquivo': '34.html', 'identificador': '33' });
+items.push({ 'titulo': '', 'nome': 'Aula 32', 'arquivo': '32.html', 'identificador': '31' });
+items.push({ 'titulo': 'AVALIAÇÃO', 'nome': 'Aula 33', 'arquivo': '33.html', 'identificador': '32' });
+items.push({ 'titulo': 'REFERÊNCIAS', 'nome': 'Aula 34', 'arquivo': '34.html', 'identificador': '33' });
+items.push({ 'titulo': '', 'nome': 'Aula 35', 'arquivo': '35.html', 'identificador': '34' });
 
 items.push({ 'titulo': 'FICHA TÉCNICA', 'nome': 'Credito', 'arquivo': 'credito1.html', 'identificador': 'c1' });
 items.push({ 'titulo': '', 'nome': 'Credito', 'arquivo': 'credito2.html', 'identificador': 'c2' });
