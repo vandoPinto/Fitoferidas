@@ -1,11 +1,7 @@
-<div class="row" >
-
+<div class="row">
     <div class="col-sm-7 textoJustificado">
         <div class="navbar-dark identificadorAulas">
-
-            <div id="dadosAula" class=dados >
-
-            </div>
+            <div id="dadosAula" class=dados></div>
         </div>
         <br>
         <br>
@@ -13,35 +9,59 @@
 </div>
 <div class="row justify-content-md-center" id="slide2">
     <div class="col-sm-10">
-        <h5 class="corDestaque2 maiusculo font-weight-bold">
-            6. REFERÊNCIAS 
+        <h5 class="corDestaque2 maiusculo font-weight-bold">1.3. Fase Reparadora ou de Maturação
+        </h5>
+    </div>
+    <div class="col-sm-5 text-center">
+        <br>
+        <span class="paragrafo">
 
+            Nas lesões agudas, esta fase tem início da primeira até a terceira semana. Nas lesões crônicas, pode
+            estender-se por longo período, a depender da etiologia, extensão, grau de comprometimento tecidual,
+            localização da lesão e outros fatores, a serem abordados mais adiante. Caracteriza-se pelas modificações que
+            acontecem no tecido cicatricial, provocadas pela síntese dos fibroblastos e pela <span
+                style="text-decoration: underline;">lise</span> (quebra) coordenada
+            pelas <span style="text-decoration: underline;">colagenases</span>.
+            <br><br> Tais modificações dão origem a novos tecidos conjuntivo e epitelização, com a regressão dos vasos e
+            o remodelamento do colágeno.
 
-
-
-
-        </h5> 
-
-
-        <p>
-            <br>
-            <span class="paragrafo">
-                BRYANT, RUTH A., AND DENISE P. NIX. Acute and Chronic Wounds: Current Management Concepts. 3rd ed. St. Louis, Mo.: Mosby Elsevier, 2007.
-                <br><br>ISOHERRANEN K, JORDAN O’BRIEN J, BARKER J ET AL. EWMA document; Atypical wounds. Best clinical practice and challenges. Journal of wound care, vol 2 8 no 6, 2019.
-                <br><br>MANTOVANI M, FONTELLES MJ. Feridas traumáticas. In: Jorge, S.A. e Dantas, S.R.P.E. Abordagem Multiprofissional do Tratamento de Feridas. Editora Atheneu, 2005. p. 135-157.
-                <br><br>ROBERT G. FRYKBERG AND JAMINELLI BANKS. Challenges in the Treatment of Chronic Wounds. Advances in wound care, volume 4, number 9. 2015.
-
-            </span>
-            <br>
-
-        </p>
+        </span>
 
     </div>
+    <div class="col-sm-5 center">
+        <br>
+        <span class="paragrafo">
+            Isso determina o aumento da força de tensão e a redução do tamanho da cicatriz e do eritema.
+
+        </span>
 
 
+        <!-- <img class="lupa img-fluid" src="img/imgslide9a.png" /><br>
+        <div class="controles">
+            <a href="img/imgslide9a.png" download target=_blank><img src="img/down-arq.png" /> </a>
+        </div> -->
+
+
+        <div class=" animate__animated animate__backInRight"
+            style="display: flex;align-items: center;justify-content: center;">
+            <img class=" img-fluid" src="img/imgslide9a.png" style="width: 90%;"><br>
+            <div class="controles"
+                style="display: flex;flex-direction: column;align-items: center;justify-content: space-around;gap: 20px;">
+                <img class="botao" src="img/lupa.png" style="max-width: 40px; cursor: pointer;">
+                <a href="img/imgslide9a.png" download=""><img src="img/down-arq.png" style="width: 90%;"></a>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="jan">
+    <img src="img/imgslide9a.png" style="height: 100%; background-color: white; padding: 20px;" />
 </div>
 <script>
-
-    $('.zoomify').zoomify();$('.img-fluid').zoomify();
-
+    $(() => {
+        $('.jan').hide().click(() => { $('.jan').fadeOut() });
+        $('.botao').css('cursor', 'pointer').click(() => {
+            $('.jan').css('cursor', 'pointer').fadeIn();
+        })
+    })
 </script>

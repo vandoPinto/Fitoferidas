@@ -1,9 +1,9 @@
-<div class="row" >
+<div class="row">
 
     <div class="col-sm-7 textoJustificado">
         <div class="navbar-dark identificadorAulas">
 
-            <div id="dadosAula" class=dados >
+            <div id="dadosAula" class=dados>
 
             </div>
         </div>
@@ -13,45 +13,37 @@
 </div>
 <div class="row justify-content-md-center" id="slide2">
     <div class="col-sm-10">
-        <h5 class="corDestaque2 maiusculo font-weight-bold">2. CLASSIFICAÇÃO DAS FERIDAS
+        <h5 class="corDestaque2 maiusculo font-weight-bold">1.3. Fase Reparadora ou de Maturação
 
 
-
-        </h5> 
+        </h5>
     </div>
-
     <div class="col-sm-10 text-center">
         <br>
-
-
-        <span class="paragrafo">
-            As feridas podem ser causadas por fatores intrínsecos ou extrínsecos; e os sistemas de classificação variam de acordo com o nível de comprometimento tecidual, a etiologia e o grau de contaminação. As diferentes classificações nos norteiam para predição de risco, condutas terapêuticas e documentação. 
-            <br>
-            Quanto ao <b>comprometimento tecidual</b>, as feridas podem ser superficiais (perda da epiderme), com perda parcial de tecido (epiderme e derme), ou perda total dos tecidos (envolvendo tecidos subcutâneos), como pode ser observado na Figura 1. 
-
-
+        <span class="paragrafo"> Iniciada nas bordas da ferida, a epitelização, durante o processo de maturação do
+            epitélio, decorre da divisão das células basais, que se deslocam concluindo o fechamento da lesão. Veja como
+            ocorrem essas modificações no diagrama 3.
         </span>
-    </div>
 
-    <div class="col-sm-10 textoJustificado">
-
-        <p>
-            <br>
-            <img class="lupa img-fluid" src="img/imgslide3.png" /><br>
- <div class="controles">
-                <a href="img/imgslide3.png" download target=_blank ><img src="img/down-arq.png"  />  </a>
+        <div class=" animate__animated animate__backInRight"
+            style="display: flex;align-items: center;justify-content: center;">
+            <img class=" img-fluid" src="img/imgslide10a.png" style="width: 70%;"><br>
+            <div class="controles"
+                style="display: flex;flex-direction: column;align-items: center;justify-content: space-around;gap: 20px;">
+                <img class="botao" src="img/lupa.png" style="max-width: 40px; cursor: pointer;">
+                <a href="img/imgslide10a.png" download=""><img src="img/down-arq.png" style="width: 30%;"></a>
             </div>
-        <br>
-
-        </p>
-
+        </div>
     </div>
-
-
-
+</div>
+<div class="jan">
+    <img src="img/imgslide10a.png" style="width: 100%; background-color: white; padding: 20px;" />
 </div>
 <script>
-
-    $('.img-fluid').zoomify();
-
+    $(() => {
+        $('.jan').hide().click(() => { $('.jan').fadeOut() });
+        $('.botao').css('cursor', 'pointer').click(() => {
+            $('.jan').css('cursor', 'pointer').fadeIn();
+        })
+    })
 </script>

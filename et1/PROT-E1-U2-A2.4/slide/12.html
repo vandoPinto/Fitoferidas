@@ -1,0 +1,47 @@
+<div class="row">
+
+    <div class="col-sm-7 textoJustificado">
+        <div class="navbar-dark identificadorAulas">
+
+            <div id="dadosAula" class=dados>
+
+            </div>
+        </div>
+        <br>
+        <br>
+    </div>
+</div>
+<div class="row justify-content-md-center" id="slide2">
+    <div class="col-sm-10">
+        <h5 class="corDestaque2 maiusculo font-weight-bold">1.3. Diferenciação da Cicatrização das Feridas Agudas e
+            Crônicas
+        </h5>
+    </div>
+    <div class="col-sm-10 text-center">
+        <br>
+        <span class="paragrafo">Observe, nas figuras abaixo, como isso ocorre:
+        </span>
+        <br>
+
+        <div class=" animate__animated animate__backInRight"
+            style="display: flex;align-items: center;justify-content: center;">
+            <img class=" img-fluid" src="img/imgslide12a.png" style="width: 90%;"><br>
+            <div class="controles"
+                style="display: flex;flex-direction: column;align-items: center;justify-content: space-around;gap: 20px;">
+                <img class="botao" src="img/lupa.png" style="max-width: 40px; cursor: pointer;">
+                <a href="img/imgslide12a.png" download=""><img src="img/down-arq.png" style="width: 30%;"></a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="jan">
+    <img src="img/imgslide12a.png" style="width: 100%; background-color: white; padding: 20px;" />
+</div>
+<script>
+    $(() => {
+        $('.jan').hide().click(() => { $('.jan').fadeOut() });
+        $('.botao').css('cursor', 'pointer').click(() => {
+            $('.jan').css('cursor', 'pointer').fadeIn();
+        })
+    })
+</script>

@@ -1,9 +1,9 @@
-<div class="row" >
+<div class="row">
 
     <div class="col-sm-7 textoJustificado">
         <div class="navbar-dark identificadorAulas">
 
-            <div id="dadosAula" class=dados >
+            <div id="dadosAula" class=dados>
 
             </div>
         </div>
@@ -13,40 +13,33 @@
 </div>
 <div class="row justify-content-md-center" id="slide2">
     <div class="col-sm-10">
-        <h5 class="corDestaque2 maiusculo font-weight-bold">2. CLASSIFICAÇÃO DAS FERIDAS
-
-
-
-        </h5> 
+        <h5 class="corDestaque2 maiusculo font-weight-bold">1.1. Fase Inflamatória
+        </h5>
     </div>
-
     <div class="col-sm-10 text-center">
         <br>
-
-        <span class="paragrafo">
-            As feridas atípicas estão associadas a doenças sistêmicas complexas e não serão objeto de discussão nos próximos capítulos, embora esse conhecimento seja importante para um diagnóstico diferencial. 	
-            <br>
-            Feridas agudas ou crônicas também podem ser classificadas por grau de complexidade de acordo com a perda tecidual e evolução do processo cicatricial, a saber:
-            <br>
-            <b>Ferida simples</b>: quando a cicatrização ocorre de forma fisiológica, com tempo de cicatrização menor ou igual a quatro semanas e o fechamento da ferida é estrutural, funcional e cosmético. 
-            <br>
-            <b>Ferida complexa</b>: quando é refratária ao tratamento devido à etiologia, a complicações metabólicas ou fisiológicas e em situações nas quais se verifica falha na resposta ao tratamento padrão há três meses. 
-
+        <span class="paragrafo"> Veja no diagrama 1 como transcorrem estas três etapas de trabalho:
         </span>
         <br>
-        <br>
-        <div class="col-sm-11 caixas saibamais   borda-direita text-center">
-            A classificação das feridas agudas e crônicas por grau de contaminação será discutida na Unidade 3: Aula 3.7 – Infecção em Feridas Agudas e Crônicas.
-
+        <div class=" animate__animated animate__backInRight"
+            style="display: flex;align-items: center;justify-content: center;">
+            <img class=" img-fluid" src="img/imgslide6a.png" style="width: 90%;"><br>
+            <div class="controles"
+                style="display: flex;flex-direction: column;align-items: center;justify-content: space-around;gap: 20px;">
+                <img class="botao" src="img/lupa.png" style="max-width: 40px; cursor: pointer;">
+                <a href="img/imgslide6a.png" download=""><img src="img/down-arq.png" style="width: 30%;"></a>
+            </div>
         </div>
     </div>
-
-
-
-
+</div>
+<div class="jan">
+    <img src="img/imgslide6a.png" style="width: 100%; background-color: white; padding: 20px;" />
 </div>
 <script>
-
-    $('.zoomify').zoomify();$('.img-fluid').zoomify();
-
+    $(() => {
+        $('.jan').hide().click(() => { $('.jan').fadeOut() });
+        $('.botao').css('cursor', 'pointer').click(() => {
+            $('.jan').css('cursor', 'pointer').fadeIn();
+        })
+    })
 </script>

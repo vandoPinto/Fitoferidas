@@ -84,6 +84,8 @@ CorTerciaria = #CA9A1C;
 
 }
 
+
+
 body {
     background-image: url('../img/fundoGeral.png');
     background-size: cover;
@@ -226,4 +228,41 @@ body {
 
 .paragrafo-imagem-esquerda {
     padding-left: 110px;
+}
+
+.row {
+    align-items: center;
+}
+
+.jan {
+    z-index: 30;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.timeline--inner-pin {
+    background-color: transparent;
+}
+
+.current {
+    background-color: orange;
+}
+
+#menuAulas {
+    background-color: rgb(225, 225, 225) !important;
+}
+
+.sidebar a {
+    color: black;
+}
+
+.sidebar a:hover {
+    color: #0F6D39;
 }
