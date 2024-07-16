@@ -8,8 +8,8 @@ and open the template in the editor.
     Author     : Vanderson
 /*
 CorDestaque1= #866607
-CorSecundaria = #CA9A1C;
-CorTerciaria = #CA9A1C;
+CorSecundaria = #e7bb52;
+CorTerciaria = #e7bb52;
 
 */
 @import url('https://fonts.googleapis.com/css2?family=Roboto');
@@ -28,7 +28,7 @@ h5.corDestaque2.maiusculo.font-weight-bold {
 }
 
 #menuAulas {
-    background-color: #CA9A1C !important;
+    background-color: #e7bb52 !important;
 }
 
 .divImgPrincipalCapa {
@@ -37,14 +37,14 @@ h5.corDestaque2.maiusculo.font-weight-bold {
 
 .btn-primary {
     color: #fff;
-    background-color: #CA9A1C !important;
-    border-color: #CA9A1C !important;
+    background-color: #e7bb52 !important;
+    border-color: #e7bb52 !important;
 }
 
 .btn-primary:hover {
     color: #fff;
-    background-color: #CA9A1C !important;
-    border-color: #CA9A1C !important;
+    background-color: #e7bb52 !important;
+    border-color: #e7bb52 !important;
 }
 
 .c100>span {
@@ -53,7 +53,7 @@ h5.corDestaque2.maiusculo.font-weight-bold {
 
 .corSecundaria,
 .corDestaque2 {
-    color: #CA9A1C !important;
+    color: #b89230 !important;
 
 }
 
@@ -84,7 +84,7 @@ h5.corDestaque2.maiusculo.font-weight-bold {
     padding: 7px;
     padding-right: 85px !important;
     color: #FFFFFF !important;
-    background-color: #CA9A1C !important;
+    background-color: #e7bb52 !important;
     font-weight: bold !important;
     overflow: hidden;
 }
@@ -111,7 +111,7 @@ body {
 }
 
 .imgPrincipalCapa {
-    border-right: 10px solid #CA9A1C;
+    border-right: 10px solid #e7bb52;
     border-radius: 0px 150px 0 0;
     width: 100%;
 
@@ -124,7 +124,7 @@ body {
 }
 
 .imgPrincipalCapaDireita {
-    border-left: 10px solid #CA9A1C;
+    border-left: 10px solid #e7bb52;
     border-radius: 0px 0px 0px 180px;
     width: 90%;
 }
@@ -230,7 +230,7 @@ body {
     overflow: hidden;
     max-width: 73%;
     margin: auto;
-    border: 7px solid #CA9A1C;
+    border: 7px solid #e7bb52;
 }
 
 .imagem-esquerda {

@@ -8,8 +8,8 @@ and open the template in the editor.
     Author     : Vanderson
 /*
 CorDestaque1= #866607
-CorSecundaria = #DEE68F;
-CorTerciaria = #DEE68F;
+CorSecundaria = #e0e797;
+CorTerciaria = #e0e797;
 
 */
 
@@ -29,7 +29,7 @@ h5.corDestaque2.maiusculo.font-weight-bold {
 }
 
 #menuAulas {
-    background-color: #DEE68F !important;
+    background-color: #e0e797 !important;
 }
 
 .divImgPrincipalCapa {
@@ -39,13 +39,13 @@ h5.corDestaque2.maiusculo.font-weight-bold {
 .btn-primary {
     color: #fff;
     background-color: #29622E !important;
-    border-color: #DEE68F !important;
+    border-color: #e0e797 !important;
 }
 
 .btn-primary:hover {
     color: #fff;
-    background-color: #DEE68F !important;
-    border-color: #DEE68F !important;
+    background-color: #e0e797 !important;
+    border-color: #e0e797 !important;
 }
 
 .c100>span {
@@ -58,7 +58,7 @@ h5.corDestaque2.maiusculo.font-weight-bold {
 
 .corSecundaria,
 .corDestaque2 {
-    color: #29622E !important;
+    color: #386134 !important;
 
 }
 
@@ -88,8 +88,8 @@ h5.corDestaque2.maiusculo.font-weight-bold {
     border-radius: 0 0 110px 0px;
     padding: 7px;
     padding-right: 85px !important;
-    color: #29622E !important;
-    background-color: #DEE68F !important;
+    color: #386134 !important;
+    background-color: #e0e797 !important;
     font-weight: bold !important;
     overflow: hidden;
 }
@@ -115,7 +115,7 @@ body {
 }
 
 .imgPrincipalCapa {
-    border-right: 10px solid #DEE68F;
+    border-right: 10px solid #e0e797;
     border-radius: 0px 150px 0 0;
     width: 100%;
 
@@ -128,7 +128,7 @@ body {
 }
 
 .imgPrincipalCapaDireita {
-    border-left: 10px solid #DEE68F;
+    border-left: 10px solid #e0e797;
     border-radius: 0px 0px 0px 180px;
     width: 90%;
 }
@@ -148,8 +148,8 @@ body {
 }
 
 .caixas {
-    color: #29622E;
-    background-color: #E0EF89;
+    color: #386134;
+    background-color: #e3ee96;
     font-weight: bold;
     padding: 15px;
     position: relative;
@@ -244,7 +244,7 @@ body {
     overflow: hidden;
     max-width: 73%;
     margin: auto;
-    border: 7px solid #DEE68F;
+    border: 7px solid #e0e797;
 }
 
 .imagem-esquerda {

@@ -8,15 +8,15 @@ and open the template in the editor.
     Author     : Vanderson
 /*
 CorDestaque1= #866607
-CorSecundaria = #CA9A1C;
-CorTerciaria = #CA9A1C;
+CorSecundaria = #f5da94;
+CorTerciaria = #f5da94;
 
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto');
 
 #menuAulas {
-    background-color: #CA9A1C !important;
+    background-color: #f5da94 !important;
 }
 
 .divImgPrincipalCapa {
@@ -24,15 +24,15 @@ CorTerciaria = #CA9A1C;
 }
 
 .btn-primary {
-    color: #fff;
-    background-color: #CA9A1C !important;
-    border-color: #CA9A1C !important;
+    color: #7a611d !important;
+    background-color: #f5da94 !important;
+    border-color: #f5da94 !important;
 }
 
 .btn-primary:hover {
-    color: #fff;
-    background-color: #CA9A1C !important;
-    border-color: #CA9A1C !important;
+    color: #7a611d !important;
+    background-color: #f5da94 !important;
+    border-color: #f5da94 !important;
 }
 
 .c100>span {
@@ -41,7 +41,7 @@ CorTerciaria = #CA9A1C;
 
 .corSecundaria,
 .corDestaque2 {
-    color: #CA9A1C !important;
+    color: #7a611d !important;
 
 }
 
@@ -71,8 +71,8 @@ CorTerciaria = #CA9A1C;
     border-radius: 0 0 110px 0px;
     padding: 7px;
     padding-right: 85px !important;
-    color: #FFFFFF !important;
-    background-color: #CA9A1C !important;
+    color: #7a611d !important;
+    background-color: #f5da94 !important;
     font-weight: bold !important;
     overflow: hidden;
 }
@@ -97,7 +97,7 @@ body {
 }
 
 .imgPrincipalCapa {
-    border-right: 10px solid #CA9A1C;
+    border-right: 10px solid #f5da94;
     border-radius: 0px 150px 0 0;
     width: 100%;
 
@@ -110,7 +110,7 @@ body {
 }
 
 .imgPrincipalCapaDireita {
-    border-left: 10px solid #CA9A1C;
+    border-left: 10px solid #f5da94;
     border-radius: 0px 0px 0px 180px;
     width: 90%;
 }
@@ -130,7 +130,7 @@ body {
 }
 
 .caixas {
-    background-color: #BC8200;
+    background-color: #b3842c;
     color: white;
     font-weight: bold;
     padding: 15px;
@@ -204,7 +204,7 @@ body {
     overflow: hidden;
     max-width: 73%;
     margin: auto;
-    border: 7px solid #CA9A1C;
+    border: 7px solid #f5da94;
 }
 
 .imagem-esquerda {

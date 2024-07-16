@@ -8,7 +8,7 @@ and open the template in the editor.
     Author     : Vanderson
 /*
 CorDestaque1= #866607
-CorSecundaria = #0F6D39;
+CorSecundaria = #316b3e;
 CorTerciaria = #83AD3F;
 
 */
@@ -26,8 +26,8 @@ CorTerciaria = #83AD3F;
 
 .btn-primary {
     color: #fff;
-    background-color: #0F6D39 !important;
-    border-color: #0F6D39 !important;
+    background-color: #316b3e !important;
+    border-color: #316b3e !important;
 }
 
 .btn-primary:hover {
@@ -42,7 +42,7 @@ CorTerciaria = #83AD3F;
 
 .corSecundaria,
 .corDestaque2 {
-    color: #0F6D39 !important;
+    color: #316b3e !important;
 
 }
 
@@ -71,7 +71,7 @@ CorTerciaria = #83AD3F;
     padding: 7px;
     padding-right: 85px !important;
     color: #FFFFFF !important;
-    background-color: #0F6D39 !important;
+    background-color: #316b3e !important;
     font-weight: bold !important;
     overflow: hidden;
 }
@@ -187,7 +187,7 @@ div#conteudo {
 }
 
 .caixas {
-    background-color: #81ae2f;
+    background-color: #8aad45;
     color: white;
     font-weight: bold;
     padding: 15px;

@@ -71,7 +71,7 @@ Time line (Menu Horizontal)
     /* display: block; */
     float: left;
     position: relative;
-    margin-left: 4%;
+    margin-left: 3.8%;
 }
 
 #menuAulas .alteraAula.concluido::before {
