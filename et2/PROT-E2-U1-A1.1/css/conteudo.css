@@ -58,7 +58,7 @@ h5.corDestaque2.maiusculo.font-weight-bold {
 
 .corSecundaria,
 .corDestaque2 {
-    color: #29622E !important;
+    color: #497b58 !important;
 
 }
 
@@ -89,7 +89,7 @@ h5.corDestaque2.maiusculo.font-weight-bold {
     padding: 7px;
     padding-right: 85px !important;
     color: #29622E !important;
-    background-color: #367E58 !important;
+    background-color: #497c5a !important;
     font-weight: bold !important;
     overflow: hidden;
 }
@@ -148,9 +148,9 @@ body {
     border-radius: 35px 0;
 }
 
-.caixas {
-    color: #347E58;
-    background-color: #B2F7CE;
+.caixas2 {
+    color: white;
+    background-color: #487c5b;
     font-weight: bold;
     padding: 15px;
     position: relative;
@@ -158,9 +158,9 @@ body {
     margin: auto;
 }
 
-.caixas2 {
-    color: #B2F7CE;
-    background-color: #347E58;
+.caixas {
+    color: #487c5b;
+    background-color: #c1f5d1;
     font-weight: bold;
     padding: 15px;
     position: relative;

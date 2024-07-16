@@ -58,7 +58,7 @@ h5.corDestaque2.maiusculo.font-weight-bold {
 
 .corSecundaria,
 .corDestaque2 {
-    color: #8AB661 !important;
+    color: #92b56b !important;
 
 }
 
@@ -89,7 +89,7 @@ h5.corDestaque2.maiusculo.font-weight-bold {
     padding: 7px;
     padding-right: 85px !important;
     color: #8AB661 !important;
-    background-color: #8AB661 !important;
+    background-color: #93b46b !important;
     font-weight: bold !important;
     overflow: hidden;
 }
@@ -150,7 +150,7 @@ body {
 
 .caixas {
     color: white;
-    background-color: #8AB661;
+    background-color: #92b56b;
     font-weight: bold;
     padding: 15px;
     position: relative;
