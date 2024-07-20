@@ -13,8 +13,7 @@ var conclusao = [];
 var items = [];
 
 var nomeUnidade = "Unidade 2 - Princípios de Anatomia, Fisiologia da Pele e Classificação das Feridas";
-var nomeAula = "Aula 2.3 - Classificação das Feridas";
-
+var nomeAula = "Aula 2.3 Cicatrização das Feridas Agudas e Crônicas";
 
 items.push({
     'titulo': 'OBJETIVOS DE APRENDIZAGEM',

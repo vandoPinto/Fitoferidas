@@ -188,13 +188,23 @@ body {
 .oms::before {
     content: "";
     background-image: url(../img/oms.png);
-    width: 70px;
-    height: 70px;
+    width: 110px;
+    height: 110px;
     position: absolute;
-    top: -45px;
+    top: 15px;
     background-size: cover;
-    right: -31px;
+    left: -31px;
+}
 
+.folha::before {
+    content: "";
+    background-image: url(../img/folha.png);
+    width: 110px;
+    height: 110px;
+    position: absolute;
+    top: 15px;
+    background-size: cover;
+    left: -31px;
 }
 
 .alerta::before {

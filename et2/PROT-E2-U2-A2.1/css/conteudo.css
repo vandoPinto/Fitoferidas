@@ -205,6 +205,18 @@ body {
 
 }
 
+.saibamais2::before {
+    content: "";
+    background-image: url(../img/plusverde.png);
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    left: -45px;
+    background-size: cover;
+    right: -31px;
+
+}
+
 .complementar::before {
     content: "";
     background-image: url(../img/complementar.png);

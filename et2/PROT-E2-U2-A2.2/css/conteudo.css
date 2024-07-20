@@ -169,6 +169,17 @@ body {
 
 }
 
+.alerta2::before {
+    content: "";
+    background-image: url(../img/alerta.png);
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: -45px;
+    background-size: cover;
+    left: 30px;
+}
+
 .adicao::before {
     content: "";
     background-image: url(../img/adicao.png);

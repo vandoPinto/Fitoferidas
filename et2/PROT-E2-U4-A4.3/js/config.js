@@ -13,7 +13,7 @@ var conclusao = [];
 var items = [];
 
 var nomeUnidade = "Unidade 4 - Integração de Práticas Integrativas e Complementares em Saúde no Tratamento de Feridas";
-var nomeAula = "Aula 4.3 - Medicina Antroposófica / Antroposia Aplicada à Saúde";
+var nomeAula = "Aula 4.3 - Medicina Antroposófica / Antroposofia aplicada à saúde";
 
 
 items.push({ 'titulo': 'OBJETIVOS', 'nome': 'Aula 1', 'arquivo': '1.html', 'identificador': '0' });

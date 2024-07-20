@@ -195,6 +195,28 @@ body {
 
 }
 
+.saibamaisCeta::before {
+    content: "";
+    background-image: url(../img/ceta.png);
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 10%;
+    background-size: cover;
+    left: -31px;
+}
+
+.saibamaisPlus::before {
+    content: "";
+    background-image: url(../img/adicao.png);
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 10%;
+    background-size: cover;
+    left: -31px;
+}
+
 .complementar::before {
     content: "";
     background-image: url(../img/complementar.png);
