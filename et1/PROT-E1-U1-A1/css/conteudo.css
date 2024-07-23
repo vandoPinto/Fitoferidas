@@ -39,7 +39,10 @@ CorTerciaria = #83AD3F;
     color: #866607 !important;
 }
 
-.corSecundaria,
+.corSecundaria {
+    color: #8dad4e !important;
+}
+
 .corDestaque2 {
     color: #316b3e !important;
 
@@ -111,7 +114,7 @@ body {
 }
 
 .logoPrincipal {
-    width: 280px;
+    width: 400px;
     margin: auto;
     display: block;
 }

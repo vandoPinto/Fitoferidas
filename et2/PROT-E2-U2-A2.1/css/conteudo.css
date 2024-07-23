@@ -57,7 +57,10 @@ h5.corDestaque2.maiusculo.font-weight-bold {
     color: #29622E;
 }
 
-.corSecundaria,
+.corSecundaria {
+    color: #8bac50 !important;
+}
+
 .corDestaque2 {
     color: #25582c !important;
 
@@ -136,7 +139,7 @@ body {
 }
 
 .logoPrincipal {
-    width: 280px;
+    width: 400px;
     margin: auto;
     display: block;
 }
