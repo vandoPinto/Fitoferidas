@@ -47,13 +47,16 @@
     <div class="col-sm-5 text-center">
         <br>
         <br>
-
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/DTyFp6X3ABA"
-            title="Fitoferidas - Boas-Vindas ao Fitoferidas" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-
+        <div class="video-container" style="position: relative; width: 560px; height: 315px;">
+            <img src="https://img.youtube.com/vi/DTyFp6X3ABA/maxresdefault.jpg" alt="Thumbnail"
+                style="width: 100%; height: 100%; position: absolute; top: 0; left: 0; cursor: pointer;"
+                onclick="playVideo()">
+            <iframe id="video-iframe" width="560" height="315"
+                src="https://www.youtube.com/embed/DTyFp6X3ABA?enablejsapi=1"
+                title="Fitoferidas - Boas-Vindas ao Fitoferidas" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="display: none;"></iframe>
+        </div>
 
     </div>
 
@@ -68,8 +71,17 @@
             id="close">X</span>
     </div> -->
 </div>
-<script src="https://www.youtube.com/iframe_api"></script>
 <script>
+    function playVideo() {
+        var iframe = document.getElementById('video-iframe');
+        iframe.style.display = 'block';
+        iframe.src += "&autoplay=1";
+        var thumbnail = iframe.previousElementSibling;
+        thumbnail.style.display = 'none';
+    }
+</script>
+<!-- <script src="https://www.youtube.com/iframe_api"></script> -->
+<!-- <script>
     var player;
 
     // Função chamada pela API do YouTube quando a API está pronta
@@ -93,4 +105,4 @@
         $('#janela').show();
     })
 
-</script>
+</script> -->
