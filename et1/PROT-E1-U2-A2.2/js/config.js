@@ -78,14 +78,14 @@ items.push({
 items.push({
     'titulo': 'LESÕES COM PERDAS RESIDUAIS', 'nome': 'Aula 12', 'arquivo': '12.html', 'identificador': '11'
 });
+// items.push({
+//     'titulo': '', 'nome': 'Aula 13', 'arquivo': '13.html', 'identificador': '12'
+// });
 items.push({
-    'titulo': '', 'nome': 'Aula 13', 'arquivo': '13.html', 'identificador': '12'
+    'titulo': 'AVALIAÇÃO', 'nome': 'Aula 14', 'arquivo': '14.html', 'identificador': '12'
 });
 items.push({
-    'titulo': 'AVALIAÇÃO', 'nome': 'Aula 14', 'arquivo': '14.html', 'identificador': '13'
-});
-items.push({
-    'titulo': 'REFERÊNCIAS', 'nome': 'Aula 15', 'arquivo': '15.html', 'identificador': '14'
+    'titulo': 'REFERÊNCIAS', 'nome': 'Aula 15', 'arquivo': '15.html', 'identificador': '13'
 });
 
 
