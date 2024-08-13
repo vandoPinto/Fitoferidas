@@ -1405,7 +1405,7 @@ Botões Navegações
 button#btInicio {
     position: absolute;
     right: 20px;
-    bottom: 0%;
+    bottom: 5%;
 }
 
 button#btAv {

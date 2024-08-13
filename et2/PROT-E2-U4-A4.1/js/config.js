@@ -36,31 +36,31 @@ items.push({ 'titulo': '', 'nome': 'Aula 14a', 'arquivo': '14a.html', 'identific
 
 
 items.push({ 'titulo': '', 'nome': 'Aula 15', 'arquivo': '15.html', 'identificador': '15' });
-items.push({ 'titulo': '', 'nome': 'Aula 15a', 'arquivo': '15a.html', 'identificador': '16' });
+// items.push({ 'titulo': '', 'nome': 'Aula 15a', 'arquivo': '15a.html', 'identificador': '16' });
 
-items.push({ 'titulo': 'RELATOS DE CASOS', 'nome': 'Aula 16', 'arquivo': '16.html', 'identificador': '17' });
+items.push({ 'titulo': 'RELATOS DE CASOS', 'nome': 'Aula 16', 'arquivo': '16.html', 'identificador': '16' });
 
-items.push({ 'titulo': '', 'nome': 'Aula 17', 'arquivo': '17.html', 'identificador': '18' });
-
-
-items.push({ 'titulo': '', 'nome': 'Aula 18', 'arquivo': '18.html', 'identificador': '19' });
-
-items.push({ 'titulo': '', 'nome': 'Aula 19', 'arquivo': '19.html', 'identificador': '20' });
-items.push({ 'titulo': '', 'nome': 'Aula 20', 'arquivo': '20.html', 'identificador': '21' });
-items.push({ 'titulo': 'FLUXO DO SERVIÇO E NÚMERO DE USUÁRIOS ATENDIDOS', 'nome': 'Aula 21', 'arquivo': '21.html', 'identificador': '22' });
-items.push({ 'titulo': 'DESCRIÇÃO DOS SERVIÇOS', 'nome': 'Aula 22', 'arquivo': '22.html', 'identificador': '23' });
-items.push({ 'titulo': '', 'nome': 'Aula 23', 'arquivo': '23.html', 'identificador': '24' });
-
-items.push({ 'titulo': 'PLANTAS MEDICINAIS E FITOTERÁPICOS E TERMALISMO', 'nome': 'Aula 24', 'arquivo': '24.html', 'identificador': '25' });
+items.push({ 'titulo': '', 'nome': 'Aula 17', 'arquivo': '17.html', 'identificador': '17' });
 
 
-items.push({ 'titulo': '', 'nome': 'Aula 25', 'arquivo': '25.html', 'identificador': '26' });
-items.push({ 'titulo': '', 'nome': 'Aula 26', 'arquivo': '26.html', 'identificador': '27' });
-items.push({ 'titulo': 'AVALIAÇÃO', 'nome': 'Aula 27', 'arquivo': '27.html', 'identificador': '28' });
+items.push({ 'titulo': '', 'nome': 'Aula 18', 'arquivo': '18.html', 'identificador': '18' });
 
-items.push({ 'titulo': 'REFERÊNCIAS BIBLIOGRÁFICAS', 'nome': 'Aula 28', 'arquivo': '28.html', 'identificador': '29' });
-items.push({ 'titulo': '', 'nome': 'Aula 29', 'arquivo': '29.html', 'identificador': '30' });
-items.push({ 'titulo': '', 'nome': 'Aula 30', 'arquivo': '30.html', 'identificador': '31' });
+items.push({ 'titulo': '', 'nome': 'Aula 19', 'arquivo': '19.html', 'identificador': '19' });
+items.push({ 'titulo': '', 'nome': 'Aula 20', 'arquivo': '20.html', 'identificador': '20' });
+items.push({ 'titulo': 'FLUXO DO SERVIÇO E NÚMERO DE USUÁRIOS ATENDIDOS', 'nome': 'Aula 21', 'arquivo': '21.html', 'identificador': '21' });
+items.push({ 'titulo': 'DESCRIÇÃO DOS SERVIÇOS', 'nome': 'Aula 22', 'arquivo': '22.html', 'identificador': '22' });
+items.push({ 'titulo': '', 'nome': 'Aula 23', 'arquivo': '23.html', 'identificador': '23' });
+
+items.push({ 'titulo': 'PLANTAS MEDICINAIS E FITOTERÁPICOS E TERMALISMO', 'nome': 'Aula 24', 'arquivo': '24.html', 'identificador': '24' });
+
+
+items.push({ 'titulo': '', 'nome': 'Aula 25', 'arquivo': '25.html', 'identificador': '25' });
+items.push({ 'titulo': '', 'nome': 'Aula 26', 'arquivo': '26.html', 'identificador': '26' });
+items.push({ 'titulo': 'AVALIAÇÃO', 'nome': 'Aula 27', 'arquivo': '27.html', 'identificador': '27' });
+
+items.push({ 'titulo': 'REFERÊNCIAS BIBLIOGRÁFICAS', 'nome': 'Aula 28', 'arquivo': '28.html', 'identificador': '28' });
+items.push({ 'titulo': '', 'nome': 'Aula 29', 'arquivo': '29.html', 'identificador': '29' });
+items.push({ 'titulo': '', 'nome': 'Aula 30', 'arquivo': '30.html', 'identificador': '30' });
 /*
 items.push({ 'titulo': '', 'nome': 'Aula 31', 'arquivo': '31.html', 'identificador': '31'});
 items.push({ 'titulo': '', 'nome': 'Aula 32', 'arquivo': '32.html', 'identificador': '32'});
