@@ -67,7 +67,7 @@ CorTerciaria = #83AD3F;
 .identificadorAulas {
     position: relative;
     top: 0;
-    display: block;
+    display: flex;
     text-align: left;
     border-radius: 0 0 110px 0px;
     padding: 7px;
@@ -76,6 +76,12 @@ CorTerciaria = #83AD3F;
     background-color: #316b3e !important;
     font-weight: bold !important;
     overflow: hidden;
+    height: 15vh;
+    align-items: center;
+}
+
+ol {
+    line-height: 2.5;
 }
 
 .identificadorAulas .dados {
