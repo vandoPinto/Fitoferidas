@@ -155,7 +155,17 @@ body {
     top: -45px;
     background-size: cover;
     right: -31px;
+}
 
+.saibamais2::before {
+    content: "";
+    background-image: url(../img/saibamais.png);
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 15px;
+    background-size: cover;
+    left: -31px;
 }
 
 .complementar::before {
@@ -179,7 +189,17 @@ body {
     top: -45px;
     background-size: cover;
     right: -31px;
+}
 
+.alerta2::before {
+    content: "";
+    background-image: url(../img/alerta.png);
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: -65px;
+    background-size: cover;
+    left: -10px;
 }
 
 .adicao::before {
