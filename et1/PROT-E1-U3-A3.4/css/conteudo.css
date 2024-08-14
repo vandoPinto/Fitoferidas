@@ -78,7 +78,6 @@ CorTerciaria = #f5da94;
     background-color: #f5da94 !important;
     font-weight: bold !important;
     overflow: hidden;
-
     height: 15vh;
     align-items: center;
 }
@@ -160,12 +159,12 @@ body {
 .complementar::before {
     content: "";
     background-image: url(../img/complementar.png);
-    width: 70px;
-    height: 70px;
+    width: 100px;
+    height: 100px;
     position: absolute;
-    top: -45px;
+    top: -50px;
     background-size: cover;
-    right: -31px;
+    right: 30px;
 
 }
 
@@ -177,12 +176,24 @@ body {
 .alerta::before {
     content: "";
     background-image: url(../img/alerta.png);
-    width: 70px;
-    height: 70px;
+    width: 100px;
+    height: 100px;
     position: absolute;
-    top: -45px;
+    top: -50px;
     background-size: cover;
-    right: -31px;
+    right: 40px;
+
+}
+
+.clique::before {
+    content: "";
+    background-image: url(../img/clique.png);
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 30px;
+    background-size: cover;
+    right: -50px;
 
 }
 
