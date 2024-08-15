@@ -69,7 +69,7 @@ CorTerciaria = #f5da94;
 .identificadorAulas {
     position: relative;
     top: 0;
-    display: block;
+    display: flex;
     text-align: left;
     border-radius: 0 0 110px 0px;
     padding: 7px;
@@ -78,6 +78,8 @@ CorTerciaria = #f5da94;
     background-color: #f5da94 !important;
     font-weight: bold !important;
     overflow: hidden;
+    height: 15vh;
+    align-items: center;
 }
 
 .identificadorAulas .dados {
@@ -146,25 +148,34 @@ body {
 .saibamais::before {
     content: "";
     background-image: url(../img/adicao.png);
-    width: 70px;
-    height: 70px;
+    width: 100px;
+    height: 100px;
     position: absolute;
-    top: -45px;
+    top: -50px;
     background-size: cover;
-    right: -31px;
-
+    right: 40px;
 }
 
 .complementar::before {
     content: "";
     background-image: url(../img/complementar.png);
-    width: 70px;
-    height: 70px;
+    width: 100px;
+    height: 100px;
     position: absolute;
-    top: -45px;
+    top: 10%;
     background-size: cover;
-    right: -31px;
+    left: -50px;
+}
 
+.complementar2::before {
+    content: "";
+    background-image: url(../img/complementar.png);
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: -52px;
+    background-size: cover;
+    right: 50px;
 }
 
 .complementar a {
@@ -175,12 +186,24 @@ body {
 .alerta::before {
     content: "";
     background-image: url(../img/alerta.png);
-    width: 70px;
-    height: 70px;
+    width: 100px;
+    height: 100px;
     position: absolute;
-    top: -45px;
+    top: -52px;
     background-size: cover;
-    right: -31px;
+    right: 50px;
+
+}
+
+.alerta2::before {
+    content: "";
+    background-image: url(../img/alerta.png);
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 48px;
+    background-size: cover;
+    right: -45px;
 
 }
 
