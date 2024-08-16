@@ -86,7 +86,7 @@ h5.corDestaque2.maiusculo.font-weight-bold {
 .identificadorAulas {
     position: relative;
     top: 0;
-    display: block;
+    display: flex;
     text-align: left;
     border-radius: 0 0 110px 0px;
     padding: 7px;
@@ -95,6 +95,8 @@ h5.corDestaque2.maiusculo.font-weight-bold {
     background-color: #e0e797 !important;
     font-weight: bold !important;
     overflow: hidden;
+    height: 15vh;
+    align-items: center;
 }
 
 .identificadorAulas .dados {
@@ -142,7 +144,7 @@ body {
     display: block;
 }
 
-.borda-direita {
+.borda-esquerda {
     border-radius: 0 35px;
 }
 
@@ -163,12 +165,12 @@ body {
 .alerta::before {
     content: "";
     background-image: url(../img/alerta.png);
-    width: 70px;
-    height: 70px;
+    width: 100px;
+    height: 100px;
     position: absolute;
-    top: -45px;
+    top: -40px;
     background-size: cover;
-    right: -31px;
+    right: 40px;
 
 }
 
@@ -199,12 +201,12 @@ body {
 .complementar::before {
     content: "";
     background-image: url(../img/complementar.png);
-    width: 70px;
-    height: 70px;
+    width: 100px;
+    height: 100px;
     position: absolute;
-    top: -45px;
+    top: -50px;
     background-size: cover;
-    right: -31px;
+    right: 40px;
 
 }
 
