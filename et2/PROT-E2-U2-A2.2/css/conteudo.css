@@ -85,7 +85,7 @@ h5.corDestaque2.maiusculo.font-weight-bold {
 .identificadorAulas {
     position: relative;
     top: 0;
-    display: block;
+    display: flex;
     text-align: left;
     border-radius: 0 0 110px 0px;
     padding: 7px;
@@ -94,6 +94,8 @@ h5.corDestaque2.maiusculo.font-weight-bold {
     background-color: #8aae4f !important;
     font-weight: bold !important;
     overflow: hidden;
+    height: 15vh;
+    align-items: center;
 }
 
 .identificadorAulas .dados {
@@ -142,7 +144,7 @@ body {
     display: block;
 }
 
-.borda-direita {
+.borda-esquerda {
     border-radius: 0 35px;
 }
 
@@ -163,20 +165,20 @@ body {
 .alerta::before {
     content: "";
     background-image: url(../img/alerta.png);
-    width: 70px;
-    height: 70px;
+    width: 100px;
+    height: 100px;
     position: absolute;
-    top: -45px;
+    top: -40px;
     background-size: cover;
-    right: -31px;
+    right: 40px;
 
 }
 
 .alerta2::before {
     content: "";
     background-image: url(../img/alerta.png);
-    width: 70px;
-    height: 70px;
+    width: 100px;
+    height: 100px;
     position: absolute;
     top: -45px;
     background-size: cover;
@@ -186,36 +188,36 @@ body {
 .adicao::before {
     content: "";
     background-image: url(../img/adicao.png);
-    width: 70px;
-    height: 70px;
+    width: 100px;
+    height: 100px;
     position: absolute;
-    top: -45px;
+    top: -40px;
     background-size: cover;
-    right: -31px;
+    right: 40px;
 
 }
 
 .saibamais::before {
     content: "";
     background-image: url(../img/adicao.png);
-    width: 70px;
-    height: 70px;
+    width: 100px;
+    height: 100px;
     position: absolute;
-    top: -45px;
+    top: -40px;
     background-size: cover;
-    right: -31px;
+    right: 40px;
 
 }
 
 .complementar::before {
     content: "";
     background-image: url(../img/complementar.png);
-    width: 70px;
-    height: 70px;
+    width: 100px;
+    height: 100px;
     position: absolute;
-    top: -45px;
+    top: -40px;
     background-size: cover;
-    right: -31px;
+    right: 40px;
 
 }
 
