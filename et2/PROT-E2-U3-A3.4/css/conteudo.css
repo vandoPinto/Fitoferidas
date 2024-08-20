@@ -87,7 +87,7 @@ h5.corDestaque2.maiusculo.font-weight-bold {
 .identificadorAulas {
     position: relative;
     top: 0;
-    display: block;
+    display: flex;
     text-align: left;
     border-radius: 0 0 110px 0px;
     padding: 7px;
@@ -96,6 +96,8 @@ h5.corDestaque2.maiusculo.font-weight-bold {
     background-color: #c88660 !important;
     font-weight: bold !important;
     overflow: hidden;
+    height: 15vh;
+    align-items: center;
 }
 
 .identificadorAulas .dados {
