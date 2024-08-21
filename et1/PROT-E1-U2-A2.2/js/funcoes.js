@@ -88,7 +88,7 @@ function mudaAula(aula) {
     }
     aulaAtual = aula;
     atualizaProgresso();
-    $('#conteudo').load('slide/' + items[aula].arquivo + '?v3', function () { $('#dadosAula').html(nomeUnidade + "<br>" + nomeAula + "<b class='desenv'><br>Arq:" + items[aula].arquivo + "</b>"); });
+    $('#conteudo').load('slide/' + items[aula].arquivo + '?v3', function () { $('#dadosAula').html(nomeUnidade + "<br>" + nomeAula); });
     //Exibe os navegadores
 
     if (aulaAtual == 0) {

@@ -12,8 +12,8 @@ var conclusao = [];
 //Array que possui a listagem de todos os items exitentes
 var items = [];
 
-var nomeUnidade = "Princípios de Anatomia, Fisiologia da Pele e Classificação das Feridas";
-var nomeAula = "Lesões Elementares da Pele";
+var nomeUnidade = "Unidade 2 - Princípios de Anatomia e Fisiologia da Pele e Classificação das Feridas";
+var nomeAula = "Aula 2.2 - Lesões Elementares da Pele";
 
 items.push({
     'titulo': 'OBJETIVOS DE APRENDIZAGEM',

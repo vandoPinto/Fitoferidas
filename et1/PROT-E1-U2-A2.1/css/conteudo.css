@@ -147,36 +147,36 @@ body {
 .saibamais::before {
     content: "";
     background-image: url(../img/saibamais.png);
-    width: 70px;
-    height: 70px;
+    width: 100px;
+    height: 100px;
     position: absolute;
-    top: -45px;
+    top: -40px;
     background-size: cover;
-    right: -31px;
+    right: 40px;
 
 }
 
 .alerta::before {
     content: "";
     background-image: url(../img/alerta.png);
-    width: 70px;
-    height: 70px;
+    width: 100px;
+    height: 100px;
     position: absolute;
-    top: -45px;
+    top: -40px;
     background-size: cover;
-    right: -31px;
+    right: 40px;
 
 }
 
 .adicao::before {
     content: "";
     background-image: url(../img/adicao.png);
-    width: 70px;
-    height: 70px;
+    width: 100px;
+    height: 100px;
     position: absolute;
-    top: -45px;
+    top: -40px;
     background-size: cover;
-    right: -31px;
+    right: 40px;
 
 }
 

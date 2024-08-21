@@ -149,60 +149,72 @@ body {
 .saibamais::before {
     content: "";
     background-image: url(../img/saibamais.png);
-    width: 70px;
-    height: 70px;
+    width: 100px;
+    height: 100px;
     position: absolute;
-    top: -45px;
+    top: -40px;
     background-size: cover;
-    right: -31px;
+    right: 40px;
 
 }
 
 .saibamais2::before {
     content: "";
     background-image: url(../img/saibamais.png);
-    width: 70px;
-    height: 70px;
+    width: 100px;
+    height: 100px;
     position: absolute;
-    top: 27px;
+    top: 7px;
     background-size: cover;
-    left: -29px;
+    left: -50px;
 
 }
 
 .complementar::before {
     content: "";
     background-image: url(../img/complementar.png);
-    width: 70px;
-    height: 70px;
+    width: 100px;
+    height: 100px;
     position: absolute;
-    top: -45px;
+    top: -40px;
     background-size: cover;
-    right: -31px;
+    right: 40px;
+
+}
+
+.livro::before {
+    content: "";
+    background-image: url(../img/livro.png);
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: -40px;
+    background-size: cover;
+    right: 40px;
 
 }
 
 .alerta::before {
     content: "";
     background-image: url(../img/alerta.png);
-    width: 70px;
-    height: 70px;
+    width: 100px;
+    height: 100px;
     position: absolute;
-    top: -45px;
+    top: -40px;
     background-size: cover;
-    right: -31px;
+    right: 40px;
 
 }
 
 .adicao::before {
     content: "";
     background-image: url(../img/adicao.png);
-    width: 70px;
-    height: 70px;
+    width: 100px;
+    height: 100px;
     position: absolute;
-    top: -45px;
+    top: -40px;
     background-size: cover;
-    right: -31px;
+    right: 40px;
 
 }
 
