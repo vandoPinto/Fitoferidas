@@ -168,6 +168,17 @@ body {
     left: -51px;
 }
 
+.saibamais3::before {
+    content: "";
+    background-image: url(../img/saibamais.png);
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: -35px;
+    background-size: cover;
+    left: -50px;
+}
+
 .complementar::before {
     content: "";
     background-image: url(../img/complementar.png);
@@ -200,6 +211,17 @@ body {
     top: -65px;
     background-size: cover;
     left: -10px;
+}
+
+.alerta3::before {
+    content: "";
+    background-image: url(../img/alerta.png);
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: -35px;
+    background-size: cover;
+    left: -50px;
 }
 
 .adicao::before {
