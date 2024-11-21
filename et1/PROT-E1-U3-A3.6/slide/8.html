@@ -202,12 +202,15 @@
 
                 <a class="carousel-control-prev w-auto" href="#slidesTela" role="button" data-slide="prev">
                     <span class="carousel-control-prev-icon bg-dark border border-dark rounded-circle"
-                        aria-hidden="true"></span>
+                        aria-hidden="true" data-toggle="tooltip" data-bs-placement="top"
+                        title="Clique aqui para voltar no carrossel"></span>
                     <span class="sr-only">Anterior</span>
                 </a>
                 <a class="carousel-control-next w-auto" href="#slidesTela" role="button" data-slide="next">
                     <span class="carousel-control-next-icon bg-dark border border-dark rounded-circle"
-                        aria-hidden="true"></span>
+                        aria-hidden="true" data-toggle="tooltip" data-bs-placement="top"
+                        title="Clique aqui para avançar no carrossel"></span>
+
                     <span class="sr-only">Próximo</span>
                 </a>
 
@@ -271,3 +274,12 @@
         }
     })
 </script>
+<!-- <script>
+    // Inicialização do tooltip (necessário no Bootstrap 5+)
+    document.addEventListener('DOMContentLoaded', function () {
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl);
+        });
+    });
+</script> -->
